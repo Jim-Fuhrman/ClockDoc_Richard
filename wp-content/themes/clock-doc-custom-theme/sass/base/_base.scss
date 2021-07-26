@@ -1,0 +1,107 @@
+* {
+  box-sizing: border-box;
+  margin: 0; /* this takes the margin off everything*/
+  padding: 0; /* this takes the padding off everything*/
+}
+
+/*@define-mixin clearfix {
+  &::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+}*/
+
+html,
+body {
+  /* this wasn't covered in the course. It prevents an unwanted white margin that increases the smaller the screen size gets. */
+  overflow-x: hidden;
+  font-size: 62.5%; /* This defines 1rem. This is 10/16 or .625* - Thus, 1rem = 10px*/
+  /* in ClockDoc-CortlandNE this font size will not work. In clockdoc-Richard this font size does indeed work. */
+  /* font-size: 62.5%; /* This defines the font-size of our entire layout. */
+
+  @media (min-width: 1010px) {
+    font-size: 62.5%;
+  }
+
+  @media (min-width: 767px) {
+    font-size: 48%;
+  }
+
+  @media (min-width: 530px) {
+    font-size: 31.25%;
+  }
+}
+
+body {
+  /* except I like Roboto font better. 50 JS projects used Open Sans font.*/
+  font-family: "Roboto", sans-serif;
+  color: #222;
+  padding-bottom: 1rem;
+  background-color: beige;
+  /*font-size: 1.6rem; */ /* In clockdoc-Richard this line of code needs to be asterisked out. */
+}
+
+h1 {
+  font-size: 3rem;
+}
+
+h2 {
+  font-size: 2.4rem;
+}
+
+p {
+  font-size: 1.6rem;
+  margin: 10rem 20rem;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+input {
+  height: 4rem;
+}
+
+textarea {
+  /* used on contact us form. */
+  height: 8rem;
+}
+
+a {
+  color: $mainBlue;
+  z-index: 10;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+p,
+ul,
+ol {
+  margin: 0 0 1.65em 0;
+}
+
+li {
+  line-height: 1.65rem;
+}
+
+p {
+  line-height: 1.65em;
+}
+
+@media (min-width: 800px) {
+  /* any width > 800 will have brown. */
+  h1 {
+    color: brown;
+  }
+}
+
+@media (max-width: 800px) {
+  /* any width < 800 will have magenta */
+  h1 {
+    color: magenta;
+  }
+}

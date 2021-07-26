@@ -1,0 +1,107 @@
+.main-navigation {
+  padding-top: 0.2rem;
+
+  ul {
+    padding: 0;
+    margin: 0;
+  }
+
+  ul:before,
+  ul:after {
+    content: " ";
+    display: table;
+  }
+
+  ul:after {
+    clear: both;
+  }
+
+  @mixin atMedium {
+    float: left;
+    margin-right: 20px;
+  }
+}
+
+.main-navigation li {
+  float: right;
+  list-style: none;
+
+  @mixin atMedium {
+    float: left;
+    padding-left: 20px;
+  }
+}
+
+.main-navigation a {
+  display: block;
+  padding: 0.1rem 2rem;
+  color: #fff;
+  text-decoration: none;
+  font-weight: 300;
+  @mixin atMedium {
+    display: inline-block;
+    padding: 0;
+  }
+}
+
+.main-navigation .current-menu-item a,
+.main-navigation a:hover {
+  color: $beige;
+}
+
+/* everything from here to the end is from the sticky navbar project from 50 JavaScript projects in 50 days. */
+.container {
+  max-width: 130rem;
+  margin: 0 auto; /*zero for top/bottom, auto for left/right which will put text in the middle. */
+}
+
+.nav {
+  position: fixed;
+  background-color: #222;
+  top: 0;
+  left: 0;
+  right: 0;
+  /*transition: all .3s ease-in-out;*/
+}
+/* .nav .container automatically puts the logo and nav menu in a row side by side. */
+.nav .container {
+  /* If I put the flex on nav, that would make the container the flex item. I don't want that. I want the container to be the flexbox. */
+  display: flex; /* I want to put the logo on the left and the nav menu on the right. That's why the container is the flexbox because the h1 and ul will be the flex items inside them. */
+  justify-content: space-between; /* this automatically puts space between the logo and the nav menu. Otherwise, they're too close together. */
+  align-items: center; /* this vertically centers the logo and nav menu within the horizontal bar, or the container class.*/
+  padding: 2rem 0; /* this adds padding, so they're not too close to the nav bar's top nor bottom.*/
+  /*transition: all .3s ease-in-out; /* We're going to change the padding value when we scroll and add the active class. */
+}
+
+.nav ul {
+  display: flex; /* we want the li's to be in a row, so we need display: flex;*/
+  list-style-type: none; /* this gets rid of bullet points. */
+  align-items: center; /* this vertically aligns the li's within the navbar. */
+  justify-content: center;
+}
+
+.nav a {
+  color: bisque;
+  text-decoration: none; /* this removes underlining. */
+  padding: 0.7rem 1.5rem;
+  /*transition: all .3s ease-in-out; /* */
+}
+
+.nav.active {
+  background-color: bisque;
+  box-shadow: 0 0.2rem 1rem rgba(0, 0, 0, 0.3); /* 10px blur*/
+}
+
+.nav.active a {
+  color: bisque;
+}
+
+.nav.active .container {
+  padding: 1rem 0;
+}
+
+.nav a.current,
+.nav a:hover {
+  color: #c0392b;
+  font-weight: bold;
+}

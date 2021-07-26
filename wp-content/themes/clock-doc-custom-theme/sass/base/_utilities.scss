@@ -1,0 +1,123 @@
+/* everything after this line is from fictional-university*/
+.content h2,
+.content h3 {
+  font-size: 150%;
+  margin: 2rem 0;
+}
+
+.content p {
+  color: #555;
+  line-height: 3rem;
+  letter-spacing: 0.12rem;
+}
+
+.section-break {
+  border: none;
+  border-top: 0.1rem solid #ddd;
+  margin: 4rem 0;
+}
+
+.section-auto {
+  margin: auto;
+}
+
+.min-list {
+  padding: 0;
+  margin: 0;
+}
+
+.min-list li {
+  list-style: none;
+}
+
+.p-top-small {
+  padding-top: 1.6rem;
+}
+.p-top-large {
+  padding-top: 2.5rem;
+}
+.p-bottom-large {
+  padding-bottom: 2.5rem;
+}
+
+@mixin atSmall {
+  .p-top-large {
+    padding-top: 5.6rem;
+  }
+  .p-bottom-large {
+    padding-bottom: 5.6rem;
+  }
+}
+
+.hide {
+  display: none;
+}
+
+.no-margin {
+  margin: 0;
+}
+.nu {
+  text-decoration: none;
+}
+.nu:hover {
+  text-decoration: underline;
+}
+
+.t-bold {
+  font-weight: bold;
+}
+.t-center {
+  text-align: center;
+}
+.t-cursive {
+  font-family: "Dancing Script", cursive, sans-serif;
+}
+.t-left {
+  text-align: left;
+}
+.t-right {
+  text-align: right;
+}
+.t-white {
+  color: #fff;
+}
+.t-black {
+  color: #000;
+}
+.b-goldenrod {
+  background-color: goldenrod;
+}
+.t-maroon {
+  background-color: #8d2b25;
+}
+
+.t-small {
+  font-size: 1.3rem;
+}
+
+.float-left {
+  float: left;
+}
+.float-right {
+  float: right;
+}
+.push-right {
+  margin-right: 2rem;
+}
+
+.container:before,
+.container:after,
+.group:before,
+.group:after {
+  content: " ";
+  display: table;
+}
+
+.container:after,
+.group:after {
+  clear: both;
+}
+
+.hide {
+  display: none;
+}

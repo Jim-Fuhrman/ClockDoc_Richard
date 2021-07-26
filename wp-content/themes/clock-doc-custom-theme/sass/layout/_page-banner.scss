@@ -1,0 +1,268 @@
+.page-banner {
+  position: relative;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  height: 100vh;
+  width: 100vw;
+  /* z-index: -2;  This line of code caused the anchor labeled "Click to see our products" not to work. */
+
+  &::before {
+    /* this is a pseudo selector that adds a ghost element to style*/
+    content: "";
+    position: absolute; /* when this is relative, it pushed the text to the right side not centered and the right 1/4 of image was brighter. */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(
+      0,
+      0,
+      0,
+      0
+    ); /* the last argument controls how bright or dark the ancient clock image on the front page will be. */
+    z-index: -1; /* this determines how close to the screen an element is. we're pushing it back with -1.*/
+  }
+
+  &__text-box {
+    position: absolute;
+    top: 50%; /* 50% of the height of the parent element */
+    left: 50%; /* 50% of the width of the parent element */
+    transform: translate(
+      -50%,
+      -50%
+    ); /* 50% of the height and width of the &__headings element itself. */
+    text-align: center;
+  }
+
+  &__heading {
+    color: #fff;
+    backface-visibility: hidden;
+    margin-bottom: 2rem;
+
+    &--main {
+      display: block;
+      font-size: 16rem;
+      font-weight: 400;
+      color: inherit;
+
+      animation-name: moveInLeft;
+      animation-duration: 1s;
+      animation-timing-function: ease-out;
+
+      /*@mixin atSmaller {
+        font-size: 4rem;
+      }
+
+      @mixin atSmall {
+        font-size: 6rem;
+      }
+
+      @mixin atMedium {
+        font-size: 8rem;
+      }*/
+    }
+
+    &--sub {
+      display: block;
+      font-size: 10rem;
+      font-weight: 400;
+      color: inherit;
+      width: max-content;
+
+      /*@mixin atSmaller {
+        font-size: 4rem;
+      }
+
+      @mixin atSmall {
+        font-size: 6rem;
+      }
+
+      @mixin atMedium {
+        font-size: 8rem;
+      }*/
+
+      animation-name: moveInRight;
+      animation-duration: 1s;
+      animation-timing-function: ease-out;
+
+      /*animation: moveInRight 1s ease-out;*/
+    }
+  }
+
+  &__btn {
+    display: inline-block;
+    text-decoration: none;
+    padding: 0.6rem 1.2rem;
+    font-size: 2rem;
+    border-radius: 10rem;
+    border: none;
+
+    @mixin atMediumSmall {
+      font-size: 2rem;
+      padding: 0.6rem 1.2rem;
+    }
+
+    &,
+    &:link,
+    &:visited {
+      text-decoration: none;
+      padding: 1.5rem 4rem;
+      display: inline-block;
+      transition: all 0.2s;
+      position: relative;
+    }
+
+    &::after {
+      content: "";
+      display: inline-block;
+      height: 200%;
+      width: 200%;
+      border-radius: 10rem;
+      background-color: blanchedalmond;
+      color: black;
+      position: absolute;
+      top: 0;
+      left: 0;
+      z-index: -1;
+      transition: all 0.4s;
+    }
+
+    &:hover {
+      transform: translateY(-0.3rem);
+      box-shadow: 10rem 0.5rem 0.1rem rgba(0, 0, 0, 0.2);
+    }
+
+    &:hover::after {
+      transform: scaleX(1.4) scaleY(1.6);
+      opacity: 0;
+    }
+
+    &--brown {
+      /* this works */
+      color: #fff;
+      background-color: brown;
+      display: inline-block;
+
+      &::after {
+        /* this works */
+        background-color: brown;
+      }
+    }
+
+    &--animated {
+      /* this works */
+      animation: moveInBottom 0.5s ease-out 0.75s;
+      animation-fill-mode: backwards;
+    }
+  }
+
+  &__important-notice {
+    /*margin-top: 25rem;*/
+    top: 35%;
+    left: 50%; /* needed definitely! */
+    font-size: 2rem;
+    border-radius: 10rem;
+    padding: 0.1rem;
+    /* max-width: 100%; */
+    text-align: center;
+    position: absolute; /* needed definitely! */
+    /* the next transform centers it */
+    transform: translate(
+      -50%,
+      -50%
+    ); /* 50% of the height and width of the &__headings element itself. */
+
+    @mixin atMediumSmall {
+      /*font-size: 3rem;*/
+      padding: 2rem;
+    }
+
+    &--animated {
+      animation: moveInTop 1s ease-out 1.5s;
+      animation-fill-mode: backwards;
+    }
+
+    &::after {
+      content: "";
+      display: inline-block;
+      height: 100%;
+      width: 100%;
+      border-radius: 10rem;
+      position: absolute;
+      top: 0;
+      left: 0;
+      z-index: -1;
+      transition: all 0.4s;
+    }
+  }
+}
+
+.page-banner__btn::after {
+  content: "";
+  display: inline-block;
+  height: 100%;
+  width: 100%;
+  border-radius: 10rem;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  transition: all 0.4s;
+}
+
+@keyframes moveInLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(-10rem);
+  }
+
+  80% {
+    transform: translateX(2rem);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translate(0);
+  }
+}
+
+@keyframes moveInRight {
+  0% {
+    opacity: 0;
+    transform: translateX(10rem);
+  }
+
+  80% {
+    transform: translateX(-2rem);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translate(0);
+  }
+}
+
+@keyframes moveInBottom {
+  0% {
+    opacity: 0;
+    transform: translateY(3rem);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translate(0);
+  }
+}
+
+@keyframes moveInTop {
+  0% {
+    opacity: 0;
+    transform: translateY(-3rem);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translate(0);
+  }
+}

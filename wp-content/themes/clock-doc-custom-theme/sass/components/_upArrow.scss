@@ -1,0 +1,30 @@
+.upArrow {
+  position: fixed !important;
+  /*position: block;*/
+  opacity: 0; /* at first we don't want to see it. */
+  right: 2rem;
+  bottom: -4.5rem;
+  color: #fff;
+  display: block;
+  font-size: 2.2rem;
+  line-height: 3.5rem;
+  text-align: center;
+  width: 4rem;
+  height: 4rem;
+  z-index: 9999;
+  cursor: pointer;
+  border-radius: 0.2rem;
+  transition: all 0.5s ease-out;
+  background-color: #d65050;
+
+  &__make-visible {
+    opacity: 1;
+    visibility: visible;
+    bottom: 1.1rem; /* This is the most critical line. It won't show without this line. */
+  }
+
+  :hover {
+    background-color: antiquewhite;
+    color: maroon;
+  }
+}

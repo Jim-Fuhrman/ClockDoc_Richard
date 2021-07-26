@@ -1,0 +1,23 @@
+.contactUs {
+  position: relative;
+  font-size: 1.6rem;
+
+  &__button {
+    background-color: $darkOrange;
+    border: none;
+    border-radius: 20%;
+    cursor: pointer;
+    display: block;
+    padding: 1rem;
+    width: 10rem;
+    /*height: 3rem;*/
+  }
+
+  &__padding {
+    padding: 0.5rem 1rem;
+  }
+}
+
+.page-id-47 {
+  background-color: burlywood;
+}

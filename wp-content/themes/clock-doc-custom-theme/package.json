@@ -1,0 +1,22 @@
+{
+  "name": "clockdoc",
+  "version": "1.0.0",
+  "description": "clock doctor of Cortland Nebraska website",
+  "main": "index.js",
+  "scripts": {
+    "compile:sass": "node-sass sass/main.scss css/style.css -w",
+    "build": "wp-scripts build",
+    "start": "wp-scripts start",
+    "dev": "wp-scripts start",
+    "devFast": "wp-scripts start"
+  },
+  "author": "Jim Fuhrman",
+  "license": "ISC",
+  "devDependencies": {
+    "@wordpress/scripts": "^17.0.0",
+    "node-sass": "^5.0.0"
+  },
+  "dependencies": {
+    "normalize.css": "^8.0.1"
+  }
+}

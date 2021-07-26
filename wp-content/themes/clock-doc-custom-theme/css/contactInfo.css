@@ -1,0 +1,118 @@
+.contactInfo__bkgd {
+  position: relative;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: bottom center;
+  background-color: rgba(141, 43, 37, 0.7);
+  color: white;
+  height: 85vh;
+  width: 100vw;
+
+  @mixin atSmall {
+    height: 50vh;
+  }
+}
+
+.maroon-color {
+  background-image: linear-gradient(
+    rgba(141, 43, 37, 0.7),
+    rgba(141, 43, 37, 0.7)
+  );
+  height: 100%;
+  position: absolute;
+  z-index: 3;
+}
+.contactInfo {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  display: inline-block;
+  justify-content: center;
+  align-items: flex-start;
+  /* margin-left: 1rem; */
+  padding: 2rem;
+
+  h2 {
+    font-size: 2.4rem;
+  }
+
+  @mixin atSmaller {
+    padding-left: 8rem;
+  }
+
+  @mixin atSmall {
+    /*min-width: 530px */
+
+    display: grid;
+    grid-template-columns: repeat(2, 25rem);
+    justify-items: center;
+  }
+
+  @mixin atMedium {
+    /* min-width: 767px */
+    padding: 10rem;
+    grid-template-columns: repeat(3, 25rem);
+  }
+
+  @mixin at1000 {
+    /* min-width: 1000px */
+    grid-template-columns: repeat(3, 30rem);
+    justify-items: center;
+  }
+
+  a {
+    color: white;
+    text-decoration: none;
+  }
+
+  h2 {
+    margin-top: 4rem;
+    margin-bottom: 3rem;
+
+    @mixin atSmall {
+      margin-right: 2rem;
+    }
+
+    @mixin at1000 {
+      margin-top: 1rem;
+    }
+  }
+
+  p {
+    font-size: 1.2rem;
+    line-height: 0.1em;
+    margin-top: 1rem;
+
+    @mixin atSmaller {
+      font-size: 1.6rem;
+    }
+  }
+
+  iframe {
+    @mixin at1000 {
+      margin-top: 1rem;
+    }
+  }
+
+  .headline {
+    color: #666;
+    margin-bottom: 0.33rem;
+  }
+
+  &__link {
+    color: #999;
+    text-decoration: none;
+  }
+
+  &__link:hover {
+    color: $mainBlue;
+    text-decoration: underline;
+  }
+
+  &_inner {
+    border-top: 1px dotted #dedede;
+    padding-top: 3.5rem;
+  }
+}
