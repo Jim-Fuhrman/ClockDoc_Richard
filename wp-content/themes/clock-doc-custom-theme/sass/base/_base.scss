@@ -4,14 +4,6 @@
   padding: 0; /* this takes the padding off everything.*/
 }
 
-/*@define-mixin clearfix {
-  &::after {
-    content: "";
-    clear: both;
-    display: table;
-  }
-}*/
-
 html,
 body {
   overflow-x: hidden; /* this was not covered in the course. It prevents an unwanted white margin that increases the smaller the screen size gets. */

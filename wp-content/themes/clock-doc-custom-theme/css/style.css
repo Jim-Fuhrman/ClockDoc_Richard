@@ -27,13 +27,6 @@
   padding: 0;
   /* this takes the padding off everything.*/ }
 
-/*@define-mixin clearfix {
-  &::after {
-    content: "";
-    clear: both;
-    display: table;
-  }
-}*/
 html,
 body {
   overflow-x: hidden;
@@ -298,13 +291,6 @@ p {
 
 .hide {
   display: none; }
-
-.about-us ul {
-  font-size: 1.6rem;
-  margin-top: -1rem; }
-
-.about-us li {
-  margin-bottom: 0.5rem; }
 
 .btn {
   display: inline-block;
