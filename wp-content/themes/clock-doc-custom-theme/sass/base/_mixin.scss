@@ -61,7 +61,6 @@
 
 @mixin atLargest {
   @media (min-width: 1860px) {
-    /* Below 1860px the flipping boxes on the about Us page start having problems. */
     @content;
   }
 }
