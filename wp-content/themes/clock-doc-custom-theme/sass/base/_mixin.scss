@@ -1,67 +1,67 @@
-@define-mixin atSmallest {
+@mixin atSmallest {
   @media (min-width: 280px) {
-    @mixin-content;
+    @content;
   }
 }
 
-@define-mixin atSmaller {
+@mixin atSmaller {
   @media (min-width: 355px) {
-    @mixin-content;
+    @content;
   }
 }
 
-@define-mixin at370 {
+@mixin at370 {
   /* site-footer needs this. */
   @media (min-width: 370px) {
-    @mixin-content;
+    @content;
   }
 }
 
-@define-mixin atSmall {
+@mixin atSmall {
   @media (min-width: 530px) {
-    @mixin-content;
+    @content;
   }
 }
 
-@define-mixin atMediumSmall {
+@mixin atMediumSmall {
   @media (min-width: 616px) {
-    @mixin-content;
+    @content;
   }
 }
 
-@define-mixin atMedium {
+@mixin atMedium {
   @media (min-width: 767px) {
-    @mixin-content;
+    @content;
   }
 }
 
-@define-mixin atMediumLarge {
+@mixin atMediumLarge {
   @media (min-width: 800px) {
-    @mixin-content;
+    @content;
   }
 }
 
-@define-mixin at1000 {
+@mixin at1000 {
   @media (min-width: 1000px) {
-    @mixin-content;
+    @content;
   }
 }
 
-@define-mixin atLarge {
+@mixin atLarge {
   @media (min-width: 1200px) {
-    @mixin-content;
+    @content;
   }
 }
 
-@define-mixin atLarger {
+@mixin atLarger {
   @media (min-width: 1500px) {
-    @mixin-content;
+    @content;
   }
 }
 
-@define-mixin atLargest {
+@mixin atLargest {
   @media (min-width: 1860px) {
     /* Below 1860px the flipping boxes on the about Us page start having problems. */
-    @mixin-content;
+    @content;
   }
 }
