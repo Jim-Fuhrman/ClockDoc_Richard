@@ -2,13 +2,29 @@
 /* medium green */
 /* light green */
 /* dark green */
+/*media query manager*/
+/*
+   0px - 280px:  atSmallest
+ 281px - 355px:  atSmaller
+ 356px = 530px:  atSmall
+
+ 531px - 616px: atMediumSmall
+ 617px - 767px: atMedium
+ 768px - 800px: atMediumLarge
+
+ 801px - 1000px: at1000
+1001px - 1200px: atLarge
+1201px - 1860px: atLarger
+1860px - ------- atLargest 
+*/
 /*@import "animations.scss";*/
 * {
   box-sizing: border-box;
+  /* border and padding are included in widths and heights specified. */
   margin: 0;
-  /* this takes the margin off everything*/
+  /* this takes the margin off everything.*/
   padding: 0;
-  /* this takes the padding off everything*/ }
+  /* this takes the padding off everything.*/ }
 
 /*@define-mixin clearfix {
   &::after {
@@ -19,25 +35,71 @@
 }*/
 html,
 body {
-  /* this wasn't covered in the course. It prevents an unwanted white margin that increases the smaller the screen size gets. */
   overflow-x: hidden;
-  font-size: 62.5%;
-  /* This defines 1rem. This is 10/16 or .625* - Thus, 1rem = 10px*/
-  /* in ClockDoc-CortlandNE this font size will not work. In clockdoc-Richard this font size does indeed work. */
-  /* font-size: 62.5%; /* This defines the font-size of our entire layout. */ }
-  @media (min-width: 1010px) {
-    html,
-    body {
-      font-size: 62.5%; } }
-  @media (min-width: 767px) {
-    html,
-    body {
-      font-size: 48%; } }
-  @media (min-width: 530px) {
-    html,
-    body {
-      font-size: 31.25%; } }
+  /* this was not covered in the course. It prevents an unwanted white margin that increases the smaller the screen size gets. */ }
 
+html {
+  font-size: 62.5%;
+  /* This defines 1rem. This is 10/16 or .625* - Thus, 1rem = 10px. This defines the font-size of our entire layout.*/
+  /* in ClockDoc-CortlandNE this font size will not work. In clockdoc-Richard this font size does indeed work. */
+  /* 355/16 = 22.1875em*/
+  /* 530/16 = 33.125em*/
+  /* 616/16 = 38.5em */
+  /* 767/16 = 47.9375em */
+  /* 800/16 = 50em */
+  /* 1000/16 = 62.5em*/
+  /* 1200/16 = 75em*/
+  /* 1500/16 = 93.75em*/
+  /* 1860/16 = 116.25em   */
+  /* 355/16 = 22.1875em*/
+  /* 530/16 = 33.125em*/
+  /* 616/16 = 38.5em */
+  /* 767/16 = 47.9375em */
+  /* 800/16 = 50em */
+  /* 1000/16 = 62.5em*/
+  /* 1200/16 = 75em*/
+  /* 1500/16 = 93.75em*/
+  /* 1860/16 = 116.25em   */
+  /* 280/16 = 17.5em */
+  /* 355/16 = 22.1875em*/
+  /* 530/16 = 33.125em*/
+  /* 616/16 = 38.5em */
+  /* 767/16 = 47.9375em */
+  /* 800/16 = 50em */
+  /* 1000/16 = 62.5em*/
+  /* 1200/16 = 75em*/
+  /* 1500/16 = 93.75em*/
+  /* 1860/16 = 116.25em   */ }
+  @media only screen and (max-width: 33.125em) {
+    html {
+      /* width <= 530px? */
+      font-size: 56.25%;
+      /* 1rem = 9px, 9/16 = 56.25%*/ } }
+  @media only screen and (max-width: 22.1875em) {
+    html {
+      /* width <= 355px? */
+      font-size: 50%;
+      /* 1rem = 8px, 8/16 = 50%*/ } }
+  @media only screen and (max-width: 17.5em) {
+    html {
+      /* width <= 280px? */
+      font-size: 43.75%;
+      /* 1rem = 7px, 7/16 = 43.75%*/ } }
+
+/* 355/16 = 22.1875em*/
+/* 530/16 = 33.125em*/
+/* 616/16 = 38.5em */
+/* 767/16 = 47.9375em */
+/* 800/16 = 50em */
+/* 1000/16 = 62.5em*/
+/* 1200/16 = 75em*/
+/* 1500/16 = 93.75em*/
+@media only screen and (min-width: 116.25em) {
+  /* width <= 280px? */
+  font-size: 62.5%;
+  /* 1rem = 10px, 10/16 = 62.5%*/ }
+
+/* 1860/16 = 116.25em   */
 body {
   /* except I like Roboto font better. 50 JS projects used Open Sans font.*/
   font-family: "Roboto", sans-serif;
@@ -81,7 +143,8 @@ ol {
   margin: 0 0 1.65em 0; }
 
 li {
-  line-height: 1.65rem; }
+  line-height: 2rem;
+  font-size: 1.5rem; }
 
 p {
   line-height: 1.65em; }
@@ -235,87 +298,12 @@ p {
 .hide {
   display: none; }
 
-.we-are {
-  text-align: center; }
-
-.about-us {
-  display: flex;
-  justify-content: center;
-  text-align: right;
-  background-color: bisque;
-  font-family: Arial;
-  height: 100vh; }
-
-.about-us ol {
+.about-us ul {
   font-size: 1.6rem;
   margin-top: -1rem; }
 
 .about-us li {
   margin-bottom: 0.5rem; }
-
-.flip-boxes {
-  position: relative;
-  display: flex;
-  justify-content: center;
-  justify-items: center; }
-
-.flip-box {
-  background-color: transparent;
-  width: 20rem;
-  /* original value 300px */
-  height: 60rem;
-  /* original value 200px */
-  border-radius: 20%;
-  perspective: 100rem;
-  margin: 0 6rem;
-  display: inline-block; }
-
-.flip-box-inner {
-  position: relative;
-  width: 100%;
-  height: 100%;
-  text-align: center;
-  transition: transform 0.25s;
-  transform-style: preserve-3d; }
-
-.flip-box:hover .flip-box-inner {
-  transform: rotateY(180deg); }
-
-.flip-box-front,
-.flip-box-back {
-  position: absolute;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-  height: 100%;
-  -webkit-backface-visibility: hidden;
-  backface-visibility: hidden; }
-
-.flip-box-front {
-  background-color: maroon;
-  color: #fff;
-  border-radius: 10%;
-  padding: 2rem; }
-
-.flip-box-back {
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  background-color: teal;
-  color: white;
-  border-radius: 10%;
-  padding: 2rem;
-  padding-top: 4rem;
-  text-align: left;
-  transform: rotateY(180deg); }
-
-.flip-box-back:not(:last-of-type) {
-  margin-bottom: 1rem; }
-
-.flip-box-back-ol {
-  margin-top: 0;
-  padding: 1rem; }
 
 .btn {
   display: inline-block;
@@ -530,6 +518,7 @@ p {
     background-color: antiquewhite;
     color: maroon; }
 
+/* This is from clockdoc-richard website. */
 .contactInfo__bkgd {
   position: relative;
   background-repeat: no-repeat;
@@ -538,8 +527,17 @@ p {
   background-color: rgba(141, 43, 37, 0.7);
   color: antiquewhite;
   height: 85vh;
-  width: 100vw; }
-  @media (min-width: 530px) {
+  width: 100vw;
+  /* 355/16 = 22.1875em*/
+  /* 530/16 = 33.125em*/
+  /* 616/16 = 38.5em */
+  /* 767/16 = 47.9375em */
+  /* 800/16 = 50em */
+  /* 1000/16 = 62.5em*/
+  /* 1200/16 = 75em*/
+  /* 1500/16 = 93.75em*/
+  /* 1860/16 = 116.25em   */ }
+  @media only screen and (max-width: 33.125em) {
     .contactInfo__bkgd {
       height: 50vh; } }
 
@@ -559,7 +557,8 @@ p {
   justify-content: center;
   align-items: flex-start;
   /* margin-left: 1rem; */
-  padding: 2rem; }
+  padding: 2rem;
+  /* I couldn't get a mixin to work with the following @media queries. If it isn't broken, don't fix it. The following @media queries work well. */ }
   .contactInfo h2 {
     font-size: 2.4rem; }
   @media (min-width: 355px) {
@@ -590,7 +589,7 @@ p {
       grid-template-columns: repeat(3, 30rem);
       justify-items: center; } }
   .contactInfo a {
-    color: white;
+    color: antiquewhite;
     text-decoration: none; }
   .contactInfo h2 {
     margin-top: 4rem;
@@ -730,7 +729,7 @@ p {
     margin-bottom: 2rem; }
     .page-banner__heading--main {
       display: block;
-      font-size: 16rem;
+      font-size: 8rem;
       font-weight: 400;
       color: inherit;
       -webkit-animation-name: moveInLeft;
@@ -752,7 +751,7 @@ p {
       }*/ }
     .page-banner__heading--sub {
       display: block;
-      font-size: 10rem;
+      font-size: 5rem;
       font-weight: 400;
       color: inherit;
       width: -webkit-max-content;
@@ -827,7 +826,7 @@ p {
     top: 35%;
     left: 50%;
     /* needed definitely! */
-    font-size: 2rem;
+    font-size: 1.75rem;
     border-radius: 10rem;
     padding: 0.1rem;
     /* max-width: 100%; */
@@ -941,7 +940,20 @@ p {
 .postpage-banner {
   background-color: #000;
   padding: 80px 0 40px 0;
-  position: relative; }
+  position: relative;
+  /* 355/16 = 22.1875em*/
+  /* 530/16 = 33.125em*/
+  /* 616/16 = 38.5em */
+  /* 767/16 = 47.9375em */
+  /* 800/16 = 50em */
+  /* 1000/16 = 62.5em*/
+  /* 1200/16 = 75em*/
+  /* 1500/16 = 93.75em*/
+  /* 1860/16 = 116.25em   */ }
+  @media only screen and (max-width: 33.125em) {
+    .postpage-banner {
+      /* width <= 530px */
+      padding: 130px 0 60px 0; } }
   .postpage-banner__content {
     position: relative;
     z-index: 2; }
@@ -950,7 +962,19 @@ p {
     font-weight: 300;
     font-size: 3.6rem;
     margin: 0 0 1rem 0;
-    color: #fff; }
+    color: #fff;
+    /* 355/16 = 22.1875em*/
+    /* 530/16 = 33.125em*/
+    /* 616/16 = 38.5em */
+    /* 767/16 = 47.9375em */
+    /* 800/16 = 50em */
+    /* 1000/16 = 62.5em*/
+    /* 1200/16 = 75em*/
+    /* 1500/16 = 93.75em*/
+    /* 1860/16 = 116.25em   */ }
+    @media only screen and (max-width: 33.125em) {
+      .postpage-banner__title {
+        font-size: 5rem; } }
   .postpage-banner__bg-image {
     opacity: 0.33;
     background-size: cover;
@@ -963,13 +987,38 @@ p {
     font-weight: 300;
     font-size: 1.2rem;
     line-height: 1.3;
-    color: #ededed; }
+    color: #ededed;
+    /* 355/16 = 22.1875em*/
+    /* 530/16 = 33.125em*/
+    /* 616/16 = 38.5em */
+    /* 767/16 = 47.9375em */
+    /* 800/16 = 50em */
+    /* 1000/16 = 62.5em*/
+    /* 1200/16 = 75em*/
+    /* 1500/16 = 93.75em*/
+    /* 1860/16 = 116.25em   */ }
+    @media only screen and (max-width: 33.125em) {
+      .postpage-banner__intro {
+        font-size: 1.65rem; } }
   .postpage-banner__intro p {
     margin: 0; }
 
 .page-section {
   padding-top: 1.6rem;
-  padding-bottom: 1.6rem; }
+  padding-bottom: 1.6rem;
+  /* 355/16 = 22.1875em*/
+  /* 530/16 = 33.125em*/
+  /* 616/16 = 38.5em */
+  /* 767/16 = 47.9375em */
+  /* 800/16 = 50em */
+  /* 1000/16 = 62.5em*/
+  /* 1200/16 = 75em*/
+  /* 1500/16 = 93.75em*/
+  /* 1860/16 = 116.25em   */ }
+  @media only screen and (max-width: 33.125em) {
+    .page-section {
+      padding-top: 3.5rem;
+      padding-bottom: 3.5rem; } }
   .page-section--white {
     background-color: #fff; }
   .page-section--beige {

@@ -1,7 +1,7 @@
 * {
-  box-sizing: border-box;
-  margin: 0; /* this takes the margin off everything*/
-  padding: 0; /* this takes the padding off everything*/
+  box-sizing: border-box; /* border and padding are included in widths and heights specified. */
+  margin: 0; /* this takes the margin off everything.*/
+  padding: 0; /* this takes the padding off everything.*/
 }
 
 /*@define-mixin clearfix {
@@ -14,23 +14,32 @@
 
 html,
 body {
-  /* this wasn't covered in the course. It prevents an unwanted white margin that increases the smaller the screen size gets. */
-  overflow-x: hidden;
-  font-size: 62.5%; /* This defines 1rem. This is 10/16 or .625* - Thus, 1rem = 10px*/
+  overflow-x: hidden; /* this was not covered in the course. It prevents an unwanted white margin that increases the smaller the screen size gets. */
+}
+
+html {
+  font-size: 62.5%; /* This defines 1rem. This is 10/16 or .625* - Thus, 1rem = 10px. This defines the font-size of our entire layout.*/
   /* in ClockDoc-CortlandNE this font size will not work. In clockdoc-Richard this font size does indeed work. */
-  /* font-size: 62.5%; /* This defines the font-size of our entire layout. */
 
-  @media (min-width: 1010px) {
-    font-size: 62.5%;
+  @include respondDesktop(atSmall) {
+    /* width <= 530px? */
+    font-size: 56.25%; /* 1rem = 9px, 9/16 = 56.25%*/
   }
 
-  @media (min-width: 767px) {
-    font-size: 48%;
+  @include respondDesktop(atSmaller) {
+    /* width <= 355px? */
+    font-size: 50%; /* 1rem = 8px, 8/16 = 50%*/
   }
 
-  @media (min-width: 530px) {
-    font-size: 31.25%;
+  @include respondDesktop(atSmallest) {
+    /* width <= 280px? */
+    font-size: 43.75%; /* 1rem = 7px, 7/16 = 43.75%*/
   }
+}
+
+@include respondDesktop(atLargest) {
+  /* width <= 280px? */
+  font-size: 62.5%; /* 1rem = 10px, 10/16 = 62.5%*/
 }
 
 body {
@@ -85,7 +94,8 @@ ol {
 }
 
 li {
-  line-height: 1.65rem;
+  line-height: 2rem;
+  font-size: 1.5rem;
 }
 
 p {
