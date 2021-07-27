@@ -38,15 +38,16 @@
 
   /* I couldn't get a mixin to work with the following @media queries because I already have a Desktop First mixin, 
   but these would require a Mobile First mixin. I can't have both.*/
-  @media (min-width: 22.1875em) {
+  /* @media (min-width: 22.1875em) {
     padding-left: 8rem;
   } /* 355px/16 = 22.1875em*/
 
-  @media (min-width: 33.125em) {
+  @media (min-width: 15em) {
+    font-size: 8rem;
     display: grid;
     grid-template-columns: repeat(2, 25rem);
     justify-items: center;
-  } /* 530px/16 = 33.125em*/
+  } /* 240px/16 = 15em*/
 
   @media (min-width: 47.9375em) {
     padding: 10rem;
@@ -83,9 +84,9 @@
     line-height: 0.1em;
     margin-top: 1rem;
 
-    @media (min-width: 355px) {
-      font-size: 1.6rem;
-    }
+    @media (min-width: 15em) {
+      font-size: 2rem;
+    } /* 240px/16 = 15em */
   }
 
   iframe {

@@ -90,7 +90,7 @@ html {
   /* 1200px/16 = 75em*/
   /* 1500px/16 = 93.75em*/
   /* 1860px/16 = 116.25em   */
-  /* 280px/16 = 17.5em */
+  /* 240px/16 = 15em */
   /* 355px/16 = 22.1875em*/
   /* 400px/16 = 25em */
   /* 530px/16 = 33.125em*/
@@ -136,7 +136,7 @@ html {
       /* width <= 355px? */
       font-size: 25%;
       /* 1rem = 4px, 4/16 = 25% */ } }
-  @media only screen and (max-width: 17.5em) {
+  @media only screen and (max-width: 15em) {
     html {
       /* width <= 280px? */
       font-size: 18.75%;
@@ -209,7 +209,7 @@ p {
 /* The underscore and scss suffix aren't needed */
 .generic-content p,
 .generic-content li {
-  font-size: 1.15rem; }
+  font-size: 1.5rem; }
 
 .generic-content blockquote,
 .generic-content blockquote p {
@@ -590,17 +590,17 @@ p {
   padding: 2rem;
   /* I couldn't get a mixin to work with the following @media queries because I already have a Desktop First mixin, 
   but these would require a Mobile First mixin. I can't have both.*/
-  /* 355px/16 = 22.1875em*/
-  /* 530px/16 = 33.125em*/
+  /* @media (min-width: 22.1875em) {
+    padding-left: 8rem;
+  } /* 355px/16 = 22.1875em*/
+  /* 240px/16 = 15em*/
   /* 767px/16 = 47.9375em */
   /* 1000px/16 = 62.5em*/ }
   .contactInfo h2 {
     font-size: 2.4rem; }
-  @media (min-width: 22.1875em) {
+  @media (min-width: 15em) {
     .contactInfo {
-      padding-left: 8rem; } }
-  @media (min-width: 33.125em) {
-    .contactInfo {
+      font-size: 8rem;
       display: grid;
       grid-template-columns: repeat(2, 25rem);
       justify-items: center; } }
@@ -629,10 +629,11 @@ p {
   .contactInfo p {
     font-size: 1.2rem;
     line-height: 0.1em;
-    margin-top: 1rem; }
-    @media (min-width: 355px) {
+    margin-top: 1rem;
+    /* 240px/16 = 15em */ }
+    @media (min-width: 15em) {
       .contactInfo p {
-        font-size: 1.6rem; } }
+        font-size: 2rem; } }
   @media (min-width: 1000px) {
     .contactInfo iframe {
       margin-top: 1rem; } }
@@ -760,38 +761,94 @@ p {
       animation-name: moveInLeft;
       animation-duration: 1s;
       animation-timing-function: ease-out;
-      /*@mixin atSmaller {
-        font-size: 4rem;
-      }
-
-      @mixin atSmall {
-        font-size: 6rem;
-      }
-
-      @mixin atMedium {
-        font-size: 8rem;
-      }*/ }
+      /* 355px/16 = 22.1875em*/
+      /* 400px/16 = 25em */
+      /* 530px/16 = 33.125em*/
+      /* 616px/16 = 38.5em */
+      /* 767px/16 = 47.9375em */
+      /* 800px/16 = 50em */
+      /* 1000px/16 = 62.5em*/
+      /* 1200px/16 = 75em*/
+      /* 1500px/16 = 93.75em*/
+      /* 1860px/16 = 116.25em   */
+      /* 355px/16 = 22.1875em*/
+      /* 400px/16 = 25em */
+      /* 530px/16 = 33.125em*/
+      /* 616px/16 = 38.5em */
+      /* 767px/16 = 47.9375em */
+      /* 800px/16 = 50em */
+      /* 1000px/16 = 62.5em*/
+      /* 1200px/16 = 75em*/
+      /* 1500px/16 = 93.75em*/
+      /* 1860px/16 = 116.25em   */
+      /* 355px/16 = 22.1875em*/
+      /* 400px/16 = 25em */
+      /* 530px/16 = 33.125em*/
+      /* 616px/16 = 38.5em */
+      /* 767px/16 = 47.9375em */
+      /* 800px/16 = 50em */
+      /* 1000px/16 = 62.5em*/
+      /* 1200px/16 = 75em*/
+      /* 1500px/16 = 93.75em*/
+      /* 1860px/16 = 116.25em   */ }
+      @media only screen and (max-width: 22.1875em) {
+        .page-banner__heading--main {
+          font-size: 4rem; } }
+      @media only screen and (max-width: 33.125em) {
+        .page-banner__heading--main {
+          font-size: 6rem; } }
+      @media only screen and (max-width: 47.9375em) {
+        .page-banner__heading--main {
+          font-size: 8rem; } }
     .page-banner__heading--sub {
       display: block;
       font-size: 5rem;
       font-weight: 400;
       color: inherit;
       width: max-content;
-      /*@mixin atSmaller {
-        font-size: 4rem;
-      }
-
-      @mixin atSmall {
-        font-size: 6rem;
-      }
-
-      @mixin atMedium {
-        font-size: 8rem;
-      }*/
+      /* 355px/16 = 22.1875em*/
+      /* 400px/16 = 25em */
+      /* 530px/16 = 33.125em*/
+      /* 616px/16 = 38.5em */
+      /* 767px/16 = 47.9375em */
+      /* 800px/16 = 50em */
+      /* 1000px/16 = 62.5em*/
+      /* 1200px/16 = 75em*/
+      /* 1500px/16 = 93.75em*/
+      /* 1860px/16 = 116.25em   */
+      /* 355px/16 = 22.1875em*/
+      /* 400px/16 = 25em */
+      /* 530px/16 = 33.125em*/
+      /* 616px/16 = 38.5em */
+      /* 767px/16 = 47.9375em */
+      /* 800px/16 = 50em */
+      /* 1000px/16 = 62.5em*/
+      /* 1200px/16 = 75em*/
+      /* 1500px/16 = 93.75em*/
+      /* 1860px/16 = 116.25em   */
+      /* 355px/16 = 22.1875em*/
+      /* 400px/16 = 25em */
+      /* 530px/16 = 33.125em*/
+      /* 616px/16 = 38.5em */
+      /* 767px/16 = 47.9375em */
+      /* 800px/16 = 50em */
+      /* 1000px/16 = 62.5em*/
+      /* 1200px/16 = 75em*/
+      /* 1500px/16 = 93.75em*/
+      /* 1860px/16 = 116.25em   */
       animation-name: moveInRight;
       animation-duration: 1s;
       animation-timing-function: ease-out;
       /*animation: moveInRight 1s ease-out;*/ }
+      @media only screen and (max-width: 22.1875em) {
+        .page-banner__heading--sub {
+          font-size: 2.5rem; } }
+      @media only screen and (max-width: 33.125em) {
+        .page-banner__heading--sub {
+          font-size: 3.75rem; } }
+      @media only screen and (max-width: 47.9375em) {
+        .page-banner__heading--sub {
+          font-size: 5rem; } }
   .page-banner__btn {
     display: inline-block;
     text-decoration: none;
@@ -972,6 +1029,7 @@ p {
     opacity: 0.33;
     background-size: cover;
     position: absolute;
+    background-position: center center;
     top: 0;
     bottom: 0;
     left: 0;

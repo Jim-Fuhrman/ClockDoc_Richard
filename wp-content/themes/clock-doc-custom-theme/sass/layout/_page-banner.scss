@@ -50,17 +50,17 @@
       animation-duration: 1s;
       animation-timing-function: ease-out;
 
-      /*@mixin atSmaller {
+      @include respondDesktop(atSmaller) {
         font-size: 4rem;
       }
 
-      @mixin atSmall {
+      @include respondDesktop(atSmall) {
         font-size: 6rem;
       }
 
-      @mixin atMedium {
+      @include respondDesktop(atMedium) {
         font-size: 8rem;
-      }*/
+      }
     }
 
     &--sub {
@@ -70,17 +70,17 @@
       color: inherit;
       width: max-content;
 
-      /*@mixin atSmaller {
-        font-size: 4rem;
+      @include respondDesktop(atSmaller) {
+        font-size: 2.5rem;
       }
 
-      @mixin atSmall {
-        font-size: 6rem;
+      @include respondDesktop(atSmall) {
+        font-size: 3.75rem;
       }
 
-      @mixin atMedium {
-        font-size: 8rem;
-      }*/
+      @include respondDesktop(atMedium) {
+        font-size: 5rem;
+      }
 
       animation-name: moveInRight;
       animation-duration: 1s;

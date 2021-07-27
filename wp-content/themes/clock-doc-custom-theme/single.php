@@ -1,5 +1,5 @@
 <?php get_header(); 
-    pageBanner();  /* The pageBanner function doesn't work.*/
+    /*pageBanner();*/  /* The pageBanner function doesn't work.*/
     get_template_part('template-parts/content', 'pageBanner');
 ?>
 

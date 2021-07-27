@@ -36,9 +36,9 @@ I need to code them that way and not use a mixin. */
 
 @mixin respondDesktop($breakpoint) {
   @if $breakpoint == atSmallest {
-    @media only screen and (max-width: 17.5em) {
+    @media only screen and (max-width: 15em) {
       @content;
-    } /* 280px/16 = 17.5em */
+    } /* 240px/16 = 15em */
   }
 
   @if $breakpoint == atSmaller {
