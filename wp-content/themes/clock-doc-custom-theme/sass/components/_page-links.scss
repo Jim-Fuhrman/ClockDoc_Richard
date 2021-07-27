@@ -9,14 +9,7 @@
     margin: 2rem 0 4rem 2rem;
     width: 30rem;
     float: right;
-  }
-
-  /*@mixin atMedium {
-    margin: 4rem 30rem;
-    margin: 2rem 0 4rem 2rem;
-    width: 30rem;
-    float: right; 
-  }  note: i had margin 4rem 30rem asterisked out earlier */
+  } /* 767px/16 = 47.9375em */
 
   &__title {
     margin: 0;

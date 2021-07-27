@@ -13,25 +13,40 @@ html {
   font-size: 62.5%; /* This defines 1rem. This is 10/16 or .625* - Thus, 1rem = 10px. This defines the font-size of our entire layout.*/
   /* in ClockDoc-CortlandNE this font size will not work. In clockdoc-Richard this font size does indeed work. */
 
+  @include respondDesktop(at1000) {
+    /* width <= 1000px? */
+    font-size: 56.25%; /*  1rem = 9px, 9/16 = 56.25% */
+  }
+
+  @include respondDesktop(atMediumSmall) {
+    /* width <= 616px? */
+    font-size: 50%; /* 1rem = 8px, 8/16 = 50% */
+  }
+
   @include respondDesktop(atSmall) {
     /* width <= 530px? */
-    font-size: 56.25%; /* 1rem = 9px, 9/16 = 56.25%*/
+    font-size: 37.5%; /* 1rem = 6px, 6/16 = 37.5% */
+  }
+
+  @include respondDesktop(at400) {
+    /* width <= 530px? */
+    font-size: 31.25%; /* 1rem = 5px, 5/16 = 31.25% */
   }
 
   @include respondDesktop(atSmaller) {
     /* width <= 355px? */
-    font-size: 50%; /* 1rem = 8px, 8/16 = 50%*/
+    font-size: 25%; /* 1rem = 4px, 4/16 = 25% */
   }
 
   @include respondDesktop(atSmallest) {
     /* width <= 280px? */
-    font-size: 43.75%; /* 1rem = 7px, 7/16 = 43.75%*/
+    font-size: 18.75%; /* 1rem = 3px, 3/16 = 18.75% */
   }
-}
 
-@include respondDesktop(atLargest) {
-  /* width <= 280px? */
-  font-size: 62.5%; /* 1rem = 10px, 10/16 = 62.5%*/
+  @include respondDesktop(atLargest) {
+    /* width >= 1860px? */
+    font-size: 62.5%; /* 1rem = 10px, 10/16 = 62.5%*/
+  }
 }
 
 body {

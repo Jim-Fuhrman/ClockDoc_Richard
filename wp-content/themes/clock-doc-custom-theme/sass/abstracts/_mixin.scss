@@ -38,60 +38,66 @@ I need to code them that way and not use a mixin. */
   @if $breakpoint == atSmallest {
     @media only screen and (max-width: 17.5em) {
       @content;
-    } /* 280/16 = 17.5em */
+    } /* 280px/16 = 17.5em */
   }
 
   @if $breakpoint == atSmaller {
     @media only screen and (max-width: 22.1875em) {
       @content;
     }
-  } /* 355/16 = 22.1875em*/
+  } /* 355px/16 = 22.1875em*/
+
+  @if $breakpoint == at400 {
+    @media only screen and (max-width: 25em) {
+      @content;
+    }
+  } /* 400px/16 = 25em */
 
   @if $breakpoint == atSmall {
     @media only screen and (max-width: 33.125em) {
       @content;
     }
-  } /* 530/16 = 33.125em*/
+  } /* 530px/16 = 33.125em*/
 
   @if $breakpoint == atMediumSmall {
     @media only screen and (max-width: 38.5em) {
       @content;
     }
-  } /* 616/16 = 38.5em */
+  } /* 616px/16 = 38.5em */
 
   @if $breakpoint == atMedium {
     @media only screen and (max-width: 47.9375em) {
       @content;
     }
-  } /* 767/16 = 47.9375em */
+  } /* 767px/16 = 47.9375em */
 
   @if $breakpoint == atMediumLarge {
     @media only screen and (max-width: 50em) {
       @content;
     }
-  } /* 800/16 = 50em */
+  } /* 800px/16 = 50em */
 
   @if $breakpoint == at1000 {
     @media only screen and (max-width: 62.5em) {
       @content;
     }
-  } /* 1000/16 = 62.5em*/
+  } /* 1000px/16 = 62.5em*/
 
   @if $breakpoint == atLarge {
     @media only screen and (max-width: 75em) {
       @content;
     }
-  } /* 1200/16 = 75em*/
+  } /* 1200px/16 = 75em*/
 
   @if $breakpoint == atLarger {
     @media only screen and (max-width: 93.75em) {
       @content;
     }
-  } /* 1500/16 = 93.75em*/
+  } /* 1500px/16 = 93.75em*/
 
   @if $breakpoint == atLargest {
     @media only screen and (min-width: 116.25em) {
       @content;
     }
-  } /* 1860/16 = 116.25em   */
+  } /* 1860px/16 = 116.25em   */
 }
