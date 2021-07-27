@@ -13,7 +13,7 @@
   transform: translate(-50%, -50%);
 }
 
-/*media query manager*/
+/* media query manager */
 /*
    0px - 280px:  atSmallest
  281px - 355px:  atSmaller
@@ -28,6 +28,11 @@
 1201px - 1860px: atLarger
 1860px - ------- atLargest 
 */
+
+/* I learned the hard way I couldn't have two mixins, 
+one that does a Desktop first approach and one that does a Mobile first approach.
+it confuses the sass compiler, obviously. If I need @media queries that do min-widths, 
+I need to code them that way and not use a mixin. */
 
 @mixin respondDesktop($breakpoint) {
   @if $breakpoint == atSmallest {

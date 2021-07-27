@@ -2,7 +2,10 @@
 /* medium green */
 /* light green */
 /* dark green */
-/*media query manager*/
+/*media query manager
+  Dtf - Desktop First
+  Mbf - Mobile First
+*/
 /*
    0px - 280px:  atSmallest
  281px - 355px:  atSmaller
@@ -442,8 +445,14 @@ p {
     margin: 4rem 30rem;
     margin: 2rem 0 4rem 2rem;
     width: 30rem;
-    float: right;
+    float: right; 
   }  note: i had margin 4rem 30rem asterisked out earlier */ }
+  @media (min-width: 47.9375em) {
+    .page-links {
+      margin: 4rem 30rem;
+      margin: 2rem 0 4rem 2rem;
+      width: 30rem;
+      float: right; } }
   .page-links__title {
     margin: 0;
     font-weight: normal;

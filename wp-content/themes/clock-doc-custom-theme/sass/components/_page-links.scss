@@ -3,11 +3,19 @@
   z-index: 1;
   background-color: $beige;
   margin: 0 0 4rem 0;
-  /*@mixin atMedium {
+
+  @media (min-width: 47.9375em) {
     margin: 4rem 30rem;
     margin: 2rem 0 4rem 2rem;
     width: 30rem;
     float: right;
+  }
+
+  /*@mixin atMedium {
+    margin: 4rem 30rem;
+    margin: 2rem 0 4rem 2rem;
+    width: 30rem;
+    float: right; 
   }  note: i had margin 4rem 30rem asterisked out earlier */
 
   &__title {
