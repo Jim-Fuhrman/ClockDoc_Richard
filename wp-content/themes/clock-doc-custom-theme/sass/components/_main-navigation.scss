@@ -16,7 +16,7 @@
     clear: both;
   }
 
-  @mixin atMedium {
+  @include respondDesktop(atMedium) {
     float: left;
     margin-right: 20px;
   }
@@ -26,7 +26,7 @@
   float: right;
   list-style: none;
 
-  @mixin atMedium {
+  @include respondDesktop(atMedium) {
     float: left;
     padding-left: 20px;
   }
@@ -38,7 +38,7 @@
   color: #fff;
   text-decoration: none;
   font-weight: 300;
-  @mixin atMedium {
+  @include respondDesktop(atMedium) {
     display: inline-block;
     padding: 0;
   }
@@ -49,10 +49,15 @@
   color: $beige;
 }
 
-/* everything from here to the end is from the sticky navbar project from 50 JavaScript projects in 50 days. */
+/* everything from here to the end is from the sticky navbar project from 50 JavaScript projects in 50 days. 
+.container needs to be defined here instead of utilities.scss, so blogs are centered. If .container is defined
+in _utilities.scss, blogs will start at the extreme left margin which doesn't look good. I tried using class
+name nav-container here and using .container in utilities.scss, but it still produced undesired results. */
 .container {
   max-width: 130rem;
   margin: 0 auto; /*zero for top/bottom, auto for left/right which will put text in the middle. */
+  padding: 0 1.6rem;
+  position: relative;
 }
 
 .nav {
@@ -81,19 +86,19 @@
 }
 
 .nav a {
-  color: bisque;
+  color: beige;
   text-decoration: none; /* this removes underlining. */
   padding: 0.7rem 1.5rem;
   /*transition: all .3s ease-in-out; /* */
 }
 
 .nav.active {
-  background-color: bisque;
+  background-color: beige;
   box-shadow: 0 0.2rem 1rem rgba(0, 0, 0, 0.3); /* 10px blur*/
 }
 
 .nav.active a {
-  color: bisque;
+  color: beige;
 }
 
 .nav.active .container {

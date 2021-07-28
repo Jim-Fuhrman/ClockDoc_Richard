@@ -1,7 +1,7 @@
 {
   "name": "clockdoc",
   "version": "1.0.0",
-  "description": "clock doctor of Cortland Nebraska website",
+  "description": "clock doctor Richard website",
   "main": "index.js",
   "scripts": {
     "compile:sass": "node-sass sass/main.scss css/style.css -w",

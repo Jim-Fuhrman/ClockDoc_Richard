@@ -1,4 +1,10 @@
-/* everything after this line is from fictional-university*/
+/* .container is defined in main-navigation. It needs to be there, or blogs will be
+at the extreme left margin. */
+
+.container--narrow {
+  max-width: 960rem;
+}
+
 .content h2,
 .content h3 {
   font-size: 150%;

@@ -244,7 +244,11 @@ p {
 .generic-content h6 {
   font-size: 1.84rem; }
 
-/* everything after this line is from fictional-university*/
+/* .container is defined in main-navigation. It needs to be there, or blogs will be
+at the extreme left margin. */
+.container--narrow {
+  max-width: 960rem; }
+
 .content h2,
 .content h3 {
   font-size: 150%;
@@ -401,7 +405,17 @@ p {
     color: #333; }
 
 .main-navigation {
-  padding-top: 0.2rem; }
+  padding-top: 0.2rem;
+  /* 355px/16 = 22.1875em*/
+  /* 400px/16 = 25em */
+  /* 530px/16 = 33.125em*/
+  /* 616px/16 = 38.5em */
+  /* 767px/16 = 47.9375em */
+  /* 800px/16 = 50em */
+  /* 1000px/16 = 62.5em*/
+  /* 1200px/16 = 75em*/
+  /* 1500px/16 = 93.75em*/
+  /* 1860px/16 = 116.25em   */ }
   .main-navigation ul {
     padding: 0;
     margin: 0; }
@@ -411,27 +425,64 @@ p {
     display: table; }
   .main-navigation ul:after {
     clear: both; }
+  @media only screen and (max-width: 47.9375em) {
+    .main-navigation {
+      float: left;
+      margin-right: 20px; } }
 
 .main-navigation li {
   float: right;
-  list-style: none; }
+  list-style: none;
+  /* 355px/16 = 22.1875em*/
+  /* 400px/16 = 25em */
+  /* 530px/16 = 33.125em*/
+  /* 616px/16 = 38.5em */
+  /* 767px/16 = 47.9375em */
+  /* 800px/16 = 50em */
+  /* 1000px/16 = 62.5em*/
+  /* 1200px/16 = 75em*/
+  /* 1500px/16 = 93.75em*/
+  /* 1860px/16 = 116.25em   */ }
+  @media only screen and (max-width: 47.9375em) {
+    .main-navigation li {
+      float: left;
+      padding-left: 20px; } }
 
 .main-navigation a {
   display: block;
   padding: 0.1rem 2rem;
   color: #fff;
   text-decoration: none;
-  font-weight: 300; }
+  font-weight: 300;
+  /* 355px/16 = 22.1875em*/
+  /* 400px/16 = 25em */
+  /* 530px/16 = 33.125em*/
+  /* 616px/16 = 38.5em */
+  /* 767px/16 = 47.9375em */
+  /* 800px/16 = 50em */
+  /* 1000px/16 = 62.5em*/
+  /* 1200px/16 = 75em*/
+  /* 1500px/16 = 93.75em*/
+  /* 1860px/16 = 116.25em   */ }
+  @media only screen and (max-width: 47.9375em) {
+    .main-navigation a {
+      display: inline-block;
+      padding: 0; } }
 
 .main-navigation .current-menu-item a,
 .main-navigation a:hover {
   color: #faf0ca; }
 
-/* everything from here to the end is from the sticky navbar project from 50 JavaScript projects in 50 days. */
+/* everything from here to the end is from the sticky navbar project from 50 JavaScript projects in 50 days. 
+.container needs to be defined here instead of utilities.scss, so blogs are centered. If .container is defined
+in _utilities.scss, blogs will start at the extreme left margin which doesn't look good. I tried using class
+name nav-container here and using .container in utilities.scss, but it still produced undesired results. */
 .container {
   max-width: 130rem;
   margin: 0 auto;
-  /*zero for top/bottom, auto for left/right which will put text in the middle. */ }
+  /*zero for top/bottom, auto for left/right which will put text in the middle. */
+  padding: 0 1.6rem;
+  position: relative; }
 
 .nav {
   position: fixed;
@@ -464,19 +515,19 @@ p {
   justify-content: center; }
 
 .nav a {
-  color: bisque;
+  color: beige;
   text-decoration: none;
   /* this removes underlining. */
   padding: 0.7rem 1.5rem;
   /*transition: all .3s ease-in-out; /* */ }
 
 .nav.active {
-  background-color: bisque;
+  background-color: beige;
   box-shadow: 0 0.2rem 1rem rgba(0, 0, 0, 0.3);
   /* 10px blur*/ }
 
 .nav.active a {
-  color: bisque; }
+  color: beige; }
 
 .nav.active .container {
   padding: 1rem 0; }
@@ -687,6 +738,51 @@ p {
 @media (min-width: 135rem) {
   .full-width-split__inner {
     width: 61rem; } }
+
+.headline {
+  margin: 0;
+  font-family: "Roboto Condensed", sans-serif;
+  font-weight: 300; }
+  .headline--large {
+    font-size: 3.6rem; }
+  .headline--large-medium {
+    font-size: 5rem;
+    margin: 0 0 1rem 0; }
+  .headline--medium {
+    font-size: 1.9rem;
+    margin-bottom: 0.75rem; }
+  .headline--small-plus {
+    font-family: "Roboto", sans-serif;
+    font-size: 1.6875rem;
+    font-weight: 400;
+    margin-bottom: 1.9rem; }
+  .headline--small {
+    font-size: 1.2rem;
+    margin-bottom: 1.9rem;
+    /* 355px/16 = 22.1875em*/
+    /* 400px/16 = 25em */
+    /* 530px/16 = 33.125em*/
+    /* 616px/16 = 38.5em */
+    /* 767px/16 = 47.9375em */
+    /* 800px/16 = 50em */
+    /* 1000px/16 = 62.5em*/
+    /* 1200px/16 = 75em*/
+    /* 1500px/16 = 93.75em*/
+    /* 1860px/16 = 116.25em   */ }
+    @media only screen and (max-width: 33.125em) {
+      .headline--small {
+        font-size: 1.6875rem; } }
+  .headline--smaller {
+    font-size: 1.5rem; }
+  .headline--tiny {
+    font-family: "Roboto", sans-serif;
+    font-size: 1.3875rem;
+    margin-bottom: 0.25rem; }
+  .headline--post-title a {
+    color: #0d3b66;
+    text-decoration: none; }
+  .headline--post-title a:hover {
+    text-decoration: underline; }
 
 .metabox {
   background-color: #faf0ca;
