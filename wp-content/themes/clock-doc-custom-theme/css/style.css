@@ -1577,8 +1577,9 @@ name nav-container here and using .container in utilities.scss, but it still pro
 
 /* this is the version that won't show the nav bar */
 .site-header .site-header__nav {
-  /*display: none;*/ }
-  @media (min-width: 616px) {
+  /*display: none;*/
+  /* 400px/16px = 25em  */ }
+  @media (min-width: 25em) {
     .site-header .site-header__nav {
       display: flex;
       justify-content: space-around;
@@ -1589,7 +1590,7 @@ name nav-container here and using .container in utilities.scss, but it still pro
 .site-header {
   z-index: 3;
   position: fixed;
-  top: 32px;
+  top: 2rem;
   left: 0;
   right: 0;
   padding: 0;
@@ -1598,61 +1599,103 @@ name nav-container here and using .container in utilities.scss, but it still pro
   background-size: cover;
   background-position: top center;
   /* .nav .container automatically puts the logo and nav menu in a row side by side. */ }
-  @media (min-width: 616px) {
-    .site-header__nav {
-      position: absolute;
-      width: 100%;
-      margin: 0 auto;
-      justify-content: space-around;
-      opacity: 1; } }
-  .site-header__nav-icon {
-    /* on small screens we don't show the nav icon at all, only on screen sizes 616px and larger. */
-    display: none; }
-    @media (min-width: 616px) {
-      .site-header__nav-icon {
-        display: inline-block;
-        width: 7rem;
-        height: 7rem;
-        background-repeat: no-repeat; } }
-    .site-header__nav-icon.hide {
+  .site-header__nav {
+    /* 400px/16px = 25em */ }
+    @media (min-width: 25em) {
+      .site-header__nav {
+        position: absolute;
+        width: 100%;
+        margin: 0 auto;
+        justify-content: space-around;
+        opacity: 1; } }
+    .site-header__nav-icon {
+      /* on small screens we don't show the nav icon at all, only on screen sizes 616px and larger. */
+      display: none;
+      /* 400px/16px = 25em */ }
+      @media (min-width: 25em) {
+        .site-header__nav-icon {
+          display: inline-block;
+          width: 7rem;
+          height: 7rem;
+          background-repeat: no-repeat; } }
+      .site-header__nav-icon.hide {
+        /* display: none; */
+        opacity: 0; }
+    .site-header__nav-menu {
+      margin: 1.65em 0 1.65em 0;
+      display: flex;
+      flex-direction: row;
+      list-style-type: none;
+      /* removes bullets */
+      align-items: center;
+      justify-content: center;
+      /* puts space between Home, About Us, Products, Contact Us*/
+      background-color: transparent;
+      color: maroon;
+      transition: all 0.3s ease-in-out; }
+      .site-header__nav-menu-menu-hide {
+        display: none; }
+    .site-header__nav-menu li {
+      line-height: 1.65rem; }
+    .site-header__nav a {
+      color: #fff;
+      text-decoration: none;
+      /* this removes underlining. */
+      padding: 1.5rem 1.5rem;
+      font-size: 2rem;
+      /* 355px/16 = 22.1875em*/
+      /* 400px/16 = 25em */
+      /* 530px/16 = 33.125em*/
+      /* 616px/16 = 38.5em */
+      /* 767px/16 = 47.9375em */
+      /* 800px/16 = 50em */
+      /* 1000px/16 = 62.5em*/
+      /* 1200px/16 = 75em*/
+      /* 1500px/16 = 93.75em*/
+      /* 1860px/16 = 116.25em   */
+      /* 355px/16 = 22.1875em*/
+      /* 400px/16 = 25em */
+      /* 530px/16 = 33.125em*/
+      /* 616px/16 = 38.5em */
+      /* 767px/16 = 47.9375em */
+      /* 800px/16 = 50em */
+      /* 1000px/16 = 62.5em*/
+      /* 1200px/16 = 75em*/
+      /* 1500px/16 = 93.75em*/
+      /* 1860px/16 = 116.25em   */
+      /* 355px/16 = 22.1875em*/
+      /* 400px/16 = 25em */
+      /* 530px/16 = 33.125em*/
+      /* 616px/16 = 38.5em */
+      /* 767px/16 = 47.9375em */
+      /* 800px/16 = 50em */
+      /* 1000px/16 = 62.5em*/
+      /* 1200px/16 = 75em*/
+      /* 1500px/16 = 93.75em*/
+      /* 1860px/16 = 116.25em   */ }
+      @media only screen and (max-width: 75em) {
+        .site-header__nav a {
+          font-size: 3rem; } }
+      @media only screen and (max-width: 47.9375em) {
+        .site-header__nav a {
+          font-size: 2rem; } }
+      @media only screen and (max-width: 25em) {
+        .site-header__nav a {
+          font-size: 2.5rem; } }
+    .site-header__nav.active {
+      background-color: #000;
+      box-shadow: 0 0.2rem 1rem rgba(0, 0, 0, 0.3);
+      /* 10px blur*/
+      padding: 1rem 0; }
+    .site-header__nav.hide {
       /* display: none; */
       opacity: 0; }
-  .site-header__nav-menu {
-    margin: 1.65em 0 1.65em 0;
-    display: flex;
-    flex-direction: row;
-    list-style-type: none;
-    /* removes bullets */
-    align-items: center;
-    justify-content: center;
-    /* puts space between Home, About Us, Products, Contact Us*/
-    background-color: transparent;
-    color: maroon;
-    transition: all 0.3s ease-in-out; }
-    .site-header__nav-menu-menu-hide {
-      display: none; }
-  .site-header__nav-menu li {
-    line-height: 1.65rem; }
-  .site-header__nav a {
-    color: #fff;
-    text-decoration: none;
-    /* this removes underlining. */
-    padding: 1.5rem 1.5rem;
-    font-size: 2rem; }
-  .site-header__nav.active {
-    background-color: #000;
-    box-shadow: 0 0.2rem 1rem rgba(0, 0, 0, 0.3);
-    /* 10px blur*/
-    padding: 1rem 0; }
-  .site-header__nav.hide {
-    /* display: none; */
-    opacity: 0; }
-  .site-header__nav.active a {
-    color: #fff; }
-  .site-header__nav a.current,
-  .site-header__nav a:hover {
-    color: #c0392b;
-    font-weight: bold; }
+    .site-header__nav.active a {
+      color: #fff; }
+    .site-header__nav a.current,
+    .site-header__nav a:hover {
+      color: #c0392b;
+      font-weight: bold; }
   .site-header__menu-icon {
     width: 2rem;
     height: 1.9rem;
@@ -1660,7 +1703,8 @@ name nav-container here and using .container in utilities.scss, but it still pro
     z-index: 10;
     top: 3.2rem;
     right: 50%;
-    opacity: 1; }
+    opacity: 1;
+    /* 400px/16px = 25em */ }
     .site-header__menu-icon.hide {
       /* display: none; */
       opacity: 0; }
@@ -1669,8 +1713,8 @@ name nav-container here and using .container in utilities.scss, but it still pro
       position: absolute;
       top: 0;
       left: 0;
-      width: 20px;
-      height: 3px;
+      width: 1.25rem;
+      height: 0.1875rem;
       background-color: #fff;
       transform-origin: 0 0;
       transition: transform 0.3s ease-out; }
@@ -1693,7 +1737,7 @@ name nav-container here and using .container in utilities.scss, but it still pro
       background-color: #fff;
       transform-origin: 0 100%;
       transition: transform 0.3s ease-out; }
-    @media (min-width: 616px) {
+    @media (min-width: 25em) {
       .site-header__menu-icon {
         display: none; } }
   .site-header__menu-icon--close-x::before {
@@ -1711,8 +1755,11 @@ name nav-container here and using .container in utilities.scss, but it still pro
     z-index: -10;
     /* This prevents our menu from being accidentally clicked on when it's invisible. */
     padding-top: 0rem;
-    text-align: center; }
-    @media (min-width: 616px) {
+    text-align: center;
+    /* 400px/16px = 25em*/
+    /* 767px/16px = 47.9375em */
+    /* 767px/16px = 47.9375em */ }
+    @media (min-width: 25em) {
       .site-header__menu-content {
         display: flex;
         justify-content: flex-end;
@@ -1738,13 +1785,13 @@ name nav-container here and using .container in utilities.scss, but it still pro
       padding: 0 0 0 20px; }
       .site-header__menu-content__util.hide {
         opacity: 0; }
-      @media (min-width: 767px) {
+      @media (min-width: 47.9375em) {
         .site-header__menu-content__util {
           padding: 0;
           float: right; } }
     .site-header__menu-content__btn {
       margin-right: 20px; }
-      @media (min-width: 767px) {
+      @media (min-width: 47.9375em) {
         .site-header__menu-content__btn {
           float: left; } }
     .site-header__menu-content .btn--with-photo {
@@ -1762,20 +1809,20 @@ name nav-container here and using .container in utilities.scss, but it still pro
     /*background-color: #04aa6d;
       color: #fff;
     padding: 16px; */
-    font-size: 16px;
+    font-size: 1rem;
     border: none; }
   .dropdown__content {
     /* dropdown content hidden by default */
     display: none;
     position: absolute;
     background-color: #bbb;
-    min-width: 160px;
-    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    min-width: 10rem;
+    box-shadow: 0rem 0.5rem 1rem 0rem rgba(0, 0, 0, 0.2);
     z-index: 1; }
     .dropdown__content a {
       /* links inside the dropdown */
       color: #000;
-      padding: 12px 16px;
+      padding: 0.75rem 1rem;
       text-decoration: none;
       display: block; }
     .dropdown__content a:hover {

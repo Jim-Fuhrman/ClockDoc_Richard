@@ -1,18 +1,18 @@
 /* this is the version that won't show the nav bar */
 .site-header .site-header__nav {
   /*display: none;*/
-  @media (min-width: 616px) {
+  @media (min-width: 25em) {
     display: flex;
     justify-content: space-around;
     align-items: center;
     transition: all 0.3s ease-in-out; /* This is the line that briefly shows the nav bar with the desired fonts then shrinks them to a really tiny font I don't want.  */
-  }
+  } /* 400px/16px = 25em  */
 }
 
 .site-header {
   z-index: 3;
   position: fixed;
-  top: 32px;
+  top: 2rem;
   left: 0;
   right: 0;
   padding: 0;
@@ -22,22 +22,23 @@
   background-position: top center;
 
   &__nav {
-    @media (min-width: 616px) {
+    @media (min-width: 25em) {
       position: absolute;
       width: 100%;
       margin: 0 auto;
       justify-content: space-around;
       opacity: 1;
-    }
+    } /* 400px/16px = 25em */
+
     &-icon {
       /* on small screens we don't show the nav icon at all, only on screen sizes 616px and larger. */
       display: none;
-      @media (min-width: 616px) {
+      @media (min-width: 25em) {
         display: inline-block;
         width: 7rem;
         height: 7rem;
         background-repeat: no-repeat;
-      }
+      } /* 400px/16px = 25em */
 
       &.hide {
         /* display: none; */
@@ -70,6 +71,18 @@
       text-decoration: none; /* this removes underlining. */
       padding: 1.5rem 1.5rem;
       font-size: 2rem;
+
+      @include respondDesktop(atLarge) {
+        font-size: 3rem;
+      }
+
+      @include respondDesktop(atMedium) {
+        font-size: 2rem;
+      }
+
+      @include respondDesktop(at400) {
+        font-size: 2.5rem;
+      }
     }
 
     &.active {
@@ -115,8 +128,8 @@
       position: absolute;
       top: 0;
       left: 0;
-      width: 20px;
-      height: 3px;
+      width: 1.25rem;
+      height: 0.1875rem;
       background-color: #fff;
       transform-origin: 0 0;
       transition: transform 0.3s ease-out;
@@ -145,9 +158,9 @@
       transition: transform 0.3s ease-out;
     }
 
-    @media (min-width: 616px) {
+    @media (min-width: 25em) {
       display: none;
-    }
+    } /* 400px/16px = 25em */
   }
 
   &__menu-icon--close-x {
@@ -173,13 +186,13 @@
     padding-top: 0rem;
     text-align: center;
 
-    @media (min-width: 616px) {
+    @media (min-width: 25em) {
       display: flex;
       justify-content: flex-end;
       opacity: 1;
       z-index: 1;
       transform: scale(1);
-    }
+    } /* 400px/16px = 25em*/
 
     &--is-visible {
       /* This is what we're toggling on and off */
@@ -207,18 +220,18 @@
         opacity: 0;
       }
 
-      @media (min-width: 767px) {
+      @media (min-width: 47.9375em) {
         padding: 0;
         float: right;
       }
-    }
+    } /* 767px/16px = 47.9375em */
 
     &__btn {
       margin-right: 20px;
-      @media (min-width: 767px) {
+      @media (min-width: 47.9375em) {
         float: left;
       }
-    }
+    } /* 767px/16px = 47.9375em */
 
     .btn--with-photo {
       margin-right: 0;
@@ -241,7 +254,7 @@
     /*background-color: #04aa6d;
       color: #fff;
     padding: 16px; */
-    font-size: 16px;
+    font-size: 1rem;
     border: none;
   }
 
@@ -250,14 +263,14 @@
     display: none;
     position: absolute;
     background-color: #bbb;
-    min-width: 160px;
-    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    min-width: 10rem;
+    box-shadow: 0rem 0.5rem 1rem 0rem rgba(0, 0, 0, 0.2);
     z-index: 1;
 
     a {
       /* links inside the dropdown */
       color: #000;
-      padding: 12px 16px;
+      padding: 0.75rem 1rem;
       text-decoration: none;
       display: block;
     }
