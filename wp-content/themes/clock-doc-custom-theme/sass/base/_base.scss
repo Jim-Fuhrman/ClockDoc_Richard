@@ -18,8 +18,8 @@ html {
     font-size: 56.25%; /*  1rem = 9px, 9/16 = 56.25% */
   }
 
-  @include respondDesktop(atMediumSmall) {
-    /* width <= 616px? */
+  @include respondDesktop(atMedium) {
+    /* width <= 767px? */
     font-size: 50%; /* 1rem = 8px, 8/16 = 50% */
   }
 
@@ -39,7 +39,7 @@ html {
   }
 
   @include respondDesktop(atSmallest) {
-    /* width <= 280px? */
+    /* width <= 240px? */
     font-size: 18.75%; /* 1rem = 3px, 3/16 = 18.75% */
   }
 

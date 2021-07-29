@@ -1092,7 +1092,6 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _UpArrow__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./UpArrow */ "./src/UpArrow.js");
 /* harmony import */ var _RevealLogin__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./RevealLogin */ "./src/RevealLogin.js");
 
-console.log("Index.js - Just testing");
 
 
 

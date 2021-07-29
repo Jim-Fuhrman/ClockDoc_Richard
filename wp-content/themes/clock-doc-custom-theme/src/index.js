@@ -1,5 +1,4 @@
 import "../css/style.css";
-console.log("Index.js - Just testing");
 import NavBarModify from "./navBarModify";
 import MobileMenu from "./MobileMenu";
 import UpArrow from "./UpArrow";

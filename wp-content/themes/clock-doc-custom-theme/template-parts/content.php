@@ -11,7 +11,7 @@ $bkgdClock = '/images/Grandfather_Clockface_Thirteen-768x1024.jpg'; /* 185kb */
 <header id="topOfWebsite" class="page-banner" style="background-image: url(<?php echo get_theme_file_uri($bkgdClock);?>">
   <?php if( !empty(get_field('important_notice'))) : ?>
       <div class="page-banner__important-notice page-banner__important-notice--animated t-center t-black b-goldenrod">
-        <strong>Important Notice: &nbsp; &nbsp;</strong><?php the_field('important_notice'); ?>
+        <strong>Important Notice: &nbsp;</strong><?php the_field('important_notice'); ?>
       </div>
   <?php endif; ?>  
   <div class="page-banner__text-box">  <!-- text-box is position: absolute; its parent class page-banner is position: relative -->

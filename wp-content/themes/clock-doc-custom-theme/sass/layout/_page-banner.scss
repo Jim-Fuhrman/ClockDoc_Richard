@@ -26,13 +26,14 @@
 
   &__text-box {
     position: absolute;
-    top: 50%; /* 50% of the height of the parent element */
-    left: 50%; /* 50% of the width of the parent element */
+    top: 50%;
+    left: 50%;
     transform: translate(
       -50%,
       -50%
     ); /* 50% of the height and width of the &__headings element itself. */
     text-align: center;
+    margin-top: 2rem;
   }
 
   &__heading {
@@ -49,18 +50,6 @@
       animation-name: moveInLeft;
       animation-duration: 1s;
       animation-timing-function: ease-out;
-
-      @include respondDesktop(atSmaller) {
-        font-size: 4rem;
-      }
-
-      @include respondDesktop(atSmall) {
-        font-size: 6rem;
-      }
-
-      @include respondDesktop(atMedium) {
-        font-size: 8rem;
-      }
     }
 
     &--sub {
@@ -69,18 +58,6 @@
       font-weight: 400;
       color: inherit;
       width: max-content;
-
-      @include respondDesktop(atSmaller) {
-        font-size: 2.5rem;
-      }
-
-      @include respondDesktop(atSmall) {
-        font-size: 3.75rem;
-      }
-
-      @include respondDesktop(atMedium) {
-        font-size: 5rem;
-      }
 
       animation-name: moveInRight;
       animation-duration: 1s;
@@ -95,13 +72,12 @@
     text-decoration: none;
     padding: 0.6rem 1.2rem;
     font-size: 2rem;
-    border-radius: 10rem;
+    border-radius: 5rem;
     border: none;
 
-    @include respondDesktop(atSmall) {
-      font-size: 3rem;
-      padding: 0.6rem 1.2rem;
-    }
+    /*@include respondDesktop(atSmall) {
+      font-size: 4rem;
+    }*/
 
     &,
     &:link,
@@ -155,27 +131,77 @@
       animation: moveInBottom 0.5s ease-out 0.75s;
       animation-fill-mode: backwards;
     }
+
+    @include respondDesktop(atLarge) {
+      font-size: 3.5rem;
+    }
+    @include respondDesktop(atMedium) {
+      font-size: 2rem;
+    }
+    @include respondDesktop(atSmall) {
+      font-size: 3rem;
+    }
+    @include respondDesktop(atSmallest) {
+      font-size: 3.5rem;
+    }
   }
 
   &__important-notice {
     /*margin-top: 25rem;*/
     top: 35%;
     left: 50%; /* needed definitely! */
-    font-size: 1.75rem;
-    border-radius: 10rem;
-    padding: 0.1rem;
-    /* max-width: 100%; */
-    text-align: center;
+    font-size: 2rem;
+    border-radius: 1rem;
+    padding: 1rem; /* Don't change this. I worked long and hard to make it look good on the largest desktops. */
+    width: 45rem;
+    height: 6rem;
+    text-align: left;
     position: absolute; /* needed definitely! */
     /* the next transform centers it */
     transform: translate(
       -50%,
-      -50%
+      -25%
     ); /* 50% of the height and width of the &__headings element itself. */
 
-    @mixin atMediumSmall {
-      /*font-size: 3rem;*/
-      padding: 2rem;
+    @include respondDesktop(atLarge) {
+      font-size: 3.5rem;
+      width: 90rem;
+      height: 12rem;
+      transform: translate(-50%, -25%);
+    }
+
+    @include respondDesktop(atMediumLarge) {
+      font-size: 3rem;
+      width: 67.5rem;
+      height: 9rem;
+      transform: translate(-50%, -25%);
+    }
+
+    @include respondDesktop(atMedium) {
+      /*this accommodates the Microsoft Lumia. Without this the notice overlaps into the Clock Doctor heading */
+      transform: translate(-50%, -150%);
+      width: 45rem;
+      height: 6rem;
+      font-size: 2rem;
+    }
+
+    @include respondDesktop(atMediumSmall) {
+      /*Just the Microsoft Lumia needs the adjustment coded with respondDesktop(atMedium). All others we do not want that change. */
+      transform: translate(-50%, -50%);
+    }
+
+    @include respondDesktop(atSmall) {
+      font-size: 3rem;
+      width: 67.5rem;
+      height: 9rem;
+      transform: translate(-50%, -10%);
+    }
+
+    @include respondDesktop(atSmallest) {
+      font-size: 3.5rem;
+      width: 67.5rem;
+      height: 9rem;
+      transform: translate(-50%, -25%);
     }
 
     &--animated {
