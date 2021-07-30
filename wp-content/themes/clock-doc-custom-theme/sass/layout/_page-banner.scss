@@ -50,6 +50,10 @@
       animation-name: moveInLeft;
       animation-duration: 1s;
       animation-timing-function: ease-out;
+
+      @include respondDesktop(atSmaller) {
+        font-size: 10rem;
+      }
     }
 
     &--sub {
@@ -63,6 +67,9 @@
       animation-duration: 1s;
       animation-timing-function: ease-out;
 
+      @include respondDesktop(atSmaller) {
+        font-size: 5rem;
+      }
       /*animation: moveInRight 1s ease-out;*/
     }
   }
@@ -141,7 +148,7 @@
     @include respondDesktop(atSmall) {
       font-size: 3rem;
     }
-    @include respondDesktop(atSmallest) {
+    @include respondDesktop(atSmaller) {
       font-size: 3.5rem;
     }
   }
@@ -187,7 +194,7 @@
 
     @include respondDesktop(atMediumSmall) {
       /*Just the Microsoft Lumia needs the adjustment coded with respondDesktop(atMedium). All others we do not want that change. */
-      transform: translate(-50%, -50%);
+      transform: translate(-50%, -25%);
     }
 
     @include respondDesktop(atSmall) {
@@ -197,7 +204,7 @@
       transform: translate(-50%, -10%);
     }
 
-    @include respondDesktop(atSmallest) {
+    @include respondDesktop(atSmaller) {
       font-size: 3.5rem;
       width: 67.5rem;
       height: 9rem;

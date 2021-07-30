@@ -1,4 +1,4 @@
-/* this is the version that won't show the nav bar */
+/* this is from clockdoc-richard. it's the version that shows the nav bar, but not the X icon nor the menu column. */
 .site-header .site-header__nav {
   /*display: none;*/
   @media (min-width: 25em) {
@@ -22,16 +22,24 @@
   background-position: top center;
 
   &__nav {
+    /* on small screens we don't show the nav bar at all, only on screen sizes 400px / 25em and larger. */
     @media (min-width: 25em) {
+      top: 3rem; /* we don't want the black admin bar to overlay the nav bar. Thus, we need this line of code. */
+      left: 0;
+      right: 0;
       position: absolute;
       width: 100%;
       margin: 0 auto;
       justify-content: space-around;
       opacity: 1;
+
+      @include respondDesktop(atSmall) {
+        top: 5rem;
+      }
     } /* 400px/16px = 25em */
 
     &-icon {
-      /* on small screens we don't show the nav icon at all, only on screen sizes 616px and larger. */
+      /* on small screens we don't show the nav icon at all, only on screen sizes 400px and larger. */
       display: none;
       @media (min-width: 25em) {
         display: inline-block;
@@ -73,11 +81,19 @@
       font-size: 2rem;
 
       @include respondDesktop(atLarge) {
+        font-size: 3.5rem;
+      }
+
+      @include respondDesktop(atMediumLarge) {
         font-size: 3rem;
       }
 
       @include respondDesktop(atMedium) {
         font-size: 2rem;
+      }
+
+      @include respondDesktop(atMediumSmall) {
+        font-size: 2.5rem;
       }
 
       @include respondDesktop(at400) {
@@ -110,13 +126,21 @@
   /* .nav .container automatically puts the logo and nav menu in a row side by side. */
 
   &__menu-icon {
-    width: 2rem;
-    height: 1.9rem;
+    width: 4rem;
+    height: 3.8rem;
     position: absolute;
     z-index: 10;
     top: 3.2rem;
     right: 50%;
     opacity: 1;
+
+    @include respondDesktop(atSmaller) {
+      top: 12rem;
+    }
+
+    @include respondDesktop(atSmallest) {
+      top: 15rem;
+    }
 
     &.hide {
       /* display: none; */
@@ -128,8 +152,8 @@
       position: absolute;
       top: 0;
       left: 0;
-      width: 1.25rem;
-      height: 0.1875rem;
+      width: 4rem;
+      height: 0.6rem;
       background-color: #fff;
       transform-origin: 0 0;
       transition: transform 0.3s ease-out;
@@ -137,10 +161,10 @@
 
     &__middle {
       position: absolute;
-      top: 0.8rem;
+      top: 1.6rem;
       left: 0;
-      width: 2rem;
-      height: 0.3rem;
+      width: 4rem;
+      height: 0.6rem;
       background-color: #fff;
       transition: all 0.3s ease-out;
       transform-origin: 0 50%;
@@ -151,10 +175,10 @@
       position: absolute;
       bottom: 0;
       left: 0;
-      width: 2rem;
-      height: 0.3rem;
+      width: 4rem;
+      height: 0.6rem;
       background-color: #fff;
-      transform-origin: 0 100%;
+      transform-origin: 0 50%;
       transition: transform 0.3s ease-out;
     }
 
@@ -173,7 +197,7 @@
     }
 
     &::after {
-      transform: rotate(-45deg) scaleX(1.25) translateY(1px);
+      transform: rotate(-45deg) scaleX(1.25) translateY(0.0625rem);
     }
   }
 
@@ -192,7 +216,7 @@
       opacity: 1;
       z-index: 1;
       transform: scale(1);
-    } /* 400px/16px = 25em*/
+    } /* 400px/16px = 25em */
 
     &--is-visible {
       /* This is what we're toggling on and off */
@@ -206,8 +230,19 @@
       align-items: flex-start;
       background-color: #000;
 
+      @include respondDesktop(atSmaller) {
+        top: 9rem;
+      } /* this ensures we see the entire menu not just part of it */
+
+      @include respondDesktop(atSmallest) {
+        top: 12rem;
+      } /* this ensures we see the entire menu not just part of it */
+
       a {
         font-size: 1.5rem;
+        @include respondDesktop(atSmaller) {
+          font-size: 3rem;
+        }
       }
       li {
         line-height: 4rem;
@@ -220,7 +255,8 @@
         opacity: 0;
       }
 
-      @media (min-width: 47.9375em) {
+      /*@media (min-width: 47.9375em) {*/
+      @include respondDesktop(atMedium) {
         padding: 0;
         float: right;
       }
@@ -228,7 +264,8 @@
 
     &__btn {
       margin-right: 20px;
-      @media (min-width: 47.9375em) {
+      /*@media (min-width: 47.9375em) {*/
+      @include respondDesktop(atMedium) {
         float: left;
       }
     } /* 767px/16px = 47.9375em */
@@ -238,7 +275,6 @@
     }
   }
 }
-
 /* the container div - needed to position the dropdown content.*/
 .dropdown {
   position: relative;

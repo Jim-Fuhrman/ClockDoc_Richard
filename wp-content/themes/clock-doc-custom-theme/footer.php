@@ -45,7 +45,7 @@
                 </div>
             </div>
         </footer>
-        <!-- This makes our black admin menu appear on the frontend  -->
+        <!-- This makes our black admin menu appear on the frontend. If you're signed into Wordpress, the black admin bar shows. If you're not signed in, the black admin bar doesn't show.  -->
         <?php wp_footer(); ?>
     </body>
 </html>

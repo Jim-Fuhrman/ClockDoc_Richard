@@ -1,12 +1,10 @@
 import "../css/style.css";
-import NavBarModify from "./navBarModify";
 import MobileMenu from "./MobileMenu";
-import UpArrow from "./UpArrow";
+import NavBarModify from "./navBarModify";
 import RevealLogin from "./RevealLogin";
-/*import RevealOnScroll from "./RevealOnScroll"; */
+import UpArrow from "./UpArrow";
 
-let upArrow = new UpArrow();
-let navBarModify = new NavBarModify();
 let mobileMenu = new MobileMenu();
+let navBarModify = new NavBarModify();
 let revealLogin = new RevealLogin();
-/* new RevealOnScroll(document.querySelectorAll(".upArrow"), 95); */
+let upArrow = new UpArrow();

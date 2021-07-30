@@ -29,8 +29,7 @@
           <li><a <?php if (is_page('contact-us')) echo 'class="current"'?> href="<?php echo esc_url(site_url('/Contact Us'));?>">Contact Us</a></li>
       
           <div class="site-header__util hide">
-          <!-- When the user type a an uppercase or lowercase L, it toggles the hiding/displaying of the Login button. 
-          By default we hide the login button, so customers can't see it -->
+          <!-- When the user types the escape key, it toggles the hiding/displaying of the Login button. By default we hide the login button, so customers can't see it -->
               <?php if(is_user_logged_in()) {?>
                     <a href="<?php echo wp_logout_url(); ?>" class="btn btn--small btn--dark-orange float-left btn--with-photo">
                     <span class="site-header__avatar"><?php echo get_avatar(get_current_user_id(), 60); ?></span>

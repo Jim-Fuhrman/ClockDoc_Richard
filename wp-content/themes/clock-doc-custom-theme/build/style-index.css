@@ -864,7 +864,20 @@ name nav-container here and using .container in utilities.scss, but it still pro
       -webkit-animation-duration: 1s;
               animation-duration: 1s;
       -webkit-animation-timing-function: ease-out;
-              animation-timing-function: ease-out; }
+              animation-timing-function: ease-out;
+      /* 355px/16 = 22.1875em*/
+      /* 400px/16 = 25em */
+      /* 530px/16 = 33.125em*/
+      /* 616px/16 = 38.5em */
+      /* 767px/16 = 47.9375em */
+      /* 800px/16 = 50em */
+      /* 1000px/16 = 62.5em*/
+      /* 1200px/16 = 75em*/
+      /* 1500px/16 = 93.75em*/
+      /* 1860px/16 = 116.25em   */ }
+      @media only screen and (max-width: 22.1875em) {
+        .page-banner__heading--main {
+          font-size: 10rem; } }
     .page-banner__heading--sub {
       display: block;
       font-size: 5rem;
@@ -879,7 +892,20 @@ name nav-container here and using .container in utilities.scss, but it still pro
               animation-duration: 1s;
       -webkit-animation-timing-function: ease-out;
               animation-timing-function: ease-out;
+      /* 355px/16 = 22.1875em*/
+      /* 400px/16 = 25em */
+      /* 530px/16 = 33.125em*/
+      /* 616px/16 = 38.5em */
+      /* 767px/16 = 47.9375em */
+      /* 800px/16 = 50em */
+      /* 1000px/16 = 62.5em*/
+      /* 1200px/16 = 75em*/
+      /* 1500px/16 = 93.75em*/
+      /* 1860px/16 = 116.25em   */
       /*animation: moveInRight 1s ease-out;*/ }
+      @media only screen and (max-width: 22.1875em) {
+        .page-banner__heading--sub {
+          font-size: 5rem; } }
   .page-banner__btn {
     display: inline-block;
     text-decoration: none;
@@ -920,7 +946,6 @@ name nav-container here and using .container in utilities.scss, but it still pro
     /* 1200px/16 = 75em*/
     /* 1500px/16 = 93.75em*/
     /* 1860px/16 = 116.25em   */
-    /* 240px/16 = 15em */
     /* 355px/16 = 22.1875em*/
     /* 400px/16 = 25em */
     /* 530px/16 = 33.125em*/
@@ -979,7 +1004,7 @@ name nav-container here and using .container in utilities.scss, but it still pro
     @media only screen and (max-width: 33.125em) {
       .page-banner__btn {
         font-size: 3rem; } }
-    @media only screen and (max-width: 15em) {
+    @media only screen and (max-width: 22.1875em) {
       .page-banner__btn {
         font-size: 3.5rem; } }
   .page-banner__important-notice {
@@ -1049,7 +1074,6 @@ name nav-container here and using .container in utilities.scss, but it still pro
     /* 1200px/16 = 75em*/
     /* 1500px/16 = 93.75em*/
     /* 1860px/16 = 116.25em   */
-    /* 240px/16 = 15em */
     /* 355px/16 = 22.1875em*/
     /* 400px/16 = 25em */
     /* 530px/16 = 33.125em*/
@@ -1082,14 +1106,14 @@ name nav-container here and using .container in utilities.scss, but it still pro
     @media only screen and (max-width: 38.5em) {
       .page-banner__important-notice {
         /*Just the Microsoft Lumia needs the adjustment coded with respondDesktop(atMedium). All others we do not want that change. */
-        transform: translate(-50%, -50%); } }
+        transform: translate(-50%, -25%); } }
     @media only screen and (max-width: 33.125em) {
       .page-banner__important-notice {
         font-size: 3rem;
         width: 67.5rem;
         height: 9rem;
         transform: translate(-50%, -10%); } }
-    @media only screen and (max-width: 15em) {
+    @media only screen and (max-width: 22.1875em) {
       .page-banner__important-notice {
         font-size: 3.5rem;
         width: 67.5rem;
@@ -1636,7 +1660,7 @@ name nav-container here and using .container in utilities.scss, but it still pro
     clear: both;
     text-align: center; }
 
-/* this is the version that won't show the nav bar */
+/* this is from clockdoc-richard. it's the version that shows the nav bar, but not the X icon nor the menu column. */
 .site-header .site-header__nav {
   /*display: none;*/
   /* 400px/16px = 25em  */ }
@@ -1661,16 +1685,34 @@ name nav-container here and using .container in utilities.scss, but it still pro
   background-position: top center;
   /* .nav .container automatically puts the logo and nav menu in a row side by side. */ }
   .site-header__nav {
+    /* on small screens we don't show the nav bar at all, only on screen sizes 400px / 25em and larger. */
     /* 400px/16px = 25em */ }
     @media (min-width: 25em) {
       .site-header__nav {
+        top: 3rem;
+        /* we don't want the black admin bar to overlay the nav bar. Thus, we need this line of code. */
+        left: 0;
+        right: 0;
         position: absolute;
         width: 100%;
         margin: 0 auto;
         justify-content: space-around;
-        opacity: 1; } }
+        opacity: 1;
+        /* 355px/16 = 22.1875em*/
+        /* 400px/16 = 25em */
+        /* 530px/16 = 33.125em*/
+        /* 616px/16 = 38.5em */
+        /* 767px/16 = 47.9375em */
+        /* 800px/16 = 50em */
+        /* 1000px/16 = 62.5em*/
+        /* 1200px/16 = 75em*/
+        /* 1500px/16 = 93.75em*/
+        /* 1860px/16 = 116.25em   */ } }
+  @media only screen and (min-width: 25em) and (max-width: 33.125em) {
+    .site-header__nav {
+      top: 5rem; } }
     .site-header__nav-icon {
-      /* on small screens we don't show the nav icon at all, only on screen sizes 616px and larger. */
+      /* on small screens we don't show the nav icon at all, only on screen sizes 400px and larger. */
       display: none;
       /* 400px/16px = 25em */ }
       @media (min-width: 25em) {
@@ -1733,13 +1775,39 @@ name nav-container here and using .container in utilities.scss, but it still pro
       /* 1000px/16 = 62.5em*/
       /* 1200px/16 = 75em*/
       /* 1500px/16 = 93.75em*/
+      /* 1860px/16 = 116.25em   */
+      /* 355px/16 = 22.1875em*/
+      /* 400px/16 = 25em */
+      /* 530px/16 = 33.125em*/
+      /* 616px/16 = 38.5em */
+      /* 767px/16 = 47.9375em */
+      /* 800px/16 = 50em */
+      /* 1000px/16 = 62.5em*/
+      /* 1200px/16 = 75em*/
+      /* 1500px/16 = 93.75em*/
+      /* 1860px/16 = 116.25em   */
+      /* 355px/16 = 22.1875em*/
+      /* 400px/16 = 25em */
+      /* 530px/16 = 33.125em*/
+      /* 616px/16 = 38.5em */
+      /* 767px/16 = 47.9375em */
+      /* 800px/16 = 50em */
+      /* 1000px/16 = 62.5em*/
+      /* 1200px/16 = 75em*/
+      /* 1500px/16 = 93.75em*/
       /* 1860px/16 = 116.25em   */ }
       @media only screen and (max-width: 75em) {
+        .site-header__nav a {
+          font-size: 3.5rem; } }
+      @media only screen and (max-width: 50em) {
         .site-header__nav a {
           font-size: 3rem; } }
       @media only screen and (max-width: 47.9375em) {
         .site-header__nav a {
           font-size: 2rem; } }
+      @media only screen and (max-width: 38.5em) {
+        .site-header__nav a {
+          font-size: 2.5rem; } }
       @media only screen and (max-width: 25em) {
         .site-header__nav a {
           font-size: 2.5rem; } }
@@ -1758,14 +1826,41 @@ name nav-container here and using .container in utilities.scss, but it still pro
       color: #c0392b;
       font-weight: bold; }
   .site-header__menu-icon {
-    width: 2rem;
-    height: 1.9rem;
+    width: 4rem;
+    height: 3.8rem;
     position: absolute;
     z-index: 10;
     top: 3.2rem;
     right: 50%;
     opacity: 1;
+    /* 355px/16 = 22.1875em*/
+    /* 400px/16 = 25em */
+    /* 530px/16 = 33.125em*/
+    /* 616px/16 = 38.5em */
+    /* 767px/16 = 47.9375em */
+    /* 800px/16 = 50em */
+    /* 1000px/16 = 62.5em*/
+    /* 1200px/16 = 75em*/
+    /* 1500px/16 = 93.75em*/
+    /* 1860px/16 = 116.25em   */
+    /* 240px/16 = 15em */
+    /* 355px/16 = 22.1875em*/
+    /* 400px/16 = 25em */
+    /* 530px/16 = 33.125em*/
+    /* 616px/16 = 38.5em */
+    /* 767px/16 = 47.9375em */
+    /* 800px/16 = 50em */
+    /* 1000px/16 = 62.5em*/
+    /* 1200px/16 = 75em*/
+    /* 1500px/16 = 93.75em*/
+    /* 1860px/16 = 116.25em   */
     /* 400px/16px = 25em */ }
+    @media only screen and (max-width: 22.1875em) {
+      .site-header__menu-icon {
+        top: 12rem; } }
+    @media only screen and (max-width: 15em) {
+      .site-header__menu-icon {
+        top: 15rem; } }
     .site-header__menu-icon.hide {
       /* display: none; */
       opacity: 0; }
@@ -1774,17 +1869,17 @@ name nav-container here and using .container in utilities.scss, but it still pro
       position: absolute;
       top: 0;
       left: 0;
-      width: 1.25rem;
-      height: 0.1875rem;
+      width: 4rem;
+      height: 0.6rem;
       background-color: #fff;
       transform-origin: 0 0;
       transition: transform 0.3s ease-out; }
     .site-header__menu-icon__middle {
       position: absolute;
-      top: 0.8rem;
+      top: 1.6rem;
       left: 0;
-      width: 2rem;
-      height: 0.3rem;
+      width: 4rem;
+      height: 0.6rem;
       background-color: #fff;
       transition: all 0.3s ease-out;
       transform-origin: 0 50%; }
@@ -1793,10 +1888,10 @@ name nav-container here and using .container in utilities.scss, but it still pro
       position: absolute;
       bottom: 0;
       left: 0;
-      width: 2rem;
-      height: 0.3rem;
+      width: 4rem;
+      height: 0.6rem;
       background-color: #fff;
-      transform-origin: 0 100%;
+      transform-origin: 0 50%;
       transition: transform 0.3s ease-out; }
     @media (min-width: 25em) {
       .site-header__menu-icon {
@@ -1806,7 +1901,7 @@ name nav-container here and using .container in utilities.scss, but it still pro
   .site-header__menu-icon--close-x .site-header__menu-icon__middle {
     opacity: 0; }
   .site-header__menu-icon--close-x::after {
-    transform: rotate(-45deg) scaleX(1.25) translateY(1px); }
+    transform: rotate(-45deg) scaleX(1.25) translateY(0.0625rem); }
   .site-header__menu-content {
     opacity: 0;
     transform: scale(1.2);
@@ -1817,7 +1912,7 @@ name nav-container here and using .container in utilities.scss, but it still pro
     /* This prevents our menu from being accidentally clicked on when it's invisible. */
     padding-top: 0rem;
     text-align: center;
-    /* 400px/16px = 25em*/
+    /* 400px/16px = 25em */
     /* 767px/16px = 47.9375em */
     /* 767px/16px = 47.9375em */ }
     @media (min-width: 25em) {
@@ -1837,22 +1932,86 @@ name nav-container here and using .container in utilities.scss, but it still pro
       flex-direction: column;
       justify-content: flex-start;
       align-items: flex-start;
-      background-color: #000; }
+      background-color: #000;
+      /* 355px/16 = 22.1875em*/
+      /* 400px/16 = 25em */
+      /* 530px/16 = 33.125em*/
+      /* 616px/16 = 38.5em */
+      /* 767px/16 = 47.9375em */
+      /* 800px/16 = 50em */
+      /* 1000px/16 = 62.5em*/
+      /* 1200px/16 = 75em*/
+      /* 1500px/16 = 93.75em*/
+      /* 1860px/16 = 116.25em   */
+      /* this ensures we see the entire menu not just part of it */
+      /* 240px/16 = 15em */
+      /* 355px/16 = 22.1875em*/
+      /* 400px/16 = 25em */
+      /* 530px/16 = 33.125em*/
+      /* 616px/16 = 38.5em */
+      /* 767px/16 = 47.9375em */
+      /* 800px/16 = 50em */
+      /* 1000px/16 = 62.5em*/
+      /* 1200px/16 = 75em*/
+      /* 1500px/16 = 93.75em*/
+      /* 1860px/16 = 116.25em   */
+      /* this ensures we see the entire menu not just part of it */ }
+      @media only screen and (max-width: 22.1875em) {
+        .site-header__menu-content--is-visible {
+          top: 9rem; } }
+      @media only screen and (max-width: 15em) {
+        .site-header__menu-content--is-visible {
+          top: 12rem; } }
       .site-header__menu-content--is-visible a {
-        font-size: 1.5rem; }
+        font-size: 1.5rem;
+        /* 355px/16 = 22.1875em*/
+        /* 400px/16 = 25em */
+        /* 530px/16 = 33.125em*/
+        /* 616px/16 = 38.5em */
+        /* 767px/16 = 47.9375em */
+        /* 800px/16 = 50em */
+        /* 1000px/16 = 62.5em*/
+        /* 1200px/16 = 75em*/
+        /* 1500px/16 = 93.75em*/
+        /* 1860px/16 = 116.25em   */ }
+        @media only screen and (max-width: 22.1875em) {
+          .site-header__menu-content--is-visible a {
+            font-size: 3rem; } }
       .site-header__menu-content--is-visible li {
         line-height: 4rem; }
     .site-header__menu-content__util {
-      padding: 0 0 0 20px; }
+      padding: 0 0 0 20px;
+      /*@media (min-width: 47.9375em) {*/
+      /* 355px/16 = 22.1875em*/
+      /* 400px/16 = 25em */
+      /* 530px/16 = 33.125em*/
+      /* 616px/16 = 38.5em */
+      /* 767px/16 = 47.9375em */
+      /* 800px/16 = 50em */
+      /* 1000px/16 = 62.5em*/
+      /* 1200px/16 = 75em*/
+      /* 1500px/16 = 93.75em*/
+      /* 1860px/16 = 116.25em   */ }
       .site-header__menu-content__util.hide {
         opacity: 0; }
-      @media (min-width: 47.9375em) {
+      @media only screen and (max-width: 47.9375em) {
         .site-header__menu-content__util {
           padding: 0;
           float: right; } }
     .site-header__menu-content__btn {
-      margin-right: 20px; }
-      @media (min-width: 47.9375em) {
+      margin-right: 20px;
+      /*@media (min-width: 47.9375em) {*/
+      /* 355px/16 = 22.1875em*/
+      /* 400px/16 = 25em */
+      /* 530px/16 = 33.125em*/
+      /* 616px/16 = 38.5em */
+      /* 767px/16 = 47.9375em */
+      /* 800px/16 = 50em */
+      /* 1000px/16 = 62.5em*/
+      /* 1200px/16 = 75em*/
+      /* 1500px/16 = 93.75em*/
+      /* 1860px/16 = 116.25em   */ }
+      @media only screen and (max-width: 47.9375em) {
         .site-header__menu-content__btn {
           float: left; } }
     .site-header__menu-content .btn--with-photo {
