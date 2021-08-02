@@ -38,11 +38,6 @@ html {
     font-size: 25%; /* 1rem = 4px, 4/16 = 25% */
   }
 
-  @include respondDesktop(atSmallest) {
-    /* width <= 240px? */
-    font-size: 18.75%; /* 1rem = 3px, 3/16 = 18.75% */
-  }
-
   @include respondDesktop(atLargest) {
     /* width >= 1860px? */
     font-size: 62.5%; /* 1rem = 10px, 10/16 = 62.5%*/

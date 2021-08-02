@@ -4,20 +4,18 @@
         <!-- <div class="contactInfo__bkgd"> -->
         <div class="contactInfo__bkgd" style="background-image: url(<?php echo get_theme_file_uri($bkgdWatch);?>">
             <div class="contactInfo maroon-color">
-                <div>
-                    <h2>Business Hours</h2>
+                <div class="wrapper__contactInfo">
+                    <h2><u>Business Hours</u></h2>
                     <p>Monday-Friday: 8:00 am to 5:00 pm</p>
                     <p>Saturday:  8:00 am to 12:00 pm</p>
                     <p>Sunday: Closed</p>
-                    <br>
                     <p><u><em><strong>Holiday hours could vary</strong></em></u></p>
                 </div>
                 <div>
-                    <h2>Contact Information</h2>
+                    <h2><u>Contact Information</u></h2>
                     <p>Clock Doctor</p>
                     <p>205 South Washington</p>
                     <p>Cortland, NE 68331</p>
-                    <br>
                     <p>Phone: (402) 798-7470</p>
                     <p>Email: <a href="mailto:myclockdoc@gmail.com">myclockdoc@gmail.com</a></p>
                 </div>

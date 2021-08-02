@@ -26,7 +26,7 @@
 
   &__text-box {
     position: absolute;
-    top: 50%;
+    top: 30%;
     left: 50%;
     transform: translate(
       -50%,
@@ -71,6 +71,9 @@
         font-size: 5rem;
       }
       /*animation: moveInRight 1s ease-out;*/
+      @include respondDesktop(atSmallest) {
+        font-size: 4.5rem;
+      }
     }
   }
 
@@ -81,10 +84,6 @@
     font-size: 2rem;
     border-radius: 5rem;
     border: none;
-
-    /*@include respondDesktop(atSmall) {
-      font-size: 4rem;
-    }*/
 
     &,
     &:link,
@@ -155,7 +154,7 @@
 
   &__important-notice {
     /*margin-top: 25rem;*/
-    top: 35%;
+    top: 30%;
     left: 50%; /* needed definitely! */
     font-size: 2rem;
     border-radius: 1rem;
@@ -186,6 +185,7 @@
 
     @include respondDesktop(atMedium) {
       /*this accommodates the Microsoft Lumia. Without this the notice overlaps into the Clock Doctor heading */
+      top: 32.5%;
       transform: translate(-50%, -150%);
       width: 45rem;
       height: 6rem;
@@ -194,6 +194,7 @@
 
     @include respondDesktop(atMediumSmall) {
       /*Just the Microsoft Lumia needs the adjustment coded with respondDesktop(atMedium). All others we do not want that change. */
+      top: 30%;
       transform: translate(-50%, -25%);
     }
 
@@ -211,8 +212,15 @@
       transform: translate(-50%, -25%);
     }
 
+    @include respondDesktop(atSmallest) {
+      font-size: 3.5rem;
+      width: 55rem;
+      height: 9rem;
+      transform: translate(-50%, -100%);
+    }
+
     &--animated {
-      animation: moveInTop 1s ease-out 1.5s;
+      animation: moveInTop 1s ease-in 1.5s;
       animation-fill-mode: backwards;
     }
 

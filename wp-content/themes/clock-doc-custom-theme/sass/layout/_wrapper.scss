@@ -1,4 +1,5 @@
 .wrapper {
+  /* used in contactInfo.php*/
   margin: 5rem;
   margin-top: 1rem;
 
@@ -7,5 +8,9 @@
 
   &__front-page {
     padding-top: 5rem;
+  }
+
+  &__contactInfo {
+    padding-left: 10rem;
   }
 }

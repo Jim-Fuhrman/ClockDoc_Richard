@@ -90,17 +90,6 @@ html {
   /* 1200px/16 = 75em*/
   /* 1500px/16 = 93.75em*/
   /* 1860px/16 = 116.25em   */
-  /* 240px/16 = 15em */
-  /* 355px/16 = 22.1875em*/
-  /* 400px/16 = 25em */
-  /* 530px/16 = 33.125em*/
-  /* 616px/16 = 38.5em */
-  /* 767px/16 = 47.9375em */
-  /* 800px/16 = 50em */
-  /* 1000px/16 = 62.5em*/
-  /* 1200px/16 = 75em*/
-  /* 1500px/16 = 93.75em*/
-  /* 1860px/16 = 116.25em   */
   /* 355px/16 = 22.1875em*/
   /* 400px/16 = 25em */
   /* 530px/16 = 33.125em*/
@@ -136,11 +125,6 @@ html {
       /* width <= 355px? */
       font-size: 25%;
       /* 1rem = 4px, 4/16 = 25% */ } }
-  @media only screen and (max-width: 15em) {
-    html {
-      /* width <= 240px? */
-      font-size: 18.75%;
-      /* 1rem = 3px, 3/16 = 18.75% */ } }
   @media only screen and (min-width: 116.25em) {
     html {
       /* width >= 1860px? */
@@ -629,6 +613,7 @@ name nav-container here and using .container in utilities.scss, but it still pro
   z-index: 3; }
 
 .contactInfo {
+  margin: auto;
   position: absolute;
   top: 0;
   bottom: 0;
@@ -638,7 +623,7 @@ name nav-container here and using .container in utilities.scss, but it still pro
   justify-content: center;
   align-items: flex-start;
   /* margin-left: 1rem; */
-  padding: 2rem;
+  padding: 20rem;
   /* I couldn't get a mixin to work with the following @media queries because I already have a Desktop First mixin, 
   but these would require a Mobile First mixin. I can't have both.*/
   /* @media (min-width: 22.1875em) {
@@ -651,19 +636,21 @@ name nav-container here and using .container in utilities.scss, but it still pro
     font-size: 2.4rem; }
   @media (min-width: 15em) {
     .contactInfo {
+      margin: auto;
       font-size: 8rem;
       display: grid;
-      grid-template-columns: repeat(2, 25rem);
+      grid-template-columns: repeat(2, 30rem);
       justify-items: center; } }
   @media (min-width: 47.9375em) {
     .contactInfo {
+      margin: auto;
       padding: 10rem;
       display: grid;
-      grid-template-columns: repeat(3, 25rem); } }
+      grid-template-columns: repeat(3, 30rem); } }
   @media (min-width: 62.5em) {
     .contactInfo {
       display: grid;
-      grid-template-columns: repeat(3, 30rem);
+      grid-template-columns: repeat(3, 35rem);
       justify-items: center; } }
   .contactInfo a {
     color: antiquewhite;
@@ -678,13 +665,13 @@ name nav-container here and using .container in utilities.scss, but it still pro
       .contactInfo h2 {
         margin-top: 1rem; } }
   .contactInfo p {
-    font-size: 1.2rem;
+    font-size: 1rem;
     line-height: 0.1em;
     margin-top: 1rem;
     /* 240px/16 = 15em */ }
     @media (min-width: 15em) {
       .contactInfo p {
-        font-size: 2rem; } }
+        font-size: 1.5rem; } }
   @media (min-width: 1000px) {
     .contactInfo iframe {
       margin-top: 1rem; } }
@@ -838,7 +825,7 @@ name nav-container here and using .container in utilities.scss, but it still pro
     /* this determines how close to the screen an element is. we're pushing it back with -1.*/ }
   .page-banner__text-box {
     position: absolute;
-    top: 50%;
+    top: 30%;
     left: 50%;
     transform: translate(-50%, -50%);
     /* 50% of the height and width of the &__headings element itself. */
@@ -888,10 +875,24 @@ name nav-container here and using .container in utilities.scss, but it still pro
       /* 1200px/16 = 75em*/
       /* 1500px/16 = 93.75em*/
       /* 1860px/16 = 116.25em   */
-      /*animation: moveInRight 1s ease-out;*/ }
+      /*animation: moveInRight 1s ease-out;*/
+      /* 240px/16 = 15em */
+      /* 355px/16 = 22.1875em*/
+      /* 400px/16 = 25em */
+      /* 530px/16 = 33.125em*/
+      /* 616px/16 = 38.5em */
+      /* 767px/16 = 47.9375em */
+      /* 800px/16 = 50em */
+      /* 1000px/16 = 62.5em*/
+      /* 1200px/16 = 75em*/
+      /* 1500px/16 = 93.75em*/
+      /* 1860px/16 = 116.25em   */ }
       @media only screen and (max-width: 22.1875em) {
         .page-banner__heading--sub {
           font-size: 5rem; } }
+      @media only screen and (max-width: 15em) {
+        .page-banner__heading--sub {
+          font-size: 4.5rem; } }
   .page-banner__btn {
     display: inline-block;
     text-decoration: none;
@@ -899,9 +900,6 @@ name nav-container here and using .container in utilities.scss, but it still pro
     font-size: 2rem;
     border-radius: 5rem;
     border: none;
-    /*@include respondDesktop(atSmall) {
-      font-size: 4rem;
-    }*/
     /* 355px/16 = 22.1875em*/
     /* 400px/16 = 25em */
     /* 530px/16 = 33.125em*/
@@ -993,7 +991,7 @@ name nav-container here and using .container in utilities.scss, but it still pro
         font-size: 3.5rem; } }
   .page-banner__important-notice {
     /*margin-top: 25rem;*/
-    top: 35%;
+    top: 30%;
     left: 50%;
     /* needed definitely! */
     font-size: 2rem;
@@ -1067,6 +1065,17 @@ name nav-container here and using .container in utilities.scss, but it still pro
     /* 1000px/16 = 62.5em*/
     /* 1200px/16 = 75em*/
     /* 1500px/16 = 93.75em*/
+    /* 1860px/16 = 116.25em   */
+    /* 240px/16 = 15em */
+    /* 355px/16 = 22.1875em*/
+    /* 400px/16 = 25em */
+    /* 530px/16 = 33.125em*/
+    /* 616px/16 = 38.5em */
+    /* 767px/16 = 47.9375em */
+    /* 800px/16 = 50em */
+    /* 1000px/16 = 62.5em*/
+    /* 1200px/16 = 75em*/
+    /* 1500px/16 = 93.75em*/
     /* 1860px/16 = 116.25em   */ }
     @media only screen and (max-width: 75em) {
       .page-banner__important-notice {
@@ -1083,6 +1092,7 @@ name nav-container here and using .container in utilities.scss, but it still pro
     @media only screen and (max-width: 47.9375em) {
       .page-banner__important-notice {
         /*this accommodates the Microsoft Lumia. Without this the notice overlaps into the Clock Doctor heading */
+        top: 32.5%;
         transform: translate(-50%, -150%);
         width: 45rem;
         height: 6rem;
@@ -1090,6 +1100,7 @@ name nav-container here and using .container in utilities.scss, but it still pro
     @media only screen and (max-width: 38.5em) {
       .page-banner__important-notice {
         /*Just the Microsoft Lumia needs the adjustment coded with respondDesktop(atMedium). All others we do not want that change. */
+        top: 30%;
         transform: translate(-50%, -25%); } }
     @media only screen and (max-width: 33.125em) {
       .page-banner__important-notice {
@@ -1103,8 +1114,14 @@ name nav-container here and using .container in utilities.scss, but it still pro
         width: 67.5rem;
         height: 9rem;
         transform: translate(-50%, -25%); } }
+    @media only screen and (max-width: 15em) {
+      .page-banner__important-notice {
+        font-size: 3.5rem;
+        width: 55rem;
+        height: 9rem;
+        transform: translate(-50%, -100%); } }
     .page-banner__important-notice--animated {
-      animation: moveInTop 1s ease-out 1.5s;
+      animation: moveInTop 1s ease-in 1.5s;
       animation-fill-mode: backwards; }
     .page-banner__important-notice::after {
       content: "";
@@ -1202,9 +1219,24 @@ name nav-container here and using .container in utilities.scss, but it still pro
     /* 1000px/16 = 62.5em*/
     /* 1200px/16 = 75em*/
     /* 1500px/16 = 93.75em*/
+    /* 1860px/16 = 116.25em   */
+    /* 355px/16 = 22.1875em*/
+    /* 400px/16 = 25em */
+    /* 530px/16 = 33.125em*/
+    /* 616px/16 = 38.5em */
+    /* 767px/16 = 47.9375em */
+    /* 800px/16 = 50em */
+    /* 1000px/16 = 62.5em*/
+    /* 1200px/16 = 75em*/
+    /* 1500px/16 = 93.75em*/
     /* 1860px/16 = 116.25em   */ }
+    @media only screen and (max-width: 75em) {
+      .postpage-banner__title {
+        /* width <= 530px */
+        font-size: 5rem; } }
     @media only screen and (max-width: 33.125em) {
       .postpage-banner__title {
+        /* width <= 530px */
         font-size: 5rem; } }
   .postpage-banner__bg-image {
     opacity: 0.33;
@@ -1765,13 +1797,13 @@ name nav-container here and using .container in utilities.scss, but it still pro
       color: #c0392b;
       font-weight: bold; }
   .site-header__menu-icon {
-    width: 4rem;
-    height: 3.8rem;
+    width: 20px;
+    height: 19px;
     position: absolute;
     z-index: 10;
+    /* we need this so the top right icon isn't overlaid when we click it the first time. Without this our icon won't make the nav menu vanish when it should vanish.*/
     top: 3.2rem;
     right: 50%;
-    opacity: 1;
     /* 355px/16 = 22.1875em*/
     /* 400px/16 = 25em */
     /* 530px/16 = 33.125em*/
@@ -1794,43 +1826,41 @@ name nav-container here and using .container in utilities.scss, but it still pro
     /* 1500px/16 = 93.75em*/
     /* 1860px/16 = 116.25em   */
     /* 400px/16px = 25em */ }
-    @media only screen and (max-width: 22.1875em) {
+    @media only screen and (max-width: 33.125em) {
       .site-header__menu-icon {
         top: 12rem; } }
     @media only screen and (max-width: 15em) {
       .site-header__menu-icon {
         top: 15rem; } }
-    .site-header__menu-icon.hide {
-      /* display: none; */
-      opacity: 0; }
     .site-header__menu-icon::before {
       content: "";
       position: absolute;
       top: 0;
       left: 0;
-      width: 4rem;
-      height: 0.6rem;
+      width: 20px;
+      height: 3px;
       background-color: #fff;
       transform-origin: 0 0;
       transition: transform 0.3s ease-out; }
     .site-header__menu-icon__middle {
       position: absolute;
-      top: 1.6rem;
+      top: 8px;
       left: 0;
-      width: 4rem;
-      height: 0.6rem;
+      width: 20px;
+      height: 3px;
       background-color: #fff;
       transition: all 0.3s ease-out;
       transform-origin: 0 50%; }
     .site-header__menu-icon::after {
       content: "";
+      /* Required or you won't see the last horizontal bar of the hamburger icon. */
       position: absolute;
       bottom: 0;
       left: 0;
-      width: 4rem;
-      height: 0.6rem;
+      width: 20px;
+      height: 3px;
       background-color: #fff;
-      transform-origin: 0 50%;
+      transform-origin: 0 100%;
       transition: transform 0.3s ease-out; }
     @media (min-width: 25em) {
       .site-header__menu-icon {
@@ -1840,7 +1870,7 @@ name nav-container here and using .container in utilities.scss, but it still pro
   .site-header__menu-icon--close-x .site-header__menu-icon__middle {
     opacity: 0; }
   .site-header__menu-icon--close-x::after {
-    transform: rotate(-45deg) scaleX(1.25) translateY(0.0625rem); }
+    transform: rotate(-45deg) scaleX(1.25) translateY(1px); }
   .site-header__menu-content {
     opacity: 0;
     transform: scale(1.2);
@@ -1895,7 +1925,7 @@ name nav-container here and using .container in utilities.scss, but it still pro
       /* 1500px/16 = 93.75em*/
       /* 1860px/16 = 116.25em   */
       /* this ensures we see the entire menu not just part of it */ }
-      @media only screen and (max-width: 22.1875em) {
+      @media only screen and (max-width: 33.125em) {
         .site-header__menu-content--is-visible {
           top: 9rem; } }
       @media only screen and (max-width: 15em) {
@@ -1913,7 +1943,7 @@ name nav-container here and using .container in utilities.scss, but it still pro
         /* 1200px/16 = 75em*/
         /* 1500px/16 = 93.75em*/
         /* 1860px/16 = 116.25em   */ }
-        @media only screen and (max-width: 22.1875em) {
+        @media only screen and (max-width: 33.125em) {
           .site-header__menu-content--is-visible a {
             font-size: 3rem; } }
       .site-header__menu-content--is-visible li {
@@ -1991,9 +2021,12 @@ name nav-container here and using .container in utilities.scss, but it still pro
       color: #fff; }
 
 .wrapper {
+  /* used in contactInfo.php*/
   margin: 5rem;
   margin-top: 1rem;
   padding-left: 10rem;
   padding-right: 10rem; }
   .wrapper__front-page {
     padding-top: 5rem; }
+  .wrapper__contactInfo {
+    padding-left: 10rem; }

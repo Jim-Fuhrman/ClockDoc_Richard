@@ -20,7 +20,13 @@
     margin: 0 0 1rem 0;
     color: #fff;
 
+    @include respondDesktop(atLarge) {
+      /* width <= 530px */
+      font-size: 5rem;
+    }
+
     @include respondDesktop(atSmall) {
+      /* width <= 530px */
       font-size: 5rem;
     }
   }
