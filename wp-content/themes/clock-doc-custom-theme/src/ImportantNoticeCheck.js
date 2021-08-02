@@ -11,7 +11,6 @@ class ImportantNoticeCheck {
   }
 
   adjustTops() {
-    console.log("Imp. Ntc. Check 1");
     if (this.importantNotice.textContent == "") {
       this.textBox.style.top = "30%";
     } else {

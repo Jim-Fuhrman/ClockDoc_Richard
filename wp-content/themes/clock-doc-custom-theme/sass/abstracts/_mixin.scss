@@ -1,6 +1,7 @@
 @mixin clearfix {
+  /* this appends a pseudo element after the element which clears the floats. After floating an element, it no longer has a height. That's why we need to clear it. */
   &::after {
-    content: "";
+    content: ""; /* always required when using pseudo elements; otherwise, the pseudo element won't appear on the page. We actually don't want to see this pseudo element. That's why we set it to "". */
     display: table;
     clear: both;
   }

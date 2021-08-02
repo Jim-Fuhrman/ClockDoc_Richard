@@ -90,11 +90,23 @@ at the extreme left margin. */
 .t-black {
   color: #000;
 }
+
+.t-maroon {
+  background-color: #8d2b25;
+}
+
 .b-goldenrod {
   background-color: goldenrod;
 }
-.t-maroon {
-  background-color: #8d2b25;
+
+.b-maroon {
+  background-image: linear-gradient(
+    rgba(141, 43, 37, 0.7),
+    rgba(141, 43, 37, 0.7)
+  );
+  height: 100%;
+  position: absolute;
+  z-index: 3;
 }
 
 .t-small {
