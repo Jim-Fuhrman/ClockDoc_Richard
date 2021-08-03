@@ -53,12 +53,16 @@
 .container needs to be defined here instead of utilities.scss, so blogs are centered. If .container is defined
 in _utilities.scss, blogs will start at the extreme left margin which doesn't look good. I tried using class
 name nav-container here and using .container in utilities.scss, but it still produced undesired results. */
-.container {
-  max-width: 130rem;
-  margin: 0 auto; /*zero for top/bottom, auto for left/right which will put text in the middle. */
-  padding: 0 1.6rem;
+/*.container {
+  max-width: 1300px;
+  margin: 0 auto;*/ /*zero for top/bottom, auto for left/right which will put text in the middle. */
+/*padding: 0 16px;
   position: relative;
 }
+
+.container--narrow {
+  max-width: 960px;
+}*/
 
 .nav {
   position: fixed;

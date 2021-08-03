@@ -1,8 +1,12 @@
-/* .container is defined in main-navigation. It needs to be there, or blogs will be
-at the extreme left margin. */
+.container {
+  max-width: 1300px;
+  margin: 0 auto; /*zero for top/bottom, auto for left/right which will put text in the middle. */
+  padding: 0 16px;
+  position: relative;
+}
 
 .container--narrow {
-  max-width: 960rem;
+  max-width: 960px;
 }
 
 .content h2,
@@ -97,16 +101,6 @@ at the extreme left margin. */
 
 .b-goldenrod {
   background-color: goldenrod;
-}
-
-.b-maroon {
-  background-image: linear-gradient(
-    rgba(141, 43, 37, 0.7),
-    rgba(141, 43, 37, 0.7)
-  );
-  height: 100%;
-  position: absolute;
-  z-index: 3;
 }
 
 .t-small {

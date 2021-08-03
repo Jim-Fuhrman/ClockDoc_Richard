@@ -228,10 +228,15 @@ p {
 .generic-content h6 {
   font-size: 1.84rem; }
 
-/* .container is defined in main-navigation. It needs to be there, or blogs will be
-at the extreme left margin. */
+.container {
+  max-width: 1300px;
+  margin: 0 auto;
+  /*zero for top/bottom, auto for left/right which will put text in the middle. */
+  padding: 0 16px;
+  position: relative; }
+
 .container--narrow {
-  max-width: 960rem; }
+  max-width: 960px; }
 
 .content h2,
 .content h3 {
@@ -305,12 +310,6 @@ at the extreme left margin. */
 
 .b-goldenrod {
   background-color: goldenrod; }
-
-.b-maroon {
-  background-image: linear-gradient(rgba(141, 43, 37, 0.7), rgba(141, 43, 37, 0.7));
-  height: 100%;
-  position: absolute;
-  z-index: 3; }
 
 .t-small {
   font-size: 1.3rem; }
@@ -467,13 +466,17 @@ at the extreme left margin. */
 .container needs to be defined here instead of utilities.scss, so blogs are centered. If .container is defined
 in _utilities.scss, blogs will start at the extreme left margin which doesn't look good. I tried using class
 name nav-container here and using .container in utilities.scss, but it still produced undesired results. */
-.container {
-  max-width: 130rem;
-  margin: 0 auto;
-  /*zero for top/bottom, auto for left/right which will put text in the middle. */
-  padding: 0 1.6rem;
-  position: relative; }
+/*.container {
+  max-width: 1300px;
+  margin: 0 auto;*/
+/*zero for top/bottom, auto for left/right which will put text in the middle. */
+/*padding: 0 16px;
+  position: relative;
+}
 
+.container--narrow {
+  max-width: 960px;
+}*/
 .nav {
   position: fixed;
   background-color: #222;
@@ -602,113 +605,94 @@ name nav-container here and using .container in utilities.scss, but it still pro
 /* This is from clockdoc-richard website. */
 .contactInfo__bkgd {
   position: relative;
+  display: block;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: bottom center;
   height: 50vh;
   width: 100vw; }
 
-.contactInfoGrid {
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-rows: 15rem 15rem;
-  grid-template-rows: 15rem 15rem;
-  -ms-grid-columns: (30rem)[3];
-  grid-template-columns: repeat(3, 30rem);
-  grid-gap: 3rem;
-  /* This is the equivalent of coding both grid-row-gap: 30; and grid-column-gap: 30; */
-  align-items: center;
-  justify-items: center;
-  max-width: 192rem;
-  margin: 0 auto;
-  /* this centers a block element inside another block element.  */
+.contactInfo-color {
+  background-size: cover;
+  /* I tried coding the linear-gradient in the contactInfo_bkgd class, but didn't get the desired results. This was the only way to get the desired results. */
+  background-image: linear-gradient(rgba(141, 43, 37, 0.7), rgba(141, 43, 37, 0.7));
+  height: 50vh;
+  width: 100vw;
   position: absolute;
+  z-index: 3; }
+
+.contactInfo {
   top: 0;
   bottom: 0;
   left: 0;
-  right: 0; }
-  .contactInfoGrid > * {
-    color: antiquewhite;
-    padding: 1rem; }
-  .contactInfoGrid__business-hours {
-    -ms-grid-row: 1;
-    grid-row: 1;
-    -ms-grid-column: 1;
-    grid-column: 1; }
-  .contactInfoGrid__name-addr-csz {
-    -ms-grid-row: 1;
-    grid-row: 1;
-    -ms-grid-column: 2;
-    grid-column: 2; }
-  .contactInfoGrid__holiday-hours {
-    -ms-grid-row: 2;
-    grid-row: 2;
-    -ms-grid-column: 1;
-    grid-column: 1; }
-  .contactInfoGrid__phone-email {
-    -ms-grid-row: 2;
-    grid-row: 2;
-    -ms-grid-column: 2;
-    grid-column: 2; }
-  .contactInfoGrid__iframe {
-    -ms-grid-row: 1;
-    -ms-grid-row-span: 2;
-    grid-row: 1 / span 2;
-    -ms-grid-column: 3;
-    grid-column: 3; }
-  .contactInfoGrid a {
-    color: antiquewhite;
-    text-decoration: none; }
-  .contactInfoGrid h2 {
-    font-size: 2.4rem;
-    margin-top: 4rem;
-    margin-bottom: 3rem;
-    /*@media (min-width: 1000px) {
+  right: 0;
+  color: antiquewhite;
+  padding: 2rem 0 3.5rem 0;
+  /*@media (min-width: 1000px) {
         margin-top: 1rem;
       }*/
-    /* 355px/16 = 22.1875em*/
-    /* 400px/16 = 25em */
-    /* 530px/16 = 33.125em*/
-    /* 616px/16 = 38.5em */
-    /* 767px/16 = 47.9375em */
-    /* 800px/16 = 50em */
-    /* 1000px/16 = 62.5em*/
-    /* 1200px/16 = 75em*/
-    /* 1500px/16 = 93.75em*/
-    /* 1860px/16 = 116.25em   */
-    /* screen size <= 1200px*/ }
+  /* 355px/16 = 22.1875em*/
+  /* 400px/16 = 25em */
+  /* 530px/16 = 33.125em*/
+  /* 616px/16 = 38.5em */
+  /* 767px/16 = 47.9375em */
+  /* 800px/16 = 50em */
+  /* 1000px/16 = 62.5em*/
+  /* 1200px/16 = 75em*/
+  /* 1500px/16 = 93.75em*/
+  /* 1860px/16 = 116.25em   */
+  /* screen size <= 1200px*/ }
+  .contactInfo a {
+    color: antiquewhite;
+    text-decoration: none; }
+  .contactInfo h2 {
+    font-size: 2.4rem;
+    margin-top: 4rem;
+    margin-bottom: 3rem; }
     @media (min-width: 530px) {
-      .contactInfoGrid h2 {
+      .contactInfo h2 {
         margin-right: 2rem; } }
-    @media only screen and (max-width: 75em) {
-      .contactInfoGrid h2 {
-        font-size: 2rem;
-        display: -ms-grid;
-        display: grid;
-        -ms-grid-columns: (35rem)[3];
-        grid-template-columns: repeat(3, 35rem);
-        justify-items: center; } }
-  .contactInfoGrid p {
+  .contactInfo p {
     font-size: 1.5rem;
     line-height: 0.1em;
     margin-top: 1rem;
     /*@media (min-width: 15em) {
-        font-size: 1.5rem;
-      }*/
+          font-size: 1.5rem;
+        }*/
     /* 240px/16 = 15em */ }
+  .contactInfo__business-hours {
+    padding: 1rem;
+    width: 40%;
+    float: left; }
+  .contactInfo__name-addr-csz {
+    padding: 1rem;
+    width: 40%;
+    float: left; }
+  .contactInfo__iframe {
+    padding: 1rem;
+    width: 20%;
+    float: right; }
+  @media only screen and (max-width: 75em) {
+    .contactInfo {
+      font-size: 2rem;
+      display: -ms-grid;
+      display: grid;
+      -ms-grid-columns: (35rem)[3];
+      grid-template-columns: repeat(3, 35rem);
+      justify-items: center; } }
   @media (min-width: 1000px) {
-    .contactInfoGrid iframe {
+    .contactInfo iframe {
       margin-top: 1rem; } }
-  .contactInfoGrid .headline {
+  .contactInfo .headline {
     color: #666;
     margin-bottom: 0.33rem; }
-  .contactInfoGrid__link {
+  .contactInfo__link {
     color: #999;
     text-decoration: none; }
-  .contactInfoGrid__link:hover {
+  .contactInfo__link:hover {
     color: #0d3b66;
     text-decoration: underline; }
-  .contactInfoGrid_inner {
+  .contactInfo_inner {
     border-top: 1px dotted #dedede;
     padding-top: 3.5rem; }
 
@@ -849,7 +833,7 @@ name nav-container here and using .container in utilities.scss, but it still pro
     /* this determines how close to the screen an element is. we're pushing it back with -1.*/ }
   .page-banner__text-box {
     position: absolute;
-    top: 30%;
+    top: 40%;
     left: 50%;
     transform: translate(-50%, -50%);
     /* 50% of the height and width of the &__headings element itself. */
@@ -1026,7 +1010,7 @@ name nav-container here and using .container in utilities.scss, but it still pro
         font-size: 3.5rem; } }
   .page-banner__important-notice {
     /*margin-top: 25rem;*/
-    top: 30%;
+    top: 40%;
     left: 50%;
     /* needed definitely! */
     font-size: 2rem;

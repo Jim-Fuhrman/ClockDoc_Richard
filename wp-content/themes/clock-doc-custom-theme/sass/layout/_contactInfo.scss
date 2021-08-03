@@ -1,6 +1,7 @@
 /* This is from clockdoc-richard website. */
 .contactInfo__bkgd {
   position: relative;
+  display: block;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: bottom center;
@@ -8,51 +9,26 @@
   width: 100vw;
 }
 
-.contactInfoGrid {
-  display: grid;
-  grid-template-rows: 15rem 15rem;
-  grid-template-columns: repeat(3, 30rem);
-
-  grid-gap: 3rem; /* This is the equivalent of coding both grid-row-gap: 30; and grid-column-gap: 30; */
-
-  align-items: center;
-  justify-items: center;
-  max-width: 192rem;
-  margin: 0 auto; /* this centers a block element inside another block element.  */
+.contactInfo-color {
+  background-size: cover;
+  /* I tried coding the linear-gradient in the contactInfo_bkgd class, but didn't get the desired results. This was the only way to get the desired results. */
+  background-image: linear-gradient(
+    rgba(141, 43, 37, 0.7),
+    rgba(141, 43, 37, 0.7)
+  );
+  height: 50vh;
+  width: 100vw;
   position: absolute;
+  z-index: 3;
+}
+
+.contactInfo {
   top: 0;
   bottom: 0;
   left: 0;
   right: 0;
-
-  & > * {
-    color: antiquewhite;
-    padding: 1rem;
-  }
-  &__business-hours {
-    grid-row: 1;
-    grid-column: 1;
-  }
-
-  &__name-addr-csz {
-    grid-row: 1;
-    grid-column: 2;
-  }
-
-  &__holiday-hours {
-    grid-row: 2;
-    grid-column: 1;
-  }
-
-  &__phone-email {
-    grid-row: 2;
-    grid-column: 2;
-  }
-
-  &__iframe {
-    grid-row: 1 / span 2;
-    grid-column: 3;
-  }
+  color: antiquewhite;
+  padding: 2rem 0 3.5rem 0;
 
   a {
     color: antiquewhite;
@@ -67,28 +43,45 @@
     @media (min-width: 530px) {
       margin-right: 2rem;
     }
-
-    /*@media (min-width: 1000px) {
-        margin-top: 1rem;
-      }*/
-
-    @include respondDesktop(atLarge) {
-      font-size: 2rem;
-      display: grid;
-      grid-template-columns: repeat(3, 35rem);
-      justify-items: center;
-    } /* screen size <= 1200px*/
   }
-
   p {
     font-size: 1.5rem;
     line-height: 0.1em;
     margin-top: 1rem;
 
     /*@media (min-width: 15em) {
-        font-size: 1.5rem;
-      }*/ /* 240px/16 = 15em */
+          font-size: 1.5rem;
+        }*/ /* 240px/16 = 15em */
   }
+
+  &__business-hours {
+    padding: 1rem;
+    width: 40%;
+    float: left;
+  }
+
+  &__name-addr-csz {
+    padding: 1rem;
+    width: 40%;
+    float: left;
+  }
+
+  &__iframe {
+    padding: 1rem;
+    width: 20%;
+    float: right;
+  }
+
+  /*@media (min-width: 1000px) {
+        margin-top: 1rem;
+      }*/
+
+  @include respondDesktop(atLarge) {
+    font-size: 2rem;
+    display: grid;
+    grid-template-columns: repeat(3, 35rem);
+    justify-items: center;
+  } /* screen size <= 1200px*/
 
   iframe {
     @media (min-width: 1000px) {
