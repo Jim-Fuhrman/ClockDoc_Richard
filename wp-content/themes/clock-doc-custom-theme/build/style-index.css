@@ -531,11 +531,12 @@ name nav-container here and using .container in utilities.scss, but it still pro
   font-weight: bold; }
 
 .page-links {
+  /* This is mobile first code */
   position: relative;
   z-index: 1;
   background-color: #faf0ca;
   margin: 0 0 4rem 0;
-  /* 767px/16 = 47.9375em */ }
+  /* screen size >= 767px/16 or 47.9375em */ }
   @media (min-width: 47.9375em) {
     .page-links {
       margin: 4rem 30rem;
@@ -628,9 +629,7 @@ name nav-container here and using .container in utilities.scss, but it still pro
   right: 0;
   color: antiquewhite;
   padding: 2rem 0 3.5rem 0;
-  /*@media (min-width: 1000px) {
-        margin-top: 1rem;
-      }*/
+  margin-top: 9rem;
   /* 355px/16 = 22.1875em*/
   /* 400px/16 = 25em */
   /* 530px/16 = 33.125em*/
@@ -641,48 +640,179 @@ name nav-container here and using .container in utilities.scss, but it still pro
   /* 1200px/16 = 75em*/
   /* 1500px/16 = 93.75em*/
   /* 1860px/16 = 116.25em   */
-  /* screen size <= 1200px*/ }
+  /* screen sizes <= 616px */ }
+  @media only screen and (max-width: 47.9375em) {
+    .contactInfo {
+      margin-top: 0.125rem; } }
   .contactInfo a {
     color: antiquewhite;
     text-decoration: none; }
   .contactInfo h2 {
     font-size: 2.4rem;
-    margin-top: 4rem;
     margin-bottom: 3rem; }
-    @media (min-width: 530px) {
-      .contactInfo h2 {
-        margin-right: 2rem; } }
   .contactInfo p {
     font-size: 1.5rem;
     line-height: 0.1em;
     margin-top: 1rem;
-    /*@media (min-width: 15em) {
-          font-size: 1.5rem;
-        }*/
-    /* 240px/16 = 15em */ }
+    /* 355px/16 = 22.1875em*/
+    /* 400px/16 = 25em */
+    /* 530px/16 = 33.125em*/
+    /* 616px/16 = 38.5em */
+    /* 767px/16 = 47.9375em */
+    /* 800px/16 = 50em */
+    /* 1000px/16 = 62.5em*/
+    /* 1200px/16 = 75em*/
+    /* 1500px/16 = 93.75em*/
+    /* 1860px/16 = 116.25em   */
+    /* screen size <= 1200px*/
+    /* 355px/16 = 22.1875em*/
+    /* 400px/16 = 25em */
+    /* 530px/16 = 33.125em*/
+    /* 616px/16 = 38.5em */
+    /* 767px/16 = 47.9375em */
+    /* 800px/16 = 50em */
+    /* 1000px/16 = 62.5em*/
+    /* 1200px/16 = 75em*/
+    /* 1500px/16 = 93.75em*/
+    /* 1860px/16 = 116.25em   */
+    /* screen size <= 800px*/
+    /* 355px/16 = 22.1875em*/
+    /* 400px/16 = 25em */
+    /* 530px/16 = 33.125em*/
+    /* 616px/16 = 38.5em */
+    /* 767px/16 = 47.9375em */
+    /* 800px/16 = 50em */
+    /* 1000px/16 = 62.5em*/
+    /* 1200px/16 = 75em*/
+    /* 1500px/16 = 93.75em*/
+    /* 1860px/16 = 116.25em   */
+    /* screen size <= 767px*/
+    /* 355px/16 = 22.1875em*/
+    /* 400px/16 = 25em */
+    /* 530px/16 = 33.125em*/
+    /* 616px/16 = 38.5em */
+    /* 767px/16 = 47.9375em */
+    /* 800px/16 = 50em */
+    /* 1000px/16 = 62.5em*/
+    /* 1200px/16 = 75em*/
+    /* 1500px/16 = 93.75em*/
+    /* 1860px/16 = 116.25em   */ }
+    @media only screen and (max-width: 75em) {
+      .contactInfo p {
+        font-size: 2.25em;
+        line-height: 0.15em; } }
+    @media only screen and (max-width: 50em) {
+      .contactInfo p {
+        font-size: 1.75em; } }
+    @media only screen and (max-width: 47.9375em) {
+      .contactInfo p {
+        font-size: 1.5em;
+        line-height: 0.125em; } }
+    @media only screen and (max-width: 38.5em) {
+      .contactInfo p {
+        font-size: 1.75rem; } }
   .contactInfo__business-hours {
     padding: 1rem;
     width: 40%;
-    float: left; }
+    float: left;
+    /* 355px/16 = 22.1875em*/
+    /* 400px/16 = 25em */
+    /* 530px/16 = 33.125em*/
+    /* 616px/16 = 38.5em */
+    /* 767px/16 = 47.9375em */
+    /* 800px/16 = 50em */
+    /* 1000px/16 = 62.5em*/
+    /* 1200px/16 = 75em*/
+    /* 1500px/16 = 93.75em*/
+    /* 1860px/16 = 116.25em   */
+    /* screen size <= 800px*/
+    /* 355px/16 = 22.1875em*/
+    /* 400px/16 = 25em */
+    /* 530px/16 = 33.125em*/
+    /* 616px/16 = 38.5em */
+    /* 767px/16 = 47.9375em */
+    /* 800px/16 = 50em */
+    /* 1000px/16 = 62.5em*/
+    /* 1200px/16 = 75em*/
+    /* 1500px/16 = 93.75em*/
+    /* 1860px/16 = 116.25em   */
+    /* screen sizes <= 616px */ }
+    @media only screen and (max-width: 50em) {
+      .contactInfo__business-hours {
+        width: 35%; } }
+    @media only screen and (max-width: 38.5em) {
+      .contactInfo__business-hours {
+        display: inline-block;
+        width: 50%;
+        padding-left: 5rem; } }
   .contactInfo__name-addr-csz {
     padding: 1rem;
     width: 40%;
-    float: left; }
+    float: left;
+    /* 355px/16 = 22.1875em*/
+    /* 400px/16 = 25em */
+    /* 530px/16 = 33.125em*/
+    /* 616px/16 = 38.5em */
+    /* 767px/16 = 47.9375em */
+    /* 800px/16 = 50em */
+    /* 1000px/16 = 62.5em*/
+    /* 1200px/16 = 75em*/
+    /* 1500px/16 = 93.75em*/
+    /* 1860px/16 = 116.25em   */
+    /* screen size <= 800px*/
+    /* 355px/16 = 22.1875em*/
+    /* 400px/16 = 25em */
+    /* 530px/16 = 33.125em*/
+    /* 616px/16 = 38.5em */
+    /* 767px/16 = 47.9375em */
+    /* 800px/16 = 50em */
+    /* 1000px/16 = 62.5em*/
+    /* 1200px/16 = 75em*/
+    /* 1500px/16 = 93.75em*/
+    /* 1860px/16 = 116.25em   */
+    /* screen sizes <= 616px */ }
+    @media only screen and (max-width: 50em) {
+      .contactInfo__name-addr-csz {
+        width: 35%; } }
+    @media only screen and (max-width: 38.5em) {
+      .contactInfo__name-addr-csz {
+        display: block;
+        width: 40%; } }
   .contactInfo__iframe {
     padding: 1rem;
     width: 20%;
-    float: right; }
-  @media only screen and (max-width: 75em) {
-    .contactInfo {
-      font-size: 2rem;
-      display: -ms-grid;
-      display: grid;
-      -ms-grid-columns: (35rem)[3];
-      grid-template-columns: repeat(3, 35rem);
-      justify-items: center; } }
-  @media (min-width: 1000px) {
-    .contactInfo iframe {
-      margin-top: 1rem; } }
+    float: right;
+    /* 355px/16 = 22.1875em*/
+    /* 400px/16 = 25em */
+    /* 530px/16 = 33.125em*/
+    /* 616px/16 = 38.5em */
+    /* 767px/16 = 47.9375em */
+    /* 800px/16 = 50em */
+    /* 1000px/16 = 62.5em*/
+    /* 1200px/16 = 75em*/
+    /* 1500px/16 = 93.75em*/
+    /* 1860px/16 = 116.25em   */
+    /* screen size <= 800px*/
+    /* 355px/16 = 22.1875em*/
+    /* 400px/16 = 25em */
+    /* 530px/16 = 33.125em*/
+    /* 616px/16 = 38.5em */
+    /* 767px/16 = 47.9375em */
+    /* 800px/16 = 50em */
+    /* 1000px/16 = 62.5em*/
+    /* 1200px/16 = 75em*/
+    /* 1500px/16 = 93.75em*/
+    /* 1860px/16 = 116.25em   */
+    /* screen sizes <= 616px */ }
+    @media only screen and (max-width: 50em) {
+      .contactInfo__iframe {
+        width: 30%; } }
+    @media only screen and (max-width: 38.5em) {
+      .contactInfo__iframe {
+        width: 40%;
+        margin: 0 auto;
+        float: left;
+        padding: 0 2rem 0 6rem; } }
   .contactInfo .headline {
     color: #666;
     margin-bottom: 0.33rem; }

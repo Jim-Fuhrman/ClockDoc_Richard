@@ -1204,7 +1204,7 @@ class NavBarModify {
 
 
   fixNav() {
-    if (window.innerWidth < 616) {
+    if (window.innerWidth < 600) {
       this.fixNavOnSmallScreens();
     } else {
       if (window.scrollY > this.nav.offsetHeight + 10) {

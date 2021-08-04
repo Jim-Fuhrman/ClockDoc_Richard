@@ -29,6 +29,11 @@
   right: 0;
   color: antiquewhite;
   padding: 2rem 0 3.5rem 0;
+  margin-top: 9rem;
+
+  @include respondDesktop(atMedium) {
+    margin-top: 0.125rem;
+  } /* screen sizes <= 616px */
 
   a {
     color: antiquewhite;
@@ -37,56 +42,78 @@
 
   h2 {
     font-size: 2.4rem;
-    margin-top: 4rem;
     margin-bottom: 3rem;
-
-    @media (min-width: 530px) {
-      margin-right: 2rem;
-    }
   }
   p {
     font-size: 1.5rem;
     line-height: 0.1em;
     margin-top: 1rem;
 
-    /*@media (min-width: 15em) {
-          font-size: 1.5rem;
-        }*/ /* 240px/16 = 15em */
+    @include respondDesktop(atLarge) {
+      font-size: 2.25em;
+      line-height: 0.15em;
+    } /* screen size <= 1200px*/
+
+    @include respondDesktop(atMediumLarge) {
+      font-size: 1.75em;
+    } /* screen size <= 800px*/
+
+    @include respondDesktop(atMedium) {
+      font-size: 1.5em;
+      line-height: 0.125em;
+    } /* screen size <= 767px*/
+
+    @include respondDesktop(atMediumSmall) {
+      font-size: 1.75rem;
+    }
   }
 
   &__business-hours {
     padding: 1rem;
     width: 40%;
     float: left;
+
+    @include respondDesktop(atMediumLarge) {
+      width: 35%;
+    } /* screen size <= 800px*/
+
+    @include respondDesktop(atMediumSmall) {
+      display: inline-block;
+      width: 50%;
+      padding-left: 5rem;
+    } /* screen sizes <= 616px */
   }
 
   &__name-addr-csz {
     padding: 1rem;
     width: 40%;
     float: left;
+
+    @include respondDesktop(atMediumLarge) {
+      width: 35%;
+    } /* screen size <= 800px*/
+
+    @include respondDesktop(atMediumSmall) {
+      display: block;
+      width: 40%;
+    } /* screen sizes <= 616px */
   }
 
   &__iframe {
     padding: 1rem;
     width: 20%;
     float: right;
-  }
 
-  /*@media (min-width: 1000px) {
-        margin-top: 1rem;
-      }*/
+    @include respondDesktop(atMediumLarge) {
+      width: 30%;
+    } /* screen size <= 800px*/
 
-  @include respondDesktop(atLarge) {
-    font-size: 2rem;
-    display: grid;
-    grid-template-columns: repeat(3, 35rem);
-    justify-items: center;
-  } /* screen size <= 1200px*/
-
-  iframe {
-    @media (min-width: 1000px) {
-      margin-top: 1rem;
-    }
+    @include respondDesktop(atMediumSmall) {
+      width: 40%;
+      margin: 0 auto;
+      float: left;
+      padding: 0 2rem 0 6rem;
+    } /* screen sizes <= 616px */
   }
 
   .headline {
