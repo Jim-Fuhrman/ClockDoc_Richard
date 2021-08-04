@@ -33,7 +33,11 @@
 
   @include respondDesktop(atMedium) {
     margin-top: 0.125rem;
-  } /* screen sizes <= 616px */
+  } /* screen sizes <= 767px */
+
+  @include respondDesktop(atSmall) {
+    margin-top: 5rem;
+  } /* screen sizes <= 767px */
 
   a {
     color: antiquewhite;
@@ -66,6 +70,10 @@
     @include respondDesktop(atMediumSmall) {
       font-size: 1.75rem;
     }
+
+    @include respondDesktop(atSmall) {
+      font-size: 2.25rem;
+    }
   }
 
   &__business-hours {
@@ -82,6 +90,10 @@
       width: 50%;
       padding-left: 5rem;
     } /* screen sizes <= 616px */
+
+    @include respondDesktop(atSmall) {
+      width: 55%;
+    }
   }
 
   &__name-addr-csz {
@@ -97,6 +109,11 @@
       display: block;
       width: 40%;
     } /* screen sizes <= 616px */
+
+    @include respondDesktop(atSmall) {
+      display: block;
+      width: 45%;
+    } /* screen sizes <= 530px */
   }
 
   &__iframe {
