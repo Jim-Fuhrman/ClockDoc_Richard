@@ -41,6 +41,7 @@ html {
   /* in ClockDoc-CortlandNE this font size will not work. In clockdoc-Richard this font size does indeed work. */
   /* 355px/16 = 22.1875em*/
   /* 400px/16 = 25em */
+  /* 371px/16 = 25em */
   /* 530px/16 = 33.125em*/
   /* 616px/16 = 38.5em */
   /* 767px/16 = 47.9375em */
@@ -51,6 +52,7 @@ html {
   /* 1860px/16 = 116.25em   */
   /* 355px/16 = 22.1875em*/
   /* 400px/16 = 25em */
+  /* 371px/16 = 25em */
   /* 530px/16 = 33.125em*/
   /* 616px/16 = 38.5em */
   /* 767px/16 = 47.9375em */
@@ -61,6 +63,7 @@ html {
   /* 1860px/16 = 116.25em   */
   /* 355px/16 = 22.1875em*/
   /* 400px/16 = 25em */
+  /* 371px/16 = 25em */
   /* 530px/16 = 33.125em*/
   /* 616px/16 = 38.5em */
   /* 767px/16 = 47.9375em */
@@ -71,6 +74,7 @@ html {
   /* 1860px/16 = 116.25em   */
   /* 355px/16 = 22.1875em*/
   /* 400px/16 = 25em */
+  /* 371px/16 = 25em */
   /* 530px/16 = 33.125em*/
   /* 616px/16 = 38.5em */
   /* 767px/16 = 47.9375em */
@@ -81,6 +85,7 @@ html {
   /* 1860px/16 = 116.25em   */
   /* 355px/16 = 22.1875em*/
   /* 400px/16 = 25em */
+  /* 371px/16 = 25em */
   /* 530px/16 = 33.125em*/
   /* 616px/16 = 38.5em */
   /* 767px/16 = 47.9375em */
@@ -91,6 +96,7 @@ html {
   /* 1860px/16 = 116.25em   */
   /* 355px/16 = 22.1875em*/
   /* 400px/16 = 25em */
+  /* 371px/16 = 25em */
   /* 530px/16 = 33.125em*/
   /* 616px/16 = 38.5em */
   /* 767px/16 = 47.9375em */
@@ -397,6 +403,7 @@ p {
   padding-top: 0.2rem;
   /* 355px/16 = 22.1875em*/
   /* 400px/16 = 25em */
+  /* 371px/16 = 25em */
   /* 530px/16 = 33.125em*/
   /* 616px/16 = 38.5em */
   /* 767px/16 = 47.9375em */
@@ -424,6 +431,7 @@ p {
   list-style: none;
   /* 355px/16 = 22.1875em*/
   /* 400px/16 = 25em */
+  /* 371px/16 = 25em */
   /* 530px/16 = 33.125em*/
   /* 616px/16 = 38.5em */
   /* 767px/16 = 47.9375em */
@@ -445,6 +453,7 @@ p {
   font-weight: 300;
   /* 355px/16 = 22.1875em*/
   /* 400px/16 = 25em */
+  /* 371px/16 = 25em */
   /* 530px/16 = 33.125em*/
   /* 616px/16 = 38.5em */
   /* 767px/16 = 47.9375em */
@@ -614,6 +623,41 @@ name nav-container here and using .container in utilities.scss, but it still pro
   width: 100vw;
   /* 355px/16 = 22.1875em*/
   /* 400px/16 = 25em */
+  /* 371px/16 = 25em */
+  /* 530px/16 = 33.125em*/
+  /* 616px/16 = 38.5em */
+  /* 767px/16 = 47.9375em */
+  /* 800px/16 = 50em */
+  /* 1000px/16 = 62.5em*/
+  /* 1200px/16 = 75em*/
+  /* 1500px/16 = 93.75em*/
+  /* 1860px/16 = 116.25em   */
+  /* 355px/16 = 22.1875em*/
+  /* 400px/16 = 25em */
+  /* 371px/16 = 25em */
+  /* 530px/16 = 33.125em*/
+  /* 616px/16 = 38.5em */
+  /* 767px/16 = 47.9375em */
+  /* 800px/16 = 50em */
+  /* 1000px/16 = 62.5em*/
+  /* 1200px/16 = 75em*/
+  /* 1500px/16 = 93.75em*/
+  /* 1860px/16 = 116.25em   */
+  /* 355px/16 = 22.1875em*/
+  /* 400px/16 = 25em */
+  /* 371px/16 = 25em */
+  /* 530px/16 = 33.125em*/
+  /* 616px/16 = 38.5em */
+  /* 767px/16 = 47.9375em */
+  /* 800px/16 = 50em */
+  /* 1000px/16 = 62.5em*/
+  /* 1200px/16 = 75em*/
+  /* 1500px/16 = 93.75em*/
+  /* 1860px/16 = 116.25em   */
+  /* 240px/16 = 15em */
+  /* 355px/16 = 22.1875em*/
+  /* 400px/16 = 25em */
+  /* 371px/16 = 25em */
   /* 530px/16 = 33.125em*/
   /* 616px/16 = 38.5em */
   /* 767px/16 = 47.9375em */
@@ -625,28 +669,78 @@ name nav-container here and using .container in utilities.scss, but it still pro
   @media only screen and (max-width: 33.125em) {
     .contactInfo__bkgd {
       height: 60vh; } }
-
-.contactInfo-color {
-  background-size: cover;
-  /* I tried coding the linear-gradient in the contactInfo_bkgd class, but didn't get the desired results. This was the only way to get the desired results. */
-  background-image: linear-gradient(rgba(141, 43, 37, 0.7), rgba(141, 43, 37, 0.7));
-  height: 50vh;
-  width: 100vw;
-  position: absolute;
-  z-index: 3;
-  /* 355px/16 = 22.1875em*/
-  /* 400px/16 = 25em */
-  /* 530px/16 = 33.125em*/
-  /* 616px/16 = 38.5em */
-  /* 767px/16 = 47.9375em */
-  /* 800px/16 = 50em */
-  /* 1000px/16 = 62.5em*/
-  /* 1200px/16 = 75em*/
-  /* 1500px/16 = 93.75em*/
-  /* 1860px/16 = 116.25em   */ }
-  @media only screen and (max-width: 33.125em) {
-    .contactInfo-color {
-      height: 60vh; } }
+  @media only screen and (max-width: 25em) {
+    .contactInfo__bkgd {
+      height: 70vh; } }
+  @media only screen and (max-width: 23.1875em) {
+    .contactInfo__bkgd {
+      height: 75vh; } }
+  @media only screen and (max-width: 15em) {
+    .contactInfo__bkgd {
+      height: 120vh; } }
+  .contactInfo__bkgd--color {
+    background-size: cover;
+    height: 50vh;
+    width: 100vw;
+    background-image: linear-gradient(rgba(141, 43, 37, 0.7), rgba(141, 43, 37, 0.7));
+    position: absolute;
+    /* 355px/16 = 22.1875em*/
+    /* 400px/16 = 25em */
+    /* 371px/16 = 25em */
+    /* 530px/16 = 33.125em*/
+    /* 616px/16 = 38.5em */
+    /* 767px/16 = 47.9375em */
+    /* 800px/16 = 50em */
+    /* 1000px/16 = 62.5em*/
+    /* 1200px/16 = 75em*/
+    /* 1500px/16 = 93.75em*/
+    /* 1860px/16 = 116.25em   */
+    /* 355px/16 = 22.1875em*/
+    /* 400px/16 = 25em */
+    /* 371px/16 = 25em */
+    /* 530px/16 = 33.125em*/
+    /* 616px/16 = 38.5em */
+    /* 767px/16 = 47.9375em */
+    /* 800px/16 = 50em */
+    /* 1000px/16 = 62.5em*/
+    /* 1200px/16 = 75em*/
+    /* 1500px/16 = 93.75em*/
+    /* 1860px/16 = 116.25em   */
+    /* 355px/16 = 22.1875em*/
+    /* 400px/16 = 25em */
+    /* 371px/16 = 25em */
+    /* 530px/16 = 33.125em*/
+    /* 616px/16 = 38.5em */
+    /* 767px/16 = 47.9375em */
+    /* 800px/16 = 50em */
+    /* 1000px/16 = 62.5em*/
+    /* 1200px/16 = 75em*/
+    /* 1500px/16 = 93.75em*/
+    /* 1860px/16 = 116.25em   */
+    /* 240px/16 = 15em */
+    /* 355px/16 = 22.1875em*/
+    /* 400px/16 = 25em */
+    /* 371px/16 = 25em */
+    /* 530px/16 = 33.125em*/
+    /* 616px/16 = 38.5em */
+    /* 767px/16 = 47.9375em */
+    /* 800px/16 = 50em */
+    /* 1000px/16 = 62.5em*/
+    /* 1200px/16 = 75em*/
+    /* 1500px/16 = 93.75em*/
+    /* 1860px/16 = 116.25em   */ }
+    @media only screen and (max-width: 33.125em) {
+      .contactInfo__bkgd--color {
+        height: 60vh; } }
+    @media only screen and (max-width: 25em) {
+      .contactInfo__bkgd--color {
+        height: 70vh; } }
+    @media only screen and (max-width: 23.1875em) {
+      .contactInfo__bkgd--color {
+        height: 75vh; } }
+    @media only screen and (max-width: 15em) {
+      .contactInfo__bkgd--color {
+        height: 120vh; } }
 
 .contactInfo {
   top: 0;
@@ -658,6 +752,7 @@ name nav-container here and using .container in utilities.scss, but it still pro
   margin-top: 9rem;
   /* 355px/16 = 22.1875em*/
   /* 400px/16 = 25em */
+  /* 371px/16 = 25em */
   /* 530px/16 = 33.125em*/
   /* 616px/16 = 38.5em */
   /* 767px/16 = 47.9375em */
@@ -669,6 +764,7 @@ name nav-container here and using .container in utilities.scss, but it still pro
   /* screen sizes <= 767px */
   /* 355px/16 = 22.1875em*/
   /* 400px/16 = 25em */
+  /* 371px/16 = 25em */
   /* 530px/16 = 33.125em*/
   /* 616px/16 = 38.5em */
   /* 767px/16 = 47.9375em */
@@ -692,6 +788,7 @@ name nav-container here and using .container in utilities.scss, but it still pro
     margin-bottom: 3rem;
     /* 355px/16 = 22.1875em*/
     /* 400px/16 = 25em */
+    /* 371px/16 = 25em */
     /* 530px/16 = 33.125em*/
     /* 616px/16 = 38.5em */
     /* 767px/16 = 47.9375em */
@@ -709,6 +806,7 @@ name nav-container here and using .container in utilities.scss, but it still pro
     margin-top: 1rem;
     /* 355px/16 = 22.1875em*/
     /* 400px/16 = 25em */
+    /* 371px/16 = 25em */
     /* 530px/16 = 33.125em*/
     /* 616px/16 = 38.5em */
     /* 767px/16 = 47.9375em */
@@ -720,6 +818,7 @@ name nav-container here and using .container in utilities.scss, but it still pro
     /* screen size <= 1200px*/
     /* 355px/16 = 22.1875em*/
     /* 400px/16 = 25em */
+    /* 371px/16 = 25em */
     /* 530px/16 = 33.125em*/
     /* 616px/16 = 38.5em */
     /* 767px/16 = 47.9375em */
@@ -731,6 +830,7 @@ name nav-container here and using .container in utilities.scss, but it still pro
     /* screen size <= 800px*/
     /* 355px/16 = 22.1875em*/
     /* 400px/16 = 25em */
+    /* 371px/16 = 25em */
     /* 530px/16 = 33.125em*/
     /* 616px/16 = 38.5em */
     /* 767px/16 = 47.9375em */
@@ -742,6 +842,7 @@ name nav-container here and using .container in utilities.scss, but it still pro
     /* screen size <= 767px*/
     /* 355px/16 = 22.1875em*/
     /* 400px/16 = 25em */
+    /* 371px/16 = 25em */
     /* 530px/16 = 33.125em*/
     /* 616px/16 = 38.5em */
     /* 767px/16 = 47.9375em */
@@ -752,6 +853,40 @@ name nav-container here and using .container in utilities.scss, but it still pro
     /* 1860px/16 = 116.25em   */
     /* 355px/16 = 22.1875em*/
     /* 400px/16 = 25em */
+    /* 371px/16 = 25em */
+    /* 530px/16 = 33.125em*/
+    /* 616px/16 = 38.5em */
+    /* 767px/16 = 47.9375em */
+    /* 800px/16 = 50em */
+    /* 1000px/16 = 62.5em*/
+    /* 1200px/16 = 75em*/
+    /* 1500px/16 = 93.75em*/
+    /* 1860px/16 = 116.25em   */
+    /* 355px/16 = 22.1875em*/
+    /* 400px/16 = 25em */
+    /* 371px/16 = 25em */
+    /* 530px/16 = 33.125em*/
+    /* 616px/16 = 38.5em */
+    /* 767px/16 = 47.9375em */
+    /* 800px/16 = 50em */
+    /* 1000px/16 = 62.5em*/
+    /* 1200px/16 = 75em*/
+    /* 1500px/16 = 93.75em*/
+    /* 1860px/16 = 116.25em   */
+    /* 355px/16 = 22.1875em*/
+    /* 400px/16 = 25em */
+    /* 371px/16 = 25em */
+    /* 530px/16 = 33.125em*/
+    /* 616px/16 = 38.5em */
+    /* 767px/16 = 47.9375em */
+    /* 800px/16 = 50em */
+    /* 1000px/16 = 62.5em*/
+    /* 1200px/16 = 75em*/
+    /* 1500px/16 = 93.75em*/
+    /* 1860px/16 = 116.25em   */
+    /* 355px/16 = 22.1875em*/
+    /* 400px/16 = 25em */
+    /* 371px/16 = 25em */
     /* 530px/16 = 33.125em*/
     /* 616px/16 = 38.5em */
     /* 767px/16 = 47.9375em */
@@ -776,13 +911,23 @@ name nav-container here and using .container in utilities.scss, but it still pro
         font-size: 1.75rem; } }
     @media only screen and (max-width: 33.125em) {
       .contactInfo p {
+        font-size: 2rem; } }
+    @media only screen and (max-width: 25em) {
+      .contactInfo p {
         font-size: 2.5rem; } }
+    @media only screen and (max-width: 23.1875em) {
+      .contactInfo p {
+        font-size: 2.25rem; } }
+    @media only screen and (max-width: 22.1875em) {
+      .contactInfo p {
+        font-size: 3rem; } }
   .contactInfo__business-hours {
     padding: 1rem;
     width: 40%;
     float: left;
     /* 355px/16 = 22.1875em*/
     /* 400px/16 = 25em */
+    /* 371px/16 = 25em */
     /* 530px/16 = 33.125em*/
     /* 616px/16 = 38.5em */
     /* 767px/16 = 47.9375em */
@@ -794,6 +939,7 @@ name nav-container here and using .container in utilities.scss, but it still pro
     /* screen size <= 800px*/
     /* 355px/16 = 22.1875em*/
     /* 400px/16 = 25em */
+    /* 371px/16 = 25em */
     /* 530px/16 = 33.125em*/
     /* 616px/16 = 38.5em */
     /* 767px/16 = 47.9375em */
@@ -805,6 +951,30 @@ name nav-container here and using .container in utilities.scss, but it still pro
     /* screen sizes <= 616px */
     /* 355px/16 = 22.1875em*/
     /* 400px/16 = 25em */
+    /* 371px/16 = 25em */
+    /* 530px/16 = 33.125em*/
+    /* 616px/16 = 38.5em */
+    /* 767px/16 = 47.9375em */
+    /* 800px/16 = 50em */
+    /* 1000px/16 = 62.5em*/
+    /* 1200px/16 = 75em*/
+    /* 1500px/16 = 93.75em*/
+    /* 1860px/16 = 116.25em   */
+    /* 355px/16 = 22.1875em*/
+    /* 400px/16 = 25em */
+    /* 371px/16 = 25em */
+    /* 530px/16 = 33.125em*/
+    /* 616px/16 = 38.5em */
+    /* 767px/16 = 47.9375em */
+    /* 800px/16 = 50em */
+    /* 1000px/16 = 62.5em*/
+    /* 1200px/16 = 75em*/
+    /* 1500px/16 = 93.75em*/
+    /* 1860px/16 = 116.25em   */
+    /* 240px/16 = 15em */
+    /* 355px/16 = 22.1875em*/
+    /* 400px/16 = 25em */
+    /* 371px/16 = 25em */
     /* 530px/16 = 33.125em*/
     /* 616px/16 = 38.5em */
     /* 767px/16 = 47.9375em */
@@ -815,7 +985,7 @@ name nav-container here and using .container in utilities.scss, but it still pro
     /* 1860px/16 = 116.25em   */ }
     @media only screen and (max-width: 50em) {
       .contactInfo__business-hours {
-        width: 35%; } }
+        wstdth: 35%; } }
     @media only screen and (max-width: 38.5em) {
       .contactInfo__business-hours {
         display: inline-block;
@@ -826,12 +996,19 @@ name nav-container here and using .container in utilities.scss, but it still pro
         display: block;
         width: 85%;
         padding-left: 20rem; } }
+    @media only screen and (max-width: 22.1875em) {
+      .contactInfo__business-hours {
+        padding-left: 7.5rem; } }
+    @media only screen and (max-width: 15em) {
+      .contactInfo__business-hours {
+        padding-left: 2rem; } }
   .contactInfo__name-addr-csz {
     padding: 1rem;
     width: 40%;
     float: left;
     /* 355px/16 = 22.1875em*/
     /* 400px/16 = 25em */
+    /* 371px/16 = 25em */
     /* 530px/16 = 33.125em*/
     /* 616px/16 = 38.5em */
     /* 767px/16 = 47.9375em */
@@ -843,6 +1020,7 @@ name nav-container here and using .container in utilities.scss, but it still pro
     /* screen size <= 800px*/
     /* 355px/16 = 22.1875em*/
     /* 400px/16 = 25em */
+    /* 371px/16 = 25em */
     /* 530px/16 = 33.125em*/
     /* 616px/16 = 38.5em */
     /* 767px/16 = 47.9375em */
@@ -854,6 +1032,7 @@ name nav-container here and using .container in utilities.scss, but it still pro
     /* screen sizes <= 616px */
     /* 355px/16 = 22.1875em*/
     /* 400px/16 = 25em */
+    /* 371px/16 = 25em */
     /* 530px/16 = 33.125em*/
     /* 616px/16 = 38.5em */
     /* 767px/16 = 47.9375em */
@@ -862,7 +1041,30 @@ name nav-container here and using .container in utilities.scss, but it still pro
     /* 1200px/16 = 75em*/
     /* 1500px/16 = 93.75em*/
     /* 1860px/16 = 116.25em   */
-    /* screen sizes <= 530px */ }
+    /* screen sizes <= 530px */
+    /* 355px/16 = 22.1875em*/
+    /* 400px/16 = 25em */
+    /* 371px/16 = 25em */
+    /* 530px/16 = 33.125em*/
+    /* 616px/16 = 38.5em */
+    /* 767px/16 = 47.9375em */
+    /* 800px/16 = 50em */
+    /* 1000px/16 = 62.5em*/
+    /* 1200px/16 = 75em*/
+    /* 1500px/16 = 93.75em*/
+    /* 1860px/16 = 116.25em   */
+    /* 240px/16 = 15em */
+    /* 355px/16 = 22.1875em*/
+    /* 400px/16 = 25em */
+    /* 371px/16 = 25em */
+    /* 530px/16 = 33.125em*/
+    /* 616px/16 = 38.5em */
+    /* 767px/16 = 47.9375em */
+    /* 800px/16 = 50em */
+    /* 1000px/16 = 62.5em*/
+    /* 1200px/16 = 75em*/
+    /* 1500px/16 = 93.75em*/
+    /* 1860px/16 = 116.25em   */ }
     @media only screen and (max-width: 50em) {
       .contactInfo__name-addr-csz {
         width: 35%; } }
@@ -875,12 +1077,19 @@ name nav-container here and using .container in utilities.scss, but it still pro
         display: block;
         width: 75%;
         padding-left: 20rem; } }
+    @media only screen and (max-width: 22.1875em) {
+      .contactInfo__name-addr-csz {
+        padding-left: 7.5rem; } }
+    @media only screen and (max-width: 15em) {
+      .contactInfo__name-addr-csz {
+        padding-left: 2rem; } }
   .contactInfo__iframe {
     padding: 1rem;
     width: 20%;
     float: right;
     /* 355px/16 = 22.1875em*/
     /* 400px/16 = 25em */
+    /* 371px/16 = 25em */
     /* 530px/16 = 33.125em*/
     /* 616px/16 = 38.5em */
     /* 767px/16 = 47.9375em */
@@ -892,6 +1101,7 @@ name nav-container here and using .container in utilities.scss, but it still pro
     /* screen size <= 800px*/
     /* 355px/16 = 22.1875em*/
     /* 400px/16 = 25em */
+    /* 371px/16 = 25em */
     /* 530px/16 = 33.125em*/
     /* 616px/16 = 38.5em */
     /* 767px/16 = 47.9375em */
@@ -903,6 +1113,7 @@ name nav-container here and using .container in utilities.scss, but it still pro
     /* screen sizes <= 616px */
     /* 355px/16 = 22.1875em*/
     /* 400px/16 = 25em */
+    /* 371px/16 = 25em */
     /* 530px/16 = 33.125em*/
     /* 616px/16 = 38.5em */
     /* 767px/16 = 47.9375em */
@@ -911,7 +1122,30 @@ name nav-container here and using .container in utilities.scss, but it still pro
     /* 1200px/16 = 75em*/
     /* 1500px/16 = 93.75em*/
     /* 1860px/16 = 116.25em   */
-    /* screen sizes <= 530px */ }
+    /* screen sizes <= 530px */
+    /* 355px/16 = 22.1875em*/
+    /* 400px/16 = 25em */
+    /* 371px/16 = 25em */
+    /* 530px/16 = 33.125em*/
+    /* 616px/16 = 38.5em */
+    /* 767px/16 = 47.9375em */
+    /* 800px/16 = 50em */
+    /* 1000px/16 = 62.5em*/
+    /* 1200px/16 = 75em*/
+    /* 1500px/16 = 93.75em*/
+    /* 1860px/16 = 116.25em   */
+    /* 240px/16 = 15em */
+    /* 355px/16 = 22.1875em*/
+    /* 400px/16 = 25em */
+    /* 371px/16 = 25em */
+    /* 530px/16 = 33.125em*/
+    /* 616px/16 = 38.5em */
+    /* 767px/16 = 47.9375em */
+    /* 800px/16 = 50em */
+    /* 1000px/16 = 62.5em*/
+    /* 1200px/16 = 75em*/
+    /* 1500px/16 = 93.75em*/
+    /* 1860px/16 = 116.25em   */ }
     @media only screen and (max-width: 50em) {
       .contactInfo__iframe {
         width: 30%; } }
@@ -926,6 +1160,12 @@ name nav-container here and using .container in utilities.scss, but it still pro
         display: block;
         width: 100%;
         padding-left: 20rem; } }
+    @media only screen and (max-width: 22.1875em) {
+      .contactInfo__iframe {
+        padding-left: 7.5rem; } }
+    @media only screen and (max-width: 15em) {
+      .contactInfo__iframe {
+        padding-left: 2rem; } }
   .contactInfo .headline {
     color: #666;
     margin-bottom: 0.33rem; }
@@ -994,6 +1234,7 @@ name nav-container here and using .container in utilities.scss, but it still pro
     margin-bottom: 1.9rem;
     /* 355px/16 = 22.1875em*/
     /* 400px/16 = 25em */
+    /* 371px/16 = 25em */
     /* 530px/16 = 33.125em*/
     /* 616px/16 = 38.5em */
     /* 767px/16 = 47.9375em */
@@ -1100,6 +1341,7 @@ name nav-container here and using .container in utilities.scss, but it still pro
               animation-timing-function: ease-out;
       /* 355px/16 = 22.1875em*/
       /* 400px/16 = 25em */
+      /* 371px/16 = 25em */
       /* 530px/16 = 33.125em*/
       /* 616px/16 = 38.5em */
       /* 767px/16 = 47.9375em */
@@ -1127,6 +1369,7 @@ name nav-container here and using .container in utilities.scss, but it still pro
               animation-timing-function: ease-out;
       /* 355px/16 = 22.1875em*/
       /* 400px/16 = 25em */
+      /* 371px/16 = 25em */
       /* 530px/16 = 33.125em*/
       /* 616px/16 = 38.5em */
       /* 767px/16 = 47.9375em */
@@ -1139,6 +1382,7 @@ name nav-container here and using .container in utilities.scss, but it still pro
       /* 240px/16 = 15em */
       /* 355px/16 = 22.1875em*/
       /* 400px/16 = 25em */
+      /* 371px/16 = 25em */
       /* 530px/16 = 33.125em*/
       /* 616px/16 = 38.5em */
       /* 767px/16 = 47.9375em */
@@ -1162,6 +1406,7 @@ name nav-container here and using .container in utilities.scss, but it still pro
     border: none;
     /* 355px/16 = 22.1875em*/
     /* 400px/16 = 25em */
+    /* 371px/16 = 25em */
     /* 530px/16 = 33.125em*/
     /* 616px/16 = 38.5em */
     /* 767px/16 = 47.9375em */
@@ -1172,6 +1417,7 @@ name nav-container here and using .container in utilities.scss, but it still pro
     /* 1860px/16 = 116.25em   */
     /* 355px/16 = 22.1875em*/
     /* 400px/16 = 25em */
+    /* 371px/16 = 25em */
     /* 530px/16 = 33.125em*/
     /* 616px/16 = 38.5em */
     /* 767px/16 = 47.9375em */
@@ -1182,6 +1428,7 @@ name nav-container here and using .container in utilities.scss, but it still pro
     /* 1860px/16 = 116.25em   */
     /* 355px/16 = 22.1875em*/
     /* 400px/16 = 25em */
+    /* 371px/16 = 25em */
     /* 530px/16 = 33.125em*/
     /* 616px/16 = 38.5em */
     /* 767px/16 = 47.9375em */
@@ -1192,6 +1439,7 @@ name nav-container here and using .container in utilities.scss, but it still pro
     /* 1860px/16 = 116.25em   */
     /* 355px/16 = 22.1875em*/
     /* 400px/16 = 25em */
+    /* 371px/16 = 25em */
     /* 530px/16 = 33.125em*/
     /* 616px/16 = 38.5em */
     /* 767px/16 = 47.9375em */
@@ -1270,6 +1518,7 @@ name nav-container here and using .container in utilities.scss, but it still pro
     /* 50% of the height and width of the &__headings element itself. */
     /* 355px/16 = 22.1875em*/
     /* 400px/16 = 25em */
+    /* 371px/16 = 25em */
     /* 530px/16 = 33.125em*/
     /* 616px/16 = 38.5em */
     /* 767px/16 = 47.9375em */
@@ -1280,6 +1529,7 @@ name nav-container here and using .container in utilities.scss, but it still pro
     /* 1860px/16 = 116.25em   */
     /* 355px/16 = 22.1875em*/
     /* 400px/16 = 25em */
+    /* 371px/16 = 25em */
     /* 530px/16 = 33.125em*/
     /* 616px/16 = 38.5em */
     /* 767px/16 = 47.9375em */
@@ -1290,6 +1540,7 @@ name nav-container here and using .container in utilities.scss, but it still pro
     /* 1860px/16 = 116.25em   */
     /* 355px/16 = 22.1875em*/
     /* 400px/16 = 25em */
+    /* 371px/16 = 25em */
     /* 530px/16 = 33.125em*/
     /* 616px/16 = 38.5em */
     /* 767px/16 = 47.9375em */
@@ -1300,6 +1551,7 @@ name nav-container here and using .container in utilities.scss, but it still pro
     /* 1860px/16 = 116.25em   */
     /* 355px/16 = 22.1875em*/
     /* 400px/16 = 25em */
+    /* 371px/16 = 25em */
     /* 530px/16 = 33.125em*/
     /* 616px/16 = 38.5em */
     /* 767px/16 = 47.9375em */
@@ -1310,6 +1562,7 @@ name nav-container here and using .container in utilities.scss, but it still pro
     /* 1860px/16 = 116.25em   */
     /* 355px/16 = 22.1875em*/
     /* 400px/16 = 25em */
+    /* 371px/16 = 25em */
     /* 530px/16 = 33.125em*/
     /* 616px/16 = 38.5em */
     /* 767px/16 = 47.9375em */
@@ -1320,6 +1573,7 @@ name nav-container here and using .container in utilities.scss, but it still pro
     /* 1860px/16 = 116.25em   */
     /* 355px/16 = 22.1875em*/
     /* 400px/16 = 25em */
+    /* 371px/16 = 25em */
     /* 530px/16 = 33.125em*/
     /* 616px/16 = 38.5em */
     /* 767px/16 = 47.9375em */
@@ -1331,6 +1585,7 @@ name nav-container here and using .container in utilities.scss, but it still pro
     /* 240px/16 = 15em */
     /* 355px/16 = 22.1875em*/
     /* 400px/16 = 25em */
+    /* 371px/16 = 25em */
     /* 530px/16 = 33.125em*/
     /* 616px/16 = 38.5em */
     /* 767px/16 = 47.9375em */
@@ -1489,6 +1744,7 @@ name nav-container here and using .container in utilities.scss, but it still pro
   position: relative;
   /* 355px/16 = 22.1875em*/
   /* 400px/16 = 25em */
+  /* 371px/16 = 25em */
   /* 530px/16 = 33.125em*/
   /* 616px/16 = 38.5em */
   /* 767px/16 = 47.9375em */
@@ -1512,6 +1768,7 @@ name nav-container here and using .container in utilities.scss, but it still pro
     color: #fff;
     /* 355px/16 = 22.1875em*/
     /* 400px/16 = 25em */
+    /* 371px/16 = 25em */
     /* 530px/16 = 33.125em*/
     /* 616px/16 = 38.5em */
     /* 767px/16 = 47.9375em */
@@ -1522,6 +1779,7 @@ name nav-container here and using .container in utilities.scss, but it still pro
     /* 1860px/16 = 116.25em   */
     /* 355px/16 = 22.1875em*/
     /* 400px/16 = 25em */
+    /* 371px/16 = 25em */
     /* 530px/16 = 33.125em*/
     /* 616px/16 = 38.5em */
     /* 767px/16 = 47.9375em */
@@ -1554,6 +1812,7 @@ name nav-container here and using .container in utilities.scss, but it still pro
     color: #ededed;
     /* 355px/16 = 22.1875em*/
     /* 400px/16 = 25em */
+    /* 371px/16 = 25em */
     /* 530px/16 = 33.125em*/
     /* 616px/16 = 38.5em */
     /* 767px/16 = 47.9375em */
@@ -1573,6 +1832,7 @@ name nav-container here and using .container in utilities.scss, but it still pro
   padding-bottom: 1.6rem;
   /* 355px/16 = 22.1875em*/
   /* 400px/16 = 25em */
+  /* 371px/16 = 25em */
   /* 530px/16 = 33.125em*/
   /* 616px/16 = 38.5em */
   /* 767px/16 = 47.9375em */
@@ -1978,6 +2238,7 @@ name nav-container here and using .container in utilities.scss, but it still pro
         opacity: 1;
         /* 355px/16 = 22.1875em*/
         /* 400px/16 = 25em */
+        /* 371px/16 = 25em */
         /* 530px/16 = 33.125em*/
         /* 616px/16 = 38.5em */
         /* 767px/16 = 47.9375em */
@@ -2026,6 +2287,7 @@ name nav-container here and using .container in utilities.scss, but it still pro
       font-size: 2rem;
       /* 355px/16 = 22.1875em*/
       /* 400px/16 = 25em */
+      /* 371px/16 = 25em */
       /* 530px/16 = 33.125em*/
       /* 616px/16 = 38.5em */
       /* 767px/16 = 47.9375em */
@@ -2036,6 +2298,7 @@ name nav-container here and using .container in utilities.scss, but it still pro
       /* 1860px/16 = 116.25em   */
       /* 355px/16 = 22.1875em*/
       /* 400px/16 = 25em */
+      /* 371px/16 = 25em */
       /* 530px/16 = 33.125em*/
       /* 616px/16 = 38.5em */
       /* 767px/16 = 47.9375em */
@@ -2046,6 +2309,7 @@ name nav-container here and using .container in utilities.scss, but it still pro
       /* 1860px/16 = 116.25em   */
       /* 355px/16 = 22.1875em*/
       /* 400px/16 = 25em */
+      /* 371px/16 = 25em */
       /* 530px/16 = 33.125em*/
       /* 616px/16 = 38.5em */
       /* 767px/16 = 47.9375em */
@@ -2056,6 +2320,7 @@ name nav-container here and using .container in utilities.scss, but it still pro
       /* 1860px/16 = 116.25em   */
       /* 355px/16 = 22.1875em*/
       /* 400px/16 = 25em */
+      /* 371px/16 = 25em */
       /* 530px/16 = 33.125em*/
       /* 616px/16 = 38.5em */
       /* 767px/16 = 47.9375em */
@@ -2066,6 +2331,7 @@ name nav-container here and using .container in utilities.scss, but it still pro
       /* 1860px/16 = 116.25em   */
       /* 355px/16 = 22.1875em*/
       /* 400px/16 = 25em */
+      /* 371px/16 = 25em */
       /* 530px/16 = 33.125em*/
       /* 616px/16 = 38.5em */
       /* 767px/16 = 47.9375em */
@@ -2113,6 +2379,7 @@ name nav-container here and using .container in utilities.scss, but it still pro
     right: 50%;
     /* 355px/16 = 22.1875em*/
     /* 400px/16 = 25em */
+    /* 371px/16 = 25em */
     /* 530px/16 = 33.125em*/
     /* 616px/16 = 38.5em */
     /* 767px/16 = 47.9375em */
@@ -2124,6 +2391,7 @@ name nav-container here and using .container in utilities.scss, but it still pro
     /* 240px/16 = 15em */
     /* 355px/16 = 22.1875em*/
     /* 400px/16 = 25em */
+    /* 371px/16 = 25em */
     /* 530px/16 = 33.125em*/
     /* 616px/16 = 38.5em */
     /* 767px/16 = 47.9375em */
@@ -2211,6 +2479,7 @@ name nav-container here and using .container in utilities.scss, but it still pro
       background-color: #000;
       /* 355px/16 = 22.1875em*/
       /* 400px/16 = 25em */
+      /* 371px/16 = 25em */
       /* 530px/16 = 33.125em*/
       /* 616px/16 = 38.5em */
       /* 767px/16 = 47.9375em */
@@ -2223,6 +2492,7 @@ name nav-container here and using .container in utilities.scss, but it still pro
       /* 240px/16 = 15em */
       /* 355px/16 = 22.1875em*/
       /* 400px/16 = 25em */
+      /* 371px/16 = 25em */
       /* 530px/16 = 33.125em*/
       /* 616px/16 = 38.5em */
       /* 767px/16 = 47.9375em */
@@ -2242,6 +2512,7 @@ name nav-container here and using .container in utilities.scss, but it still pro
         font-size: 1.5rem;
         /* 355px/16 = 22.1875em*/
         /* 400px/16 = 25em */
+        /* 371px/16 = 25em */
         /* 530px/16 = 33.125em*/
         /* 616px/16 = 38.5em */
         /* 767px/16 = 47.9375em */
@@ -2260,6 +2531,7 @@ name nav-container here and using .container in utilities.scss, but it still pro
       /*@media (min-width: 47.9375em) {*/
       /* 355px/16 = 22.1875em*/
       /* 400px/16 = 25em */
+      /* 371px/16 = 25em */
       /* 530px/16 = 33.125em*/
       /* 616px/16 = 38.5em */
       /* 767px/16 = 47.9375em */
@@ -2279,6 +2551,7 @@ name nav-container here and using .container in utilities.scss, but it still pro
       /*@media (min-width: 47.9375em) {*/
       /* 355px/16 = 22.1875em*/
       /* 400px/16 = 25em */
+      /* 371px/16 = 25em */
       /* 530px/16 = 33.125em*/
       /* 616px/16 = 38.5em */
       /* 767px/16 = 47.9375em */

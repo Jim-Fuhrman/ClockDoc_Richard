@@ -11,22 +11,37 @@
   @include respondDesktop(atSmall) {
     height: 60vh;
   }
-}
+  @include respondDesktop(at400) {
+    height: 70vh;
+  }
+  @include respondDesktop(at371) {
+    height: 75vh;
+  }
+  @include respondDesktop(atSmallest) {
+    height: 120vh;
+  }
 
-.contactInfo-color {
-  background-size: cover;
-  /* I tried coding the linear-gradient in the contactInfo_bkgd class, but didn't get the desired results. This was the only way to get the desired results. */
-  background-image: linear-gradient(
-    rgba(141, 43, 37, 0.7),
-    rgba(141, 43, 37, 0.7)
-  );
-  height: 50vh;
-  width: 100vw;
-  position: absolute;
-  z-index: 3;
-
-  @include respondDesktop(atSmall) {
-    height: 60vh;
+  &--color {
+    background-size: cover;
+    height: 50vh;
+    width: 100vw;
+    background-image: linear-gradient(
+      rgba(141, 43, 37, 0.7),
+      rgba(141, 43, 37, 0.7)
+    );
+    position: absolute;
+    @include respondDesktop(atSmall) {
+      height: 60vh;
+    }
+    @include respondDesktop(at400) {
+      height: 70vh;
+    }
+    @include respondDesktop(at371) {
+      height: 75vh;
+    }
+    @include respondDesktop(atSmallest) {
+      height: 120vh;
+    }
   }
 }
 
@@ -84,7 +99,18 @@
     }
 
     @include respondDesktop(atSmall) {
+      font-size: 2rem;
+    }
+
+    @include respondDesktop(at400) {
       font-size: 2.5rem;
+    }
+
+    @include respondDesktop(at371) {
+      font-size: 2.25rem;
+    }
+    @include respondDesktop(atSmaller) {
+      font-size: 3rem;
     }
   }
 
@@ -94,9 +120,8 @@
     float: left;
 
     @include respondDesktop(atMediumLarge) {
-      width: 35%;
+      wstdth: 35%;
     } /* screen size <= 800px*/
-
     @include respondDesktop(atMediumSmall) {
       display: inline-block;
       width: 50%;
@@ -107,6 +132,14 @@
       display: block;
       width: 85%;
       padding-left: 20rem;
+    }
+
+    @include respondDesktop(atSmaller) {
+      padding-left: 7.5rem;
+    }
+
+    @include respondDesktop(atSmallest) {
+      padding-left: 2rem;
     }
   }
 
@@ -129,6 +162,12 @@
       width: 75%;
       padding-left: 20rem;
     } /* screen sizes <= 530px */
+    @include respondDesktop(atSmaller) {
+      padding-left: 7.5rem;
+    }
+    @include respondDesktop(atSmallest) {
+      padding-left: 2rem;
+    }
   }
 
   &__iframe {
@@ -152,6 +191,12 @@
       width: 100%;
       padding-left: 20rem;
     } /* screen sizes <= 530px */
+    @include respondDesktop(atSmaller) {
+      padding-left: 7.5rem;
+    }
+    @include respondDesktop(atSmallest) {
+      padding-left: 2rem;
+    }
   }
 
   .headline {

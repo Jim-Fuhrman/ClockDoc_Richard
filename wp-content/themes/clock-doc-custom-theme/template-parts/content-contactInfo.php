@@ -4,7 +4,7 @@
         <!-- <div class="contactInfo__bkgd"> -->
         <div class="contactInfo__bkgd" 
         style="background-image: url(<?php echo get_theme_file_uri($bkgdWatch);?>">
-            <div class="contactInfo-color">
+            <div class="contactInfo__bkgd--color">
                 <div class="contactInfo container container--narrow">
                     <div class="group">
                         <div class="contactInfo__business-hours">
@@ -12,7 +12,7 @@
                             <p>Monday-Friday: 8:00 am to 5:00 pm</p>
                             <p>Saturday:  8:00 am to 12:00 pm</p>
                             <p>Sunday: Closed</p>
-                            <p><u><em><strong>Holiday hours could vary</strong></em></u></p>
+                            <p><u><em>Holiday hours could vary</em></u></p>
                         </div>
                         <div class="contactInfo__name-addr-csz">
                             <h2><u>Contact Information</u></h2>
