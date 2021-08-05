@@ -8,9 +8,13 @@
   height: 50vh;
   width: 100vw;
 
-  @include respondDesktop(atSmall) {
-    height: 60vh;
+  @include respondDesktop(atMedium) {
+    height: 105vh;
   }
+  @include respondDesktop(atMediumSmall) {
+    height: 70vh;
+  }
+
   @include respondDesktop(at400) {
     height: 70vh;
   }
@@ -18,7 +22,7 @@
     height: 75vh;
   }
   @include respondDesktop(atSmallest) {
-    height: 120vh;
+    height: 130vh;
   }
 
   &--color {
@@ -30,9 +34,14 @@
       rgba(141, 43, 37, 0.7)
     );
     position: absolute;
-    @include respondDesktop(atSmall) {
-      height: 60vh;
+
+    @include respondDesktop(atMedium) {
+      height: 105vh;
     }
+    @include respondDesktop(atMediumSmall) {
+      height: 70vh;
+    }
+
     @include respondDesktop(at400) {
       height: 70vh;
     }
@@ -40,7 +49,7 @@
       height: 75vh;
     }
     @include respondDesktop(atSmallest) {
-      height: 120vh;
+      height: 130vh;
     }
   }
 }
@@ -53,6 +62,13 @@
   color: antiquewhite;
   padding: 2rem 0 3.5rem 0;
   margin-top: 9rem;
+  font-size: 1em;
+  height: 100%;
+  width: 100%;
+
+  @include respondDesktop(atMediumLarge) {
+    padding-left: 3rem;
+  }
 
   @include respondDesktop(atMedium) {
     margin-top: 0.125rem;
@@ -60,7 +76,15 @@
 
   @include respondDesktop(atSmall) {
     margin-top: 2.5rem;
-  } /* screen sizes <= 767px */
+  } /* screen sizes <= 530px */
+
+  @include respondDesktop(atSmaller) {
+    padding-left: 3.5rem;
+  } /* screen sizes <= 320px */
+
+  @include respondDesktop(atSmallest) {
+    padding-left: 1rem;
+  } /* screen sizes <= 240px */
 
   a {
     color: antiquewhite;
@@ -68,38 +92,45 @@
   }
 
   h2 {
-    font-size: 2.4rem;
-    margin-bottom: 3rem;
+    font-size: 2.25em;
+    margin-bottom: 1em;
+
+    @include respondDesktop(atLarge) {
+      font-size: 3em;
+    } /* screen size <= 1200px*/
+
+    @include respondDesktop(atMediumSmall) {
+      font-size: 2.5em;
+    }
 
     @include respondDesktop(atSmall) {
-      font-size: 3rem;
+      font-size: 4rem;
     }
   }
   p {
-    font-size: 1.5rem;
+    font-size: 1.5em;
     line-height: 0.1em;
-    margin-top: 1rem;
 
     @include respondDesktop(atLarge) {
-      font-size: 2.25em;
-      line-height: 0.15em;
+      font-size: 2.5em;
     } /* screen size <= 1200px*/
 
-    @include respondDesktop(atMediumLarge) {
+    /*@include respondDesktop(atMediumLarge) {
       font-size: 1.75em;
-    } /* screen size <= 800px*/
+    }*/ /* screen size <= 800px*/
 
     @include respondDesktop(atMedium) {
-      font-size: 1.5em;
+      font-size: 2em;
       line-height: 0.125em;
     } /* screen size <= 767px*/
 
     @include respondDesktop(atMediumSmall) {
-      font-size: 1.75rem;
+      line-height: 0.001em;
+      font-size: 2em;
     }
 
     @include respondDesktop(atSmall) {
-      font-size: 2rem;
+      font-size: 3rem;
     }
 
     @include respondDesktop(at400) {
@@ -115,88 +146,84 @@
   }
 
   &__business-hours {
-    padding: 1rem;
-    width: 40%;
+    padding: 1em;
+    width: 35%;
     float: left;
 
-    @include respondDesktop(atMediumLarge) {
-      width: 35%;
-    } /* screen size <= 800px*/
-    @include respondDesktop(atMediumSmall) {
-      display: inline-block;
+    @include respondDesktop(atLarge) {
       width: 50%;
-      padding-left: 5rem;
+    }
+
+    /*@include respondDesktop(atLarge) {
+      display: inline-block;
+    }*/ /* screen size <= 1200px*/
+
+    /*@include respondDesktop(atLarge) {
+      width: 40%;
+    }*/ /* screen size <= 1200px*/
+
+    /*@include respondDesktop(atMediumLarge) {
+      width: 35%;
+    }*/ /* screen size <= 800px*/
+    @include respondDesktop(atMediumSmall) {
+      width: 100%;
+      padding-left: 10em;
     } /* screen sizes <= 616px */
 
-    @include respondDesktop(atSmall) {
-      display: block;
-      width: 85%;
-      padding-left: 20rem;
-    }
-
-    @include respondDesktop(atSmaller) {
-      padding-left: 7.5rem;
-    }
-
-    @include respondDesktop(atSmallest) {
-      padding-left: 2rem;
-    }
+    /*@include respondDesktop(atSmall) {
+      width: 100%;
+    }*/
   }
 
   &__name-addr-csz {
-    padding: 1rem;
-    width: 40%;
+    padding: 1em;
+    width: 35%;
     float: left;
 
-    @include respondDesktop(atMediumLarge) {
+    @include respondDesktop(atLarge) {
+      width: 50%;
+    }
+
+    /*@include respondDesktop(atLarge) {
+      display: inline-block;
+    }*/ /* screen size <= 1200px*/
+
+    /*@include respondDesktop(atMediumLarge) {
       width: 35%;
-    } /* screen size <= 800px*/
+    }*/ /* screen size <= 800px*/
 
     @include respondDesktop(atMediumSmall) {
-      display: block;
-      width: 40%;
+      width: 100%;
+      padding-left: 10em;
     } /* screen sizes <= 616px */
 
-    @include respondDesktop(atSmall) {
-      display: block;
-      width: 75%;
-      padding-left: 20rem;
-    } /* screen sizes <= 530px */
-    @include respondDesktop(atSmaller) {
-      padding-left: 7.5rem;
-    }
-    @include respondDesktop(atSmallest) {
-      padding-left: 2rem;
-    }
+    /*@include respondDesktop(atSmall) {
+      width: 100%;
+    }*/ /* screen sizes <= 530px */
   }
 
   &__iframe {
-    padding: 1rem;
-    width: 20%;
-    float: right;
+    padding: 1em;
+    width: 30%;
+    float: left;
 
-    @include respondDesktop(atMediumLarge) {
+    /* @include respondDesktop(atLarge) {
+      display: inline-block;
+    }*/ /* screen size <= 1200px*/
+
+    /*@include respondDesktop(atMediumLarge) {
       width: 30%;
-    } /* screen size <= 800px*/
+    }*/ /* screen size <= 800px*/
 
     @include respondDesktop(atMediumSmall) {
       width: 40%;
       margin: 0 auto;
-      float: left;
-      padding: 0 2rem 0 6rem;
+      padding-left: 10em;
     } /* screen sizes <= 616px */
 
-    @include respondDesktop(atSmall) {
-      display: block;
+    /*@include respondDesktop(atSmall) {
       width: 100%;
-      padding-left: 20rem;
-    } /* screen sizes <= 530px */
-    @include respondDesktop(atSmaller) {
-      padding-left: 7.5rem;
-    }
-    @include respondDesktop(atSmallest) {
-      padding-left: 2rem;
-    }
+    }*/ /* screen sizes <= 530px */
   }
 
   .headline {
