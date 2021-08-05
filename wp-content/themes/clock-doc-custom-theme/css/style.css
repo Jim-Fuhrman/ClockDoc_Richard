@@ -986,7 +986,7 @@ name nav-container here and using .container in utilities.scss, but it still pro
     /* 1860px/16 = 116.25em   */ }
     @media only screen and (max-width: 50em) {
       .contactInfo__business-hours {
-        wstdth: 35%; } }
+        width: 35%; } }
     @media only screen and (max-width: 38.5em) {
       .contactInfo__business-hours {
         display: inline-block;

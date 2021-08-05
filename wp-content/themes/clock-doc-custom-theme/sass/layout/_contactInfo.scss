@@ -120,7 +120,7 @@
     float: left;
 
     @include respondDesktop(atMediumLarge) {
-      wstdth: 35%;
+      width: 35%;
     } /* screen size <= 800px*/
     @include respondDesktop(atMediumSmall) {
       display: inline-block;
