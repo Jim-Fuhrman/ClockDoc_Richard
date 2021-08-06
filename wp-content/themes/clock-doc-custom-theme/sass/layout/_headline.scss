@@ -4,48 +4,54 @@
   font-weight: 300;
 
   &--large {
-    font-size: 3.6rem;
-    @mixin atSmall {
-      font-size: 6.25rem;
+    font-size: 3.6em;
+    @include respondDesktop(atSmall) {
+      font-size: 6.25em;
     }
   }
 
   &--large-medium {
-    font-size: 5rem;
-    margin: 0 0 1rem 0;
+    font-size: 5em;
+    margin: 0 0 1em 0;
   }
 
   &--medium {
-    font-size: 1.9rem;
-    margin-bottom: 0.75rem;
-    @mixin atSmall {
-      font-size: 3.125rem;
+    font-size: 1.9em;
+    margin-bottom: 0.75em;
+    @include respondDesktop(atLarge) {
+      font-size: 3.1em;
+    }
+    @include respondDesktop(atSmall) {
+      font-size: 3.5em;
+    }
+    @include respondDesktop(atSmaller) {
+      font-size: 4.5em;
     }
   }
 
   &--small-plus {
     font-family: "Roboto", sans-serif;
-    font-size: 1.6875rem;
+    font-size: 1.6875em;
     font-weight: 400;
-    margin-bottom: 1.9rem;
+    margin-bottom: 1.9em;
   }
 
   &--small {
-    font-size: 1.2rem;
-    margin-bottom: 1.9rem;
+    font-size: 1.2em;
+    margin-bottom: 1.9em;
     @include respondDesktop(atSmall) {
-      font-size: 1.6875rem;
+      font-size: 1.6875em;
     }
   }
 
   &--smaller {
-    font-size: 1.5rem;
+    font-size: 1.5em;
   }
 
   &--tiny {
     font-family: "Roboto", sans-serif;
-    font-size: 1.3875rem;
-    margin-bottom: 0.25rem;
+    font-size: 1.3875em;
+    margin-bottom: 0.25em;
   }
 
   &--post-title a {

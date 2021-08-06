@@ -26,24 +26,7 @@
 
   p {
     margin: 0;
-    font-size: 1.5em;
     color: color($beige l(-45%) s(-33%));
-
-    @include respondDesktop(atLarge) {
-      font-size: 2em;
-    }
-    @include respondDesktop(atMediumLarge) {
-      font-size: 1.5em;
-    }
-    @include respondDesktop(atSmall) {
-      font-size: 2em;
-    }
-    @include respondDesktop(at400) {
-      font-size: 2.5em;
-    }
-    @include respondDesktop(atSmaller) {
-      font-size: 2.75em;
-    }
   }
 
   a {
