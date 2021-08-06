@@ -15,10 +15,18 @@
 .page-section {
   padding-top: 1.6rem;
   padding-bottom: 1.6rem;
-  @mixin atSmall {
+  @include respondDesktop(atMedium) {
+    padding-top: 6.5em;
+    padding-bottom: 6.5em;
+  }
+  /*@include respondDesktop(atSmaller) {
+    padding-left: 1.6em;
+  }*/
+
+  /*@mixin atSmall {
     padding-top: 3.5rem;
     padding-bottom: 3.5rem;
-  }
+  }*/
 
   &--white {
     background-color: #fff;

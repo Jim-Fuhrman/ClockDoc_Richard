@@ -1333,23 +1333,107 @@ name nav-container here and using .container in utilities.scss, but it still pro
 
 .metabox {
   background-color: #faf0ca;
-  border-radius: 0.3rem;
-  padding: 1rem 1.5rem;
+  border-radius: 0.3em;
+  padding: 1em 1.5em;
   display: inline-block;
-  margin-bottom: 3rem;
-  box-shadow: 0.2rem 0.2rem 0.1rem rgba(0, 0, 0, 0.07); }
+  margin-bottom: 3em;
+  box-shadow: 0.2em 0.2em 0.1em rgba(0, 0, 0, 0.07); }
   .metabox--position-up {
     position: absolute;
     top: 0;
     transform: translateY(-50%); }
   .metabox--with-home-link {
-    padding: 0; }
+    padding: 0;
+    /* 355px/16 = 22.1875em*/
+    /* 400px/16 = 25em */
+    /* 371px/16 = 25em */
+    /* 530px/16 = 33.125em*/
+    /* 616px/16 = 38.5em */
+    /* 767px/16 = 47.9375em */
+    /* 800px/16 = 50em */
+    /* 1000px/16 = 62.5em*/
+    /* 1200px/16 = 75em*/
+    /* 1500px/16 = 93.75em*/
+    /* 1860px/16 = 116.25em   */ }
+    @media only screen and (max-width: 22.1875em) {
+      .metabox--with-home-link {
+        display: none; } }
   .metabox__main {
-    padding: 1rem 1.5rem 1rem 1.1rem; }
+    padding: 1em 1.5em 1em 1.1em; }
   .metabox p {
     margin: 0;
-    font-size: 1.5rem;
-    color: color(#faf0ca l(-45%) s(-33%)); }
+    font-size: 1.5em;
+    color: color(#faf0ca l(-45%) s(-33%));
+    /* 355px/16 = 22.1875em*/
+    /* 400px/16 = 25em */
+    /* 371px/16 = 25em */
+    /* 530px/16 = 33.125em*/
+    /* 616px/16 = 38.5em */
+    /* 767px/16 = 47.9375em */
+    /* 800px/16 = 50em */
+    /* 1000px/16 = 62.5em*/
+    /* 1200px/16 = 75em*/
+    /* 1500px/16 = 93.75em*/
+    /* 1860px/16 = 116.25em   */
+    /* 355px/16 = 22.1875em*/
+    /* 400px/16 = 25em */
+    /* 371px/16 = 25em */
+    /* 530px/16 = 33.125em*/
+    /* 616px/16 = 38.5em */
+    /* 767px/16 = 47.9375em */
+    /* 800px/16 = 50em */
+    /* 1000px/16 = 62.5em*/
+    /* 1200px/16 = 75em*/
+    /* 1500px/16 = 93.75em*/
+    /* 1860px/16 = 116.25em   */
+    /* 355px/16 = 22.1875em*/
+    /* 400px/16 = 25em */
+    /* 371px/16 = 25em */
+    /* 530px/16 = 33.125em*/
+    /* 616px/16 = 38.5em */
+    /* 767px/16 = 47.9375em */
+    /* 800px/16 = 50em */
+    /* 1000px/16 = 62.5em*/
+    /* 1200px/16 = 75em*/
+    /* 1500px/16 = 93.75em*/
+    /* 1860px/16 = 116.25em   */
+    /* 355px/16 = 22.1875em*/
+    /* 400px/16 = 25em */
+    /* 371px/16 = 25em */
+    /* 530px/16 = 33.125em*/
+    /* 616px/16 = 38.5em */
+    /* 767px/16 = 47.9375em */
+    /* 800px/16 = 50em */
+    /* 1000px/16 = 62.5em*/
+    /* 1200px/16 = 75em*/
+    /* 1500px/16 = 93.75em*/
+    /* 1860px/16 = 116.25em   */
+    /* 355px/16 = 22.1875em*/
+    /* 400px/16 = 25em */
+    /* 371px/16 = 25em */
+    /* 530px/16 = 33.125em*/
+    /* 616px/16 = 38.5em */
+    /* 767px/16 = 47.9375em */
+    /* 800px/16 = 50em */
+    /* 1000px/16 = 62.5em*/
+    /* 1200px/16 = 75em*/
+    /* 1500px/16 = 93.75em*/
+    /* 1860px/16 = 116.25em   */ }
+    @media only screen and (max-width: 75em) {
+      .metabox p {
+        font-size: 2em; } }
+    @media only screen and (max-width: 50em) {
+      .metabox p {
+        font-size: 1.5em; } }
+    @media only screen and (max-width: 33.125em) {
+      .metabox p {
+        font-size: 2em; } }
+    @media only screen and (max-width: 25em) {
+      .metabox p {
+        font-size: 2.5em; } }
+    @media only screen and (max-width: 22.1875em) {
+      .metabox p {
+        font-size: 2.75em; } }
   .metabox a {
     color: color(#faf0ca l(-45%) s(-33%));
     text-decoration: none;
@@ -1360,8 +1444,8 @@ name nav-container here and using .container in utilities.scss, but it still pro
     background-color: #0d3b66;
     color: #fff;
     display: inline-block;
-    padding: 1rem 1.5rem;
-    border-radius: 0.3rem 0 0 0.3rem;
+    padding: 1em 1.5em;
+    border-radius: 0.3em 0 0 0.3em;
     font-weight: normal; }
   .metabox .metabox__blog-home-link:hover {
     text-decoration: none;
@@ -2010,7 +2094,29 @@ name nav-container here and using .container in utilities.scss, but it still pro
 
 .page-section {
   padding-top: 1.6rem;
-  padding-bottom: 1.6rem; }
+  padding-bottom: 1.6rem;
+  /* 355px/16 = 22.1875em*/
+  /* 400px/16 = 25em */
+  /* 371px/16 = 25em */
+  /* 530px/16 = 33.125em*/
+  /* 616px/16 = 38.5em */
+  /* 767px/16 = 47.9375em */
+  /* 800px/16 = 50em */
+  /* 1000px/16 = 62.5em*/
+  /* 1200px/16 = 75em*/
+  /* 1500px/16 = 93.75em*/
+  /* 1860px/16 = 116.25em   */
+  /*@include respondDesktop(atSmaller) {
+    padding-left: 1.6em;
+  }*/
+  /*@mixin atSmall {
+    padding-top: 3.5rem;
+    padding-bottom: 3.5rem;
+  }*/ }
+  @media only screen and (max-width: 47.9375em) {
+    .page-section {
+      padding-top: 6.5em;
+      padding-bottom: 6.5em; } }
   .page-section--white {
     background-color: #fff; }
   .page-section--beige {
