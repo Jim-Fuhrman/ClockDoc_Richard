@@ -48,22 +48,29 @@ body {
   /* except I like Roboto font better. 50 JS projects used Open Sans font.*/
   font-family: "Roboto", sans-serif;
   color: #222;
-  padding-bottom: 1rem;
+  padding-bottom: 1em;
   background-color: beige;
-  /*font-size: 1.6rem; */ /* In clockdoc-Richard this line of code needs to be asterisked out. */
+  font-size: 1em; /* In clockdoc-Richard this line of code needs to be asterisked out. */
 }
 
 h1 {
-  font-size: 3rem;
+  font-size: 3em;
 }
 
 h2 {
-  font-size: 2.4rem;
-}
+  font-size: 2em;
 
-p {
-  font-size: 1.6rem;
-  margin: 10rem 20rem;
+  @include respondDesktop(atLarge) {
+    font-size: 3em;
+  } /* screen size <= 1200px*/
+
+  @include respondDesktop(atMedium) {
+    font-size: 2.5em;
+  } /* screen size <= 1200px*/
+
+  @include respondDesktop(atSmall) {
+    font-size: 3em;
+  } /* screen size <= 530px*/
 }
 
 img {
@@ -72,12 +79,12 @@ img {
 }
 
 input {
-  height: 4rem;
+  height: 4em;
 }
 
 textarea {
   /* used on contact us form. */
-  height: 8rem;
+  height: 8em;
 }
 
 a {
@@ -96,12 +103,60 @@ ol {
 }
 
 li {
-  line-height: 2rem;
-  font-size: 1.5rem;
+  font-size: 1.875em;
+  line-height: 1.5em;
+
+  @include respondDesktop(atLarge) {
+    font-size: 2.3em; /* needed so fonts on About Us are big enough on the ipadpro. */
+  } /* screen size <= 1200px */
+
+  @include respondDesktop(atMedium) {
+    line-height: 1.5em;
+    font-size: 1.875em;
+  } /* screen size <= 767px*/
+
+  @include respondDesktop(atSmall) {
+    font-size: 3em;
+  }
+
+  @include respondDesktop(at400) {
+    font-size: 2.5em;
+  }
+
+  @include respondDesktop(at371) {
+    font-size: 2.25em;
+  }
+  @include respondDesktop(atSmaller) {
+    font-size: 3em;
+  }
 }
 
 p {
+  font-size: 1.6rem;
   line-height: 1.65em;
+
+  @include respondDesktop(atLarge) {
+    font-size: 2.5em; /* needed so fonts on About Us are big enough on the ipadpro. */
+  } /* screen size <= 1200px*/
+
+  @include respondDesktop(atMedium) {
+    font-size: 2em;
+  } /* screen size <= 767px*/
+
+  @include respondDesktop(atSmall) {
+    font-size: 3em;
+  }
+
+  @include respondDesktop(at400) {
+    font-size: 2.5em;
+  }
+
+  @include respondDesktop(at371) {
+    font-size: 2.25em;
+  }
+  @include respondDesktop(atSmaller) {
+    font-size: 3em;
+  }
 }
 
 @media (min-width: 800px) {

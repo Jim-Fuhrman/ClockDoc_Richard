@@ -12,14 +12,17 @@
     height: 105vh;
   }
   @include respondDesktop(atMediumSmall) {
-    height: 70vh;
+    height: 75vh;
   }
 
   @include respondDesktop(at400) {
     height: 70vh;
   }
   @include respondDesktop(at371) {
-    height: 75vh;
+    height: 80vh;
+  }
+  @include respondDesktop(atSmaller) {
+    height: 90vh;
   }
   @include respondDesktop(atSmallest) {
     height: 130vh;
@@ -39,14 +42,17 @@
       height: 105vh;
     }
     @include respondDesktop(atMediumSmall) {
-      height: 70vh;
+      height: 75vh;
     }
 
     @include respondDesktop(at400) {
       height: 70vh;
     }
     @include respondDesktop(at371) {
-      height: 75vh;
+      height: 80vh;
+    }
+    @include respondDesktop(atSmaller) {
+      height: 90vh;
     }
     @include respondDesktop(atSmallest) {
       height: 130vh;
@@ -92,56 +98,21 @@
   }
 
   h2 {
-    font-size: 2.25em;
     margin-bottom: 1em;
-
-    @include respondDesktop(atLarge) {
-      font-size: 3em;
-    } /* screen size <= 1200px*/
-
-    @include respondDesktop(atMediumSmall) {
-      font-size: 2.5em;
-    }
-
-    @include respondDesktop(atSmall) {
-      font-size: 4rem;
+    @include respondDesktop(atSmaller) {
+      font-size: 3.5em;
     }
   }
+
   p {
-    font-size: 1.5em;
     line-height: 0.1em;
 
-    @include respondDesktop(atLarge) {
-      font-size: 2.5em;
-    } /* screen size <= 1200px*/
-
-    /*@include respondDesktop(atMediumLarge) {
-      font-size: 1.75em;
-    }*/ /* screen size <= 800px*/
-
-    @include respondDesktop(atMedium) {
-      font-size: 2em;
-      line-height: 0.125em;
-    } /* screen size <= 767px*/
-
-    @include respondDesktop(atMediumSmall) {
-      line-height: 0.001em;
-      font-size: 2em;
-    }
-
     @include respondDesktop(atSmall) {
-      font-size: 3rem;
+      font-size: 2.5em;
     }
 
-    @include respondDesktop(at400) {
-      font-size: 2.5rem;
-    }
-
-    @include respondDesktop(at371) {
-      font-size: 2.25rem;
-    }
     @include respondDesktop(atSmaller) {
-      font-size: 3rem;
+      font-size: 3em;
     }
   }
 
@@ -154,25 +125,10 @@
       width: 50%;
     }
 
-    /*@include respondDesktop(atLarge) {
-      display: inline-block;
-    }*/ /* screen size <= 1200px*/
-
-    /*@include respondDesktop(atLarge) {
-      width: 40%;
-    }*/ /* screen size <= 1200px*/
-
-    /*@include respondDesktop(atMediumLarge) {
-      width: 35%;
-    }*/ /* screen size <= 800px*/
     @include respondDesktop(atMediumSmall) {
       width: 100%;
       padding-left: 10em;
     } /* screen sizes <= 616px */
-
-    /*@include respondDesktop(atSmall) {
-      width: 100%;
-    }*/
   }
 
   &__name-addr-csz {
@@ -184,22 +140,10 @@
       width: 50%;
     }
 
-    /*@include respondDesktop(atLarge) {
-      display: inline-block;
-    }*/ /* screen size <= 1200px*/
-
-    /*@include respondDesktop(atMediumLarge) {
-      width: 35%;
-    }*/ /* screen size <= 800px*/
-
     @include respondDesktop(atMediumSmall) {
       width: 100%;
       padding-left: 10em;
     } /* screen sizes <= 616px */
-
-    /*@include respondDesktop(atSmall) {
-      width: 100%;
-    }*/ /* screen sizes <= 530px */
   }
 
   &__iframe {
@@ -207,23 +151,11 @@
     width: 30%;
     float: left;
 
-    /* @include respondDesktop(atLarge) {
-      display: inline-block;
-    }*/ /* screen size <= 1200px*/
-
-    /*@include respondDesktop(atMediumLarge) {
-      width: 30%;
-    }*/ /* screen size <= 800px*/
-
     @include respondDesktop(atMediumSmall) {
       width: 40%;
       margin: 0 auto;
       padding-left: 10em;
     } /* screen sizes <= 616px */
-
-    /*@include respondDesktop(atSmall) {
-      width: 100%;
-    }*/ /* screen sizes <= 530px */
   }
 
   .headline {
