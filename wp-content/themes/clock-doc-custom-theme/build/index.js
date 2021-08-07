@@ -1187,8 +1187,9 @@ class NavBarModify {
     this.dropdownMenu = document.querySelector(".dropdown__content");
     this.doctorKitIcon = document.querySelector(".site-header__nav-icon");
     this.hamburgerIcon = document.querySelector(".site-header__menu-icon");
-    this.scrollThrottle = lodash_throttle__WEBPACK_IMPORTED_MODULE_0___default()(this.calcCaller, 50).bind(this);
+    this.scrollThrottle = lodash_throttle__WEBPACK_IMPORTED_MODULE_0___default()(this.calcCaller, 20).bind(this);
     this.events();
+    /* we want calcCaller to execcute 50 times a second or 1000 milliseconds divided by 20. That's why 20 is coded in the line above.  */
   }
 
   calcCaller() {
@@ -1204,8 +1205,6 @@ class NavBarModify {
 
 
   fixNav() {
-    console.log("fixNav executing 20 times per second.");
-
     if (window.innerWidth < 600) {
       this.fixNavOnSmallScreens();
     } else {

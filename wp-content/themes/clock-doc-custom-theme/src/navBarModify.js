@@ -6,8 +6,8 @@ class NavBarModify {
     this.dropdownMenu = document.querySelector(".dropdown__content");
     this.doctorKitIcon = document.querySelector(".site-header__nav-icon");
     this.hamburgerIcon = document.querySelector(".site-header__menu-icon");
-    this.scrollThrottle = throttle(this.calcCaller, 50).bind(this);
-    this.events();
+    this.scrollThrottle = throttle(this.calcCaller, 20).bind(this);
+    this.events(); /* we want calcCaller to execcute 50 times a second or 1000 milliseconds divided by 20. That's why 20 is coded in the line above.  */
   }
 
   calcCaller() {
