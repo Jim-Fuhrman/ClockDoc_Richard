@@ -6,7 +6,7 @@ class NavBarModify {
     this.dropdownMenu = document.querySelector(".dropdown__content");
     this.doctorKitIcon = document.querySelector(".site-header__nav-icon");
     this.hamburgerIcon = document.querySelector(".site-header__menu-icon");
-    this.scrollThrottle = throttle(this.calcCaller, 200).bind(this);
+    this.scrollThrottle = throttle(this.calcCaller, 50).bind(this);
     this.events();
   }
 

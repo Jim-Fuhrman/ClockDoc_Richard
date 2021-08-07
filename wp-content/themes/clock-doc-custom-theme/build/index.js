@@ -1187,7 +1187,7 @@ class NavBarModify {
     this.dropdownMenu = document.querySelector(".dropdown__content");
     this.doctorKitIcon = document.querySelector(".site-header__nav-icon");
     this.hamburgerIcon = document.querySelector(".site-header__menu-icon");
-    this.scrollThrottle = lodash_throttle__WEBPACK_IMPORTED_MODULE_0___default()(this.calcCaller, 200).bind(this);
+    this.scrollThrottle = lodash_throttle__WEBPACK_IMPORTED_MODULE_0___default()(this.calcCaller, 50).bind(this);
     this.events();
   }
 
@@ -1204,6 +1204,8 @@ class NavBarModify {
 
 
   fixNav() {
+    console.log("fixNav executing 20 times per second.");
+
     if (window.innerWidth < 600) {
       this.fixNavOnSmallScreens();
     } else {
