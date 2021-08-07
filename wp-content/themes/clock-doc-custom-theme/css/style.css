@@ -318,7 +318,7 @@ li {
       font-size: 3em; } }
 
 p {
-  font-size: 1.6rem;
+  font-size: 2em;
   line-height: 1.65em;
   /* 355px/16 = 22.1875em*/
   /* 400px/16 = 25em */
@@ -687,7 +687,7 @@ name nav-container here and using .container in utilities.scss, but it still pro
   /* this automatically puts space between the logo and the nav menu. Otherwise, they're too close together. */
   align-items: center;
   /* this vertically centers the logo and nav menu within the horizontal bar, or the container class.*/
-  padding: 2rem 0;
+  padding: 0;
   /* this adds padding, so they're not too close to the nav bar's top nor bottom.*/
   /*transition: all .3s ease-in-out; /* We're going to change the padding value when we scroll and add the active class. */ }
 
@@ -1089,6 +1089,7 @@ name nav-container here and using .container in utilities.scss, but it still pro
         font-size: 3.5em; } }
   .contactInfo p {
     line-height: 0.1em;
+    font-size: 1.6em;
     /* 355px/16 = 22.1875em*/
     /* 400px/16 = 25em */
     /* 371px/16 = 25em */

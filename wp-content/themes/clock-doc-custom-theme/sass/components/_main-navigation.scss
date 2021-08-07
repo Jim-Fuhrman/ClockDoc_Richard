@@ -78,7 +78,7 @@ name nav-container here and using .container in utilities.scss, but it still pro
   display: flex; /* I want to put the logo on the left and the nav menu on the right. That's why the container is the flexbox because the h1 and ul will be the flex items inside them. */
   justify-content: space-between; /* this automatically puts space between the logo and the nav menu. Otherwise, they're too close together. */
   align-items: center; /* this vertically centers the logo and nav menu within the horizontal bar, or the container class.*/
-  padding: 2rem 0; /* this adds padding, so they're not too close to the nav bar's top nor bottom.*/
+  padding: 0; /* this adds padding, so they're not too close to the nav bar's top nor bottom.*/
   /*transition: all .3s ease-in-out; /* We're going to change the padding value when we scroll and add the active class. */
 }
 
