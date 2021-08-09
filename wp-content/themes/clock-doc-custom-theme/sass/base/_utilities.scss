@@ -12,19 +12,19 @@
 .content h2,
 .content h3 {
   font-size: 150%;
-  margin: 2rem 0;
+  margin: 2em 0;
 }
 
 .content p {
   color: #555;
-  line-height: 3rem;
-  letter-spacing: 0.12rem;
+  line-height: 3em;
+  letter-spacing: 0.12em;
 }
 
 .section-break {
   border: none;
-  border-top: 0.1rem solid #ddd;
-  margin: 4rem 0;
+  border-top: 0.1em solid #ddd;
+  margin: 4em 0;
 }
 
 .section-auto {
@@ -41,21 +41,21 @@
 }
 
 .p-top-small {
-  padding-top: 1.6rem;
+  padding-top: 1.6em;
 }
 .p-top-large {
-  padding-top: 2.5rem;
+  padding-top: 2.5em;
 }
 .p-bottom-large {
-  padding-bottom: 2.5rem;
+  padding-bottom: 2.5em;
 }
 
 @mixin atSmall {
   .p-top-large {
-    padding-top: 5.6rem;
+    padding-top: 5.6em;
   }
   .p-bottom-large {
-    padding-bottom: 5.6rem;
+    padding-bottom: 5.6em;
   }
 }
 
@@ -104,7 +104,7 @@
 }
 
 .t-small {
-  font-size: 1.3rem;
+  font-size: 1.3em;
 }
 
 .float-left {
@@ -114,7 +114,7 @@
   float: right;
 }
 .push-right {
-  margin-right: 2rem;
+  margin-right: 2em;
 }
 
 .container:before,

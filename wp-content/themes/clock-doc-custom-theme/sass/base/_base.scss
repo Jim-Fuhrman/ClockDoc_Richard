@@ -53,6 +53,19 @@ body {
   font-size: 1em; /* In clockdoc-Richard this line of code needs to be asterisked out. */
 }
 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Roboto Condensed", sans-serif;
+  font-weight: 500;
+  margin-top: 0;
+  margin-bottom: 1em;
+  text-decoration: none;
+}
+
 h1 {
   font-size: 3em;
 }
@@ -71,6 +84,40 @@ h2 {
   @include respondDesktop(atSmall) {
     font-size: 3em;
   } /* screen size <= 530px*/
+}
+
+h3 {
+  font-size: 2.6rem;
+}
+h4 {
+  font-size: 2.1rem;
+}
+h5 {
+  font-size: 1.6rem;
+}
+h6 {
+  font-size: 1.15rem;
+}
+
+@include respondDesktop(atSmall) {
+  h1 {
+    font-size: 6.25em;
+  }
+  h2 {
+    font-size: 5em;
+  }
+  h3 {
+    font-size: 3.125em;
+  }
+  h4 {
+    font-size: 2.4em;
+  }
+  h5 {
+    font-size: 1.9em;
+  }
+  h6 {
+    font-size: 1.15em;
+  }
 }
 
 img {
@@ -98,7 +145,7 @@ a:hover {
 
 blockquote,
 blockquote p {
-  font-size: 2.4rem;
+  font-size: 2.4em;
   font-style: italic;
 }
 
@@ -109,7 +156,7 @@ ol {
 }
 
 li {
-  font-size: 1.875em;
+  font-size: 1.875rem; /* use rem not em here; otherwise, the font will be too big on the inner list within the outer list on the Conditions of Use page. */
   line-height: 1.5em;
 
   @include respondDesktop(atLarge) {

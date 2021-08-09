@@ -1,15 +1,16 @@
 .site-footer {
-  padding: 2rem 0 3.5rem 0;
-  background-image: linear-gradient(#fff, #ececec);
-  position: relative;
-
-  p {
-    font-size: 0.9rem;
-  }
+  padding: 2em 0 3.5em 0;
+  background-image: linear-gradient(bisque, antiquewhite);
+  /*position:  relative;*/
 
   .headline {
     color: #666;
-    margin-bottom: 0.33rem;
+    margin-bottom: 0.33em;
+  }
+
+  &__copyright-info {
+    margin: 0 auto;
+    margin-top: 2em;
   }
 
   &__link {
@@ -24,27 +25,27 @@
 
   &__inner {
     border-top: 1px dotted #dedede;
-    padding-top: 3.5rem;
+    padding-top: 3.5em;
   }
 
   &__col-one {
-    text-align: center;
-    @mixin atMedium {
-      text-align: left;
-      width: 33%;
-      float: left;
+    text-align: left;
+    width: 33%;
+    float: left;
+    @include respondDesktop(atMedium) {
+      text-align: center;
     }
   }
 
   &__col-two-three-group {
-    text-align: center;
-    width: 85%;
-    margin: 0 auto;
-    @mixin atMedium {
-      text-align: left;
-      float: left;
-      width: 42%;
-      margin: 0;
+    text-align: left;
+    float: left;
+    width: 42%;
+    margin: 0;
+    @include respondDesktop(atMedium) {
+      text-align: center;
+      width: 85%;
+      margin: 0 auto;
     }
   }
 
@@ -57,18 +58,19 @@
     float: left;
   }
   &__col-four {
-    padding-top: 20px;
-    width: 85%;
-    margin: 0 auto;
-    clear: both;
-    text-align: center;
-    @mixin atMedium {
-      padding-top: 0;
-      margin: 0;
-      clear: none;
-      text-align: left;
-      width: 25%;
-      float: right;
+    padding-top: 0;
+    margin: 0;
+    clear: none;
+    text-align: left;
+    width: 25%;
+    float: right;
+
+    @include respondDesktop(atMedium) {
+      padding-top: 20px;
+      width: 85%;
+      margin: 0 auto;
+      clear: both;
+      text-align: center;
     }
   }
 }
