@@ -12,7 +12,8 @@
 <!-- this is the version that won't show the nav bar -->
 <header class="site-header">
     <nav class="site-header__nav">
-      <div class="site-header__nav-icon" style="background-image: url(<?php echo get_theme_file_uri('/images/ClockDocIcon.png');?>"><a href="<?php echo esc_url(site_url('')); ?>"></a></div>
+      <div class="site-header__nav-icon" style="background-image: url(<?php echo get_theme_file_uri('/images/ClockDocIcon.png');?>">
+    </div>
       <ul class="site-header__nav-menu site-header__menu-content">
           <li><a href="<?php echo esc_url(site_url('')); ?>">Home</a></li>
           <!-- <li><a href="#about-Us">About Us</a></li> -->

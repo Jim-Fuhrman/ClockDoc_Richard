@@ -177,6 +177,14 @@
   font-size: 0.9em;
   color: #999;
   text-decoration: none;
+
+  @include respondDesktop(atLarge) {
+    font-size: 1.2em;
+  }
+
+  @include respondDesktop(atSmall) {
+    font-size: 0.9em;
+  }
 }
 
 .nav-list a:hover {

@@ -99,8 +99,8 @@
 
   h2 {
     margin-bottom: 1em;
-    @include respondDesktop(atSmaller) {
-      font-size: 3.5em;
+    @include respondDesktop(atSmall) {
+      font-size: 4em;
     }
   }
 

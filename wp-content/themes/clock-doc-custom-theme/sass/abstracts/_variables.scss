@@ -1,11 +1,22 @@
-/*primary colors  */ 
-$color-primary: #55c57a;        /* medium green */
-$color-primary-light: #7ed56f;  /* light green */
-$color-primary-dark: #28b485;   /* dark green */
+/*primary colors  */
+$color-primary: #55c57a; /* medium green */
+$color-primary-light: #7ed56f; /* light green */
+$color-primary-dark: #28b485; /* dark green */
 
 $color-gray-dark: #777;
 
 $color-maroon: #800000;
 $color-gold: #ebab17;
 $mainBlue: rgb(0, 0, 255);
-$beige: #f4f0db;
+
+$beige: #faf0ca; /* used in _btn.scss */
+$mainYellow: #f4d35e;
+$mainBlue: #0d3b66;
+$lightOrange: #ee964b;
+$darkOrange: #f95738;
+
+/* Grid */
+$grid-width: 114rem;
+$gutter-vertical: 1rem;
+$gutter-horizontal: 9rem;
+$grid-gap: 1rem;

@@ -1,16 +1,41 @@
 .site-footer {
-  padding: 2em 0 3.5em 0;
+  padding: 1em 0 1em 0;
   background-image: linear-gradient(bisque, antiquewhite);
+  grid-column: full-start / full-end;
   /*position:  relative;*/
 
-  .headline {
-    color: #666;
-    margin-bottom: 0.33em;
+  &__container {
+    /* I need this class in place of the plain container class in utilities.scss because the container in utilities.scss creates a "before" pseudo-class that pushes everything over too much.  */
+    max-width: 1300px;
+    margin: 0 auto; /*zero for top/bottom, auto for left/right which will put text in the middle. */
+    padding: 0 16px;
+    position: relative;
+  }
+
+  &__inner-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(15em, 1fr));
+    grid-gap: $grid-gap;
+
+    border-top: 1px dotted #dedede;
+    padding-top: 3.5em;
+
+    @include respondDesktop(atSmallest) {
+      grid-template-columns: repeat(auto-fit, minmax(25em, 1fr));
+    }
+  }
+
+  &__inner-grid--item {
+    text-decoration: none;
+    text-align: center;
+    padding: 1.5rem;
   }
 
   &__copyright-info {
     margin: 0 auto;
     margin-top: 2em;
+    width: 75%;
+    text-align: center;
   }
 
   &__link {
@@ -23,54 +48,15 @@
     text-decoration: underline;
   }
 
-  &__inner {
-    border-top: 1px dotted #dedede;
-    padding-top: 3.5em;
+  h2 {
+    @include respondDesktop(atSmall) {
+      font-size: 2.5em;
+    } /* screen size <= 530px*/
   }
 
-  &__col-one {
-    text-align: left;
-    width: 33%;
-    float: left;
-    @include respondDesktop(atMedium) {
-      text-align: center;
-    }
-  }
-
-  &__col-two-three-group {
-    text-align: left;
-    float: left;
-    width: 42%;
-    margin: 0;
-    @include respondDesktop(atMedium) {
-      text-align: center;
-      width: 85%;
-      margin: 0 auto;
-    }
-  }
-
-  &__col-two {
-    width: 50%;
-    float: left;
-  }
-  &__col-three {
-    width: 50%;
-    float: left;
-  }
-  &__col-four {
-    padding-top: 0;
-    margin: 0;
-    clear: none;
-    text-align: left;
-    width: 25%;
-    float: right;
-
-    @include respondDesktop(atMedium) {
-      padding-top: 20px;
-      width: 85%;
-      margin: 0 auto;
-      clear: both;
-      text-align: center;
-    }
+  h3 {
+    @include respondDesktop(atSmall) {
+      font-size: 2em;
+    } /* screen size <= 530px*/
   }
 }

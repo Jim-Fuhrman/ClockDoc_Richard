@@ -2,6 +2,8 @@
 /* medium green */
 /* light green */
 /* dark green */
+/* used in _btn.scss */
+/* Grid */
 /* media query manager */
 /*
    0px - 280px:  atSmallest
@@ -142,6 +144,7 @@ body {
   color: #222;
   padding-bottom: 1em;
   background-color: beige;
+  /* $beige: #faf0ca; is worth considering */
   font-size: 1em;
   /* In clockdoc-Richard this line of code needs to be asterisked out. */ }
 
@@ -162,6 +165,7 @@ h1 {
 
 h2 {
   font-size: 2em;
+  text-align: left;
   /* 355px/16 = 22.1875em*/
   /* 400px/16 = 25em */
   /* 371px/16 = 25em */
@@ -209,16 +213,16 @@ h2 {
       font-size: 3em; } }
 
 h3 {
-  font-size: 2.6rem; }
+  font-size: 1.8em; }
 
 h4 {
-  font-size: 2.1rem; }
+  font-size: 1.6em; }
 
 h5 {
-  font-size: 1.6rem; }
+  font-size: 1.4em; }
 
 h6 {
-  font-size: 1.15rem; }
+  font-size: 1.2em; }
 
 /* 355px/16 = 22.1875em*/
 /* 400px/16 = 25em */
@@ -257,7 +261,7 @@ textarea {
   height: 8em; }
 
 a {
-  color: blue;
+  color: #0d3b66;
   z-index: 10; }
 
 a:hover {
@@ -277,6 +281,7 @@ li {
   font-size: 1.875rem;
   /* use rem not em here; otherwise, the font will be too big on the inner list within the outer list on the Conditions of Use page. */
   line-height: 1.5em;
+  text-align: left;
   /* 355px/16 = 22.1875em*/
   /* 400px/16 = 25em */
   /* 371px/16 = 25em */
@@ -1133,9 +1138,9 @@ name nav-container here and using .container in utilities.scss, but it still pro
     /* 1200px/16 = 75em*/
     /* 1500px/16 = 93.75em*/
     /* 1860px/16 = 116.25em   */ }
-    @media only screen and (max-width: 22.1875em) {
+    @media only screen and (max-width: 33.125em) {
       .contactInfo h2 {
-        font-size: 3.5em; } }
+        font-size: 4em; } }
   .contactInfo p {
     line-height: 0.1em;
     font-size: 1.6em;
@@ -2273,7 +2278,35 @@ name nav-container here and using .container in utilities.scss, but it still pro
 .nav-list a {
   font-size: 0.9em;
   color: #999;
-  text-decoration: none; }
+  text-decoration: none;
+  /* 355px/16 = 22.1875em*/
+  /* 400px/16 = 25em */
+  /* 371px/16 = 25em */
+  /* 530px/16 = 33.125em*/
+  /* 616px/16 = 38.5em */
+  /* 767px/16 = 47.9375em */
+  /* 800px/16 = 50em */
+  /* 1000px/16 = 62.5em*/
+  /* 1200px/16 = 75em*/
+  /* 1500px/16 = 93.75em*/
+  /* 1860px/16 = 116.25em   */
+  /* 355px/16 = 22.1875em*/
+  /* 400px/16 = 25em */
+  /* 371px/16 = 25em */
+  /* 530px/16 = 33.125em*/
+  /* 616px/16 = 38.5em */
+  /* 767px/16 = 47.9375em */
+  /* 800px/16 = 50em */
+  /* 1000px/16 = 62.5em*/
+  /* 1200px/16 = 75em*/
+  /* 1500px/16 = 93.75em*/
+  /* 1860px/16 = 116.25em   */ }
+  @media only screen and (max-width: 75em) {
+    .nav-list a {
+      font-size: 1.2em; } }
+  @media only screen and (max-width: 33.125em) {
+    .nav-list a {
+      font-size: 0.9em; } }
 
 .nav-list a:hover {
   color: #0d3b66;
@@ -2374,28 +2407,55 @@ name nav-container here and using .container in utilities.scss, but it still pro
   opacity: 0; }
 
 .site-footer {
-  padding: 2em 0 3.5em 0;
+  padding: 1em 0 1em 0;
   background-image: linear-gradient(bisque, antiquewhite);
+  grid-column: full-start / full-end;
   /*position:  relative;*/ }
-  .site-footer .headline {
-    color: #666;
-    margin-bottom: 0.33em; }
+  .site-footer__container {
+    /* I need this class in place of the plain container class in utilities.scss because the container in utilities.scss creates a "before" pseudo-class that pushes everything over too much.  */
+    max-width: 1300px;
+    margin: 0 auto;
+    /*zero for top/bottom, auto for left/right which will put text in the middle. */
+    padding: 0 16px;
+    position: relative; }
+  .site-footer__inner-grid {
+    display: -ms-grid;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(15em, 1fr));
+    grid-gap: 1rem;
+    border-top: 1px dotted #dedede;
+    padding-top: 3.5em;
+    /* 240px/16 = 15em */
+    /* 355px/16 = 22.1875em*/
+    /* 400px/16 = 25em */
+    /* 371px/16 = 25em */
+    /* 530px/16 = 33.125em*/
+    /* 616px/16 = 38.5em */
+    /* 767px/16 = 47.9375em */
+    /* 800px/16 = 50em */
+    /* 1000px/16 = 62.5em*/
+    /* 1200px/16 = 75em*/
+    /* 1500px/16 = 93.75em*/
+    /* 1860px/16 = 116.25em   */ }
+    @media only screen and (max-width: 15em) {
+      .site-footer__inner-grid {
+        grid-template-columns: repeat(auto-fit, minmax(25em, 1fr)); } }
+  .site-footer__inner-grid--item {
+    text-decoration: none;
+    text-align: center;
+    padding: 1.5rem; }
   .site-footer__copyright-info {
     margin: 0 auto;
-    margin-top: 2em; }
+    margin-top: 2em;
+    width: 75%;
+    text-align: center; }
   .site-footer__link {
     color: #999;
     text-decoration: none; }
   .site-footer__link:hover {
     color: #0d3b66;
     text-decoration: underline; }
-  .site-footer__inner {
-    border-top: 1px dotted #dedede;
-    padding-top: 3.5em; }
-  .site-footer__col-one {
-    text-align: left;
-    width: 33%;
-    float: left;
+  .site-footer h2 {
     /* 355px/16 = 22.1875em*/
     /* 400px/16 = 25em */
     /* 371px/16 = 25em */
@@ -2406,15 +2466,12 @@ name nav-container here and using .container in utilities.scss, but it still pro
     /* 1000px/16 = 62.5em*/
     /* 1200px/16 = 75em*/
     /* 1500px/16 = 93.75em*/
-    /* 1860px/16 = 116.25em   */ }
-    @media only screen and (max-width: 47.9375em) {
-      .site-footer__col-one {
-        text-align: center; } }
-  .site-footer__col-two-three-group {
-    text-align: left;
-    float: left;
-    width: 42%;
-    margin: 0;
+    /* 1860px/16 = 116.25em   */
+    /* screen size <= 530px*/ }
+    @media only screen and (max-width: 33.125em) {
+      .site-footer h2 {
+        font-size: 2.5em; } }
+  .site-footer h3 {
     /* 355px/16 = 22.1875em*/
     /* 400px/16 = 25em */
     /* 371px/16 = 25em */
@@ -2425,43 +2482,11 @@ name nav-container here and using .container in utilities.scss, but it still pro
     /* 1000px/16 = 62.5em*/
     /* 1200px/16 = 75em*/
     /* 1500px/16 = 93.75em*/
-    /* 1860px/16 = 116.25em   */ }
-    @media only screen and (max-width: 47.9375em) {
-      .site-footer__col-two-three-group {
-        text-align: center;
-        width: 85%;
-        margin: 0 auto; } }
-  .site-footer__col-two {
-    width: 50%;
-    float: left; }
-  .site-footer__col-three {
-    width: 50%;
-    float: left; }
-  .site-footer__col-four {
-    padding-top: 0;
-    margin: 0;
-    clear: none;
-    text-align: left;
-    width: 25%;
-    float: right;
-    /* 355px/16 = 22.1875em*/
-    /* 400px/16 = 25em */
-    /* 371px/16 = 25em */
-    /* 530px/16 = 33.125em*/
-    /* 616px/16 = 38.5em */
-    /* 767px/16 = 47.9375em */
-    /* 800px/16 = 50em */
-    /* 1000px/16 = 62.5em*/
-    /* 1200px/16 = 75em*/
-    /* 1500px/16 = 93.75em*/
-    /* 1860px/16 = 116.25em   */ }
-    @media only screen and (max-width: 47.9375em) {
-      .site-footer__col-four {
-        padding-top: 20px;
-        width: 85%;
-        margin: 0 auto;
-        clear: both;
-        text-align: center; } }
+    /* 1860px/16 = 116.25em   */
+    /* screen size <= 530px*/ }
+    @media only screen and (max-width: 33.125em) {
+      .site-footer h3 {
+        font-size: 2em; } }
 
 /* this is from clockdoc-richard. it's the version that shows the nav bar, but not the X icon nor the menu column. */
 .site-header .site-header__nav {
