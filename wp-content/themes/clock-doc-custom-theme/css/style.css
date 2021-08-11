@@ -2053,6 +2053,9 @@ name nav-container here and using .container in utilities.scss, but it still pro
   .gallery__item--6 {
     grid-row: 2 / 3;
     grid-column: 1 / span 2; }
+  .gallery__item--17 {
+    grid-row: 4 / 5;
+    grid-column: 2 / 4; }
 
 .products-miscellaneous {
   flex: 1;

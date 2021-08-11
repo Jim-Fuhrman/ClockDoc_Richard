@@ -42,7 +42,8 @@ function clockdoc_features() {
     add_theme_support('title-tag');
     add_theme_support('post-thumbnails');
     add_image_size('clockStylePortrait', 480, 650, true);
-    add_image_size('clockStyleLandscape', 400, 260, true);    
+    add_image_size('clockStyleLandscape', 400, 260, true);
+    add_image_size('clockStyleRectangle', 300, 150, true);    
     add_image_size('pageBanner', 1500, 350, true);
     //add_image_size('homepage-slideshow', 1900, 525, array('left', 'top'));
   }
