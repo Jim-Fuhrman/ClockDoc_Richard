@@ -2040,12 +2040,19 @@ name nav-container here and using .container in utilities.scss, but it still pro
     position: relative;
     background-size: cover; }
 
-.products-foreground {
+.gallery {
   margin: auto auto;
+  padding: 3rem;
   display: grid;
-  grid-template-rows: repeat(3, 1fr);
-  grid-template-columns: repeat(4, 1fr);
-  grid-gap: 1; }
+  grid-template-rows: repeat(4, 1fr);
+  grid-template-columns: repeat(5, 1fr);
+  grid-gap: 2rem; }
+  .gallery__item--1 {
+    grid-row: 1 / 2;
+    grid-column: 1 / 2; }
+  .gallery__item--6 {
+    grid-row: 2 / 3;
+    grid-column: 1 / span 2; }
 
 .products-miscellaneous {
   flex: 1;
