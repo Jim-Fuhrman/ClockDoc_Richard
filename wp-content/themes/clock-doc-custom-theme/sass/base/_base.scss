@@ -127,12 +127,12 @@ img {
 }
 
 input {
-  height: 4em;
+  height: 4rem; /* This needs to be 4rem not 4em; otherwise, the fields on the Contact Us page will be too big.*/
 }
 
 textarea {
   /* used on contact us form. */
-  height: 8em;
+  height: 8rem; /* This needs to be 8rem not 8em; otherwise, the textarea on the Contact Us page will be too big.*/
 }
 
 a {

@@ -264,11 +264,13 @@ img {
   height: auto; }
 
 input {
-  height: 4em; }
+  height: 4rem;
+  /* This needs to be 4rem not 4em; otherwise, the fields on the Contact Us page will be too big.*/ }
 
 textarea {
   /* used on contact us form. */
-  height: 8em; }
+  height: 8rem;
+  /* This needs to be 8rem not 8em; otherwise, the textarea on the Contact Us page will be too big.*/ }
 
 a {
   color: #0d3b66;
@@ -2195,8 +2197,8 @@ the exception being the .container class. That's defined in utilities.scss, so t
   background-color: #dedede; }
 
 .page-section {
-  padding-top: 1.6em;
-  padding-bottom: 1.6em;
+  padding-top: 1.6rem;
+  padding-bottom: 1.6rem;
   /* 355px/16 = 22.1875em*/
   /* 400px/16 = 25em */
   /* 371px/16 = 25em */
@@ -2212,7 +2214,9 @@ the exception being the .container class. That's defined in utilities.scss, so t
   @media only screen and (max-width: 47.9375em) {
     .page-section {
       padding-top: 6.5em;
-      padding-bottom: 6.5em; } }
+      /* used to be 6.5em. Because Contact Us fields were so huge, I reduced this to 3.5rem. That's what clockdoc-cortlandNE has. */
+      padding-bottom: 6.5em;
+      /* used to be 6.5em. Because Contact Us fields were so huge, I reduced this to 3.5rem. That's what clockdoc-cortlandNE has. */ } }
   .page-section--white {
     background-color: #fff; }
   .page-section--beige {

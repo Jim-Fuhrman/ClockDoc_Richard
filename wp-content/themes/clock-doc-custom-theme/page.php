@@ -5,7 +5,7 @@ while(have_posts()) {
    get_template_part('template-parts/content', 'pageBanner')
    ?>
    <!-- I don't want container--narrow in the next div because it makes everything on the About Us page too scrunched together on the largest desktops. -->
-    <div class="container page-section">
+    <div class="container container--narrow page-section">
     <?php
       $theParent = wp_get_post_parent_id(get_the_ID());
       if ($theParent) { ?>
