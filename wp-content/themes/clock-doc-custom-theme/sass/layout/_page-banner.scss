@@ -78,28 +78,30 @@
   }
 
   &__btn {
-    display: inline-block;
+    display: block;
     text-decoration: none;
     padding: 0.6rem 1.2rem;
     font-size: 2rem;
     border-radius: 5rem;
     border: none;
+    width: max-content;
+    margin: 1.5em auto;
 
     &,
     &:link,
     &:visited {
       text-decoration: none;
       padding: 1.5rem 4rem;
-      display: inline-block;
+      display: block;
       transition: all 0.2s;
       position: relative;
     }
 
     &::after {
       content: "";
-      display: inline-block;
-      height: 200%;
-      width: 200%;
+      display: block;
+      /*height: 200%;
+      width: 200%;*/
       border-radius: 10rem;
       background-color: blanchedalmond;
       color: black;
@@ -124,7 +126,7 @@
       /* this works */
       color: #fff;
       background-color: brown;
-      display: inline-block;
+      display: block;
 
       &::after {
         /* this works */
@@ -153,40 +155,32 @@
   }
 
   &__important-notice {
-    /*margin-top: 25rem;*/
-    top: 40%;
-    left: 50%; /* needed definitely! */
+    /*margin-top: 2.5rem;*/
+    display: block;
+    text-decoration: none;
+    padding: 0.6rem 1.2rem;
     font-size: 2rem;
-    border-radius: 1rem;
-    padding: 1rem; /* Don't change this. I worked long and hard to make it look good on the largest desktops. */
-    width: 45rem;
-    height: 6rem;
+    border-radius: none;
+    border: none;
+    margin: 0 auto;
+    width: max-content;
     text-align: left;
-    position: absolute; /* needed definitely! */
-    /* the next transform centers it */
-    transform: translate(
-      -50%,
-      -25%
-    ); /* 50% of the height and width of the &__headings element itself. */
 
     @include respondDesktop(atLarge) {
       font-size: 3.5rem;
       width: 90rem;
       height: 12rem;
-      transform: translate(-50%, -25%);
     }
 
     @include respondDesktop(atMediumLarge) {
       font-size: 3rem;
       width: 67.5rem;
       height: 9rem;
-      transform: translate(-50%, -25%);
     }
 
     @include respondDesktop(atMedium) {
       /*this accommodates the Microsoft Lumia. Without this the notice overlaps into the Clock Doctor heading */
-      top: 32.5%;
-      transform: translate(-50%, -150%);
+      top: 15.5%;
       width: 45rem;
       height: 6rem;
       font-size: 2rem;
@@ -194,42 +188,39 @@
 
     @include respondDesktop(atMediumSmall) {
       /*Just the Microsoft Lumia needs the adjustment coded with respondDesktop(atMedium). All others we do not want that change. */
-      top: 30%;
-      transform: translate(-50%, -25%);
+      top: 34%;
     }
 
     @include respondDesktop(atSmall) {
       font-size: 3rem;
       width: 67.5rem;
       height: 9rem;
-      transform: translate(-50%, -10%);
     }
 
     @include respondDesktop(atSmaller) {
       font-size: 3.5rem;
       width: 67.5rem;
       height: 9rem;
-      transform: translate(-50%, -25%);
     }
 
     @include respondDesktop(atSmallest) {
       font-size: 3.5rem;
       width: 55rem;
       height: 9rem;
-      transform: translate(-50%, -100%);
     }
 
     &--animated {
-      animation: moveInTop 1s ease-in 1.5s;
+      animation: moveInBottom 1s ease-in 1.5s;
       animation-fill-mode: backwards;
     }
 
     &::after {
       content: "";
-      display: inline-block;
-      height: 100%;
-      width: 100%;
-      border-radius: 10rem;
+      display: block;
+      /*height: 100%;
+      width: 100%;*/
+      text-align: left;
+      border-radius: none;
       position: absolute;
       top: 0;
       left: 0;
@@ -241,7 +232,7 @@
 
 .page-banner__btn::after {
   content: "";
-  display: inline-block;
+  display: block;
   height: 100%;
   width: 100%;
   border-radius: 10rem;
@@ -288,18 +279,6 @@
   0% {
     opacity: 0;
     transform: translateY(3rem);
-  }
-
-  100% {
-    opacity: 1;
-    transform: translate(0);
-  }
-}
-
-@keyframes moveInTop {
-  0% {
-    opacity: 0;
-    transform: translateY(-3rem);
   }
 
   100% {

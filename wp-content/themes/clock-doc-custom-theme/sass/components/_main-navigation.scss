@@ -50,19 +50,7 @@
 }
 
 /* everything from here to the end is from the sticky navbar project from 50 JavaScript projects in 50 days. 
-.container needs to be defined here instead of utilities.scss, so blogs are centered. If .container is defined
-in _utilities.scss, blogs will start at the extreme left margin which doesn't look good. I tried using class
-name nav-container here and using .container in utilities.scss, but it still produced undesired results. */
-/*.container {
-  max-width: 1300px;
-  margin: 0 auto;*/ /*zero for top/bottom, auto for left/right which will put text in the middle. */
-/*padding: 0 16px;
-  position: relative;
-}
-
-.container--narrow {
-  max-width: 960px;
-}*/
+the exception being the .container class. That's defined in utilities.scss, so the whole website can use it. */
 
 .nav {
   position: fixed;

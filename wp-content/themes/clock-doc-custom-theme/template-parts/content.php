@@ -8,12 +8,7 @@ $bkgdClock = '/images/Grandfather_Clockface_Thirteen-768x1024.jpg'; /* 185kb */
 <!-- topOfWebsite is used by the content-upArrow.php -->
 <!-- -->
 
-<header id="topOfWebsite" class="page-banner" style="background-image: url(<?php echo get_theme_file_uri($bkgdClock);?>">
-  <?php if( !empty(get_field('important_notice'))) : ?>
-      <div class="page-banner__important-notice page-banner__important-notice--animated t-center t-black b-goldenrod">
-        <strong>Important Notice: &nbsp;</strong><?php the_field('important_notice'); ?>
-      </div>
-  <?php endif; ?>  
+<header id="topOfWebsite" class="page-banner" style="background-image: url(<?php echo get_theme_file_uri($bkgdClock);?>">  
   <div class="page-banner__text-box">  <!-- text-box is position: absolute; its parent class page-banner is position: relative -->
     <h1 class="page-banner__heading">  <!-- heading is position: undefined-->
       <span class="page-banner__heading--main no-margin t-cursive">Clock Doctor</span>
@@ -23,5 +18,10 @@ $bkgdClock = '/images/Grandfather_Clockface_Thirteen-768x1024.jpg'; /* 185kb */
         class="page-banner__btn page-banner__btn--animated page-banner__btn--brown">
         Click to see our products
      </a>
+     <?php if( !empty(get_field('important_notice'))) : ?>
+      <div class="page-banner__important-notice page-banner__important-notice--animated t-center t-black b-goldenrod">
+        <strong>Notice: &nbsp;</strong><?php the_field('important_notice'); ?>
+      </div>
+  <?php endif; ?>
   </div>
 </header>

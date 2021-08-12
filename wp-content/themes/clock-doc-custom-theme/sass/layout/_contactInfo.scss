@@ -106,7 +106,7 @@
 
   p {
     line-height: 0.1em;
-    font-size: 1.6em;
+    font-size: 2em;
 
     @include respondDesktop(atLarge) {
       font-size: 2.5em; /* needed so fonts on About Us are big enough on the ipadpro. */

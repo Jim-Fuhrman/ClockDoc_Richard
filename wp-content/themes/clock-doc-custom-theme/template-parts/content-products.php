@@ -16,7 +16,6 @@
 <div id="products" class="products-bkgd full-width-split group">
     <div class="products-clocks full-width-split__one" style="background-image: url(<?php echo get_theme_file_uri($bkgdClock);?>">
         <div class="full-width-split__inner white-cover">
-            <h2><?php echo 'There are ' . $clocks->found_posts . ' clock styles in the clock doctor website.';?></h2>
         </div>
     </div>
     <div class="gallery">
@@ -45,7 +44,6 @@
     </div>
     <div class="products-miscellaneous full-width-split__two" style="background-image: url(<?php echo get_theme_file_uri($bkgdMisc);?>">
         <div class="full-width-split__inner white-cover">
-            <h2><?php echo 'There are ' . $misc->found_posts . ' miscellaneous styles in the website';?></h2>
         </div>
     </div>
 </div>

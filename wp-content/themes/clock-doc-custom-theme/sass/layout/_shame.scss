@@ -19,14 +19,6 @@
     padding-top: 6.5em;
     padding-bottom: 6.5em;
   }
-  /*@include respondDesktop(atSmaller) {
-    padding-left: 1.6em;
-  }*/
-
-  /*@mixin atSmall {
-    padding-top: 3.5em;
-    padding-bottom: 3.5em;
-  }*/
 
   &--white {
     background-color: #fff;
@@ -174,8 +166,8 @@
 }
 
 .nav-list a {
-  font-size: 0.9em;
-  color: #999;
+  font-size: 1.3em;
+  color: darkblue;
   text-decoration: none;
 
   @include respondDesktop(atLarge) {
