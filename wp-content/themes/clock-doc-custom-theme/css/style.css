@@ -1565,7 +1565,8 @@ the exception being the .container class. That's defined in utilities.scss, so t
     transform: translate(-50%, -50%);
     /* 50% of the height and width of the &__headings element itself. */
     text-align: center;
-    margin-top: 2rem; }
+    margin-top: 2rem;
+    margin: auto auto; }
   .page-banner__heading {
     color: #fff;
     backface-visibility: hidden;
@@ -1751,18 +1752,14 @@ the exception being the .container class. That's defined in utilities.scss, so t
     margin: 0 auto;
     width: max-content;
     text-align: left;
-    /* 355px/16 = 22.1875em*/
-    /* 400px/16 = 25em */
-    /* 371px/16 = 25em */
-    /* 530px/16 = 33.125em*/
-    /* 562px/16 = 35.125em*/
-    /* 616px/16 = 38.5em */
-    /* 767px/16 = 47.9375em */
-    /* 800px/16 = 50em */
-    /* 1000px/16 = 62.5em*/
-    /* 1200px/16 = 75em*/
-    /* 1500px/16 = 93.75em*/
-    /* 1860px/16 = 116.25em   */
+    /* The next @include is asterisked out because it made the page banner look bad. 
+    The Quality and Craftmanship was out of line. Without it the font is pretty small on the ipadpro, 
+    but that's better than having the misaligned headings. */
+    /*@include respondDesktop(atLarge) {
+      font-size: 3.5rem;
+      width: 90rem;
+      height: 12rem;
+    }*/
     /* 355px/16 = 22.1875em*/
     /* 400px/16 = 25em */
     /* 371px/16 = 25em */
@@ -1836,11 +1833,6 @@ the exception being the .container class. That's defined in utilities.scss, so t
     /* 1200px/16 = 75em*/
     /* 1500px/16 = 93.75em*/
     /* 1860px/16 = 116.25em   */ }
-    @media only screen and (max-width: 75em) {
-      .page-banner__important-notice {
-        font-size: 3.5rem;
-        width: 90rem;
-        height: 12rem; } }
     @media only screen and (max-width: 50em) {
       .page-banner__important-notice {
         font-size: 3rem;
@@ -2052,7 +2044,22 @@ the exception being the .container class. That's defined in utilities.scss, so t
   position: relative;
   background-color: transparent;
   height: 100vh;
-  display: flex; }
+  display: flex;
+  /* 355px/16 = 22.1875em*/
+  /* 400px/16 = 25em */
+  /* 371px/16 = 25em */
+  /* 530px/16 = 33.125em*/
+  /* 562px/16 = 35.125em*/
+  /* 616px/16 = 38.5em */
+  /* 767px/16 = 47.9375em */
+  /* 800px/16 = 50em */
+  /* 1000px/16 = 62.5em*/
+  /* 1200px/16 = 75em*/
+  /* 1500px/16 = 93.75em*/
+  /* 1860px/16 = 116.25em   */ }
+  @media only screen and (max-width: 33.125em) {
+    .products-bkgd {
+      height: 175vh; } }
 
 .white-cover {
   width: 100%;
@@ -2090,20 +2097,292 @@ the exception being the .container class. That's defined in utilities.scss, so t
 
 .gallery {
   margin: auto auto;
-  padding: 3rem;
+  padding: 1em;
   display: grid;
-  grid-template-rows: repeat(4, 1fr);
-  grid-template-columns: repeat(5, 1fr);
-  grid-gap: 2rem; }
+  grid-template-rows: repeat(5, 1fr);
+  grid-template-columns: repeat(6, 1fr);
+  grid-gap: 1em;
+  /* 355px/16 = 22.1875em*/
+  /* 400px/16 = 25em */
+  /* 371px/16 = 25em */
+  /* 530px/16 = 33.125em*/
+  /* 562px/16 = 35.125em*/
+  /* 616px/16 = 38.5em */
+  /* 767px/16 = 47.9375em */
+  /* 800px/16 = 50em */
+  /* 1000px/16 = 62.5em*/
+  /* 1200px/16 = 75em*/
+  /* 1500px/16 = 93.75em*/
+  /* 1860px/16 = 116.25em   */
+  /*@include respondDesktop(atSmall) {
+    grid-template-rows: repeat(10, minmax(1.5rem, min-content));
+    grid-template-columns: repeat(auto-fit, minmax(1.5rem, 1fr));
+  }*/ }
+  .gallery__img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block; }
+  @media only screen and (max-width: 33.125em) {
+    .gallery {
+      margin: 1em;
+      /*grid-template-rows: repeat(10, 9vw);*/
+      grid-template-rows: repeat(10, 1fr);
+      grid-template-columns: repeat(3, 1fr);
+      grid-gap: 1em; } }
   .gallery__item--1 {
     grid-row: 1 / 2;
     grid-column: 1 / 2; }
+  .gallery__item--2 {
+    grid-row: 1 / 2;
+    grid-column: 2 / span 2; }
+  .gallery__item--3 {
+    grid-row: 1 / 2;
+    grid-column: 4 / 6;
+    /* 355px/16 = 22.1875em*/
+    /* 400px/16 = 25em */
+    /* 371px/16 = 25em */
+    /* 530px/16 = 33.125em*/
+    /* 562px/16 = 35.125em*/
+    /* 616px/16 = 38.5em */
+    /* 767px/16 = 47.9375em */
+    /* 800px/16 = 50em */
+    /* 1000px/16 = 62.5em*/
+    /* 1200px/16 = 75em*/
+    /* 1500px/16 = 93.75em*/
+    /* 1860px/16 = 116.25em   */ }
+    @media only screen and (max-width: 33.125em) {
+      .gallery__item--3 {
+        grid-row: 2 / 3;
+        grid-column: 1 / span 2; } }
+  .gallery__item--4 {
+    grid-row: 1 / 2;
+    grid-column: 6 / -1;
+    /* 355px/16 = 22.1875em*/
+    /* 400px/16 = 25em */
+    /* 371px/16 = 25em */
+    /* 530px/16 = 33.125em*/
+    /* 562px/16 = 35.125em*/
+    /* 616px/16 = 38.5em */
+    /* 767px/16 = 47.9375em */
+    /* 800px/16 = 50em */
+    /* 1000px/16 = 62.5em*/
+    /* 1200px/16 = 75em*/
+    /* 1500px/16 = 93.75em*/
+    /* 1860px/16 = 116.25em   */ }
+    @media only screen and (max-width: 33.125em) {
+      .gallery__item--4 {
+        grid-row: 2 / 3;
+        grid-column: 3 / 4; } }
+  .gallery__item--5 {
+    grid-row: 2 / span 2;
+    grid-column: 1 / span 2;
+    /* 355px/16 = 22.1875em*/
+    /* 400px/16 = 25em */
+    /* 371px/16 = 25em */
+    /* 530px/16 = 33.125em*/
+    /* 562px/16 = 35.125em*/
+    /* 616px/16 = 38.5em */
+    /* 767px/16 = 47.9375em */
+    /* 800px/16 = 50em */
+    /* 1000px/16 = 62.5em*/
+    /* 1200px/16 = 75em*/
+    /* 1500px/16 = 93.75em*/
+    /* 1860px/16 = 116.25em   */ }
+    @media only screen and (max-width: 33.125em) {
+      .gallery__item--5 {
+        grid-row: 3 / 4;
+        grid-column: 1 / 3; } }
   .gallery__item--6 {
-    grid-row: 2 / 3;
-    grid-column: 1 / span 2; }
-  .gallery__item--17 {
+    grid-row: 2 / span 2;
+    grid-column: 3 / span 2;
+    /* 355px/16 = 22.1875em*/
+    /* 400px/16 = 25em */
+    /* 371px/16 = 25em */
+    /* 530px/16 = 33.125em*/
+    /* 562px/16 = 35.125em*/
+    /* 616px/16 = 38.5em */
+    /* 767px/16 = 47.9375em */
+    /* 800px/16 = 50em */
+    /* 1000px/16 = 62.5em*/
+    /* 1200px/16 = 75em*/
+    /* 1500px/16 = 93.75em*/
+    /* 1860px/16 = 116.25em   */ }
+    @media only screen and (max-width: 33.125em) {
+      .gallery__item--6 {
+        grid-row: 3 / 5;
+        grid-column: 3 / 4; } }
+  .gallery__item--7 {
+    grid-row: 2 / 4;
+    grid-column: 5 / 6;
+    /* 355px/16 = 22.1875em*/
+    /* 400px/16 = 25em */
+    /* 371px/16 = 25em */
+    /* 530px/16 = 33.125em*/
+    /* 562px/16 = 35.125em*/
+    /* 616px/16 = 38.5em */
+    /* 767px/16 = 47.9375em */
+    /* 800px/16 = 50em */
+    /* 1000px/16 = 62.5em*/
+    /* 1200px/16 = 75em*/
+    /* 1500px/16 = 93.75em*/
+    /* 1860px/16 = 116.25em   */ }
+    @media only screen and (max-width: 33.125em) {
+      .gallery__item--7 {
+        grid-row: 4 / 6;
+        grid-column: 1 / 3; } }
+  .gallery__item--8 {
+    grid-row: 2 / span 2;
+    grid-column: 6 / 7;
+    /* 355px/16 = 22.1875em*/
+    /* 400px/16 = 25em */
+    /* 371px/16 = 25em */
+    /* 530px/16 = 33.125em*/
+    /* 562px/16 = 35.125em*/
+    /* 616px/16 = 38.5em */
+    /* 767px/16 = 47.9375em */
+    /* 800px/16 = 50em */
+    /* 1000px/16 = 62.5em*/
+    /* 1200px/16 = 75em*/
+    /* 1500px/16 = 93.75em*/
+    /* 1860px/16 = 116.25em   */ }
+    @media only screen and (max-width: 33.125em) {
+      .gallery__item--8 {
+        grid-row: 5 / span 2;
+        grid-column: 3 / 4; } }
+  .gallery__item--9 {
     grid-row: 4 / 5;
-    grid-column: 2 / 4; }
+    grid-column: 1 / 3;
+    /* 355px/16 = 22.1875em*/
+    /* 400px/16 = 25em */
+    /* 371px/16 = 25em */
+    /* 530px/16 = 33.125em*/
+    /* 562px/16 = 35.125em*/
+    /* 616px/16 = 38.5em */
+    /* 767px/16 = 47.9375em */
+    /* 800px/16 = 50em */
+    /* 1000px/16 = 62.5em*/
+    /* 1200px/16 = 75em*/
+    /* 1500px/16 = 93.75em*/
+    /* 1860px/16 = 116.25em   */ }
+    @media only screen and (max-width: 33.125em) {
+      .gallery__item--9 {
+        grid-row: 7 / 8;
+        grid-column: 1 / span 2; } }
+  .gallery__item--10 {
+    grid-row: 4 / 5;
+    grid-column: 3 / 5;
+    /* 355px/16 = 22.1875em*/
+    /* 400px/16 = 25em */
+    /* 371px/16 = 25em */
+    /* 530px/16 = 33.125em*/
+    /* 562px/16 = 35.125em*/
+    /* 616px/16 = 38.5em */
+    /* 767px/16 = 47.9375em */
+    /* 800px/16 = 50em */
+    /* 1000px/16 = 62.5em*/
+    /* 1200px/16 = 75em*/
+    /* 1500px/16 = 93.75em*/
+    /* 1860px/16 = 116.25em   */ }
+    @media only screen and (max-width: 33.125em) {
+      .gallery__item--10 {
+        grid-row: 7 / 9;
+        grid-column: 3 / -1; } }
+  .gallery__item--11 {
+    grid-row: 4 / 5;
+    grid-column: 5 / span 2;
+    /* 355px/16 = 22.1875em*/
+    /* 400px/16 = 25em */
+    /* 371px/16 = 25em */
+    /* 530px/16 = 33.125em*/
+    /* 562px/16 = 35.125em*/
+    /* 616px/16 = 38.5em */
+    /* 767px/16 = 47.9375em */
+    /* 800px/16 = 50em */
+    /* 1000px/16 = 62.5em*/
+    /* 1200px/16 = 75em*/
+    /* 1500px/16 = 93.75em*/
+    /* 1860px/16 = 116.25em   */ }
+    @media only screen and (max-width: 33.125em) {
+      .gallery__item--11 {
+        grid-row: 8 / 9;
+        grid-column: 1 / span 3; } }
+  .gallery__item--12 {
+    grid-row: 5 / 6;
+    grid-column: 1 / 2;
+    /* 355px/16 = 22.1875em*/
+    /* 400px/16 = 25em */
+    /* 371px/16 = 25em */
+    /* 530px/16 = 33.125em*/
+    /* 562px/16 = 35.125em*/
+    /* 616px/16 = 38.5em */
+    /* 767px/16 = 47.9375em */
+    /* 800px/16 = 50em */
+    /* 1000px/16 = 62.5em*/
+    /* 1200px/16 = 75em*/
+    /* 1500px/16 = 93.75em*/
+    /* 1860px/16 = 116.25em   */ }
+    @media only screen and (max-width: 33.125em) {
+      .gallery__item--12 {
+        grid-row: 9 / 10;
+        grid-column: 1 / 2; } }
+  .gallery__item--13 {
+    grid-row: 5 / 6;
+    grid-column: 2 / span 2;
+    /* 355px/16 = 22.1875em*/
+    /* 400px/16 = 25em */
+    /* 371px/16 = 25em */
+    /* 530px/16 = 33.125em*/
+    /* 562px/16 = 35.125em*/
+    /* 616px/16 = 38.5em */
+    /* 767px/16 = 47.9375em */
+    /* 800px/16 = 50em */
+    /* 1000px/16 = 62.5em*/
+    /* 1200px/16 = 75em*/
+    /* 1500px/16 = 93.75em*/
+    /* 1860px/16 = 116.25em   */ }
+    @media only screen and (max-width: 33.125em) {
+      .gallery__item--13 {
+        grid-row: 9 / 10;
+        grid-column: 2 / span 2; } }
+  .gallery__item--14 {
+    grid-row: 5 / 6;
+    grid-column: 4 / span 2;
+    /* 355px/16 = 22.1875em*/
+    /* 400px/16 = 25em */
+    /* 371px/16 = 25em */
+    /* 530px/16 = 33.125em*/
+    /* 562px/16 = 35.125em*/
+    /* 616px/16 = 38.5em */
+    /* 767px/16 = 47.9375em */
+    /* 800px/16 = 50em */
+    /* 1000px/16 = 62.5em*/
+    /* 1200px/16 = 75em*/
+    /* 1500px/16 = 93.75em*/
+    /* 1860px/16 = 116.25em   */ }
+    @media only screen and (max-width: 33.125em) {
+      .gallery__item--14 {
+        grid-row: 10 / 11;
+        grid-column: 1 / span 2; } }
+  .gallery__item--15 {
+    grid-row: 5 / -1;
+    grid-column: 6 / -1;
+    /* 355px/16 = 22.1875em*/
+    /* 400px/16 = 25em */
+    /* 371px/16 = 25em */
+    /* 530px/16 = 33.125em*/
+    /* 562px/16 = 35.125em*/
+    /* 616px/16 = 38.5em */
+    /* 767px/16 = 47.9375em */
+    /* 800px/16 = 50em */
+    /* 1000px/16 = 62.5em*/
+    /* 1200px/16 = 75em*/
+    /* 1500px/16 = 93.75em*/
+    /* 1860px/16 = 116.25em   */ }
+    @media only screen and (max-width: 33.125em) {
+      .gallery__item--15 {
+        grid-row: 10 / 11;
+        grid-column: 3 / 4; } }
 
 .products-miscellaneous {
   flex: 1;

@@ -1,4 +1,4 @@
-                <?php wp_footer(); ?> 
+                <?php wp_footer(); ?>
         <footer class="site-footer">
             <div class="site-footer__inner-grid site-footer__container container--narrow">
                 <div class="site-footer__inner-grid--item">

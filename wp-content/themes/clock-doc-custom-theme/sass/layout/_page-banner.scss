@@ -34,6 +34,7 @@
     ); /* 50% of the height and width of the &__headings element itself. */
     text-align: center;
     margin-top: 2rem;
+    margin: auto auto;
   }
 
   &__heading {
@@ -166,11 +167,15 @@
     width: max-content;
     text-align: left;
 
-    @include respondDesktop(atLarge) {
+    /* The next @include is asterisked out because it made the page banner look bad. 
+    The Quality and Craftmanship was out of line. Without it the font is pretty small on the ipadpro, 
+    but that's better than having the misaligned headings. */
+
+    /*@include respondDesktop(atLarge) {
       font-size: 3.5rem;
       width: 90rem;
       height: 12rem;
-    }
+    }*/
 
     @include respondDesktop(atMediumLarge) {
       font-size: 3rem;

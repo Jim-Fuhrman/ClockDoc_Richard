@@ -41,19 +41,12 @@ function clockdoc_features() {
     register_nav_menu('headerMenuLocation', 'Clocks');
     add_theme_support('title-tag');
     add_theme_support('post-thumbnails');
-    add_image_size('clockStylePortrait', 480, 650, true);
-    add_image_size('clockStyleLandscape', 400, 260, true);
-    add_image_size('clockStyleRectangle', 300, 150, true);    
+    add_image_size('clockStylePortrait', 150, 320, true);
+    add_image_size('clockStyleLargeSquare', 320, 320, true);
+    add_image_size('clockStyleRectangle', 320, 150, true);
+    add_image_size('clockStyleLongRectangle', 490, 150, true);    
     add_image_size('pageBanner', 1500, 350, true);
     //add_image_size('homepage-slideshow', 1900, 525, array('left', 'top'));
   }
   
   add_action('after_setup_theme', 'clockdoc_features');
-  
-  // if (strstr($_SERVER['SERVER_NAME'], 'dev')) {
-  //     wp_enqueue_script('main-university-js', './bundled.js', NULL, '1.0', true);
-  //   } else {
-  //     wp_enqueue_script('our-vendors-js', get_theme_file_uri('/bundled-assets/vendors~scripts.1e7bf5b86d0fb2b2de53.js'), NULL, '1.0', true);
-  //     wp_enqueue_script('main-university-js', get_theme_file_uri('/bundled-assets/scripts.60b2165d177427643e3f.js'), NULL, '1.0', true);
-  //     wp_enqueue_style('our-main-styles', get_theme_file_uri('/bundled-assets/styles.60b2165d177427643e3f.css'));
-  //   }

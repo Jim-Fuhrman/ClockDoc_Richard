@@ -959,68 +959,6 @@ module.exports = g;
 
 /***/ }),
 
-/***/ "./src/ImportantNoticeCheck.js":
-/*!*************************************!*\
-  !*** ./src/ImportantNoticeCheck.js ***!
-  \*************************************/
-/*! exports provided: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-class ImportantNoticeCheck {
-  constructor() {
-    this.importantNotice = document.querySelector(".page-banner__important-notice");
-
-    if (this.importantNotice === null) {
-      return null;
-    }
-
-    this.textBox = document.querySelector(".page-banner__text-box");
-    this.events();
-  }
-
-  events() {
-    this.adjustTops();
-  }
-
-  adjustTops() {
-    let topMinusNotice = "40%";
-    let topPlusNotice = "45%";
-
-    if (window.screen.width >= 767) {
-      topMinusNotice = "45%";
-      topPlusNotice = "55%";
-    }
-
-    console.log("topMinusNotice = " + topMinusNotice);
-    console.log("topPlusNotice = " + topPlusNotice);
-    console.log("window screen width = " + window.screen.width);
-    this.textBox.style.top = topMinusNotice;
-
-    if (this.importantNotice) {
-      if (this.importantNotice.textContent !== null) {
-        this.textBox.style.top = topPlusNotice;
-      }
-      /* end of inner If */
-
-    }
-    /* end of outer If */
-
-
-    console.log("top set to " + this.textBox.style.top);
-  }
-  /* end of adjustTops function */
-
-
-}
-/* end of the entire class ImportantNoticeCheck */
-
-
-/* harmony default export */ __webpack_exports__["default"] = (ImportantNoticeCheck);
-
-/***/ }),
-
 /***/ "./src/MobileMenu.js":
 /*!***************************!*\
   !*** ./src/MobileMenu.js ***!
@@ -1149,22 +1087,23 @@ class upArrow {
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _css_style_css__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../css/style.css */ "./css/style.css");
-/* harmony import */ var _ImportantNoticeCheck__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./ImportantNoticeCheck */ "./src/ImportantNoticeCheck.js");
-/* harmony import */ var _MobileMenu__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./MobileMenu */ "./src/MobileMenu.js");
-/* harmony import */ var _navBarModify__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./navBarModify */ "./src/navBarModify.js");
-/* harmony import */ var _RevealLogin__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./RevealLogin */ "./src/RevealLogin.js");
-/* harmony import */ var _UpArrow__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./UpArrow */ "./src/UpArrow.js");
+/* harmony import */ var _MobileMenu__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./MobileMenu */ "./src/MobileMenu.js");
+/* harmony import */ var _navBarModify__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./navBarModify */ "./src/navBarModify.js");
+/* harmony import */ var _RevealLogin__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./RevealLogin */ "./src/RevealLogin.js");
+/* harmony import */ var _UpArrow__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./UpArrow */ "./src/UpArrow.js");
+
+/*import ImportantNoticeCheck from "./ImportantNoticeCheck";*/
 
 
 
 
 
+/*let importantNoticeCheck = new ImportantNoticeCheck();*/
 
-let importantNoticeCheck = new _ImportantNoticeCheck__WEBPACK_IMPORTED_MODULE_1__["default"]();
-let mobileMenu = new _MobileMenu__WEBPACK_IMPORTED_MODULE_2__["default"]();
-let navBarModify = new _navBarModify__WEBPACK_IMPORTED_MODULE_3__["default"]();
-let revealLogin = new _RevealLogin__WEBPACK_IMPORTED_MODULE_4__["default"]();
-let upArrow = new _UpArrow__WEBPACK_IMPORTED_MODULE_5__["default"]();
+let mobileMenu = new _MobileMenu__WEBPACK_IMPORTED_MODULE_1__["default"]();
+let navBarModify = new _navBarModify__WEBPACK_IMPORTED_MODULE_2__["default"]();
+let revealLogin = new _RevealLogin__WEBPACK_IMPORTED_MODULE_3__["default"]();
+let upArrow = new _UpArrow__WEBPACK_IMPORTED_MODULE_4__["default"]();
 
 /***/ }),
 

@@ -11,8 +11,8 @@ $bkgdClock = '/images/Grandfather_Clockface_Thirteen-768x1024.jpg'; /* 185kb */
 <header id="topOfWebsite" class="page-banner" style="background-image: url(<?php echo get_theme_file_uri($bkgdClock);?>">  
   <div class="page-banner__text-box">  <!-- text-box is position: absolute; its parent class page-banner is position: relative -->
     <h1 class="page-banner__heading">  <!-- heading is position: undefined-->
-      <span class="page-banner__heading--main no-margin t-cursive">Clock Doctor</span>
-      <span class="page-banner__heading--sub no-margin t-cursive">Quality & Craftmanship for all Time</span>
+        <span class="page-banner__heading--main no-margin t-cursive">Clock Doctor</span>
+        <span class="page-banner__heading--sub no-margin t-cursive">Quality & Craftmanship for all Time</span>
     </h1>
     <a href="#products"
         class="page-banner__btn page-banner__btn--animated page-banner__btn--brown">
@@ -22,6 +22,6 @@ $bkgdClock = '/images/Grandfather_Clockface_Thirteen-768x1024.jpg'; /* 185kb */
       <div class="page-banner__important-notice page-banner__important-notice--animated t-center t-black b-goldenrod">
         <strong>Notice: &nbsp;</strong><?php the_field('important_notice'); ?>
       </div>
-  <?php endif; ?>
+      <?php endif; ?>
   </div>
 </header>
