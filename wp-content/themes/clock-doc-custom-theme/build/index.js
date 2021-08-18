@@ -1005,6 +1005,7 @@ class MobileMenu {
 __webpack_require__.r(__webpack_exports__);
 class RevealLogin {
   constructor() {
+    /* the site-header__util will appear in the site-header.php file right after the closing nav tag when we want users to see the login/logout buttons. Right now we don't want them to see them. */
     this.loginBtn = document.querySelector(".site-header__util");
     this.events();
   }
@@ -1012,7 +1013,6 @@ class RevealLogin {
   events() {
     window.addEventListener("keydown", keyPressed => {
       if (keyPressed.key === "Escape") {
-        console.log("the Escape key was pressed.");
         this.loginBtn.classList.toggle("hide");
       }
     });

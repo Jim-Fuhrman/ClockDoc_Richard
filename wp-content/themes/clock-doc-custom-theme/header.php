@@ -16,7 +16,6 @@
     </div>
       <ul class="site-header__nav-menu site-header__menu-content">
           <li><a href="<?php echo esc_url(site_url('')); ?>">Home</a></li>
-          <!-- <li><a href="#about-Us">About Us</a></li> -->
           <li><a <?php if (is_page('about-us') or wp_get_post_parent_id(0) == 42) echo 'class="current"'?> href="<?php echo esc_url(site_url('/About Us'));?>">About</a></li>
           <div class="dropdown">
             <li class="dropdown__a"><a  <?php if(is_page('Clocks') || is_page('Watches') || is_page('Miscellaneous')) echo 'class="current"'?> href="#">Products</a></li>  <!-- If I want Products to look like the other 4 links, it needs to be an anchor tag with an href. -->
@@ -28,8 +27,12 @@
           </div>
           <li><a <?php if (get_post_type() == 'post') echo 'class="current"'?> href="<?php echo site_url('/blog'); ?>">Blogs</a></li>
           <li><a <?php if (is_page('contact-us')) echo 'class="current"'?> href="<?php echo esc_url(site_url('/Contact Us'));?>">Contact Us</a></li>
-      
-          <div class="site-header__util hide">
+          <li>
+              <a href="<?php echo esc_url(site_url('/search')); ?>">
+                <i class="fa fa-search" aria-hidden="true"></i>
+              </a>
+          </li>
+          <div class="site-header__util hide">   
           <!-- When the user types the escape key, it toggles the hiding/displaying of the Login button. By default we hide the login button, so customers can't see it -->
               <?php if(is_user_logged_in()) {?>
                     <a href="<?php echo wp_logout_url(); ?>" class="btn btn--small btn--dark-orange float-left btn--with-photo">
