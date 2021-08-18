@@ -73,6 +73,14 @@
     grid-gap: 1em;
   }
 
+  @include respondDesktop(atSmaller) {
+    margin: 1em;
+    /*grid-template-rows: repeat(10, 9vw);*/
+    grid-template-rows: repeat(15, 1fr);
+    grid-template-columns: 1fr;
+    grid-gap: 1em;
+  }
+
   /*@include respondDesktop(atSmall) {
     grid-template-rows: repeat(10, minmax(1.5rem, min-content));
     grid-template-columns: repeat(auto-fit, minmax(1.5rem, 1fr));
@@ -134,7 +142,7 @@
       grid-column: 5 / 6;
 
       @include respondDesktop(atSmall) {
-        grid-row: 4 / 6;
+        grid-row: 4 / 7;
         grid-column: 1 / 3;
       }
     }
@@ -144,7 +152,7 @@
       grid-column: 6 / 7;
 
       @include respondDesktop(atSmall) {
-        grid-row: 5 / span 2;
+        grid-row: 5 / span 3;
         grid-column: 3 / 4;
       }
     }
@@ -163,10 +171,11 @@
       grid-row: 4 / 5;
       grid-column: 3 / 5;
 
-      @include respondDesktop(atSmall) {
+      /* The next is asterisked out, so grid cell 8, the BoucSelf clock with black face and glass cover shows entirely. */
+      /*@include respondDesktop(atSmall) {
         grid-row: 7 / 9;
         grid-column: 3 / -1;
-      }
+      }*/
     }
 
     &--11 {

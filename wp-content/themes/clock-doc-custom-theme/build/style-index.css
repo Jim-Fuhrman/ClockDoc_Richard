@@ -2161,6 +2161,18 @@ the exception being the .container class. That's defined in utilities.scss, so t
   /* 1200px/16 = 75em*/
   /* 1500px/16 = 93.75em*/
   /* 1860px/16 = 116.25em   */
+  /* 355px/16 = 22.1875em*/
+  /* 400px/16 = 25em */
+  /* 371px/16 = 25em */
+  /* 530px/16 = 33.125em*/
+  /* 562px/16 = 35.125em*/
+  /* 616px/16 = 38.5em */
+  /* 767px/16 = 47.9375em */
+  /* 800px/16 = 50em */
+  /* 1000px/16 = 62.5em*/
+  /* 1200px/16 = 75em*/
+  /* 1500px/16 = 93.75em*/
+  /* 1860px/16 = 116.25em   */
   /*@include respondDesktop(atSmall) {
     grid-template-rows: repeat(10, minmax(1.5rem, min-content));
     grid-template-columns: repeat(auto-fit, minmax(1.5rem, 1fr));
@@ -2179,6 +2191,15 @@ the exception being the .container class. That's defined in utilities.scss, so t
       grid-template-rows: repeat(10, 1fr);
       -ms-grid-columns: (1fr)[3];
       grid-template-columns: repeat(3, 1fr);
+      grid-gap: 1em; } }
+  @media only screen and (max-width: 22.1875em) {
+    .gallery {
+      margin: 1em;
+      /*grid-template-rows: repeat(10, 9vw);*/
+      -ms-grid-rows: (1fr)[15];
+      grid-template-rows: repeat(15, 1fr);
+      -ms-grid-columns: 1fr;
+      grid-template-columns: 1fr;
       grid-gap: 1em; } }
   .gallery__item--1 {
     -ms-grid-row: 1;
@@ -2322,8 +2343,8 @@ the exception being the .container class. That's defined in utilities.scss, so t
     @media only screen and (max-width: 33.125em) {
       .gallery__item--7 {
         -ms-grid-row: 4;
-        -ms-grid-row-span: 2;
-        grid-row: 4 / 6;
+        -ms-grid-row-span: 3;
+        grid-row: 4 / 7;
         -ms-grid-column: 1;
         -ms-grid-column-span: 2;
         grid-column: 1 / 3; } }
@@ -2349,8 +2370,8 @@ the exception being the .container class. That's defined in utilities.scss, so t
     @media only screen and (max-width: 33.125em) {
       .gallery__item--8 {
         -ms-grid-row: 5;
-        -ms-grid-row-span: 2;
-        grid-row: 5 / span 2;
+        -ms-grid-row-span: 3;
+        grid-row: 5 / span 3;
         -ms-grid-column: 3;
         -ms-grid-column-span: 1;
         grid-column: 3 / 4; } }
@@ -2388,24 +2409,11 @@ the exception being the .container class. That's defined in utilities.scss, so t
     -ms-grid-column: 3;
     -ms-grid-column-span: 2;
     grid-column: 3 / 5;
-    /* 355px/16 = 22.1875em*/
-    /* 400px/16 = 25em */
-    /* 371px/16 = 25em */
-    /* 530px/16 = 33.125em*/
-    /* 562px/16 = 35.125em*/
-    /* 616px/16 = 38.5em */
-    /* 767px/16 = 47.9375em */
-    /* 800px/16 = 50em */
-    /* 1000px/16 = 62.5em*/
-    /* 1200px/16 = 75em*/
-    /* 1500px/16 = 93.75em*/
-    /* 1860px/16 = 116.25em   */ }
-    @media only screen and (max-width: 33.125em) {
-      .gallery__item--10 {
-        -ms-grid-row: 7;
-        -ms-grid-row-span: 2;
+    /* The next is asterisked out, so grid cell 8, the BoucSelf clock with black face and glass cover shows entirely. */
+    /*@include respondDesktop(atSmall) {
         grid-row: 7 / 9;
-        grid-column: 3 / -1; } }
+        grid-column: 3 / -1;
+      }*/ }
   .gallery__item--11 {
     -ms-grid-row: 4;
     -ms-grid-row-span: 1;

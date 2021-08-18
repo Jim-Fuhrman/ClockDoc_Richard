@@ -1,27 +1,27 @@
 <?php
 function pageBanner($args = NULL) {
-  if (!isset($args['title'])) {
+  if (!$args['title']) {
     $args['title'] = get_the_title();
   }
-
-  if (!isset($args['subtitle'])) {
+  
+  if (!$args['subtitle']) {
     $args['subtitle'] = get_field('page_banner_subtitle');
   }
-
-  if (!isset($args['photo'])) {
+  
+  if (!$args['photo']) {
     if (get_field('page_banner_background_image')) {
       $args['photo'] = get_field('page_banner_background_image')['sizes']['pageBanner'];
     } else {
-      $args['photo'] = get_theme_file_uri('/images/unsplash-Sunrise.jpg');
+      $args['photo'] = get_theme_file_uri('/images/shutterstock_Clock_Ancient.jpg');
     }
   }
   ?>
     <div class="postpage-banner">
-      <div class="postpage-banner__bg-image" style="background-image: url(<?php echo get_field('page_banner_background_image')['sizes']['pageBanner']; ?>);"></div>
+      <div class="postpage-banner__bg-image" style="background-image: url(<?php echo $args['photo'];?>);"></div>
       <div class="postpage-banner__content container container--narrow">
-        <h1 class="postpage-banner__title"><?php echo get_the_title();?></h1>
+        <h1 class="postpage-banner__title"><?php echo $args['title'];?></h1>
         <div class="postpage-banner__intro">
-          <p><?php echo get_field('page_banner_subtitle'); ?></p>
+          <p><?php echo $args['subtitle']; ?></p>
         </div>
       </div>
     </div>

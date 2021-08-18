@@ -40,19 +40,19 @@
             </picture>    
         </figure>
         <figure class="gallery__item gallery__item--8"><img src="<?php echo get_theme_file_uri('/images/BoucSelf_Clock_Black_Face_Glass_Cover-150x320.jpeg'); ?>" alt="Gallery img 8" class="gallery__img"></figure>
-        <figure class="gallery__item gallery__item--9"><img src="<?php echo get_theme_file_uri('/images/shutterstock_Jimf_Gold_WatchBand_BlackFace-320x150.jpg'); ?>" alt="Gallery img 10" class="gallery__img"></figure>
+        <figure class="gallery__item gallery__item--9"><img src="<?php echo get_theme_file_uri('/images/shutterstock_Jimf_Gold_WatchBand_BlackFace-320x150.jpg'); ?>" alt="Gallery img 9" class="gallery__img"></figure>
         <figure class="gallery__item gallery__item--10">
             <source srcset="<?php echo get_theme_file_uri('/images/shutterstock_Clock_Ancient_clear-1024x591-1-490x150.jpg'); ?>" media="(max-width: 33.125em)">
-            <img src="<?php echo get_theme_file_uri('/images/shutterstock_Clockwork_Colorful_Jims_Pick-320x150.jpg'); ?>" alt="Gallery img 11" class="gallery__img">
+            <img src="<?php echo get_theme_file_uri('/images/shutterstock_Clockwork_Colorful_Jims_Pick-320x150.jpg'); ?>" alt="Gallery img 10" class="gallery__img">
         </figure>
         <figure class="gallery__item gallery__item--11">
             <source srcset="<?php echo get_theme_file_uri('/images/shutterstock_JimF_Watch_Bracelet_Gold_small-150x150.jpg'); ?>" media="(max-width: 33.125em)">
-            <img src="<?php echo get_theme_file_uri('/images/shutterstock_JimF_Watch_Bracelet_Gold_small-320x150.jpg'); ?>" alt="Gallery img 12" class="gallery__img">
+            <img src="<?php echo get_theme_file_uri('/images/shutterstock_JimF_Watch_Bracelet_Gold_small-320x150.jpg'); ?>" alt="Gallery img 11" class="gallery__img">
         </figure>
-        <figure class="gallery__item gallery__item--12"><img src="<?php echo get_theme_file_uri('/images/Bouc_Watches_Pocket-150x150.jpg'); ?>" alt="Gallery img 13" class="gallery__img"></figure>
-        <figure class="gallery__item gallery__item--13"><img src="<?php echo get_theme_file_uri('/images/shutterstock_JimF_Flat_Watch_SilverBand-320x150.jpg'); ?>" alt="Gallery img 14" class="gallery__img"></figure>
-        <figure class="gallery__item gallery__item--14"><img src="<?php echo get_theme_file_uri('/images/shutterstock_Clock_Ancient_clear-1024x591-1-320x150.jpg'); ?>" alt="Gallery img 15" class="gallery__img"></figure>
-        <figure class="gallery__item gallery__item--15"><img src="<?php echo get_theme_file_uri('/images/Bouc_Watch_and_picker-150x150.jpg'); ?>" alt="Gallery img 16" class="gallery__img"></figure>
+        <figure class="gallery__item gallery__item--12"><img src="<?php echo get_theme_file_uri('/images/Bouc_Watches_Pocket-150x150.jpg'); ?>" alt="Gallery img 12" class="gallery__img"></figure>
+        <figure class="gallery__item gallery__item--13"><img src="<?php echo get_theme_file_uri('/images/shutterstock_JimF_Flat_Watch_SilverBand-320x150.jpg'); ?>" alt="Gallery img 13" class="gallery__img"></figure>
+        <figure class="gallery__item gallery__item--14"><img src="<?php echo get_theme_file_uri('/images/shutterstock_Clock_Ancient_clear-1024x591-1-320x150.jpg'); ?>" alt="Gallery img 14" class="gallery__img"></figure>
+        <figure class="gallery__item gallery__item--15"><img src="<?php echo get_theme_file_uri('/images/Bouc_Watch_and_picker-150x150.jpg'); ?>" alt="Gallery img 15" class="gallery__img"></figure>
     </div>
     <div class="products-miscellaneous full-width-split__two" style="background-image: url(<?php echo get_theme_file_uri($bkgdMisc);?>">
         <div class="full-width-split__inner white-cover">

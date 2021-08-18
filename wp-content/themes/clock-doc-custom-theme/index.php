@@ -3,7 +3,7 @@
     pageBanner(array(
         'title' => 'Welcome to Our Blogs',
         'subtitle' => 'Here are what our customers have posted',
-        'background_image' => get_theme_file_uri('/images/Bouc_Grandfather_ClockFace.jpg')
+        'photo' => get_theme_file_uri('/images/shutterstock_JimF_Antique_Bottom_Up.jpg')
     )); 
     ?>
     
