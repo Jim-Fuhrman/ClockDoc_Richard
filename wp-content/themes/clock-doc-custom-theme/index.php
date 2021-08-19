@@ -1,4 +1,4 @@
-<?php
+<?php 
     get_header();
     pageBanner(array(
         'title' => 'Welcome to Our Blogs',
@@ -7,7 +7,6 @@
     )); 
     ?>
     
-
     <div class="container container--narrow page-section">
     <?php
         if( have_posts() ) : 

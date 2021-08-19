@@ -1,4 +1,4 @@
-<h1>content-post.php file</h1>
+<h1>content-clocks.php file</h1>
 <div class="post-item">
     <h2 class="headline headline--medium headline--post-title">
         <a href="<?php the_permalink(); ?>"><?php the_title();?></a>

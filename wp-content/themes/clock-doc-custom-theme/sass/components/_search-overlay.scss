@@ -39,9 +39,9 @@
     margin-right: 10px;
     font-size: 1.8rem;
     color: $darkOrange;
-    @include atMedium {
+    /*@include atMedium {
       font-size: 2.5rem;
-    }
+    }*/
   }
 
   &--active {
@@ -69,14 +69,14 @@
     background-color: #fff;
     color: $darkOrange;
     line-height: 0.7;
-    @include atSmall {
+    /*@include atSmall {
       top: 18px;
       font-size: 2.1rem;
     }
     @include atMedium {
       top: 26px;
       font-size: 2.8rem;
-    }
+    }*/
   }
 
   &__close:hover {
@@ -99,13 +99,13 @@
   font-weight: 300;
   outline: none;
   color: $darkOrange;
-  @include atSmall {
+  /*@include atSmall {
     font-size: 1.5rem;
   }
   @include atMedium {
     width: 80%;
     font-size: 3rem;
-  }
+  }*/
 }
 
 .body-no-scroll {
