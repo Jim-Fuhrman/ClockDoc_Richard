@@ -391,7 +391,8 @@ li {
       font-size: 3em; } }
 
 p {
-  font-size: 2em;
+  font-size: 2rem;
+  /* This needs to be 2rem, not 2em, so the font isn't so big on the archive-clocks page. */
   line-height: 1.65em;
   /* 355px/16 = 22.1875em*/
   /* 400px/16 = 25em */
