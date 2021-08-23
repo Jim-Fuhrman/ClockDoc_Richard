@@ -1,12 +1,35 @@
-.products-bkgd {
+.products-background {
+  /* 38 is the page id of the Products page.  This class used to be called products-background. page-id-38 is what it will be called later. */
   position: relative;
   background-color: transparent;
   height: 100vh;
+  width: 100vw;
   display: flex;
 
   @include respondDesktop(atSmall) {
     height: 175vh;
   }
+}
+
+.products-foreground-metalinks {
+  position: absolute;
+  display: flex;
+}
+
+.products-foreground {
+  top: 0;
+  left: 0;
+  transform: translate(
+    7.5%,
+    -2.5%
+  ); /* Yes, that's 5% and -2.5%, not -50%. Anything more than 5% will overlap with metaboxes. -50% will overlap the page banner. */
+  font-size: 1.5rem;
+}
+
+.products-metalinks {
+  margin-left: 8rem;
+  margin-top: 3.7rem;
+  z-index: 10;
 }
 
 .white-cover {
@@ -49,9 +72,21 @@
   }
 }
 
+.products-list {
+  li {
+    list-style-type: none;
+    padding-bottom: 10rem;
+    border-bottom: 1px solid maroon;
+  }
+
+  li:last-child {
+    padding-bottom: none;
+  }
+}
+
 .gallery {
   margin: auto auto;
-  padding: 1em;
+  padding: 1rem;
   display: grid;
 
   grid-template-rows: repeat(5, 1fr);

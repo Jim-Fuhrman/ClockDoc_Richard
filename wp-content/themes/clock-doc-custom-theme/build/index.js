@@ -1024,6 +1024,46 @@ class RevealLogin {
 
 /***/ }),
 
+/***/ "./src/Search.js":
+/*!***********************!*\
+  !*** ./src/Search.js ***!
+  \***********************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+class Search {
+  // 1. constructor is where we describe and create/initiate our object.
+  constructor() {
+    this.openButton = document.querySelector(".js-search-trigger");
+    this.closeButton = document.querySelector(".search-overlay__close");
+    this.searchOverlay = document.querySelector(".search-overlay");
+    this.events();
+    /* This makes sure our add event listeners get added right away. */
+  } // 2. events - when something gets clicked on, for example. Where we connect the dots between the constructor and the actions it can perform. the main central office. if this.head feels, cold, we wear a hat.
+
+
+  events() {
+    this.openButton.addEventListener("click", openOverlay());
+    this.closeButton.addEventListener("click", closeOverlay());
+  } // 3. methods (function, action...)
+
+
+  openOverlay() {
+    this.searchOverlay.classList.add("search-overlay--active");
+  }
+
+  closeOverlay() {
+    this.searchOverlay.classList.remove("search-overlay--active");
+  }
+
+}
+
+/* harmony default export */ __webpack_exports__["default"] = (Search);
+
+/***/ }),
+
 /***/ "./src/UpArrow.js":
 /*!************************!*\
   !*** ./src/UpArrow.js ***!
@@ -1090,9 +1130,11 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _MobileMenu__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./MobileMenu */ "./src/MobileMenu.js");
 /* harmony import */ var _navBarModify__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./navBarModify */ "./src/navBarModify.js");
 /* harmony import */ var _RevealLogin__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./RevealLogin */ "./src/RevealLogin.js");
-/* harmony import */ var _UpArrow__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./UpArrow */ "./src/UpArrow.js");
+/* harmony import */ var _Search__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./Search */ "./src/Search.js");
+/* harmony import */ var _UpArrow__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./UpArrow */ "./src/UpArrow.js");
 
 /*import ImportantNoticeCheck from "./ImportantNoticeCheck";*/
+
 
 
 
@@ -1103,7 +1145,7 @@ __webpack_require__.r(__webpack_exports__);
 let mobileMenu = new _MobileMenu__WEBPACK_IMPORTED_MODULE_1__["default"]();
 let navBarModify = new _navBarModify__WEBPACK_IMPORTED_MODULE_2__["default"]();
 let revealLogin = new _RevealLogin__WEBPACK_IMPORTED_MODULE_3__["default"]();
-let upArrow = new _UpArrow__WEBPACK_IMPORTED_MODULE_4__["default"]();
+let upArrow = new _UpArrow__WEBPACK_IMPORTED_MODULE_5__["default"]();
 
 /***/ }),
 

@@ -28,7 +28,7 @@
           <li><a <?php if (get_post_type() == 'post') echo 'class="current"'?> href="<?php echo site_url('/blog'); ?>">Blogs</a></li>
           <li><a <?php if (is_page('contact-us')) echo 'class="current"'?> href="<?php echo esc_url(site_url('/Contact Us'));?>">Contact Us</a></li>
           <li>
-              <a href="<?php echo esc_url(site_url('/search')); ?>">
+              <a href="<?php echo esc_url(site_url('/search')); ?>" class="search-trigger js-search-trigger">
                 <i class="fa fa-search" aria-hidden="true"></i>
               </a>
           </li>

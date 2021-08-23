@@ -5,12 +5,12 @@ $clockStyles = new WP_Query(array(
 ));
 pageBanner(array(
     'title' => 'All Clocks',
-    'subtitle' => 'We have ' . $clockStyles->found_posts . ' different clock styles'
+    'subtitle' => 'Pictured below are ' . $clockStyles->found_posts . ' different clock styles'
 ));
 ?>
 
 <div class="container container--narrow page-section">
-    <ul class="link-list min-list">
+    <ul class="products-list">
 <?php
     $pgmCount = 1;
     while (have_posts() ) {
@@ -29,5 +29,6 @@ pageBanner(array(
 ?>
     </ul>
 </div>
-
-<?php get_footer();?>
+<?php 
+get_template_part('template-parts/content', 'contactInfo');
+get_footer();?>

@@ -104,10 +104,10 @@
   cursor: pointer;
   top: 1px;
   margin-left: 20px;
-  /*@mixin atMedium {
+  @include respondDesktop(atMedium) {
     display: inline-block;
     top: 6px;
-  }*/
+  }
 }
 
 .search-trigger:hover {

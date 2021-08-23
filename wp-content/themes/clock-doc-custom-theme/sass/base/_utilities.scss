@@ -73,14 +73,23 @@
   text-decoration: underline;
 }
 
+.t-block {
+  display: block;
+}
 .t-bold {
   font-weight: bold;
 }
-.t-center {
-  text-align: center;
+.t-normal {
+  font-weight: normal;
 }
 .t-cursive {
   font-family: "Dancing Script", cursive, sans-serif;
+}
+.t-underline {
+  text-decoration: underline;
+}
+.t-center {
+  text-align: center;
 }
 .t-left {
   text-align: left;
@@ -94,17 +103,16 @@
 .t-black {
   color: #000;
 }
+.t-small {
+  font-size: 1.3em;
+}
 
 .t-maroon {
-  background-color: #8d2b25;
+  color: #8d2b25;
 }
 
 .b-goldenrod {
   background-color: goldenrod;
-}
-
-.t-small {
-  font-size: 1.3em;
 }
 
 .float-left {

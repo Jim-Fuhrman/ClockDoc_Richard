@@ -1,20 +1,22 @@
 .full-width-split {
-  @mixin atMediumLarge {
+  display: flex;
+  /*@mixin atMediumLarge {
     display: flex;
-  }
+  }*/
 
   &__one {
     flex: 1;
     z-index: -1;
     /*padding: 1.6rem 1rem; */
-    @mixin atMediumLarge {
-      /* padding: 40px; */
-    }
+    /*@mixin atMediumLarge {*/
+    /* padding: 40px; */
+    /*}*/
 
     .full-width-split__inner {
-      @mixin atMediumLarge {
+      float: right;
+      /*@mixin atMediumLarge {
         float: right;
-      }
+      }*/
     }
   }
 
@@ -23,9 +25,9 @@
     z-index: -1;
     background-color: $beige;
     /*padding: 1.6rem 1rem; */
-    @mixin atMediumLarge {
-      /* padding: 40px; */
-    }
+    /*@mixin atMediumLarge {*/
+    /* padding: 40px; */
+    /*}*/
   }
 
   &__inner {

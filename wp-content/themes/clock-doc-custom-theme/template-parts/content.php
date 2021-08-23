@@ -14,7 +14,7 @@ $bkgdClock = '/images/Grandfather_Clockface_Thirteen-768x1024.jpg'; /* 185kb */
         <span class="page-banner__heading--main no-margin t-cursive"><?php echo bloginfo('name'); ?></span>
         <span class="page-banner__heading--sub no-margin t-cursive"><?php echo bloginfo('description'); ?></span>
     </h1>
-    <a href="#products"
+    <a href="/products"
         class="page-banner__btn page-banner__btn--animated page-banner__btn--brown">
         Click to see our products
      </a>

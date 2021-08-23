@@ -3,6 +3,7 @@ import "../css/style.css";
 import MobileMenu from "./MobileMenu";
 import NavBarModify from "./navBarModify";
 import RevealLogin from "./RevealLogin";
+import magicalSearch from "./Search";
 import UpArrow from "./UpArrow";
 
 /*let importantNoticeCheck = new ImportantNoticeCheck();*/

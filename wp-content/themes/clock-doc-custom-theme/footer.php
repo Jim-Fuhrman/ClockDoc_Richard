@@ -36,6 +36,15 @@
             <p class="site-footer__copyright-info t-small">&copy; Copyright 2021 | Clock Doctor | All Rights Reserved | Website created by Jim Fuhrman | Contact <a href="mailto: Jim Fuhrman@Yahoo.com">Jim Fuhrman</a>
             </p> 
         </footer>
+        <div class="search-overlay">
+            <div class="search-overlay__top">
+                <div class="container">  <!-- the container class horizontally centers everything on the screen -->
+                    <i class="fa fa-search search-overlay__icon" aria-hidden="true"></i>  <!-- when using font-awesome icons, always code aria-hidden="true". Thus, it won't read out loud something to someone who is visually impaired. -->
+                    <input type="text" class="search-term" placeholder="What are you looking for?" id="search-term">
+                    <i class="fa fa-window-close search-overlay__close" aria-hidden="true"></i>
+                </div>
+            </div>
+        </div>
         <!-- This makes our black admin menu appear on the frontend. If you're signed into Wordpress, the black admin bar shows. If you're not signed in, the black admin bar doesn't show.  -->
         <?php wp_footer(); ?>
     </body>

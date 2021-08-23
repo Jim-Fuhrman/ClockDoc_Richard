@@ -555,14 +555,23 @@ p {
 .nu:hover {
   text-decoration: underline; }
 
+.t-block {
+  display: block; }
+
 .t-bold {
   font-weight: bold; }
 
-.t-center {
-  text-align: center; }
+.t-normal {
+  font-weight: normal; }
 
 .t-cursive {
   font-family: "Dancing Script", cursive, sans-serif; }
+
+.t-underline {
+  text-decoration: underline; }
+
+.t-center {
+  text-align: center; }
 
 .t-left {
   text-align: left; }
@@ -576,14 +585,14 @@ p {
 .t-black {
   color: #000; }
 
+.t-small {
+  font-size: 1.3em; }
+
 .t-maroon {
-  background-color: #8d2b25; }
+  color: #8d2b25; }
 
 .b-goldenrod {
   background-color: goldenrod; }
-
-.t-small {
-  font-size: 1.3em; }
 
 .float-left {
   float: left; }
@@ -867,10 +876,10 @@ the exception being the .container class. That's defined in utilities.scss, so t
     background-color: rgba(0, 0, 0, 0.12); }
   .search-overlay__icon {
     margin-right: 10px;
-    font-size: 1.8rem;
+    font-size: 7.2rem;
     color: #f95738;
     /*@include atMedium {
-      font-size: 2.5rem;
+      font-size: 9rem;
     }*/ }
   .search-overlay--active {
     visibility: visible;
@@ -880,14 +889,14 @@ the exception being the .container class. That's defined in utilities.scss, so t
     margin: 30px 0 1px 0;
     font-weight: 400;
     color: #0d3b66;
-    font-size: 2rem;
+    font-size: 7rem;
     padding: 15px 0;
     border-bottom: 1px solid #ccc; }
   .search-overlay__close {
     position: absolute;
     top: 13px;
     right: 16px;
-    font-size: 2.1rem;
+    font-size: 7.4rem;
     cursor: pointer;
     transition: all 0.3s;
     background-color: #fff;
@@ -895,11 +904,11 @@ the exception being the .container class. That's defined in utilities.scss, so t
     line-height: 0.7;
     /*@include atSmall {
       top: 18px;
-      font-size: 2.1rem;
+      font-size: 7.4rem;
     }
     @include atMedium {
       top: 26px;
-      font-size: 2.8rem;
+      font-size: 10.2rem;
     }*/ }
   .search-overlay__close:hover {
     opacity: 1; }
@@ -913,16 +922,16 @@ the exception being the .container class. That's defined in utilities.scss, so t
   padding: 15px 0;
   margin: 0;
   background-color: transparent;
-  font-size: 1rem;
+  font-size: 3rem;
   font-weight: 300;
   outline: none;
   color: #f95738;
   /*@include atSmall {
-    font-size: 1.5rem;
+    font-size: 5rem;
   }
   @include atMedium {
     width: 80%;
-    font-size: 3rem;
+    font-size: 11rem;  
   }*/ }
 
 .body-no-scroll {
@@ -1442,6 +1451,7 @@ the exception being the .container class. That's defined in utilities.scss, so t
   position: relative;
   font-size: 1.6rem; }
   .contactUs__button {
+    /* This is used on Contact Form 1, not the Contact Us Page. */
     background-color: #f95738;
     border: none;
     border-radius: 20%;
@@ -1456,20 +1466,34 @@ the exception being the .container class. That's defined in utilities.scss, so t
 .page-id-47 {
   background-color: burlywood; }
 
-.full-width-split__one {
-  flex: 1;
-  z-index: -1;
-  /*padding: 1.6rem 1rem; */ }
-
-.full-width-split__two {
-  flex: 1;
-  z-index: -1;
-  background-color: #faf0ca;
-  /*padding: 1.6rem 1rem; */ }
-
-@media (min-width: 135rem) {
-  .full-width-split__inner {
-    width: 61rem; } }
+.full-width-split {
+  display: flex;
+  /*@mixin atMediumLarge {
+    display: flex;
+  }*/ }
+  .full-width-split__one {
+    flex: 1;
+    z-index: -1;
+    /*padding: 1.6rem 1rem; */
+    /*@mixin atMediumLarge {*/
+    /* padding: 40px; */
+    /*}*/ }
+    .full-width-split__one .full-width-split__inner {
+      float: right;
+      /*@mixin atMediumLarge {
+        float: right;
+      }*/ }
+  .full-width-split__two {
+    flex: 1;
+    z-index: -1;
+    background-color: #faf0ca;
+    /*padding: 1.6rem 1rem; */
+    /*@mixin atMediumLarge {*/
+    /* padding: 40px; */
+    /*}*/ }
+  @media (min-width: 135rem) {
+    .full-width-split__inner {
+      width: 61rem; } }
 
 .headline {
   margin: 0;
@@ -1580,11 +1604,11 @@ the exception being the .container class. That's defined in utilities.scss, so t
 
 .metabox {
   background-color: #faf0ca;
-  border-radius: 0.3em;
-  padding: 1em 1.5em;
+  border-radius: 0.3rem;
+  padding: 1rem 1.5rem;
   display: inline-block;
-  margin-bottom: 3em;
-  box-shadow: 0.2em 0.2em 0.1em rgba(0, 0, 0, 0.07); }
+  margin-bottom: 3rem;
+  box-shadow: 0.2rem 0.2rem 0.1rem rgba(0, 0, 0, 0.07); }
   .metabox--position-up {
     position: absolute;
     top: 0;
@@ -1607,7 +1631,7 @@ the exception being the .container class. That's defined in utilities.scss, so t
       .metabox--with-home-link {
         display: none; } }
   .metabox__main {
-    padding: 1em 1.5em 1em 1.1em; }
+    padding: 1rem 1.5rem 1rem 1.1rem; }
   .metabox p {
     margin: 0;
     color: color(#faf0ca l(-45%) s(-33%)); }
@@ -1621,8 +1645,8 @@ the exception being the .container class. That's defined in utilities.scss, so t
     background-color: #0d3b66;
     color: #fff;
     display: inline-block;
-    padding: 1em 1.5em;
-    border-radius: 0.3em 0 0 0.3em;
+    padding: 1rem 1.5rem;
+    border-radius: 0.3rem 0 0 0.3rem;
     font-weight: normal; }
   .metabox .metabox__blog-home-link:hover {
     text-decoration: none;
@@ -2131,10 +2155,12 @@ the exception being the .container class. That's defined in utilities.scss, so t
     margin-bottom: 0; }
 
 /*@import "base/generic-content";*/
-.products-bkgd {
+.products-background {
+  /* 38 is the page id of the Products page.  This class used to be called products-background. page-id-38 is what it will be called later. */
   position: relative;
   background-color: transparent;
   height: 100vh;
+  width: 100vw;
   display: flex;
   /* 355px/16 = 22.1875em*/
   /* 400px/16 = 25em */
@@ -2149,8 +2175,24 @@ the exception being the .container class. That's defined in utilities.scss, so t
   /* 1500px/16 = 93.75em*/
   /* 1860px/16 = 116.25em   */ }
   @media only screen and (max-width: 33.125em) {
-    .products-bkgd {
+    .products-background {
       height: 175vh; } }
+
+.products-foreground-metalinks {
+  position: absolute;
+  display: flex; }
+
+.products-foreground {
+  top: 0;
+  left: 0;
+  transform: translate(7.5%, -2.5%);
+  /* Yes, that's 5% and -2.5%, not -50%. Anything more than 5% will overlap with metaboxes. -50% will overlap the page banner. */
+  font-size: 1.5rem; }
+
+.products-metalinks {
+  margin-left: 8rem;
+  margin-top: 3.7rem;
+  z-index: 10; }
 
 .white-cover {
   width: 100%;
@@ -2186,9 +2228,17 @@ the exception being the .container class. That's defined in utilities.scss, so t
     position: relative;
     background-size: cover; }
 
+.products-list li {
+  list-style-type: none;
+  padding-bottom: 10rem;
+  border-bottom: 1px solid maroon; }
+
+.products-list li:last-child {
+  padding-bottom: none; }
+
 .gallery {
   margin: auto auto;
-  padding: 1em;
+  padding: 1rem;
   display: grid;
   grid-template-rows: repeat(5, 1fr);
   grid-template-columns: repeat(6, 1fr);
@@ -2603,10 +2653,22 @@ the exception being the .container class. That's defined in utilities.scss, so t
   cursor: pointer;
   top: 1px;
   margin-left: 20px;
-  /*@mixin atMedium {
-    display: inline-block;
-    top: 6px;
-  }*/ }
+  /* 355px/16 = 22.1875em*/
+  /* 400px/16 = 25em */
+  /* 371px/16 = 25em */
+  /* 530px/16 = 33.125em*/
+  /* 562px/16 = 35.125em*/
+  /* 616px/16 = 38.5em */
+  /* 767px/16 = 47.9375em */
+  /* 800px/16 = 50em */
+  /* 1000px/16 = 62.5em*/
+  /* 1200px/16 = 75em*/
+  /* 1500px/16 = 93.75em*/
+  /* 1860px/16 = 116.25em   */ }
+  @media only screen and (max-width: 47.9375em) {
+    .search-trigger {
+      display: inline-block;
+      top: 6px; } }
 
 .search-trigger:hover {
   opacity: 0.65; }

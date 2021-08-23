@@ -3,6 +3,7 @@
   font-size: 1.6rem;
 
   &__button {
+    /* This is used on Contact Form 1, not the Contact Us Page. */
     background-color: $darkOrange;
     border: none;
     border-radius: 20%;
