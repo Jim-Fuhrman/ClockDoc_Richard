@@ -9,4 +9,12 @@ function yearsExperienceFunction() {
     $currentYear = date('Y');
     return $currentYear - 1990;
 }
+
+/*add_shortcode('nmbrStyles', 'nmbrStylesFunction');
+
+function nmbrStylesFunction() {
+    return stylesCount -> new WP_Query(array(
+        'post_type' = 'clocks'
+    ));
+}*/
 ?>
