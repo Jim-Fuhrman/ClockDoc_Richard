@@ -11,7 +11,11 @@
                 <br>
             <?php } ?>
             <div class="t-left t-normal">
-                <?php the_content(); ?>
+                <?php the_content(); 
+                    if (has_excerpt()) {
+                        the_excerpt(); 
+                    }
+                ?>
             </div>
         </div>
     </div>

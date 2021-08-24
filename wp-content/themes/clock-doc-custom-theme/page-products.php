@@ -24,7 +24,7 @@ while(have_posts()) {
                 <?php get_template_part("template-parts/content", "products-gallery");?>
             </div>
             <div class="products-metalinks">
-                <?php get_template_part("template-parts/content", "metalinks");?>
+                <?php get_template_part("template-parts/content", "products-metalinks");?>
             </div>
         </div>
     </div>
