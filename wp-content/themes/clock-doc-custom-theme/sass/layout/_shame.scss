@@ -98,14 +98,14 @@
 }
 
 .search-trigger {
-  display: none;
+  display: inline-block;
   color: #fff;
   position: relative;
   cursor: pointer;
   top: 1px;
   margin-left: 20px;
   @include respondDesktop(atMedium) {
-    display: inline-block;
+    display: none;
     top: 6px;
   }
 }

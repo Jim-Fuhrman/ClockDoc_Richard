@@ -3,11 +3,12 @@ import "../css/style.css";
 import MobileMenu from "./MobileMenu";
 import NavBarModify from "./navBarModify";
 import RevealLogin from "./RevealLogin";
-import magicalSearch from "./Search";
+import Search from "./Search";
 import UpArrow from "./UpArrow";
 
 /*let importantNoticeCheck = new ImportantNoticeCheck();*/
 let mobileMenu = new MobileMenu();
 let navBarModify = new NavBarModify();
 let revealLogin = new RevealLogin();
+let letsSearch = new Search();
 let upArrow = new UpArrow();

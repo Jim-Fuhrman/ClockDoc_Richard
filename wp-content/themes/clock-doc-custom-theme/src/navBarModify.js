@@ -26,7 +26,7 @@ class NavBarModify {
     } else {
       if (window.scrollY > this.nav.offsetHeight + 10) {
         this.doctorKitIcon.classList.add("hide");
-        if (window.scrollY > this.nav.offsetHeight + 170) {
+        if (window.scrollY > this.nav.offsetHeight + 70) {
           this.nav.classList.add("active");
           this.dropdownMenu.classList.add("active");
         } else {

@@ -6,6 +6,7 @@ class RevealLogin {
   }
 
   events() {
+    /* the keydown contains keycode info: keyPressed to the if statement. */
     window.addEventListener("keydown", (keyPressed) => {
       if (keyPressed.key === "Escape") {
         this.loginBtn.classList.toggle("hide");

@@ -863,8 +863,6 @@ the exception being the .container class. That's defined in utilities.scss, so t
   transform: scale(1.09);
   transition: opacity 0.3s, transform 0.3s, visibility 0.3s;
   box-sizing: border-box; }
-  .search-overlay p {
-    padding-top: 15px; }
   .search-overlay .event-summary p {
     padding-top: 0; }
   .search-overlay .event-summary {
@@ -876,7 +874,7 @@ the exception being the .container class. That's defined in utilities.scss, so t
     background-color: rgba(0, 0, 0, 0.12); }
   .search-overlay__icon {
     margin-right: 10px;
-    font-size: 7.2rem;
+    font-size: 4rem;
     color: #f95738;
     /*@include atMedium {
       font-size: 9rem;
@@ -889,16 +887,17 @@ the exception being the .container class. That's defined in utilities.scss, so t
     margin: 30px 0 1px 0;
     font-weight: 400;
     color: #0d3b66;
-    font-size: 7rem;
+    font-size: 3rem;
     padding: 15px 0;
     border-bottom: 1px solid #ccc; }
   .search-overlay__close {
     position: absolute;
     top: 13px;
     right: 16px;
-    font-size: 7.4rem;
+    font-size: 4rem;
     cursor: pointer;
     transition: all 0.3s;
+    transform: translateY(-20%);
     background-color: #fff;
     color: #f95738;
     line-height: 0.7;
@@ -2647,7 +2646,7 @@ the exception being the .container class. That's defined in utilities.scss, so t
   color: #999999; }
 
 .search-trigger {
-  display: none;
+  display: inline-block;
   color: #fff;
   position: relative;
   cursor: pointer;
@@ -2667,7 +2666,7 @@ the exception being the .container class. That's defined in utilities.scss, so t
   /* 1860px/16 = 116.25em   */ }
   @media only screen and (max-width: 47.9375em) {
     .search-trigger {
-      display: inline-block;
+      display: none;
       top: 6px; } }
 
 .search-trigger:hover {
