@@ -861,10 +861,7 @@ the exception being the .container class. That's defined in utilities.scss, so t
   opacity: 0;
   transform: scale(1.09);
   transition: opacity 0.3s, transform 0.3s, visibility 0.3s;
-  box-sizing: border-box;
-  /*p {
-    padding-top: 15px;
-  }*/ }
+  box-sizing: border-box; }
   .search-overlay .event-summary p {
     padding-top: 0; }
   .search-overlay .event-summary {
@@ -2813,22 +2810,10 @@ the exception being the .container class. That's defined in utilities.scss, so t
   cursor: pointer;
   top: 1px;
   margin-left: 20px;
-  /* 355px/16 = 22.1875em*/
-  /* 400px/16 = 25em */
-  /* 371px/16 = 25em */
-  /* 530px/16 = 33.125em*/
-  /* 562px/16 = 35.125em*/
-  /* 616px/16 = 38.5em */
-  /* 767px/16 = 47.9375em */
-  /* 800px/16 = 50em */
-  /* 1000px/16 = 62.5em*/
-  /* 1200px/16 = 75em*/
-  /* 1500px/16 = 93.75em*/
-  /* 1860px/16 = 116.25em   */ }
-  @media only screen and (max-width: 47.9375em) {
-    .search-trigger {
-      display: none;
-      top: 6px; } }
+  /*@include respondDesktop(atMedium) {
+    display: none;
+    top: 6px;
+  }*/ }
 
 .search-trigger:hover {
   opacity: 0.65; }
@@ -2928,6 +2913,7 @@ the exception being the .container class. That's defined in utilities.scss, so t
 .row {
   margin-right: -50px; }
 
+.one-whole,
 .one-half,
 .one-third,
 .two-thirds,
@@ -2939,8 +2925,8 @@ the exception being the .container class. That's defined in utilities.scss, so t
   box-sizing: border-box;
   padding-right: 50px; }
 
-.two-thirds {
-  width: 66.66%; }
+.one-whole {
+  width: 100%; }
 
 .one-half {
   width: 50%; }
@@ -2948,7 +2934,10 @@ the exception being the .container class. That's defined in utilities.scss, so t
 .one-third {
   width: 33.33%; }
 
-.one-quarter {
+.two-thirds {
+  width: 66.66%; }
+
+.one-fourth {
   width: 25%; }
 
 .one-fifth {
@@ -3166,17 +3155,30 @@ the exception being the .container class. That's defined in utilities.scss, so t
       .site-footer h3 {
         font-size: 2em; } }
 
-/* this is from clockdoc-richard. it's the version that shows the nav bar, but not the X icon nor the menu column. */
 .site-header .site-header__nav {
-  /*display: none;*/
-  /* 400px/16px = 25em  */ }
-  @media (min-width: 25em) {
+  /* 1000px/16px = 62.5em  */ }
+  @media (min-width: 62.5em) {
     .site-header .site-header__nav {
       display: flex;
       justify-content: space-around;
       align-items: center;
       transition: all 0.3s ease-in-out;
-      /* This is the line that briefly shows the nav bar with the desired fonts then shrinks them to a really tiny font I don't want.  */ } }
+      /* This is the line that briefly shows the nav bar with the desired fonts then shrinks them to a really tiny font I don't want.  */
+      /* 355px/16 = 22.1875em*/
+      /* 400px/16 = 25em */
+      /* 371px/16 = 25em */
+      /* 530px/16 = 33.125em*/
+      /* 562px/16 = 35.125em*/
+      /* 616px/16 = 38.5em */
+      /* 767px/16 = 47.9375em */
+      /* 800px/16 = 50em */
+      /* 1000px/16 = 62.5em*/
+      /* 1200px/16 = 75em*/
+      /* 1500px/16 = 93.75em*/
+      /* 1860px/16 = 116.25em   */ } }
+  @media only screen and (min-width: 62.5em) and (max-width: 62.5em) {
+    .site-header .site-header__nav {
+      display: none; } }
 
 .site-header {
   z-index: 3;
@@ -3191,9 +3193,9 @@ the exception being the .container class. That's defined in utilities.scss, so t
   background-position: top center;
   /* .nav .container automatically puts the logo and nav menu in a row side by side. */ }
   .site-header__nav {
-    /* on small screens we don't show the nav bar at all, only on screen sizes 400px / 25em and larger. */
-    /* 400px/16px = 25em */ }
-    @media (min-width: 25em) {
+    /* on small screens we don't show the nav bar at all, only on screen sizes 1000px / 62.5em and larger. */
+    /* 1000px/16px = 62.5em */ }
+    @media (min-width: 62.5em) {
       .site-header__nav {
         top: 3rem;
         /* we don't want the black admin bar to overlay the nav bar. Thus, we need this line of code. */
@@ -3215,20 +3217,38 @@ the exception being the .container class. That's defined in utilities.scss, so t
         /* 1000px/16 = 62.5em*/
         /* 1200px/16 = 75em*/
         /* 1500px/16 = 93.75em*/
-        /* 1860px/16 = 116.25em   */ } }
-  @media only screen and (min-width: 25em) and (max-width: 33.125em) {
+        /* 1860px/16 = 116.25em   */
+        /*@include respondDesktop(atSmall) {
+        top: 5rem;
+      }*/ } }
+  @media only screen and (min-width: 62.5em) and (max-width: 62.5em) {
     .site-header__nav {
-      top: 5rem; } }
+      display: none; } }
     .site-header__nav-icon {
-      /* on small screens we don't show the nav icon at all, only on screen sizes 400px and larger. */
+      /* on small screens we don't show the nav icon at all, only on screen sizes 1000px / 62.5em and larger. */
       display: none;
-      /* 400px/16px = 25em */ }
-      @media (min-width: 25em) {
+      /* 1000px/16px = 62.5em */
+      /* 355px/16 = 22.1875em*/
+      /* 400px/16 = 25em */
+      /* 371px/16 = 25em */
+      /* 530px/16 = 33.125em*/
+      /* 562px/16 = 35.125em*/
+      /* 616px/16 = 38.5em */
+      /* 767px/16 = 47.9375em */
+      /* 800px/16 = 50em */
+      /* 1000px/16 = 62.5em*/
+      /* 1200px/16 = 75em*/
+      /* 1500px/16 = 93.75em*/
+      /* 1860px/16 = 116.25em   */ }
+      @media (min-width: 62.5em) {
         .site-header__nav-icon {
           display: inline-block;
           width: 7em;
           height: 7em;
           background-repeat: no-repeat; } }
+      @media only screen and (max-width: 62.5em) {
+        .site-header__nav-icon {
+          display: none; } }
       .site-header__nav-icon.hide {
         /* display: none; */
         opacity: 0; }
@@ -3254,6 +3274,7 @@ the exception being the .container class. That's defined in utilities.scss, so t
       /* this removes underlining. */
       padding: 1.5rem 1.5rem;
       font-size: 2rem;
+      /* Without a 3.5rem font-size in the next @include the font will be too small on the ipadpro. */
       /* 355px/16 = 22.1875em*/
       /* 400px/16 = 25em */
       /* 371px/16 = 25em */
@@ -3350,7 +3371,7 @@ the exception being the .container class. That's defined in utilities.scss, so t
     z-index: 10;
     /* we need this so the top right icon isn't overlaid when we click it the first time. Without this our icon won't make the nav menu vanish when it should vanish.*/
     top: 3.2rem;
-    right: 50%;
+    left: 10%;
     /* 355px/16 = 22.1875em*/
     /* 400px/16 = 25em */
     /* 371px/16 = 25em */
@@ -3379,10 +3400,10 @@ the exception being the .container class. That's defined in utilities.scss, so t
     /* 400px/16px = 25em */ }
     @media only screen and (max-width: 33.125em) {
       .site-header__menu-icon {
-        top: 12rem; } }
+        top: 2rem; } }
     @media only screen and (max-width: 15em) {
       .site-header__menu-icon {
-        top: 15rem; } }
+        top: 5rem; } }
     .site-header__menu-icon::before {
       content: "";
       position: absolute;
@@ -3413,7 +3434,7 @@ the exception being the .container class. That's defined in utilities.scss, so t
       background-color: #fff;
       transform-origin: 0 100%;
       transition: transform 0.3s ease-out; }
-    @media (min-width: 25em) {
+    @media (min-width: 62.5em) {
       .site-header__menu-icon {
         display: none; } }
   .site-header__menu-icon--close-x::before {
@@ -3435,7 +3456,7 @@ the exception being the .container class. That's defined in utilities.scss, so t
     /* 400px/16px = 25em */
     /* 767px/16px = 47.9375em */
     /* 767px/16px = 47.9375em */ }
-    @media (min-width: 25em) {
+    @media (min-width: 62.5em) {
       .site-header__menu-content {
         display: flex;
         justify-content: flex-end;

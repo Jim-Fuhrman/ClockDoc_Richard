@@ -1,12 +1,14 @@
-/* this is from clockdoc-richard. it's the version that shows the nav bar, but not the X icon nor the menu column. */
 .site-header .site-header__nav {
-  /*display: none;*/
-  @media (min-width: 25em) {
+  @media (min-width: 62.5em) {
     display: flex;
     justify-content: space-around;
     align-items: center;
     transition: all 0.3s ease-in-out; /* This is the line that briefly shows the nav bar with the desired fonts then shrinks them to a really tiny font I don't want.  */
-  } /* 400px/16px = 25em  */
+
+    @include respondDesktop(at1000) {
+      display: none;
+    }
+  } /* 1000px/16px = 62.5em  */
 }
 
 .site-header {
@@ -22,8 +24,8 @@
   background-position: top center;
 
   &__nav {
-    /* on small screens we don't show the nav bar at all, only on screen sizes 400px / 25em and larger. */
-    @media (min-width: 25em) {
+    /* on small screens we don't show the nav bar at all, only on screen sizes 1000px / 62.5em and larger. */
+    @media (min-width: 62.5em) {
       top: 3rem; /* we don't want the black admin bar to overlay the nav bar. Thus, we need this line of code. */
       left: 0;
       right: 0;
@@ -33,20 +35,28 @@
       justify-content: space-around;
       opacity: 1;
 
-      @include respondDesktop(atSmall) {
-        top: 5rem;
+      @include respondDesktop(at1000) {
+        display: none;
       }
-    } /* 400px/16px = 25em */
+
+      /*@include respondDesktop(atSmall) {
+        top: 5rem;
+      }*/
+    } /* 1000px/16px = 62.5em */
 
     &-icon {
-      /* on small screens we don't show the nav icon at all, only on screen sizes 400px and larger. */
+      /* on small screens we don't show the nav icon at all, only on screen sizes 1000px / 62.5em and larger. */
       display: none;
-      @media (min-width: 25em) {
+      @media (min-width: 62.5em) {
         display: inline-block;
         width: 7em;
         height: 7em;
         background-repeat: no-repeat;
-      } /* 400px/16px = 25em */
+      } /* 1000px/16px = 62.5em */
+
+      @include respondDesktop(at1000) {
+        display: none;
+      }
 
       &.hide {
         /* display: none; */
@@ -80,6 +90,7 @@
       padding: 1.5rem 1.5rem;
       font-size: 2rem;
 
+      /* Without a 3.5rem font-size in the next @include the font will be too small on the ipadpro. */
       @include respondDesktop(atLarge) {
         font-size: 3.5rem;
       }
@@ -131,14 +142,14 @@
     position: absolute;
     z-index: 10; /* we need this so the top right icon isn't overlaid when we click it the first time. Without this our icon won't make the nav menu vanish when it should vanish.*/
     top: 3.2rem;
-    right: 50%;
+    left: 10%;
 
     @include respondDesktop(atSmall) {
-      top: 12rem;
+      top: 2rem;
     }
 
     @include respondDesktop(atSmallest) {
-      top: 15rem;
+      top: 5rem;
     }
 
     &::before {
@@ -176,7 +187,7 @@
       transition: transform 0.3s ease-out;
     }
 
-    @media (min-width: 25em) {
+    @media (min-width: 62.5em) {
       display: none;
     } /* 400px/16px = 25em */
   }
@@ -204,7 +215,7 @@
     padding-top: 0rem;
     text-align: center;
 
-    @media (min-width: 25em) {
+    @media (min-width: 62.5em) {
       display: flex;
       justify-content: flex-end;
       opacity: 1;

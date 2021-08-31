@@ -3162,42 +3162,42 @@ class Search {
 
 
   async getResults() {
-    /*try {*/
-    const apiUrl = clockdoctorData.root_url + "/wp-json/clockdoc/v1/search?term=" + this.searchField.value;
-    const response = await axios__WEBPACK_IMPORTED_MODULE_0___default.a.get(apiUrl);
-    const results = response.data;
-    this.resultsDiv.innerHTML = `
+    try {
+      const apiUrl = clockdoctorData.root_url + "/wp-json/clockdoc/v1/search?term=" + this.searchField.value;
+      const response = await axios__WEBPACK_IMPORTED_MODULE_0___default.a.get(apiUrl);
+      const results = response.data;
+      this.resultsDiv.innerHTML = `
     <div class="row">   
-        <div class="one-fourth">
-            <h2 class="search-overlay__section-title">General Information</h2>
-              ${results.generalInfo.length ? '<ul class="link-list min-list">' : "<p> no general info matches that search </p>"}
-                  ${results.generalInfo.map(item => `<li><a href="${item.permalink}">${item.title}</a> ${item.postType == "post" ? `by ${item.authorName}` : ""}</li>`).join("")}
-                ${results.generalInfo.length ? "</ul>" : ""}
-        </div>
-        <div class="one-fourth">
+        <div class="one-third">
             <h2 class="search-overlay__section-title">Clocks</h2>
             ${results.clocks.length ? '<ul class="link-list min-list">' : `<p>No clocks match that search. <a href="${clockdoctorData.root_url}/clocks">View all clocks</a></p>`}
               ${results.clocks.map(item => `<li><a href="${item.permalink}">${item.title}</a></li>`).join("")}
             ${results.clocks.length ? "</ul>" : ""}
         </div>
-        <div class="one-fourth">
+        <div class="one-third">
             <h2 class="search-overlay__section-title">Watches</h2>
             ${results.watches.length ? '<ul class="link-list min-list">' : `<p>No watches match that search. <a href="${clockdoctorData.root_url}/watches">View all watches</a></p>`}
               ${results.watches.map(item => `<li><a href="${item.permalink}">${item.title}</a></li>`).join("")}
             ${results.watches.length ? "</ul>" : ""}
         </div>
-        <div class="one-fourth">
+        <div class="one-third">
             <h2 class="search-overlay__section-title">Miscellaneous Items</h2>
             ${results.misc_items.length ? '<ul class="link-list min-list">' : `<p>No misc. items match that search. <a href="${clockdoctorData.root_url}/misc_items">View all Miscellaneous Items</a></p>`}
               ${results.misc_items.map(item => `<li><a href="${item.permalink}">${item.title}</a></li>`).join("")}
             ${results.misc_items.length ? "</ul>" : ""}
-        </div>        
+        </div>
+        <div class="one-whole t-center">  
+            <h2 class="search-overlay__section-title">General Information</h2>
+              ${results.generalInfo.length ? '<ul class="link-list min-list">' : "<p> no general info matches that search </p>"}
+                  ${results.generalInfo.map(item => `<li><a href="${item.permalink}">${item.title}</a> ${item.postType == "post" ? `by ${item.authorName}` : ""}</li>`).join("")}
+                ${results.generalInfo.length ? "</ul>" : ""}
+        </div>
     </div>
       `;
-    this.isSpinnerVisible = false;
-    /*} catch (e) {
+      this.isSpinnerVisible = false;
+    } catch (e) {
       console.log(e);
-    }*/
+    }
   }
   /* the dollar sign with curly brackets is a native part of Javascript. This tells Javascript everything between the curly brackets needs to be evaluated as real Javascript code. */
 

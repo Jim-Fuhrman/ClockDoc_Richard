@@ -21,4 +21,4 @@
     </div>
 <?php 
 get_template_part('template-parts/content', 'contactInfo');
-get_footer(); ?>
+get_footer(); ?>   

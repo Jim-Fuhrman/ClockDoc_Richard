@@ -1,13 +1,13 @@
 <?php
 
-add_action('rest_api_init', 'clockdocRegisterSearch');
-
 function clockdocRegisterSearch() {
     register_rest_route('clockdoc/v1', 'search', array(
         'methods' => WP_REST_SERVER::READABLE, 
         'callback' => 'clockdocSearchResults'
     ));
 }
+
+add_action('rest_api_init', 'clockdocRegisterSearch');
 
 function clockdocSearchResults($data) {
     $mainQuery = new WP_Query(array(
@@ -28,7 +28,8 @@ function clockdocSearchResults($data) {
             array_push($results['generalInfo'], array(
                 'title' => get_the_title(),
                 'permalink' => get_the_permalink(),
-                'postType' => get_post_type()
+                'postType' => get_post_type(),
+                'authorName' => get_the_author()
             ));
         }
         if(get_post_type() == 'clocks') {
