@@ -1,5 +1,5 @@
 .site-header .site-header__nav {
-  @media (min-width: 62.5em) {
+  @media (min-width: 65em) {
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -8,7 +8,7 @@
     @include respondDesktop(at1000) {
       display: none;
     }
-  } /* 1000px/16px = 62.5em  */
+  } /* 1040px/16px = 65em  */
 }
 
 .site-header {
@@ -24,8 +24,8 @@
   background-position: top center;
 
   &__nav {
-    /* on small screens we don't show the nav bar at all, only on screen sizes 1000px / 62.5em and larger. */
-    @media (min-width: 62.5em) {
+    /* on small screens we don't show the nav bar at all, only on screen sizes 1040px / 65em and larger. */
+    @media (min-width: 65em) {
       top: 3rem; /* we don't want the black admin bar to overlay the nav bar. Thus, we need this line of code. */
       left: 0;
       right: 0;
@@ -42,17 +42,17 @@
       /*@include respondDesktop(atSmall) {
         top: 5rem;
       }*/
-    } /* 1000px/16px = 62.5em */
+    } /* 1040px/16px = 65em */
 
     &-icon {
-      /* on small screens we don't show the nav icon at all, only on screen sizes 1000px / 62.5em and larger. */
+      /* on small screens we don't show the nav icon at all, only on screen sizes 1040px / 65em and larger. */
       display: none;
-      @media (min-width: 62.5em) {
+      @media (min-width: 65em) {
         display: inline-block;
         width: 7em;
         height: 7em;
         background-repeat: no-repeat;
-      } /* 1000px/16px = 62.5em */
+      } /* 1040px/16px = 65em */
 
       @include respondDesktop(at1000) {
         display: none;
@@ -89,11 +89,6 @@
       text-decoration: none; /* this removes underlining. */
       padding: 1.5rem 1.5rem;
       font-size: 2rem;
-
-      /* Without a 3.5rem font-size in the next @include the font will be too small on the ipadpro. */
-      @include respondDesktop(atLarge) {
-        font-size: 3.5rem;
-      }
 
       @include respondDesktop(atMediumLarge) {
         font-size: 3rem;
@@ -187,7 +182,7 @@
       transition: transform 0.3s ease-out;
     }
 
-    @media (min-width: 62.5em) {
+    @media (min-width: 65em) {
       display: none;
     } /* 400px/16px = 25em */
   }
@@ -215,7 +210,7 @@
     padding-top: 0rem;
     text-align: center;
 
-    @media (min-width: 62.5em) {
+    @media (min-width: 65em) {
       display: flex;
       justify-content: flex-end;
       opacity: 1;

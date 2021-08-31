@@ -16,8 +16,8 @@
   padding-top: 1.6rem;
   padding-bottom: 1.6rem;
   @include respondDesktop(atMedium) {
-    padding-top: 6.5em; /* used to be 6.5em. Because Contact Us fields were so huge, I reduced this to 3.5rem. That's what clockdoc-cortlandNE has. */
-    padding-bottom: 6.5em; /* used to be 6.5em. Because Contact Us fields were so huge, I reduced this to 3.5rem. That's what clockdoc-cortlandNE has. */
+    padding-top: 3.5rem;
+    padding-bottom: 3.5rem;
   }
 
   &--white {

@@ -191,26 +191,26 @@ p {
   line-height: 1.65em;
 
   @include respondDesktop(atLarge) {
-    font-size: 2.5em; /* needed so fonts on About Us are big enough on the ipadpro. */
+    font-size: 3rem; /* needed so fonts on About Us are big enough on the ipadpro. */
   } /* screen size <= 1200px*/
 
   @include respondDesktop(atMedium) {
-    font-size: 2em;
+    font-size: 2rem;
   } /* screen size <= 767px*/
 
   @include respondDesktop(atSmall) {
-    font-size: 3em;
+    font-size: 3rem;
   }
 
   @include respondDesktop(at400) {
-    font-size: 2.5em;
+    font-size: 2.5rem;
   }
 
   @include respondDesktop(at371) {
-    font-size: 2.25em;
+    font-size: 2.25rem;
   }
   @include respondDesktop(atSmaller) {
-    font-size: 3em;
+    font-size: 3rem;
   }
 }
 
