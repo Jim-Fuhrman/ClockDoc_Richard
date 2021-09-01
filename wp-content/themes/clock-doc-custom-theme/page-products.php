@@ -18,14 +18,9 @@ while(have_posts()) {
                 <div class="full-width-split__inner white-cover"></div>
             </div>
         </div>
-        <div class="products-foreground-metalinks">
-            <div class="products-foreground">
-                <h1 class="t-maroon t-cursive t-bold t-center">Not all items pictured may be in stock</h1>    
-                <?php get_template_part("template-parts/content", "products-gallery");?>
-            </div>
-            <div class="products-metalinks">
-                <?php get_template_part("template-parts/content", "products-metalinks");?>
-            </div>
+        <div class="products-foreground">
+            <h1 class="t-maroon t-cursive t-bold t-center">Not all items pictured may be in stock</h1>    
+            <?php get_template_part("template-parts/content", "products-gallery");?>
         </div>
     </div>
 </div>

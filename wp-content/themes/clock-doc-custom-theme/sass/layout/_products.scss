@@ -20,9 +20,9 @@
   top: 0;
   left: 0;
   transform: translate(
-    7.5%,
+    50%,
     -2.5%
-  ); /* Yes, that's 5% and -2.5%, not -50%. Anything more than 5% will overlap with metaboxes. -50% will overlap the page banner. */
+  ); /* Yes, that's 7.5% and -2.5%, not -50%. Anything more than 7.5% will overlap with metaboxes. -50% will overlap the page banner. */
   font-size: 1.5rem;
 }
 

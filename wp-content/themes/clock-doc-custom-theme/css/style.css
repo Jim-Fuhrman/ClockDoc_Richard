@@ -502,7 +502,7 @@ p {
 .container {
   max-width: 1300px;
   margin: 0 auto;
-  /*zero for top/bottom, auto for left/right which will put text in the middle. */
+  /*zero for top/bottom, auto for left/right which will puts everything in the middle. */
   padding: 0 16px;
   position: relative; }
 
@@ -804,18 +804,30 @@ the exception being the .container class. That's defined in utilities.scss, so t
   font-weight: bold; }
 
 .page-links {
-  /* This is mobile first code */
   position: relative;
+  margin: 4rem;
+  width: 30rem;
+  float: right;
   z-index: 1;
   background-color: #faf0ca;
-  margin: 0 0 4rem 0;
+  /* 355px/16 = 22.1875em*/
+  /* 400px/16 = 25em */
+  /* 371px/16 = 25em */
+  /* 530px/16 = 33.125em*/
+  /* 562px/16 = 35.125em*/
+  /* 616px/16 = 38.5em */
+  /* 767px/16 = 47.9375em */
+  /* 800px/16 = 50em */
+  /* 1000px/16 = 62.5em*/
+  /* 1200px/16 = 75em*/
+  /* 1500px/16 = 93.75em*/
+  /* 1860px/16 = 116.25em   */
   /* screen size >= 767px/16 or 47.9375em */ }
-  @media (min-width: 47.9375em) {
+  @media only screen and (max-width: 47.9375em) {
     .page-links {
-      margin: 4rem 30rem;
-      margin: 2rem 0 4rem 2rem;
-      width: 30rem;
-      float: right; } }
+      margin: 0 0 4rem 0;
+      width: 100%;
+      float: none; } }
   .page-links__title {
     margin: 0;
     font-weight: normal;
@@ -2184,8 +2196,8 @@ the exception being the .container class. That's defined in utilities.scss, so t
 .products-foreground {
   top: 0;
   left: 0;
-  transform: translate(7.5%, -2.5%);
-  /* Yes, that's 5% and -2.5%, not -50%. Anything more than 5% will overlap with metaboxes. -50% will overlap the page banner. */
+  transform: translate(50%, -2.5%);
+  /* Yes, that's 7.5% and -2.5%, not -50%. Anything more than 7.5% will overlap with metaboxes. -50% will overlap the page banner. */
   font-size: 1.5rem; }
 
 .products-metalinks {
@@ -2749,44 +2761,40 @@ the exception being the .container class. That's defined in utilities.scss, so t
 .one-sixth {
   padding-bottom: 1.6em; }
 
-/*@include respondDesktop(atMedium) {*/
-.row {
-  margin-right: -50px; }
+@media (min-width: 33.125em) {
+  /*530px = 33.125em.  I couldn't make this work using a desktop first 
+    approach. It did just the opposite of what I wanted. On large screens I want the text on the same row 
+    as the picture. On smaller screens I want the text below the picture. */
+  .row {
+    /* This makes text appear to the right or the left of the picture on single-clocks and single-watches pages. 
+    Without the margin text appears below the picture.  */
+    margin-right: -50px; }
+  .one-whole,
+  .one-half,
+  .one-third,
+  .two-thirds,
+  .one-fourth,
+  .one-fifth,
+  .one-sixth {
+    padding-bottom: 0;
+    float: left;
+    box-sizing: border-box;
+    padding-right: 50px; }
+  .one-whole {
+    width: 100%; }
+  .one-half {
+    width: 50%; }
+  .one-third {
+    width: 33.33%; }
+  .two-thirds {
+    width: 66.66%; }
+  .one-fourth {
+    width: 25%; }
+  .one-fifth {
+    width: 20%; }
+  .one-sixth {
+    width: 16.66%; } }
 
-.one-whole,
-.one-half,
-.one-third,
-.two-thirds,
-.one-fourth,
-.one-fifth,
-.one-sixth {
-  padding-bottom: 0;
-  float: left;
-  box-sizing: border-box;
-  padding-right: 50px; }
-
-.one-whole {
-  width: 100%; }
-
-.one-half {
-  width: 50%; }
-
-.one-third {
-  width: 33.33%; }
-
-.two-thirds {
-  width: 66.66%; }
-
-.one-fourth {
-  width: 25%; }
-
-.one-fifth {
-  width: 20%; }
-
-.one-sixth {
-  width: 16.66%; }
-
-/*}*/
 /* Make Top WP Admin Bar Fixed on Mobile */
 @media screen and (max-width: 600px) {
   #wpadminbar {
@@ -3192,8 +3200,9 @@ the exception being the .container class. That's defined in utilities.scss, so t
     height: 19px;
     position: absolute;
     z-index: 10;
-    /* we need this so the top right icon isn't overlaid when we click it the first time. Without this our icon won't make the nav menu vanish when it should vanish.*/
+    /* we need this so the top left icon isn't overlaid when we click it the first time. Without this our icon won't make the nav menu vanish when it should vanish.*/
     top: 3.2rem;
+    /* Users won't have login/logout capability. Thus, the admin bar will never block the hamburger icon. */
     left: 10%;
     /* 355px/16 = 22.1875em*/
     /* 400px/16 = 25em */

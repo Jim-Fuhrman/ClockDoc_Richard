@@ -1,15 +1,16 @@
 .page-links {
-  /* This is mobile first code */
   position: relative;
+  margin: 4rem;
+  width: 30rem;
+  float: right;
+
   z-index: 1;
   background-color: $beige;
-  margin: 0 0 4rem 0;
 
-  @media (min-width: 47.9375em) {
-    margin: 4rem 30rem;
-    margin: 2rem 0 4rem 2rem;
-    width: 30rem;
-    float: right;
+  @include respondDesktop(atMedium) {
+    margin: 0 0 4rem 0;
+    width: 100%;
+    float: none;
   } /* screen size >= 767px/16 or 47.9375em */
 
   &__title {

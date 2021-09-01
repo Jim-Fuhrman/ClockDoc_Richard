@@ -9,18 +9,21 @@
     <?php wp_head(); ?>  <!-- This is needed along with get_stylesheet_uri() in the functions.php file. -->
   </head>
 <body <?php body_class(); ?>>
-<!-- this is the version that won't show the nav bar -->
 <header class="site-header">
+    <div class="site-header__menu-icon">
+        <div class="site-header__menu-icon__middle"></div>
+    </div>
     <div class="site-header__menu group">
-      <nav class="site-header__nav">
+      <nav class="site-header__nav">   
           <div class="site-header__nav-icon" style="background-image: url(<?php echo get_theme_file_uri('/images/ClockDocIcon.png');?>">
-        </div>
+          </div>   
           <ul class="site-header__nav-menu site-header__menu-content">
               <li><a href="<?php echo esc_url(site_url('')); ?>">Home</a></li>
               <li><a <?php if (is_page('about-us') or wp_get_post_parent_id(0) == 42) echo 'class="current"'?> href="<?php echo esc_url(site_url('/About Us'));?>">About</a></li>
               <div class="dropdown">
-                <li class="dropdown__a"><a  <?php if(get_post_type('clocks') || get_post_type('watches') || get_post_type('misc_items')) echo 'class="current"'?> href="#">Products</a></li>  <!-- If I want Products to look like the other 4 links, it needs to be an anchor tag with an href. -->
+                <li class="dropdown__a"><a  <?php if(is_page('products') || get_post_type('clocks') || get_post_type('watches') || get_post_type('misc_items')) echo 'class="current"'?> href="#">Products</a></li>  <!-- If I want Products to look like the other 4 links, it needs to be an anchor tag with an href. -->
                   <div class="dropdown__content"> <!-- dropdown__content is in /layout/_site-header.scss -->
+                    <a href="<?php echo esc_url(site_url('/Products')); ?>">All Products</a>  
                     <a href="<?php echo get_post_type_archive_link('clocks'); ?>">Clocks</a>
                     <a href="<?php echo get_post_type_archive_link('watches');?>">Watches</a>
                     <a href="<?php echo get_post_type_archive_link('misc_items');?>">Miscellaneous</a>
@@ -45,10 +48,7 @@
                   <?php } ?>
               </div>
           </ul>
-          <div class="site-header__menu-icon">
-            <div class="site-header__menu-icon__middle"></div>
-          </div>
-        </nav>
-      </div>
+      </nav>
+    </div>
 </header>
     

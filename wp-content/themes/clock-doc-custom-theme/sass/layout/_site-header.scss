@@ -135,8 +135,8 @@
     width: 20px;
     height: 19px;
     position: absolute;
-    z-index: 10; /* we need this so the top right icon isn't overlaid when we click it the first time. Without this our icon won't make the nav menu vanish when it should vanish.*/
-    top: 3.2rem;
+    z-index: 10; /* we need this so the top left icon isn't overlaid when we click it the first time. Without this our icon won't make the nav menu vanish when it should vanish.*/
+    top: 3.2rem; /* Users won't have login/logout capability. Thus, the admin bar will never block the hamburger icon. */
     left: 10%;
 
     @include respondDesktop(atSmall) {
