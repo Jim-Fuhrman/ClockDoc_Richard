@@ -48,6 +48,7 @@ html {
   /* 562px/16 = 35.125em*/
   /* 616px/16 = 38.5em */
   /* 767px/16 = 47.9375em */
+  /* 782px/16 = 48.875em. This one's needed by the hamburger icon, so the wp-admin bar doesn't block it. wp-admin bar changes sizes at 782px. */
   /* 800px/16 = 50em */
   /* 1000px/16 = 62.5em*/
   /* 1200px/16 = 75em*/
@@ -60,6 +61,7 @@ html {
   /* 562px/16 = 35.125em*/
   /* 616px/16 = 38.5em */
   /* 767px/16 = 47.9375em */
+  /* 782px/16 = 48.875em. This one's needed by the hamburger icon, so the wp-admin bar doesn't block it. wp-admin bar changes sizes at 782px. */
   /* 800px/16 = 50em */
   /* 1000px/16 = 62.5em*/
   /* 1200px/16 = 75em*/
@@ -72,6 +74,7 @@ html {
   /* 562px/16 = 35.125em*/
   /* 616px/16 = 38.5em */
   /* 767px/16 = 47.9375em */
+  /* 782px/16 = 48.875em. This one's needed by the hamburger icon, so the wp-admin bar doesn't block it. wp-admin bar changes sizes at 782px. */
   /* 800px/16 = 50em */
   /* 1000px/16 = 62.5em*/
   /* 1200px/16 = 75em*/
@@ -84,6 +87,7 @@ html {
   /* 562px/16 = 35.125em*/
   /* 616px/16 = 38.5em */
   /* 767px/16 = 47.9375em */
+  /* 782px/16 = 48.875em. This one's needed by the hamburger icon, so the wp-admin bar doesn't block it. wp-admin bar changes sizes at 782px. */
   /* 800px/16 = 50em */
   /* 1000px/16 = 62.5em*/
   /* 1200px/16 = 75em*/
@@ -96,6 +100,7 @@ html {
   /* 562px/16 = 35.125em*/
   /* 616px/16 = 38.5em */
   /* 767px/16 = 47.9375em */
+  /* 782px/16 = 48.875em. This one's needed by the hamburger icon, so the wp-admin bar doesn't block it. wp-admin bar changes sizes at 782px. */
   /* 800px/16 = 50em */
   /* 1000px/16 = 62.5em*/
   /* 1200px/16 = 75em*/
@@ -108,6 +113,7 @@ html {
   /* 562px/16 = 35.125em*/
   /* 616px/16 = 38.5em */
   /* 767px/16 = 47.9375em */
+  /* 782px/16 = 48.875em. This one's needed by the hamburger icon, so the wp-admin bar doesn't block it. wp-admin bar changes sizes at 782px. */
   /* 800px/16 = 50em */
   /* 1000px/16 = 62.5em*/
   /* 1200px/16 = 75em*/
@@ -179,12 +185,13 @@ h2 {
   /* 562px/16 = 35.125em*/
   /* 616px/16 = 38.5em */
   /* 767px/16 = 47.9375em */
+  /* 782px/16 = 48.875em. This one's needed by the hamburger icon, so the wp-admin bar doesn't block it. wp-admin bar changes sizes at 782px. */
   /* 800px/16 = 50em */
   /* 1000px/16 = 62.5em*/
   /* 1200px/16 = 75em*/
   /* 1500px/16 = 93.75em*/
   /* 1860px/16 = 116.25em   */
-  /* screen size <= 1200px*/
+  /* screen size <= 767px*/
   /* 355px/16 = 22.1875em*/
   /* 400px/16 = 25em */
   /* 371px/16 = 25em */
@@ -192,28 +199,13 @@ h2 {
   /* 562px/16 = 35.125em*/
   /* 616px/16 = 38.5em */
   /* 767px/16 = 47.9375em */
-  /* 800px/16 = 50em */
-  /* 1000px/16 = 62.5em*/
-  /* 1200px/16 = 75em*/
-  /* 1500px/16 = 93.75em*/
-  /* 1860px/16 = 116.25em   */
-  /* screen size <= 1200px*/
-  /* 355px/16 = 22.1875em*/
-  /* 400px/16 = 25em */
-  /* 371px/16 = 25em */
-  /* 530px/16 = 33.125em*/
-  /* 562px/16 = 35.125em*/
-  /* 616px/16 = 38.5em */
-  /* 767px/16 = 47.9375em */
+  /* 782px/16 = 48.875em. This one's needed by the hamburger icon, so the wp-admin bar doesn't block it. wp-admin bar changes sizes at 782px. */
   /* 800px/16 = 50em */
   /* 1000px/16 = 62.5em*/
   /* 1200px/16 = 75em*/
   /* 1500px/16 = 93.75em*/
   /* 1860px/16 = 116.25em   */
   /* screen size <= 530px*/ }
-  @media only screen and (max-width: 75em) {
-    h2 {
-      font-size: 3em; } }
   @media only screen and (max-width: 47.9375em) {
     h2 {
       font-size: 2.5em; } }
@@ -254,6 +246,7 @@ h6 {
 /* 562px/16 = 35.125em*/
 /* 616px/16 = 38.5em */
 /* 767px/16 = 47.9375em */
+/* 782px/16 = 48.875em. This one's needed by the hamburger icon, so the wp-admin bar doesn't block it. wp-admin bar changes sizes at 782px. */
 /* 800px/16 = 50em */
 /* 1000px/16 = 62.5em*/
 /* 1200px/16 = 75em*/
@@ -265,12 +258,12 @@ img {
 
 input {
   height: 4rem;
-  /* This needs to be 4rem not 4em; otherwise, the fields on the Contact Us page will be too big.*/ }
+  /* This needs to be 4rem not 4em; otherwise, the fields on the Contact Us page will be too big. */ }
 
 textarea {
   /* used on contact us form. */
   height: 8rem;
-  /* This needs to be 8rem not 8em; otherwise, the textarea on the Contact Us page will be too big.*/ }
+  /* This needs to be 8rem not 8em; otherwise, the textarea on the Contact Us page will be too big. */ }
 
 a {
   color: #0d3b66;
@@ -301,32 +294,7 @@ li {
   /* 562px/16 = 35.125em*/
   /* 616px/16 = 38.5em */
   /* 767px/16 = 47.9375em */
-  /* 800px/16 = 50em */
-  /* 1000px/16 = 62.5em*/
-  /* 1200px/16 = 75em*/
-  /* 1500px/16 = 93.75em*/
-  /* 1860px/16 = 116.25em   */
-  /* screen size <= 1200px */
-  /* 355px/16 = 22.1875em*/
-  /* 400px/16 = 25em */
-  /* 371px/16 = 25em */
-  /* 530px/16 = 33.125em*/
-  /* 562px/16 = 35.125em*/
-  /* 616px/16 = 38.5em */
-  /* 767px/16 = 47.9375em */
-  /* 800px/16 = 50em */
-  /* 1000px/16 = 62.5em*/
-  /* 1200px/16 = 75em*/
-  /* 1500px/16 = 93.75em*/
-  /* 1860px/16 = 116.25em   */
-  /* screen size <= 767px*/
-  /* 355px/16 = 22.1875em*/
-  /* 400px/16 = 25em */
-  /* 371px/16 = 25em */
-  /* 530px/16 = 33.125em*/
-  /* 562px/16 = 35.125em*/
-  /* 616px/16 = 38.5em */
-  /* 767px/16 = 47.9375em */
+  /* 782px/16 = 48.875em. This one's needed by the hamburger icon, so the wp-admin bar doesn't block it. wp-admin bar changes sizes at 782px. */
   /* 800px/16 = 50em */
   /* 1000px/16 = 62.5em*/
   /* 1200px/16 = 75em*/
@@ -339,6 +307,7 @@ li {
   /* 562px/16 = 35.125em*/
   /* 616px/16 = 38.5em */
   /* 767px/16 = 47.9375em */
+  /* 782px/16 = 48.875em. This one's needed by the hamburger icon, so the wp-admin bar doesn't block it. wp-admin bar changes sizes at 782px. */
   /* 800px/16 = 50em */
   /* 1000px/16 = 62.5em*/
   /* 1200px/16 = 75em*/
@@ -351,6 +320,7 @@ li {
   /* 562px/16 = 35.125em*/
   /* 616px/16 = 38.5em */
   /* 767px/16 = 47.9375em */
+  /* 782px/16 = 48.875em. This one's needed by the hamburger icon, so the wp-admin bar doesn't block it. wp-admin bar changes sizes at 782px. */
   /* 800px/16 = 50em */
   /* 1000px/16 = 62.5em*/
   /* 1200px/16 = 75em*/
@@ -363,19 +333,12 @@ li {
   /* 562px/16 = 35.125em*/
   /* 616px/16 = 38.5em */
   /* 767px/16 = 47.9375em */
+  /* 782px/16 = 48.875em. This one's needed by the hamburger icon, so the wp-admin bar doesn't block it. wp-admin bar changes sizes at 782px. */
   /* 800px/16 = 50em */
   /* 1000px/16 = 62.5em*/
   /* 1200px/16 = 75em*/
   /* 1500px/16 = 93.75em*/
   /* 1860px/16 = 116.25em   */ }
-  @media only screen and (max-width: 75em) {
-    li {
-      font-size: 2.3em;
-      /* needed so fonts on About Us are big enough on the ipadpro. */ } }
-  @media only screen and (max-width: 47.9375em) {
-    li {
-      line-height: 1.5em;
-      font-size: 1.875em; } }
   @media only screen and (max-width: 33.125em) {
     li {
       font-size: 3em; } }
@@ -400,32 +363,7 @@ p {
   /* 562px/16 = 35.125em*/
   /* 616px/16 = 38.5em */
   /* 767px/16 = 47.9375em */
-  /* 800px/16 = 50em */
-  /* 1000px/16 = 62.5em*/
-  /* 1200px/16 = 75em*/
-  /* 1500px/16 = 93.75em*/
-  /* 1860px/16 = 116.25em   */
-  /* screen size <= 1200px*/
-  /* 355px/16 = 22.1875em*/
-  /* 400px/16 = 25em */
-  /* 371px/16 = 25em */
-  /* 530px/16 = 33.125em*/
-  /* 562px/16 = 35.125em*/
-  /* 616px/16 = 38.5em */
-  /* 767px/16 = 47.9375em */
-  /* 800px/16 = 50em */
-  /* 1000px/16 = 62.5em*/
-  /* 1200px/16 = 75em*/
-  /* 1500px/16 = 93.75em*/
-  /* 1860px/16 = 116.25em   */
-  /* screen size <= 767px*/
-  /* 355px/16 = 22.1875em*/
-  /* 400px/16 = 25em */
-  /* 371px/16 = 25em */
-  /* 530px/16 = 33.125em*/
-  /* 562px/16 = 35.125em*/
-  /* 616px/16 = 38.5em */
-  /* 767px/16 = 47.9375em */
+  /* 782px/16 = 48.875em. This one's needed by the hamburger icon, so the wp-admin bar doesn't block it. wp-admin bar changes sizes at 782px. */
   /* 800px/16 = 50em */
   /* 1000px/16 = 62.5em*/
   /* 1200px/16 = 75em*/
@@ -438,6 +376,7 @@ p {
   /* 562px/16 = 35.125em*/
   /* 616px/16 = 38.5em */
   /* 767px/16 = 47.9375em */
+  /* 782px/16 = 48.875em. This one's needed by the hamburger icon, so the wp-admin bar doesn't block it. wp-admin bar changes sizes at 782px. */
   /* 800px/16 = 50em */
   /* 1000px/16 = 62.5em*/
   /* 1200px/16 = 75em*/
@@ -450,6 +389,7 @@ p {
   /* 562px/16 = 35.125em*/
   /* 616px/16 = 38.5em */
   /* 767px/16 = 47.9375em */
+  /* 782px/16 = 48.875em. This one's needed by the hamburger icon, so the wp-admin bar doesn't block it. wp-admin bar changes sizes at 782px. */
   /* 800px/16 = 50em */
   /* 1000px/16 = 62.5em*/
   /* 1200px/16 = 75em*/
@@ -462,18 +402,12 @@ p {
   /* 562px/16 = 35.125em*/
   /* 616px/16 = 38.5em */
   /* 767px/16 = 47.9375em */
+  /* 782px/16 = 48.875em. This one's needed by the hamburger icon, so the wp-admin bar doesn't block it. wp-admin bar changes sizes at 782px. */
   /* 800px/16 = 50em */
   /* 1000px/16 = 62.5em*/
   /* 1200px/16 = 75em*/
   /* 1500px/16 = 93.75em*/
   /* 1860px/16 = 116.25em   */ }
-  @media only screen and (max-width: 75em) {
-    p {
-      font-size: 3rem;
-      /* needed so fonts on About Us are big enough on the ipadpro. */ } }
-  @media only screen and (max-width: 47.9375em) {
-    p {
-      font-size: 2rem; } }
   @media only screen and (max-width: 33.125em) {
     p {
       font-size: 3rem; } }
@@ -681,6 +615,7 @@ p {
   /* 562px/16 = 35.125em*/
   /* 616px/16 = 38.5em */
   /* 767px/16 = 47.9375em */
+  /* 782px/16 = 48.875em. This one's needed by the hamburger icon, so the wp-admin bar doesn't block it. wp-admin bar changes sizes at 782px. */
   /* 800px/16 = 50em */
   /* 1000px/16 = 62.5em*/
   /* 1200px/16 = 75em*/
@@ -710,6 +645,7 @@ p {
   /* 562px/16 = 35.125em*/
   /* 616px/16 = 38.5em */
   /* 767px/16 = 47.9375em */
+  /* 782px/16 = 48.875em. This one's needed by the hamburger icon, so the wp-admin bar doesn't block it. wp-admin bar changes sizes at 782px. */
   /* 800px/16 = 50em */
   /* 1000px/16 = 62.5em*/
   /* 1200px/16 = 75em*/
@@ -733,6 +669,7 @@ p {
   /* 562px/16 = 35.125em*/
   /* 616px/16 = 38.5em */
   /* 767px/16 = 47.9375em */
+  /* 782px/16 = 48.875em. This one's needed by the hamburger icon, so the wp-admin bar doesn't block it. wp-admin bar changes sizes at 782px. */
   /* 800px/16 = 50em */
   /* 1000px/16 = 62.5em*/
   /* 1200px/16 = 75em*/
@@ -816,6 +753,7 @@ the exception being the .container class. That's defined in utilities.scss, so t
   /* 562px/16 = 35.125em*/
   /* 616px/16 = 38.5em */
   /* 767px/16 = 47.9375em */
+  /* 782px/16 = 48.875em. This one's needed by the hamburger icon, so the wp-admin bar doesn't block it. wp-admin bar changes sizes at 782px. */
   /* 800px/16 = 50em */
   /* 1000px/16 = 62.5em*/
   /* 1200px/16 = 75em*/
@@ -991,6 +929,7 @@ the exception being the .container class. That's defined in utilities.scss, so t
   /* 562px/16 = 35.125em*/
   /* 616px/16 = 38.5em */
   /* 767px/16 = 47.9375em */
+  /* 782px/16 = 48.875em. This one's needed by the hamburger icon, so the wp-admin bar doesn't block it. wp-admin bar changes sizes at 782px. */
   /* 800px/16 = 50em */
   /* 1000px/16 = 62.5em*/
   /* 1200px/16 = 75em*/
@@ -1003,6 +942,7 @@ the exception being the .container class. That's defined in utilities.scss, so t
   /* 562px/16 = 35.125em*/
   /* 616px/16 = 38.5em */
   /* 767px/16 = 47.9375em */
+  /* 782px/16 = 48.875em. This one's needed by the hamburger icon, so the wp-admin bar doesn't block it. wp-admin bar changes sizes at 782px. */
   /* 800px/16 = 50em */
   /* 1000px/16 = 62.5em*/
   /* 1200px/16 = 75em*/
@@ -1015,6 +955,7 @@ the exception being the .container class. That's defined in utilities.scss, so t
   /* 562px/16 = 35.125em*/
   /* 616px/16 = 38.5em */
   /* 767px/16 = 47.9375em */
+  /* 782px/16 = 48.875em. This one's needed by the hamburger icon, so the wp-admin bar doesn't block it. wp-admin bar changes sizes at 782px. */
   /* 800px/16 = 50em */
   /* 1000px/16 = 62.5em*/
   /* 1200px/16 = 75em*/
@@ -1027,6 +968,7 @@ the exception being the .container class. That's defined in utilities.scss, so t
   /* 562px/16 = 35.125em*/
   /* 616px/16 = 38.5em */
   /* 767px/16 = 47.9375em */
+  /* 782px/16 = 48.875em. This one's needed by the hamburger icon, so the wp-admin bar doesn't block it. wp-admin bar changes sizes at 782px. */
   /* 800px/16 = 50em */
   /* 1000px/16 = 62.5em*/
   /* 1200px/16 = 75em*/
@@ -1039,6 +981,7 @@ the exception being the .container class. That's defined in utilities.scss, so t
   /* 562px/16 = 35.125em*/
   /* 616px/16 = 38.5em */
   /* 767px/16 = 47.9375em */
+  /* 782px/16 = 48.875em. This one's needed by the hamburger icon, so the wp-admin bar doesn't block it. wp-admin bar changes sizes at 782px. */
   /* 800px/16 = 50em */
   /* 1000px/16 = 62.5em*/
   /* 1200px/16 = 75em*/
@@ -1052,6 +995,7 @@ the exception being the .container class. That's defined in utilities.scss, so t
   /* 562px/16 = 35.125em*/
   /* 616px/16 = 38.5em */
   /* 767px/16 = 47.9375em */
+  /* 782px/16 = 48.875em. This one's needed by the hamburger icon, so the wp-admin bar doesn't block it. wp-admin bar changes sizes at 782px. */
   /* 800px/16 = 50em */
   /* 1000px/16 = 62.5em*/
   /* 1200px/16 = 75em*/
@@ -1088,6 +1032,7 @@ the exception being the .container class. That's defined in utilities.scss, so t
     /* 562px/16 = 35.125em*/
     /* 616px/16 = 38.5em */
     /* 767px/16 = 47.9375em */
+    /* 782px/16 = 48.875em. This one's needed by the hamburger icon, so the wp-admin bar doesn't block it. wp-admin bar changes sizes at 782px. */
     /* 800px/16 = 50em */
     /* 1000px/16 = 62.5em*/
     /* 1200px/16 = 75em*/
@@ -1100,6 +1045,7 @@ the exception being the .container class. That's defined in utilities.scss, so t
     /* 562px/16 = 35.125em*/
     /* 616px/16 = 38.5em */
     /* 767px/16 = 47.9375em */
+    /* 782px/16 = 48.875em. This one's needed by the hamburger icon, so the wp-admin bar doesn't block it. wp-admin bar changes sizes at 782px. */
     /* 800px/16 = 50em */
     /* 1000px/16 = 62.5em*/
     /* 1200px/16 = 75em*/
@@ -1112,6 +1058,7 @@ the exception being the .container class. That's defined in utilities.scss, so t
     /* 562px/16 = 35.125em*/
     /* 616px/16 = 38.5em */
     /* 767px/16 = 47.9375em */
+    /* 782px/16 = 48.875em. This one's needed by the hamburger icon, so the wp-admin bar doesn't block it. wp-admin bar changes sizes at 782px. */
     /* 800px/16 = 50em */
     /* 1000px/16 = 62.5em*/
     /* 1200px/16 = 75em*/
@@ -1124,6 +1071,7 @@ the exception being the .container class. That's defined in utilities.scss, so t
     /* 562px/16 = 35.125em*/
     /* 616px/16 = 38.5em */
     /* 767px/16 = 47.9375em */
+    /* 782px/16 = 48.875em. This one's needed by the hamburger icon, so the wp-admin bar doesn't block it. wp-admin bar changes sizes at 782px. */
     /* 800px/16 = 50em */
     /* 1000px/16 = 62.5em*/
     /* 1200px/16 = 75em*/
@@ -1136,6 +1084,7 @@ the exception being the .container class. That's defined in utilities.scss, so t
     /* 562px/16 = 35.125em*/
     /* 616px/16 = 38.5em */
     /* 767px/16 = 47.9375em */
+    /* 782px/16 = 48.875em. This one's needed by the hamburger icon, so the wp-admin bar doesn't block it. wp-admin bar changes sizes at 782px. */
     /* 800px/16 = 50em */
     /* 1000px/16 = 62.5em*/
     /* 1200px/16 = 75em*/
@@ -1149,6 +1098,7 @@ the exception being the .container class. That's defined in utilities.scss, so t
     /* 562px/16 = 35.125em*/
     /* 616px/16 = 38.5em */
     /* 767px/16 = 47.9375em */
+    /* 782px/16 = 48.875em. This one's needed by the hamburger icon, so the wp-admin bar doesn't block it. wp-admin bar changes sizes at 782px. */
     /* 800px/16 = 50em */
     /* 1000px/16 = 62.5em*/
     /* 1200px/16 = 75em*/
@@ -1191,6 +1141,7 @@ the exception being the .container class. That's defined in utilities.scss, so t
   /* 562px/16 = 35.125em*/
   /* 616px/16 = 38.5em */
   /* 767px/16 = 47.9375em */
+  /* 782px/16 = 48.875em. This one's needed by the hamburger icon, so the wp-admin bar doesn't block it. wp-admin bar changes sizes at 782px. */
   /* 800px/16 = 50em */
   /* 1000px/16 = 62.5em*/
   /* 1200px/16 = 75em*/
@@ -1203,6 +1154,7 @@ the exception being the .container class. That's defined in utilities.scss, so t
   /* 562px/16 = 35.125em*/
   /* 616px/16 = 38.5em */
   /* 767px/16 = 47.9375em */
+  /* 782px/16 = 48.875em. This one's needed by the hamburger icon, so the wp-admin bar doesn't block it. wp-admin bar changes sizes at 782px. */
   /* 800px/16 = 50em */
   /* 1000px/16 = 62.5em*/
   /* 1200px/16 = 75em*/
@@ -1216,6 +1168,7 @@ the exception being the .container class. That's defined in utilities.scss, so t
   /* 562px/16 = 35.125em*/
   /* 616px/16 = 38.5em */
   /* 767px/16 = 47.9375em */
+  /* 782px/16 = 48.875em. This one's needed by the hamburger icon, so the wp-admin bar doesn't block it. wp-admin bar changes sizes at 782px. */
   /* 800px/16 = 50em */
   /* 1000px/16 = 62.5em*/
   /* 1200px/16 = 75em*/
@@ -1229,6 +1182,7 @@ the exception being the .container class. That's defined in utilities.scss, so t
   /* 562px/16 = 35.125em*/
   /* 616px/16 = 38.5em */
   /* 767px/16 = 47.9375em */
+  /* 782px/16 = 48.875em. This one's needed by the hamburger icon, so the wp-admin bar doesn't block it. wp-admin bar changes sizes at 782px. */
   /* 800px/16 = 50em */
   /* 1000px/16 = 62.5em*/
   /* 1200px/16 = 75em*/
@@ -1243,6 +1197,7 @@ the exception being the .container class. That's defined in utilities.scss, so t
   /* 562px/16 = 35.125em*/
   /* 616px/16 = 38.5em */
   /* 767px/16 = 47.9375em */
+  /* 782px/16 = 48.875em. This one's needed by the hamburger icon, so the wp-admin bar doesn't block it. wp-admin bar changes sizes at 782px. */
   /* 800px/16 = 50em */
   /* 1000px/16 = 62.5em*/
   /* 1200px/16 = 75em*/
@@ -1276,6 +1231,7 @@ the exception being the .container class. That's defined in utilities.scss, so t
     /* 562px/16 = 35.125em*/
     /* 616px/16 = 38.5em */
     /* 767px/16 = 47.9375em */
+    /* 782px/16 = 48.875em. This one's needed by the hamburger icon, so the wp-admin bar doesn't block it. wp-admin bar changes sizes at 782px. */
     /* 800px/16 = 50em */
     /* 1000px/16 = 62.5em*/
     /* 1200px/16 = 75em*/
@@ -1294,6 +1250,7 @@ the exception being the .container class. That's defined in utilities.scss, so t
     /* 562px/16 = 35.125em*/
     /* 616px/16 = 38.5em */
     /* 767px/16 = 47.9375em */
+    /* 782px/16 = 48.875em. This one's needed by the hamburger icon, so the wp-admin bar doesn't block it. wp-admin bar changes sizes at 782px. */
     /* 800px/16 = 50em */
     /* 1000px/16 = 62.5em*/
     /* 1200px/16 = 75em*/
@@ -1307,6 +1264,7 @@ the exception being the .container class. That's defined in utilities.scss, so t
     /* 562px/16 = 35.125em*/
     /* 616px/16 = 38.5em */
     /* 767px/16 = 47.9375em */
+    /* 782px/16 = 48.875em. This one's needed by the hamburger icon, so the wp-admin bar doesn't block it. wp-admin bar changes sizes at 782px. */
     /* 800px/16 = 50em */
     /* 1000px/16 = 62.5em*/
     /* 1200px/16 = 75em*/
@@ -1320,6 +1278,7 @@ the exception being the .container class. That's defined in utilities.scss, so t
     /* 562px/16 = 35.125em*/
     /* 616px/16 = 38.5em */
     /* 767px/16 = 47.9375em */
+    /* 782px/16 = 48.875em. This one's needed by the hamburger icon, so the wp-admin bar doesn't block it. wp-admin bar changes sizes at 782px. */
     /* 800px/16 = 50em */
     /* 1000px/16 = 62.5em*/
     /* 1200px/16 = 75em*/
@@ -1332,6 +1291,7 @@ the exception being the .container class. That's defined in utilities.scss, so t
     /* 562px/16 = 35.125em*/
     /* 616px/16 = 38.5em */
     /* 767px/16 = 47.9375em */
+    /* 782px/16 = 48.875em. This one's needed by the hamburger icon, so the wp-admin bar doesn't block it. wp-admin bar changes sizes at 782px. */
     /* 800px/16 = 50em */
     /* 1000px/16 = 62.5em*/
     /* 1200px/16 = 75em*/
@@ -1361,6 +1321,7 @@ the exception being the .container class. That's defined in utilities.scss, so t
     /* 562px/16 = 35.125em*/
     /* 616px/16 = 38.5em */
     /* 767px/16 = 47.9375em */
+    /* 782px/16 = 48.875em. This one's needed by the hamburger icon, so the wp-admin bar doesn't block it. wp-admin bar changes sizes at 782px. */
     /* 800px/16 = 50em */
     /* 1000px/16 = 62.5em*/
     /* 1200px/16 = 75em*/
@@ -1373,6 +1334,7 @@ the exception being the .container class. That's defined in utilities.scss, so t
     /* 562px/16 = 35.125em*/
     /* 616px/16 = 38.5em */
     /* 767px/16 = 47.9375em */
+    /* 782px/16 = 48.875em. This one's needed by the hamburger icon, so the wp-admin bar doesn't block it. wp-admin bar changes sizes at 782px. */
     /* 800px/16 = 50em */
     /* 1000px/16 = 62.5em*/
     /* 1200px/16 = 75em*/
@@ -1397,6 +1359,7 @@ the exception being the .container class. That's defined in utilities.scss, so t
     /* 562px/16 = 35.125em*/
     /* 616px/16 = 38.5em */
     /* 767px/16 = 47.9375em */
+    /* 782px/16 = 48.875em. This one's needed by the hamburger icon, so the wp-admin bar doesn't block it. wp-admin bar changes sizes at 782px. */
     /* 800px/16 = 50em */
     /* 1000px/16 = 62.5em*/
     /* 1200px/16 = 75em*/
@@ -1409,6 +1372,7 @@ the exception being the .container class. That's defined in utilities.scss, so t
     /* 562px/16 = 35.125em*/
     /* 616px/16 = 38.5em */
     /* 767px/16 = 47.9375em */
+    /* 782px/16 = 48.875em. This one's needed by the hamburger icon, so the wp-admin bar doesn't block it. wp-admin bar changes sizes at 782px. */
     /* 800px/16 = 50em */
     /* 1000px/16 = 62.5em*/
     /* 1200px/16 = 75em*/
@@ -1433,6 +1397,7 @@ the exception being the .container class. That's defined in utilities.scss, so t
     /* 562px/16 = 35.125em*/
     /* 616px/16 = 38.5em */
     /* 767px/16 = 47.9375em */
+    /* 782px/16 = 48.875em. This one's needed by the hamburger icon, so the wp-admin bar doesn't block it. wp-admin bar changes sizes at 782px. */
     /* 800px/16 = 50em */
     /* 1000px/16 = 62.5em*/
     /* 1200px/16 = 75em*/
@@ -1518,6 +1483,7 @@ the exception being the .container class. That's defined in utilities.scss, so t
     /* 562px/16 = 35.125em*/
     /* 616px/16 = 38.5em */
     /* 767px/16 = 47.9375em */
+    /* 782px/16 = 48.875em. This one's needed by the hamburger icon, so the wp-admin bar doesn't block it. wp-admin bar changes sizes at 782px. */
     /* 800px/16 = 50em */
     /* 1000px/16 = 62.5em*/
     /* 1200px/16 = 75em*/
@@ -1539,6 +1505,7 @@ the exception being the .container class. That's defined in utilities.scss, so t
     /* 562px/16 = 35.125em*/
     /* 616px/16 = 38.5em */
     /* 767px/16 = 47.9375em */
+    /* 782px/16 = 48.875em. This one's needed by the hamburger icon, so the wp-admin bar doesn't block it. wp-admin bar changes sizes at 782px. */
     /* 800px/16 = 50em */
     /* 1000px/16 = 62.5em*/
     /* 1200px/16 = 75em*/
@@ -1551,6 +1518,7 @@ the exception being the .container class. That's defined in utilities.scss, so t
     /* 562px/16 = 35.125em*/
     /* 616px/16 = 38.5em */
     /* 767px/16 = 47.9375em */
+    /* 782px/16 = 48.875em. This one's needed by the hamburger icon, so the wp-admin bar doesn't block it. wp-admin bar changes sizes at 782px. */
     /* 800px/16 = 50em */
     /* 1000px/16 = 62.5em*/
     /* 1200px/16 = 75em*/
@@ -1563,6 +1531,7 @@ the exception being the .container class. That's defined in utilities.scss, so t
     /* 562px/16 = 35.125em*/
     /* 616px/16 = 38.5em */
     /* 767px/16 = 47.9375em */
+    /* 782px/16 = 48.875em. This one's needed by the hamburger icon, so the wp-admin bar doesn't block it. wp-admin bar changes sizes at 782px. */
     /* 800px/16 = 50em */
     /* 1000px/16 = 62.5em*/
     /* 1200px/16 = 75em*/
@@ -1592,6 +1561,7 @@ the exception being the .container class. That's defined in utilities.scss, so t
     /* 562px/16 = 35.125em*/
     /* 616px/16 = 38.5em */
     /* 767px/16 = 47.9375em */
+    /* 782px/16 = 48.875em. This one's needed by the hamburger icon, so the wp-admin bar doesn't block it. wp-admin bar changes sizes at 782px. */
     /* 800px/16 = 50em */
     /* 1000px/16 = 62.5em*/
     /* 1200px/16 = 75em*/
@@ -1632,6 +1602,7 @@ the exception being the .container class. That's defined in utilities.scss, so t
     /* 562px/16 = 35.125em*/
     /* 616px/16 = 38.5em */
     /* 767px/16 = 47.9375em */
+    /* 782px/16 = 48.875em. This one's needed by the hamburger icon, so the wp-admin bar doesn't block it. wp-admin bar changes sizes at 782px. */
     /* 800px/16 = 50em */
     /* 1000px/16 = 62.5em*/
     /* 1200px/16 = 75em*/
@@ -1715,6 +1686,7 @@ the exception being the .container class. That's defined in utilities.scss, so t
       /* 562px/16 = 35.125em*/
       /* 616px/16 = 38.5em */
       /* 767px/16 = 47.9375em */
+      /* 782px/16 = 48.875em. This one's needed by the hamburger icon, so the wp-admin bar doesn't block it. wp-admin bar changes sizes at 782px. */
       /* 800px/16 = 50em */
       /* 1000px/16 = 62.5em*/
       /* 1200px/16 = 75em*/
@@ -1744,6 +1716,7 @@ the exception being the .container class. That's defined in utilities.scss, so t
       /* 562px/16 = 35.125em*/
       /* 616px/16 = 38.5em */
       /* 767px/16 = 47.9375em */
+      /* 782px/16 = 48.875em. This one's needed by the hamburger icon, so the wp-admin bar doesn't block it. wp-admin bar changes sizes at 782px. */
       /* 800px/16 = 50em */
       /* 1000px/16 = 62.5em*/
       /* 1200px/16 = 75em*/
@@ -1758,6 +1731,7 @@ the exception being the .container class. That's defined in utilities.scss, so t
       /* 562px/16 = 35.125em*/
       /* 616px/16 = 38.5em */
       /* 767px/16 = 47.9375em */
+      /* 782px/16 = 48.875em. This one's needed by the hamburger icon, so the wp-admin bar doesn't block it. wp-admin bar changes sizes at 782px. */
       /* 800px/16 = 50em */
       /* 1000px/16 = 62.5em*/
       /* 1200px/16 = 75em*/
@@ -1787,6 +1761,7 @@ the exception being the .container class. That's defined in utilities.scss, so t
     /* 562px/16 = 35.125em*/
     /* 616px/16 = 38.5em */
     /* 767px/16 = 47.9375em */
+    /* 782px/16 = 48.875em. This one's needed by the hamburger icon, so the wp-admin bar doesn't block it. wp-admin bar changes sizes at 782px. */
     /* 800px/16 = 50em */
     /* 1000px/16 = 62.5em*/
     /* 1200px/16 = 75em*/
@@ -1799,6 +1774,7 @@ the exception being the .container class. That's defined in utilities.scss, so t
     /* 562px/16 = 35.125em*/
     /* 616px/16 = 38.5em */
     /* 767px/16 = 47.9375em */
+    /* 782px/16 = 48.875em. This one's needed by the hamburger icon, so the wp-admin bar doesn't block it. wp-admin bar changes sizes at 782px. */
     /* 800px/16 = 50em */
     /* 1000px/16 = 62.5em*/
     /* 1200px/16 = 75em*/
@@ -1811,6 +1787,7 @@ the exception being the .container class. That's defined in utilities.scss, so t
     /* 562px/16 = 35.125em*/
     /* 616px/16 = 38.5em */
     /* 767px/16 = 47.9375em */
+    /* 782px/16 = 48.875em. This one's needed by the hamburger icon, so the wp-admin bar doesn't block it. wp-admin bar changes sizes at 782px. */
     /* 800px/16 = 50em */
     /* 1000px/16 = 62.5em*/
     /* 1200px/16 = 75em*/
@@ -1823,6 +1800,7 @@ the exception being the .container class. That's defined in utilities.scss, so t
     /* 562px/16 = 35.125em*/
     /* 616px/16 = 38.5em */
     /* 767px/16 = 47.9375em */
+    /* 782px/16 = 48.875em. This one's needed by the hamburger icon, so the wp-admin bar doesn't block it. wp-admin bar changes sizes at 782px. */
     /* 800px/16 = 50em */
     /* 1000px/16 = 62.5em*/
     /* 1200px/16 = 75em*/
@@ -1907,6 +1885,7 @@ the exception being the .container class. That's defined in utilities.scss, so t
     /* 562px/16 = 35.125em*/
     /* 616px/16 = 38.5em */
     /* 767px/16 = 47.9375em */
+    /* 782px/16 = 48.875em. This one's needed by the hamburger icon, so the wp-admin bar doesn't block it. wp-admin bar changes sizes at 782px. */
     /* 800px/16 = 50em */
     /* 1000px/16 = 62.5em*/
     /* 1200px/16 = 75em*/
@@ -1919,6 +1898,7 @@ the exception being the .container class. That's defined in utilities.scss, so t
     /* 562px/16 = 35.125em*/
     /* 616px/16 = 38.5em */
     /* 767px/16 = 47.9375em */
+    /* 782px/16 = 48.875em. This one's needed by the hamburger icon, so the wp-admin bar doesn't block it. wp-admin bar changes sizes at 782px. */
     /* 800px/16 = 50em */
     /* 1000px/16 = 62.5em*/
     /* 1200px/16 = 75em*/
@@ -1931,6 +1911,7 @@ the exception being the .container class. That's defined in utilities.scss, so t
     /* 562px/16 = 35.125em*/
     /* 616px/16 = 38.5em */
     /* 767px/16 = 47.9375em */
+    /* 782px/16 = 48.875em. This one's needed by the hamburger icon, so the wp-admin bar doesn't block it. wp-admin bar changes sizes at 782px. */
     /* 800px/16 = 50em */
     /* 1000px/16 = 62.5em*/
     /* 1200px/16 = 75em*/
@@ -1943,6 +1924,7 @@ the exception being the .container class. That's defined in utilities.scss, so t
     /* 562px/16 = 35.125em*/
     /* 616px/16 = 38.5em */
     /* 767px/16 = 47.9375em */
+    /* 782px/16 = 48.875em. This one's needed by the hamburger icon, so the wp-admin bar doesn't block it. wp-admin bar changes sizes at 782px. */
     /* 800px/16 = 50em */
     /* 1000px/16 = 62.5em*/
     /* 1200px/16 = 75em*/
@@ -1955,6 +1937,7 @@ the exception being the .container class. That's defined in utilities.scss, so t
     /* 562px/16 = 35.125em*/
     /* 616px/16 = 38.5em */
     /* 767px/16 = 47.9375em */
+    /* 782px/16 = 48.875em. This one's needed by the hamburger icon, so the wp-admin bar doesn't block it. wp-admin bar changes sizes at 782px. */
     /* 800px/16 = 50em */
     /* 1000px/16 = 62.5em*/
     /* 1200px/16 = 75em*/
@@ -1968,6 +1951,7 @@ the exception being the .container class. That's defined in utilities.scss, so t
     /* 562px/16 = 35.125em*/
     /* 616px/16 = 38.5em */
     /* 767px/16 = 47.9375em */
+    /* 782px/16 = 48.875em. This one's needed by the hamburger icon, so the wp-admin bar doesn't block it. wp-admin bar changes sizes at 782px. */
     /* 800px/16 = 50em */
     /* 1000px/16 = 62.5em*/
     /* 1200px/16 = 75em*/
@@ -2101,6 +2085,7 @@ the exception being the .container class. That's defined in utilities.scss, so t
   /* 562px/16 = 35.125em*/
   /* 616px/16 = 38.5em */
   /* 767px/16 = 47.9375em */
+  /* 782px/16 = 48.875em. This one's needed by the hamburger icon, so the wp-admin bar doesn't block it. wp-admin bar changes sizes at 782px. */
   /* 800px/16 = 50em */
   /* 1000px/16 = 62.5em*/
   /* 1200px/16 = 75em*/
@@ -2126,6 +2111,7 @@ the exception being the .container class. That's defined in utilities.scss, so t
     /* 562px/16 = 35.125em*/
     /* 616px/16 = 38.5em */
     /* 767px/16 = 47.9375em */
+    /* 782px/16 = 48.875em. This one's needed by the hamburger icon, so the wp-admin bar doesn't block it. wp-admin bar changes sizes at 782px. */
     /* 800px/16 = 50em */
     /* 1000px/16 = 62.5em*/
     /* 1200px/16 = 75em*/
@@ -2138,6 +2124,7 @@ the exception being the .container class. That's defined in utilities.scss, so t
     /* 562px/16 = 35.125em*/
     /* 616px/16 = 38.5em */
     /* 767px/16 = 47.9375em */
+    /* 782px/16 = 48.875em. This one's needed by the hamburger icon, so the wp-admin bar doesn't block it. wp-admin bar changes sizes at 782px. */
     /* 800px/16 = 50em */
     /* 1000px/16 = 62.5em*/
     /* 1200px/16 = 75em*/
@@ -2172,6 +2159,7 @@ the exception being the .container class. That's defined in utilities.scss, so t
     /* 562px/16 = 35.125em*/
     /* 616px/16 = 38.5em */
     /* 767px/16 = 47.9375em */
+    /* 782px/16 = 48.875em. This one's needed by the hamburger icon, so the wp-admin bar doesn't block it. wp-admin bar changes sizes at 782px. */
     /* 800px/16 = 50em */
     /* 1000px/16 = 62.5em*/
     /* 1200px/16 = 75em*/
@@ -2193,6 +2181,7 @@ the exception being the .container class. That's defined in utilities.scss, so t
   /* 562px/16 = 35.125em*/
   /* 616px/16 = 38.5em */
   /* 767px/16 = 47.9375em */
+  /* 782px/16 = 48.875em. This one's needed by the hamburger icon, so the wp-admin bar doesn't block it. wp-admin bar changes sizes at 782px. */
   /* 800px/16 = 50em */
   /* 1000px/16 = 62.5em*/
   /* 1200px/16 = 75em*/
@@ -2224,6 +2213,7 @@ the exception being the .container class. That's defined in utilities.scss, so t
   /* 562px/16 = 35.125em*/
   /* 616px/16 = 38.5em */
   /* 767px/16 = 47.9375em */
+  /* 782px/16 = 48.875em. This one's needed by the hamburger icon, so the wp-admin bar doesn't block it. wp-admin bar changes sizes at 782px. */
   /* 800px/16 = 50em */
   /* 1000px/16 = 62.5em*/
   /* 1200px/16 = 75em*/
@@ -2236,6 +2226,7 @@ the exception being the .container class. That's defined in utilities.scss, so t
   /* 562px/16 = 35.125em*/
   /* 616px/16 = 38.5em */
   /* 767px/16 = 47.9375em */
+  /* 782px/16 = 48.875em. This one's needed by the hamburger icon, so the wp-admin bar doesn't block it. wp-admin bar changes sizes at 782px. */
   /* 800px/16 = 50em */
   /* 1000px/16 = 62.5em*/
   /* 1200px/16 = 75em*/
@@ -2249,6 +2240,7 @@ the exception being the .container class. That's defined in utilities.scss, so t
   /* 562px/16 = 35.125em*/
   /* 616px/16 = 38.5em */
   /* 767px/16 = 47.9375em */
+  /* 782px/16 = 48.875em. This one's needed by the hamburger icon, so the wp-admin bar doesn't block it. wp-admin bar changes sizes at 782px. */
   /* 800px/16 = 50em */
   /* 1000px/16 = 62.5em*/
   /* 1200px/16 = 75em*/
@@ -2320,6 +2312,33 @@ the exception being the .container class. That's defined in utilities.scss, so t
   /* 562px/16 = 35.125em*/
   /* 616px/16 = 38.5em */
   /* 767px/16 = 47.9375em */
+  /* 782px/16 = 48.875em. This one's needed by the hamburger icon, so the wp-admin bar doesn't block it. wp-admin bar changes sizes at 782px. */
+  /* 800px/16 = 50em */
+  /* 1000px/16 = 62.5em*/
+  /* 1200px/16 = 75em*/
+  /* 1500px/16 = 93.75em*/
+  /* 1860px/16 = 116.25em   */
+  /* 355px/16 = 22.1875em*/
+  /* 400px/16 = 25em */
+  /* 371px/16 = 25em */
+  /* 530px/16 = 33.125em*/
+  /* 562px/16 = 35.125em*/
+  /* 616px/16 = 38.5em */
+  /* 767px/16 = 47.9375em */
+  /* 782px/16 = 48.875em. This one's needed by the hamburger icon, so the wp-admin bar doesn't block it. wp-admin bar changes sizes at 782px. */
+  /* 800px/16 = 50em */
+  /* 1000px/16 = 62.5em*/
+  /* 1200px/16 = 75em*/
+  /* 1500px/16 = 93.75em*/
+  /* 1860px/16 = 116.25em   */
+  /* 355px/16 = 22.1875em*/
+  /* 400px/16 = 25em */
+  /* 371px/16 = 25em */
+  /* 530px/16 = 33.125em*/
+  /* 562px/16 = 35.125em*/
+  /* 616px/16 = 38.5em */
+  /* 767px/16 = 47.9375em */
+  /* 782px/16 = 48.875em. This one's needed by the hamburger icon, so the wp-admin bar doesn't block it. wp-admin bar changes sizes at 782px. */
   /* 800px/16 = 50em */
   /* 1000px/16 = 62.5em*/
   /* 1200px/16 = 75em*/
@@ -2328,6 +2347,12 @@ the exception being the .container class. That's defined in utilities.scss, so t
   @media only screen and (max-width: 75em) {
     .products-foreground {
       transform: translate(5%, 0%); } }
+  @media only screen and (max-width: 47.9375em) {
+    .products-foreground {
+      transform: translate(15%, 0%); } }
+  @media only screen and (max-width: 38.5em) {
+    .products-foreground {
+      transform: translate(1%, 0%); } }
 
 .gallery {
   margin: auto auto;
@@ -2346,6 +2371,7 @@ the exception being the .container class. That's defined in utilities.scss, so t
   /* 562px/16 = 35.125em*/
   /* 616px/16 = 38.5em */
   /* 767px/16 = 47.9375em */
+  /* 782px/16 = 48.875em. This one's needed by the hamburger icon, so the wp-admin bar doesn't block it. wp-admin bar changes sizes at 782px. */
   /* 800px/16 = 50em */
   /* 1000px/16 = 62.5em*/
   /* 1200px/16 = 75em*/
@@ -2358,6 +2384,7 @@ the exception being the .container class. That's defined in utilities.scss, so t
   /* 562px/16 = 35.125em*/
   /* 616px/16 = 38.5em */
   /* 767px/16 = 47.9375em */
+  /* 782px/16 = 48.875em. This one's needed by the hamburger icon, so the wp-admin bar doesn't block it. wp-admin bar changes sizes at 782px. */
   /* 800px/16 = 50em */
   /* 1000px/16 = 62.5em*/
   /* 1200px/16 = 75em*/
@@ -2369,7 +2396,7 @@ the exception being the .container class. That's defined in utilities.scss, so t
     -o-object-fit: cover;
        object-fit: cover;
     display: block; }
-  @media only screen and (max-width: 75em) {
+  @media only screen and (max-width: 47.9375em) {
     .gallery {
       margin: 1rem;
       -ms-grid-rows: (15vh)[10];
@@ -2415,12 +2442,13 @@ the exception being the .container class. That's defined in utilities.scss, so t
     /* 562px/16 = 35.125em*/
     /* 616px/16 = 38.5em */
     /* 767px/16 = 47.9375em */
+    /* 782px/16 = 48.875em. This one's needed by the hamburger icon, so the wp-admin bar doesn't block it. wp-admin bar changes sizes at 782px. */
     /* 800px/16 = 50em */
     /* 1000px/16 = 62.5em*/
     /* 1200px/16 = 75em*/
     /* 1500px/16 = 93.75em*/
     /* 1860px/16 = 116.25em   */ }
-    @media only screen and (max-width: 75em) {
+    @media only screen and (max-width: 47.9375em) {
       .gallery__item--3 {
         -ms-grid-row: 2;
         -ms-grid-row-span: 1;
@@ -2440,12 +2468,13 @@ the exception being the .container class. That's defined in utilities.scss, so t
     /* 562px/16 = 35.125em*/
     /* 616px/16 = 38.5em */
     /* 767px/16 = 47.9375em */
+    /* 782px/16 = 48.875em. This one's needed by the hamburger icon, so the wp-admin bar doesn't block it. wp-admin bar changes sizes at 782px. */
     /* 800px/16 = 50em */
     /* 1000px/16 = 62.5em*/
     /* 1200px/16 = 75em*/
     /* 1500px/16 = 93.75em*/
     /* 1860px/16 = 116.25em   */ }
-    @media only screen and (max-width: 75em) {
+    @media only screen and (max-width: 47.9375em) {
       .gallery__item--4 {
         -ms-grid-row: 2;
         -ms-grid-row-span: 1;
@@ -2467,12 +2496,13 @@ the exception being the .container class. That's defined in utilities.scss, so t
     /* 562px/16 = 35.125em*/
     /* 616px/16 = 38.5em */
     /* 767px/16 = 47.9375em */
+    /* 782px/16 = 48.875em. This one's needed by the hamburger icon, so the wp-admin bar doesn't block it. wp-admin bar changes sizes at 782px. */
     /* 800px/16 = 50em */
     /* 1000px/16 = 62.5em*/
     /* 1200px/16 = 75em*/
     /* 1500px/16 = 93.75em*/
     /* 1860px/16 = 116.25em   */ }
-    @media only screen and (max-width: 75em) {
+    @media only screen and (max-width: 47.9375em) {
       .gallery__item--5 {
         -ms-grid-row: 3;
         -ms-grid-row-span: 2;
@@ -2494,12 +2524,13 @@ the exception being the .container class. That's defined in utilities.scss, so t
     /* 562px/16 = 35.125em*/
     /* 616px/16 = 38.5em */
     /* 767px/16 = 47.9375em */
+    /* 782px/16 = 48.875em. This one's needed by the hamburger icon, so the wp-admin bar doesn't block it. wp-admin bar changes sizes at 782px. */
     /* 800px/16 = 50em */
     /* 1000px/16 = 62.5em*/
     /* 1200px/16 = 75em*/
     /* 1500px/16 = 93.75em*/
     /* 1860px/16 = 116.25em   */ }
-    @media only screen and (max-width: 75em) {
+    @media only screen and (max-width: 47.9375em) {
       .gallery__item--6 {
         -ms-grid-row: 3;
         -ms-grid-row-span: 2;
@@ -2521,12 +2552,13 @@ the exception being the .container class. That's defined in utilities.scss, so t
     /* 562px/16 = 35.125em*/
     /* 616px/16 = 38.5em */
     /* 767px/16 = 47.9375em */
+    /* 782px/16 = 48.875em. This one's needed by the hamburger icon, so the wp-admin bar doesn't block it. wp-admin bar changes sizes at 782px. */
     /* 800px/16 = 50em */
     /* 1000px/16 = 62.5em*/
     /* 1200px/16 = 75em*/
     /* 1500px/16 = 93.75em*/
     /* 1860px/16 = 116.25em   */ }
-    @media only screen and (max-width: 75em) {
+    @media only screen and (max-width: 47.9375em) {
       .gallery__item--7 {
         -ms-grid-row: 5;
         -ms-grid-row-span: 2;
@@ -2548,12 +2580,13 @@ the exception being the .container class. That's defined in utilities.scss, so t
     /* 562px/16 = 35.125em*/
     /* 616px/16 = 38.5em */
     /* 767px/16 = 47.9375em */
+    /* 782px/16 = 48.875em. This one's needed by the hamburger icon, so the wp-admin bar doesn't block it. wp-admin bar changes sizes at 782px. */
     /* 800px/16 = 50em */
     /* 1000px/16 = 62.5em*/
     /* 1200px/16 = 75em*/
     /* 1500px/16 = 93.75em*/
     /* 1860px/16 = 116.25em   */ }
-    @media only screen and (max-width: 75em) {
+    @media only screen and (max-width: 47.9375em) {
       .gallery__item--8 {
         -ms-grid-row: 5;
         -ms-grid-row-span: 2;
@@ -2575,12 +2608,13 @@ the exception being the .container class. That's defined in utilities.scss, so t
     /* 562px/16 = 35.125em*/
     /* 616px/16 = 38.5em */
     /* 767px/16 = 47.9375em */
+    /* 782px/16 = 48.875em. This one's needed by the hamburger icon, so the wp-admin bar doesn't block it. wp-admin bar changes sizes at 782px. */
     /* 800px/16 = 50em */
     /* 1000px/16 = 62.5em*/
     /* 1200px/16 = 75em*/
     /* 1500px/16 = 93.75em*/
     /* 1860px/16 = 116.25em   */ }
-    @media only screen and (max-width: 75em) {
+    @media only screen and (max-width: 47.9375em) {
       .gallery__item--9 {
         -ms-grid-row: 7;
         -ms-grid-row-span: 1;
@@ -2602,12 +2636,13 @@ the exception being the .container class. That's defined in utilities.scss, so t
     /* 562px/16 = 35.125em*/
     /* 616px/16 = 38.5em */
     /* 767px/16 = 47.9375em */
+    /* 782px/16 = 48.875em. This one's needed by the hamburger icon, so the wp-admin bar doesn't block it. wp-admin bar changes sizes at 782px. */
     /* 800px/16 = 50em */
     /* 1000px/16 = 62.5em*/
     /* 1200px/16 = 75em*/
     /* 1500px/16 = 93.75em*/
     /* 1860px/16 = 116.25em   */ }
-    @media only screen and (max-width: 75em) {
+    @media only screen and (max-width: 47.9375em) {
       .gallery__item--10 {
         -ms-grid-row: 7;
         -ms-grid-row-span: 1;
@@ -2629,12 +2664,13 @@ the exception being the .container class. That's defined in utilities.scss, so t
     /* 562px/16 = 35.125em*/
     /* 616px/16 = 38.5em */
     /* 767px/16 = 47.9375em */
+    /* 782px/16 = 48.875em. This one's needed by the hamburger icon, so the wp-admin bar doesn't block it. wp-admin bar changes sizes at 782px. */
     /* 800px/16 = 50em */
     /* 1000px/16 = 62.5em*/
     /* 1200px/16 = 75em*/
     /* 1500px/16 = 93.75em*/
     /* 1860px/16 = 116.25em   */ }
-    @media only screen and (max-width: 75em) {
+    @media only screen and (max-width: 47.9375em) {
       .gallery__item--11 {
         -ms-grid-row: 8;
         -ms-grid-row-span: 1;
@@ -2656,12 +2692,13 @@ the exception being the .container class. That's defined in utilities.scss, so t
     /* 562px/16 = 35.125em*/
     /* 616px/16 = 38.5em */
     /* 767px/16 = 47.9375em */
+    /* 782px/16 = 48.875em. This one's needed by the hamburger icon, so the wp-admin bar doesn't block it. wp-admin bar changes sizes at 782px. */
     /* 800px/16 = 50em */
     /* 1000px/16 = 62.5em*/
     /* 1200px/16 = 75em*/
     /* 1500px/16 = 93.75em*/
     /* 1860px/16 = 116.25em   */ }
-    @media only screen and (max-width: 75em) {
+    @media only screen and (max-width: 47.9375em) {
       .gallery__item--12 {
         -ms-grid-row: 8;
         -ms-grid-row-span: 1;
@@ -2683,12 +2720,13 @@ the exception being the .container class. That's defined in utilities.scss, so t
     /* 562px/16 = 35.125em*/
     /* 616px/16 = 38.5em */
     /* 767px/16 = 47.9375em */
+    /* 782px/16 = 48.875em. This one's needed by the hamburger icon, so the wp-admin bar doesn't block it. wp-admin bar changes sizes at 782px. */
     /* 800px/16 = 50em */
     /* 1000px/16 = 62.5em*/
     /* 1200px/16 = 75em*/
     /* 1500px/16 = 93.75em*/
     /* 1860px/16 = 116.25em   */ }
-    @media only screen and (max-width: 75em) {
+    @media only screen and (max-width: 47.9375em) {
       .gallery__item--13 {
         -ms-grid-row: 9;
         -ms-grid-row-span: 1;
@@ -2710,12 +2748,13 @@ the exception being the .container class. That's defined in utilities.scss, so t
     /* 562px/16 = 35.125em*/
     /* 616px/16 = 38.5em */
     /* 767px/16 = 47.9375em */
+    /* 782px/16 = 48.875em. This one's needed by the hamburger icon, so the wp-admin bar doesn't block it. wp-admin bar changes sizes at 782px. */
     /* 800px/16 = 50em */
     /* 1000px/16 = 62.5em*/
     /* 1200px/16 = 75em*/
     /* 1500px/16 = 93.75em*/
     /* 1860px/16 = 116.25em   */ }
-    @media only screen and (max-width: 75em) {
+    @media only screen and (max-width: 47.9375em) {
       .gallery__item--14 {
         -ms-grid-row: 9;
         -ms-grid-row-span: 1;
@@ -2733,12 +2772,13 @@ the exception being the .container class. That's defined in utilities.scss, so t
     /* 562px/16 = 35.125em*/
     /* 616px/16 = 38.5em */
     /* 767px/16 = 47.9375em */
+    /* 782px/16 = 48.875em. This one's needed by the hamburger icon, so the wp-admin bar doesn't block it. wp-admin bar changes sizes at 782px. */
     /* 800px/16 = 50em */
     /* 1000px/16 = 62.5em*/
     /* 1200px/16 = 75em*/
     /* 1500px/16 = 93.75em*/
     /* 1860px/16 = 116.25em   */ }
-    @media only screen and (max-width: 75em) {
+    @media only screen and (max-width: 47.9375em) {
       .gallery__item--15 {
         -ms-grid-row: 10;
         -ms-grid-row-span: 1;
@@ -2789,6 +2829,7 @@ the exception being the .container class. That's defined in utilities.scss, so t
   /* 562px/16 = 35.125em*/
   /* 616px/16 = 38.5em */
   /* 767px/16 = 47.9375em */
+  /* 782px/16 = 48.875em. This one's needed by the hamburger icon, so the wp-admin bar doesn't block it. wp-admin bar changes sizes at 782px. */
   /* 800px/16 = 50em */
   /* 1000px/16 = 62.5em*/
   /* 1200px/16 = 75em*/
@@ -2933,6 +2974,7 @@ the exception being the .container class. That's defined in utilities.scss, so t
   /* 562px/16 = 35.125em*/
   /* 616px/16 = 38.5em */
   /* 767px/16 = 47.9375em */
+  /* 782px/16 = 48.875em. This one's needed by the hamburger icon, so the wp-admin bar doesn't block it. wp-admin bar changes sizes at 782px. */
   /* 800px/16 = 50em */
   /* 1000px/16 = 62.5em*/
   /* 1200px/16 = 75em*/
@@ -2945,6 +2987,7 @@ the exception being the .container class. That's defined in utilities.scss, so t
   /* 562px/16 = 35.125em*/
   /* 616px/16 = 38.5em */
   /* 767px/16 = 47.9375em */
+  /* 782px/16 = 48.875em. This one's needed by the hamburger icon, so the wp-admin bar doesn't block it. wp-admin bar changes sizes at 782px. */
   /* 800px/16 = 50em */
   /* 1000px/16 = 62.5em*/
   /* 1200px/16 = 75em*/
@@ -3120,6 +3163,7 @@ the exception being the .container class. That's defined in utilities.scss, so t
     /* 562px/16 = 35.125em*/
     /* 616px/16 = 38.5em */
     /* 767px/16 = 47.9375em */
+    /* 782px/16 = 48.875em. This one's needed by the hamburger icon, so the wp-admin bar doesn't block it. wp-admin bar changes sizes at 782px. */
     /* 800px/16 = 50em */
     /* 1000px/16 = 62.5em*/
     /* 1200px/16 = 75em*/
@@ -3137,6 +3181,7 @@ the exception being the .container class. That's defined in utilities.scss, so t
       /* 562px/16 = 35.125em*/
       /* 616px/16 = 38.5em */
       /* 767px/16 = 47.9375em */
+      /* 782px/16 = 48.875em. This one's needed by the hamburger icon, so the wp-admin bar doesn't block it. wp-admin bar changes sizes at 782px. */
       /* 800px/16 = 50em */
       /* 1000px/16 = 62.5em*/
       /* 1200px/16 = 75em*/
@@ -3149,6 +3194,7 @@ the exception being the .container class. That's defined in utilities.scss, so t
       /* 562px/16 = 35.125em*/
       /* 616px/16 = 38.5em */
       /* 767px/16 = 47.9375em */
+      /* 782px/16 = 48.875em. This one's needed by the hamburger icon, so the wp-admin bar doesn't block it. wp-admin bar changes sizes at 782px. */
       /* 800px/16 = 50em */
       /* 1000px/16 = 62.5em*/
       /* 1200px/16 = 75em*/
@@ -3183,6 +3229,7 @@ the exception being the .container class. That's defined in utilities.scss, so t
     /* 562px/16 = 35.125em*/
     /* 616px/16 = 38.5em */
     /* 767px/16 = 47.9375em */
+    /* 782px/16 = 48.875em. This one's needed by the hamburger icon, so the wp-admin bar doesn't block it. wp-admin bar changes sizes at 782px. */
     /* 800px/16 = 50em */
     /* 1000px/16 = 62.5em*/
     /* 1200px/16 = 75em*/
@@ -3200,6 +3247,7 @@ the exception being the .container class. That's defined in utilities.scss, so t
     /* 562px/16 = 35.125em*/
     /* 616px/16 = 38.5em */
     /* 767px/16 = 47.9375em */
+    /* 782px/16 = 48.875em. This one's needed by the hamburger icon, so the wp-admin bar doesn't block it. wp-admin bar changes sizes at 782px. */
     /* 800px/16 = 50em */
     /* 1000px/16 = 62.5em*/
     /* 1200px/16 = 75em*/
@@ -3226,6 +3274,7 @@ the exception being the .container class. That's defined in utilities.scss, so t
       /* 562px/16 = 35.125em*/
       /* 616px/16 = 38.5em */
       /* 767px/16 = 47.9375em */
+      /* 782px/16 = 48.875em. This one's needed by the hamburger icon, so the wp-admin bar doesn't block it. wp-admin bar changes sizes at 782px. */
       /* 800px/16 = 50em */
       /* 1000px/16 = 62.5em*/
       /* 1200px/16 = 75em*/
@@ -3252,7 +3301,7 @@ the exception being the .container class. That's defined in utilities.scss, so t
     /* 1040px/16px = 65em */ }
     @media (min-width: 65em) {
       .site-header__nav {
-        top: 3rem;
+        top: 3.2rem;
         /* we don't want the black admin bar to overlay the nav bar. Thus, we need this line of code. */
         left: 0;
         right: 0;
@@ -3268,6 +3317,7 @@ the exception being the .container class. That's defined in utilities.scss, so t
         /* 562px/16 = 35.125em*/
         /* 616px/16 = 38.5em */
         /* 767px/16 = 47.9375em */
+        /* 782px/16 = 48.875em. This one's needed by the hamburger icon, so the wp-admin bar doesn't block it. wp-admin bar changes sizes at 782px. */
         /* 800px/16 = 50em */
         /* 1000px/16 = 62.5em*/
         /* 1200px/16 = 75em*/
@@ -3290,6 +3340,7 @@ the exception being the .container class. That's defined in utilities.scss, so t
       /* 562px/16 = 35.125em*/
       /* 616px/16 = 38.5em */
       /* 767px/16 = 47.9375em */
+      /* 782px/16 = 48.875em. This one's needed by the hamburger icon, so the wp-admin bar doesn't block it. wp-admin bar changes sizes at 782px. */
       /* 800px/16 = 50em */
       /* 1000px/16 = 62.5em*/
       /* 1200px/16 = 75em*/
@@ -3336,6 +3387,7 @@ the exception being the .container class. That's defined in utilities.scss, so t
       /* 562px/16 = 35.125em*/
       /* 616px/16 = 38.5em */
       /* 767px/16 = 47.9375em */
+      /* 782px/16 = 48.875em. This one's needed by the hamburger icon, so the wp-admin bar doesn't block it. wp-admin bar changes sizes at 782px. */
       /* 800px/16 = 50em */
       /* 1000px/16 = 62.5em*/
       /* 1200px/16 = 75em*/
@@ -3348,6 +3400,7 @@ the exception being the .container class. That's defined in utilities.scss, so t
       /* 562px/16 = 35.125em*/
       /* 616px/16 = 38.5em */
       /* 767px/16 = 47.9375em */
+      /* 782px/16 = 48.875em. This one's needed by the hamburger icon, so the wp-admin bar doesn't block it. wp-admin bar changes sizes at 782px. */
       /* 800px/16 = 50em */
       /* 1000px/16 = 62.5em*/
       /* 1200px/16 = 75em*/
@@ -3360,6 +3413,7 @@ the exception being the .container class. That's defined in utilities.scss, so t
       /* 562px/16 = 35.125em*/
       /* 616px/16 = 38.5em */
       /* 767px/16 = 47.9375em */
+      /* 782px/16 = 48.875em. This one's needed by the hamburger icon, so the wp-admin bar doesn't block it. wp-admin bar changes sizes at 782px. */
       /* 800px/16 = 50em */
       /* 1000px/16 = 62.5em*/
       /* 1200px/16 = 75em*/
@@ -3372,6 +3426,7 @@ the exception being the .container class. That's defined in utilities.scss, so t
       /* 562px/16 = 35.125em*/
       /* 616px/16 = 38.5em */
       /* 767px/16 = 47.9375em */
+      /* 782px/16 = 48.875em. This one's needed by the hamburger icon, so the wp-admin bar doesn't block it. wp-admin bar changes sizes at 782px. */
       /* 800px/16 = 50em */
       /* 1000px/16 = 62.5em*/
       /* 1200px/16 = 75em*/
@@ -3409,9 +3464,9 @@ the exception being the .container class. That's defined in utilities.scss, so t
     position: absolute;
     z-index: 10;
     /* we need this so the top left icon isn't overlaid when we click it the first time. Without this our icon won't make the nav menu vanish when it should vanish.*/
-    top: 3.2rem;
+    top: 4.2rem;
     /* Users won't have login/logout capability. Thus, the admin bar will never block the hamburger icon. */
-    left: 10%;
+    right: 46px;
     /* 355px/16 = 22.1875em*/
     /* 400px/16 = 25em */
     /* 371px/16 = 25em */
@@ -3419,6 +3474,46 @@ the exception being the .container class. That's defined in utilities.scss, so t
     /* 562px/16 = 35.125em*/
     /* 616px/16 = 38.5em */
     /* 767px/16 = 47.9375em */
+    /* 782px/16 = 48.875em. This one's needed by the hamburger icon, so the wp-admin bar doesn't block it. wp-admin bar changes sizes at 782px. */
+    /* 800px/16 = 50em */
+    /* 1000px/16 = 62.5em*/
+    /* 1200px/16 = 75em*/
+    /* 1500px/16 = 93.75em*/
+    /* 1860px/16 = 116.25em   */
+    /* 355px/16 = 22.1875em*/
+    /* 400px/16 = 25em */
+    /* 371px/16 = 25em */
+    /* 530px/16 = 33.125em*/
+    /* 562px/16 = 35.125em*/
+    /* 616px/16 = 38.5em */
+    /* 767px/16 = 47.9375em */
+    /* 782px/16 = 48.875em. This one's needed by the hamburger icon, so the wp-admin bar doesn't block it. wp-admin bar changes sizes at 782px. */
+    /* 800px/16 = 50em */
+    /* 1000px/16 = 62.5em*/
+    /* 1200px/16 = 75em*/
+    /* 1500px/16 = 93.75em*/
+    /* 1860px/16 = 116.25em   */
+    /* 355px/16 = 22.1875em*/
+    /* 400px/16 = 25em */
+    /* 371px/16 = 25em */
+    /* 530px/16 = 33.125em*/
+    /* 562px/16 = 35.125em*/
+    /* 616px/16 = 38.5em */
+    /* 767px/16 = 47.9375em */
+    /* 782px/16 = 48.875em. This one's needed by the hamburger icon, so the wp-admin bar doesn't block it. wp-admin bar changes sizes at 782px. */
+    /* 800px/16 = 50em */
+    /* 1000px/16 = 62.5em*/
+    /* 1200px/16 = 75em*/
+    /* 1500px/16 = 93.75em*/
+    /* 1860px/16 = 116.25em   */
+    /* 355px/16 = 22.1875em*/
+    /* 400px/16 = 25em */
+    /* 371px/16 = 25em */
+    /* 530px/16 = 33.125em*/
+    /* 562px/16 = 35.125em*/
+    /* 616px/16 = 38.5em */
+    /* 767px/16 = 47.9375em */
+    /* 782px/16 = 48.875em. This one's needed by the hamburger icon, so the wp-admin bar doesn't block it. wp-admin bar changes sizes at 782px. */
     /* 800px/16 = 50em */
     /* 1000px/16 = 62.5em*/
     /* 1200px/16 = 75em*/
@@ -3432,18 +3527,28 @@ the exception being the .container class. That's defined in utilities.scss, so t
     /* 562px/16 = 35.125em*/
     /* 616px/16 = 38.5em */
     /* 767px/16 = 47.9375em */
+    /* 782px/16 = 48.875em. This one's needed by the hamburger icon, so the wp-admin bar doesn't block it. wp-admin bar changes sizes at 782px. */
     /* 800px/16 = 50em */
     /* 1000px/16 = 62.5em*/
     /* 1200px/16 = 75em*/
     /* 1500px/16 = 93.75em*/
     /* 1860px/16 = 116.25em   */
     /* 400px/16px = 25em */ }
+    @media only screen and (max-width: 48.875em) {
+      .site-header__menu-icon {
+        top: 6.3rem; } }
     @media only screen and (max-width: 33.125em) {
       .site-header__menu-icon {
-        top: 2rem; } }
+        top: 8.4rem; } }
+    @media only screen and (max-width: 25em) {
+      .site-header__menu-icon {
+        top: 10.4rem; } }
+    @media only screen and (max-width: 22.1875em) {
+      .site-header__menu-icon {
+        top: 12.4rem; } }
     @media only screen and (max-width: 15em) {
       .site-header__menu-icon {
-        top: 5rem; } }
+        top: 14.4rem; } }
     .site-header__menu-icon::before {
       content: "";
       position: absolute;
@@ -3521,6 +3626,7 @@ the exception being the .container class. That's defined in utilities.scss, so t
       /* 562px/16 = 35.125em*/
       /* 616px/16 = 38.5em */
       /* 767px/16 = 47.9375em */
+      /* 782px/16 = 48.875em. This one's needed by the hamburger icon, so the wp-admin bar doesn't block it. wp-admin bar changes sizes at 782px. */
       /* 800px/16 = 50em */
       /* 1000px/16 = 62.5em*/
       /* 1200px/16 = 75em*/
@@ -3535,6 +3641,7 @@ the exception being the .container class. That's defined in utilities.scss, so t
       /* 562px/16 = 35.125em*/
       /* 616px/16 = 38.5em */
       /* 767px/16 = 47.9375em */
+      /* 782px/16 = 48.875em. This one's needed by the hamburger icon, so the wp-admin bar doesn't block it. wp-admin bar changes sizes at 782px. */
       /* 800px/16 = 50em */
       /* 1000px/16 = 62.5em*/
       /* 1200px/16 = 75em*/
@@ -3556,6 +3663,7 @@ the exception being the .container class. That's defined in utilities.scss, so t
         /* 562px/16 = 35.125em*/
         /* 616px/16 = 38.5em */
         /* 767px/16 = 47.9375em */
+        /* 782px/16 = 48.875em. This one's needed by the hamburger icon, so the wp-admin bar doesn't block it. wp-admin bar changes sizes at 782px. */
         /* 800px/16 = 50em */
         /* 1000px/16 = 62.5em*/
         /* 1200px/16 = 75em*/
@@ -3576,6 +3684,7 @@ the exception being the .container class. That's defined in utilities.scss, so t
       /* 562px/16 = 35.125em*/
       /* 616px/16 = 38.5em */
       /* 767px/16 = 47.9375em */
+      /* 782px/16 = 48.875em. This one's needed by the hamburger icon, so the wp-admin bar doesn't block it. wp-admin bar changes sizes at 782px. */
       /* 800px/16 = 50em */
       /* 1000px/16 = 62.5em*/
       /* 1200px/16 = 75em*/
@@ -3597,6 +3706,7 @@ the exception being the .container class. That's defined in utilities.scss, so t
       /* 562px/16 = 35.125em*/
       /* 616px/16 = 38.5em */
       /* 767px/16 = 47.9375em */
+      /* 782px/16 = 48.875em. This one's needed by the hamburger icon, so the wp-admin bar doesn't block it. wp-admin bar changes sizes at 782px. */
       /* 800px/16 = 50em */
       /* 1000px/16 = 62.5em*/
       /* 1200px/16 = 75em*/
@@ -3652,6 +3762,7 @@ the exception being the .container class. That's defined in utilities.scss, so t
   /* 562px/16 = 35.125em*/
   /* 616px/16 = 38.5em */
   /* 767px/16 = 47.9375em */
+  /* 782px/16 = 48.875em. This one's needed by the hamburger icon, so the wp-admin bar doesn't block it. wp-admin bar changes sizes at 782px. */
   /* 800px/16 = 50em */
   /* 1000px/16 = 62.5em*/
   /* 1200px/16 = 75em*/

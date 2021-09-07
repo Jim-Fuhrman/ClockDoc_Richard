@@ -41,11 +41,11 @@ class NavBarModify {
 
   fixNavOnSmallScreens() {
     if (window.scrollY > this.nav.offsetHeight + 100) {
-      this.nav.classList.add("hide");
+      this.nav.classList.add("hide"); /* Please hide the nav bar */
       this.hamburgerIcon.classList.add("hide");
     } else {
-      this.nav.classList.remove("hide"); /* Please show it */
-      this.hamburgerIcon.classList.remove("hide"); /* Please show it */
+      this.nav.classList.remove("hide"); /* Please show the nav bar */
+      this.hamburgerIcon.classList.remove("hide"); /* Please show the nav bar */
     }
   }
 }

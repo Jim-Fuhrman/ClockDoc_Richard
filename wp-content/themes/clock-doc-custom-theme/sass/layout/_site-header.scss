@@ -26,7 +26,7 @@
   &__nav {
     /* on small screens we don't show the nav bar at all, only on screen sizes 1040px / 65em and larger. */
     @media (min-width: 65em) {
-      top: 3rem; /* we don't want the black admin bar to overlay the nav bar. Thus, we need this line of code. */
+      top: 3.2rem; /* we don't want the black admin bar to overlay the nav bar. Thus, we need this line of code. */
       left: 0;
       right: 0;
       position: absolute;
@@ -136,15 +136,27 @@
     height: 19px;
     position: absolute;
     z-index: 10; /* we need this so the top left icon isn't overlaid when we click it the first time. Without this our icon won't make the nav menu vanish when it should vanish.*/
-    top: 3.2rem; /* Users won't have login/logout capability. Thus, the admin bar will never block the hamburger icon. */
-    left: 10%;
+    top: 4.2rem; /* Users won't have login/logout capability. Thus, the admin bar will never block the hamburger icon. */
+    right: 46px;
+
+    @include respondDesktop(at782) {
+      top: 6.3rem;
+    }
 
     @include respondDesktop(atSmall) {
-      top: 2rem;
+      top: 8.4rem;
+    }
+
+    @include respondDesktop(at400) {
+      top: 10.4rem;
+    }
+
+    @include respondDesktop(atSmaller) {
+      top: 12.4rem;
     }
 
     @include respondDesktop(atSmallest) {
-      top: 5rem;
+      top: 14.4rem;
     }
 
     &::before {

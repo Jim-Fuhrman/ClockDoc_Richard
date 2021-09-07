@@ -74,13 +74,9 @@ h2 {
   font-size: 2.1em;
   text-align: left;
 
-  @include respondDesktop(atLarge) {
-    font-size: 3em;
-  } /* screen size <= 1200px*/
-
   @include respondDesktop(atMedium) {
     font-size: 2.5em;
-  } /* screen size <= 1200px*/
+  } /* screen size <= 767px*/
 
   @include respondDesktop(atSmall) {
     font-size: 3em;
@@ -127,12 +123,12 @@ img {
 }
 
 input {
-  height: 4rem; /* This needs to be 4rem not 4em; otherwise, the fields on the Contact Us page will be too big.*/
+  height: 4rem; /* This needs to be 4rem not 4em; otherwise, the fields on the Contact Us page will be too big. */
 }
 
 textarea {
   /* used on contact us form. */
-  height: 8rem; /* This needs to be 8rem not 8em; otherwise, the textarea on the Contact Us page will be too big.*/
+  height: 8rem; /* This needs to be 8rem not 8em; otherwise, the textarea on the Contact Us page will be too big. */
 }
 
 a {
@@ -161,15 +157,6 @@ li {
   line-height: 1.5em;
   text-align: left;
 
-  @include respondDesktop(atLarge) {
-    font-size: 2.3em; /* needed so fonts on About Us are big enough on the ipadpro. */
-  } /* screen size <= 1200px */
-
-  @include respondDesktop(atMedium) {
-    line-height: 1.5em;
-    font-size: 1.875em;
-  } /* screen size <= 767px*/
-
   @include respondDesktop(atSmall) {
     font-size: 3em;
   }
@@ -189,14 +176,6 @@ li {
 p {
   font-size: 2rem; /* This needs to be 2rem, not 2em, so the font isn't so big on the archive-clocks page. */
   line-height: 1.65em;
-
-  @include respondDesktop(atLarge) {
-    font-size: 3rem; /* needed so fonts on About Us are big enough on the ipadpro. */
-  } /* screen size <= 1200px*/
-
-  @include respondDesktop(atMedium) {
-    font-size: 2rem;
-  } /* screen size <= 767px*/
 
   @include respondDesktop(atSmall) {
     font-size: 3rem;
