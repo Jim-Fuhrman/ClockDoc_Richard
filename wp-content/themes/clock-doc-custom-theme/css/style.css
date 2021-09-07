@@ -3305,7 +3305,7 @@ the exception being the .container class. That's defined in utilities.scss, so t
     .site-header__mobile-menu h1 {
       color: #fff;
       font-size: 4rem; }
-  .site-header__menu-icon {
+  .site-header__mobile-menu-icon {
     width: 20px;
     height: 19px;
     position: absolute;
@@ -3382,21 +3382,21 @@ the exception being the .container class. That's defined in utilities.scss, so t
     /* 1860px/16 = 116.25em   */
     /* 400px/16px = 25em */ }
     @media only screen and (max-width: 48.875em) {
-      .site-header__menu-icon {
+      .site-header__mobile-menu-icon {
         top: 6.3rem; } }
     @media only screen and (max-width: 33.125em) {
-      .site-header__menu-icon {
+      .site-header__mobile-menu-icon {
         top: 8.4rem; } }
     @media only screen and (max-width: 25em) {
-      .site-header__menu-icon {
+      .site-header__mobile-menu-icon {
         top: 10.4rem; } }
     @media only screen and (max-width: 22.1875em) {
-      .site-header__menu-icon {
+      .site-header__mobile-menu-icon {
         top: 12.4rem; } }
     @media only screen and (max-width: 15em) {
-      .site-header__menu-icon {
+      .site-header__mobile-menu-icon {
         top: 14.4rem; } }
-    .site-header__menu-icon::before {
+    .site-header__mobile-menu-icon::before {
       content: "";
       position: absolute;
       top: 0;
@@ -3406,7 +3406,7 @@ the exception being the .container class. That's defined in utilities.scss, so t
       background-color: #fff;
       transform-origin: 0 0;
       transition: transform 0.3s ease-out; }
-    .site-header__menu-icon__middle {
+    .site-header__mobile-menu-icon__middle {
       position: absolute;
       top: 8px;
       left: 0;
@@ -3415,7 +3415,7 @@ the exception being the .container class. That's defined in utilities.scss, so t
       background-color: #fff;
       transition: all 0.3s ease-out;
       transform-origin: 0 50%; }
-    .site-header__menu-icon::after {
+    .site-header__mobile-menu-icon::after {
       content: "";
       /* Required or you won't see the last horizontal bar of the hamburger icon. */
       position: absolute;
@@ -3427,13 +3427,13 @@ the exception being the .container class. That's defined in utilities.scss, so t
       transform-origin: 0 100%;
       transition: transform 0.3s ease-out; }
     @media (min-width: 65em) {
-      .site-header__menu-icon {
+      .site-header__mobile-menu-icon {
         display: none; } }
-  .site-header__menu-icon--close-x::before {
+  .site-header__mobile-menu-icon--close-x::before {
     transform: rotate(45deg) scaleX(1.25); }
-  .site-header__menu-icon--close-x .site-header__menu-icon__middle {
+  .site-header__mobile-menu-icon--close-x .site-header__mobile-menu-icon__middle {
     opacity: 0; }
-  .site-header__menu-icon--close-x::after {
+  .site-header__mobile-menu-icon--close-x::after {
     transform: rotate(-45deg) scaleX(1.25) translateY(1px); }
   .site-header__menu-content {
     opacity: 0;

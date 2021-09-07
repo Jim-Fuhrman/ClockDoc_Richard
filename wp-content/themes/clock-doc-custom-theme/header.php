@@ -11,10 +11,10 @@
 <body <?php body_class(); ?>>
 <header class="site-header">
   <!-- nav bar for small screens -->
-    <nav class="site-header__mobile-menu">
+  <nav class="site-header__mobile-menu">
       <h1>Clock Doctor Mobile Menu --></h1>
-      <div class="site-header__menu-icon">
-          <div class="site-header__menu-icon__middle"></div>
+      <div class="site-header__mobile-menu-icon">
+          <div class="site-header__mobile-menu-icon__middle"></div>
       </div>
     </nav>
 

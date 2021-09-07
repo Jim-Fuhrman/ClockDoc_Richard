@@ -3025,20 +3025,20 @@ module.exports = g;
 __webpack_require__.r(__webpack_exports__);
 class MobileMenu {
   constructor() {
-    this.menuIcon = document.querySelector(".site-header__menu-icon");
+    this.mobileMenuIcon = document.querySelector(".site-header__mobile-menu-icon");
     this.menuContent = document.querySelector(".site-header__menu-content");
     this.siteHeader = document.querySelector(".site-header");
     this.events();
   }
 
   events() {
-    this.menuIcon.addEventListener("click", () => this.toggleTheMenu());
+    this.mobileMenuIcon.addEventListener("click", () => this.toggleTheMenu());
   }
 
   toggleTheMenu() {
     this.menuContent.classList.toggle("site-header__menu-content--is-visible");
     this.siteHeader.classList.toggle("site-header--is-expanded");
-    this.menuIcon.classList.toggle("site-header__menu-icon--close-x");
+    this.mobileMenuIcon.classList.toggle("site-header__mobile-menu-icon--close-x");
   }
 
   goToTopOfWebsite() {}
@@ -3345,7 +3345,7 @@ class NavBarModify {
     this.nav = document.querySelector(".site-header__nav");
     this.dropdownMenu = document.querySelector(".dropdown__content");
     this.doctorKitIcon = document.querySelector(".site-header__nav-icon");
-    this.hamburgerIcon = document.querySelector(".site-header__menu-icon");
+    this.hamburgerIcon = document.querySelector(".site-header__mobile-menu-icon");
     this.scrollThrottle = lodash_throttle__WEBPACK_IMPORTED_MODULE_0___default()(this.calcCaller, 20).bind(this);
     this.events();
     /* we want calcCaller to execcute 50 times a second or 1000 milliseconds divided by 20. That's why 20 is coded in the line above.  */

@@ -143,7 +143,7 @@
     }
   }
 
-  &__menu-icon {
+  &__mobile-menu-icon {
     width: 20px;
     height: 19px;
     position: absolute;
@@ -211,12 +211,12 @@
     } /* 400px/16px = 25em */
   }
 
-  &__menu-icon--close-x {
+  &__mobile-menu-icon--close-x {
     &::before {
       transform: rotate(45deg) scaleX(1.25);
     }
 
-    .site-header__menu-icon__middle {
+    .site-header__mobile-menu-icon__middle {
       opacity: 0;
     }
 
