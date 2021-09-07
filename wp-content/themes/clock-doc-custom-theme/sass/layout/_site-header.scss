@@ -38,15 +38,11 @@
       @include respondDesktop(at1000) {
         display: none;
       }
-
-      /*@include respondDesktop(atSmall) {
-        top: 5rem;
-      }*/
     } /* 1040px/16px = 65em */
 
     &-icon {
       /* on small screens we don't show the nav icon at all, only on screen sizes 1040px / 65em and larger. */
-      display: none;
+      /*display: none;*/
       @media (min-width: 65em) {
         display: inline-block;
         width: 7em;
@@ -238,9 +234,11 @@
       transform: scale(1);
       display: flex;
       flex-direction: column;
-      justify-content: flex-start;
-      align-items: flex-start;
+      justify-content: flex-end;
+      align-items: flex-end;
       background-color: #000;
+      top: 3.2rem;
+      right: 9rem;
 
       @include respondDesktop(atSmall) {
         top: 9rem;

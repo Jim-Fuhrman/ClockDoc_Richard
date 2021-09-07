@@ -3159,16 +3159,13 @@ the exception being the .container class. That's defined in utilities.scss, so t
         /* 1000px/16 = 62.5em*/
         /* 1200px/16 = 75em*/
         /* 1500px/16 = 93.75em*/
-        /* 1860px/16 = 116.25em   */
-        /*@include respondDesktop(atSmall) {
-        top: 5rem;
-      }*/ } }
+        /* 1860px/16 = 116.25em   */ } }
   @media only screen and (min-width: 65em) and (max-width: 62.5em) {
     .site-header__nav {
       display: none; } }
     .site-header__nav-icon {
       /* on small screens we don't show the nav icon at all, only on screen sizes 1040px / 65em and larger. */
-      display: none;
+      /*display: none;*/
       /* 1040px/16px = 65em */
       /* 355px/16 = 22.1875em*/
       /* 400px/16 = 25em */
@@ -3453,9 +3450,11 @@ the exception being the .container class. That's defined in utilities.scss, so t
       transform: scale(1);
       display: flex;
       flex-direction: column;
-      justify-content: flex-start;
-      align-items: flex-start;
+      justify-content: flex-end;
+      align-items: flex-end;
       background-color: #000;
+      top: 3.2rem;
+      right: 9rem;
       /* 355px/16 = 22.1875em*/
       /* 400px/16 = 25em */
       /* 371px/16 = 25em */
