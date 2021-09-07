@@ -10,10 +10,16 @@
   </head>
 <body <?php body_class(); ?>>
 <header class="site-header">
-    <div class="site-header__menu-icon">
-        <div class="site-header__menu-icon__middle"></div>
-    </div>
-    <div class="site-header__menu group">
+  <!-- nav bar for small screens -->
+    <nav class="site-header__mobile-menu">
+      <h1>Clock Doctor Mobile Menu --></h1>
+      <div class="site-header__menu-icon">
+          <div class="site-header__menu-icon__middle"></div>
+      </div>
+    </nav>
+
+    <!-- nav bar for large screens -->
+    <div class="site-header__menu">
       <nav class="site-header__nav">   
           <div class="site-header__nav-icon" style="background-image: url(<?php echo get_theme_file_uri('/images/ClockDocIcon.png');?>">
           </div>   

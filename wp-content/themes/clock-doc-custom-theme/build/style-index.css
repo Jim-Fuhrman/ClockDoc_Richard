@@ -3455,6 +3455,19 @@ the exception being the .container class. That's defined in utilities.scss, so t
     .site-header__nav a:hover {
       color: #c0392b;
       font-weight: bold; }
+  .site-header__mobile-menu {
+    display: flex;
+    justify-content: space-around;
+    background-color: #000;
+    color: #fff;
+    height: 7.2rem;
+    /* 400px/16px = 25em */ }
+    @media (min-width: 65em) {
+      .site-header__mobile-menu {
+        display: none; } }
+    .site-header__mobile-menu h1 {
+      color: #fff;
+      font-size: 4rem; }
   .site-header__menu-icon {
     width: 20px;
     height: 19px;
