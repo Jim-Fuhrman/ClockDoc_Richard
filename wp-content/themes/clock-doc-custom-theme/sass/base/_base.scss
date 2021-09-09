@@ -71,7 +71,7 @@ h1 {
 }
 
 h2 {
-  font-size: 2.1em;
+  font-size: 2.1rem;
   text-align: left;
 
   @include respondDesktop(atMedium) {
@@ -190,19 +190,5 @@ p {
   }
   @include respondDesktop(atSmaller) {
     font-size: 3rem;
-  }
-}
-
-@media (min-width: 800px) {
-  /* any width > 800 will have brown. */
-  h1 {
-    color: brown;
-  }
-}
-
-@media (max-width: 800px) {
-  /* any width < 800 will have magenta */
-  h1 {
-    color: magenta;
   }
 }

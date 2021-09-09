@@ -176,7 +176,7 @@ h1 {
   font-size: 3em; }
 
 h2 {
-  font-size: 2.1em;
+  font-size: 2.1rem;
   text-align: left;
   /* 355px/16 = 22.1875em*/
   /* 400px/16 = 25em */
@@ -421,19 +421,10 @@ p {
     p {
       font-size: 3rem; } }
 
-@media (min-width: 800px) {
-  /* any width > 800 will have brown. */
-  h1 {
-    color: brown; } }
-
-@media (max-width: 800px) {
-  /* any width < 800 will have magenta */
-  h1 {
-    color: magenta; } }
-
 /* The underscore and scss suffix aren't needed. */
 .container {
   max-width: 1300px;
+  /* If the viewport is < 1300px, our container will occupy 100% of the viewport. */
   margin: 0 auto;
   /*zero for top/bottom, auto for left/right which will puts everything in the middle. */
   padding: 0 16px;
@@ -3301,13 +3292,9 @@ the exception being the .container class. That's defined in utilities.scss, so t
     /* 1040px/16px = 65em */ }
     @media (min-width: 65em) {
       .site-header__nav {
-        top: 3.2rem;
-        /* we don't want the black admin bar to overlay the nav bar. Thus, we need this line of code. */
-        left: 0;
-        right: 0;
         position: absolute;
         width: 100%;
-        margin: 0 auto;
+        /*margin: 0 auto;*/
         justify-content: space-around;
         opacity: 1;
         /* 355px/16 = 22.1875em*/
@@ -3377,6 +3364,7 @@ the exception being the .container class. That's defined in utilities.scss, so t
       /* this removes underlining. */
       padding: 1.5rem 1.5rem;
       font-size: 2rem;
+      margin: 0;
       /* 355px/16 = 22.1875em*/
       /* 400px/16 = 25em */
       /* 371px/16 = 25em */
@@ -3456,148 +3444,78 @@ the exception being the .container class. That's defined in utilities.scss, so t
       color: #c0392b;
       font-weight: bold; }
   .site-header__mobile-menu {
+    /* 1040px/16px = 65em */
     display: flex;
-    justify-content: space-around;
-    background-color: #000;
+    justify-content: space-between;
+    align-items: center;
+    background-color: transparent;
     color: #fff;
-    height: 7.2rem;
-    /* 400px/16px = 25em */ }
+    height: 7.5rem; }
     @media (min-width: 65em) {
       .site-header__mobile-menu {
         display: none; } }
-    .site-header__mobile-menu h1 {
+    .site-header__mobile-menu--headings {
+      font-size: 1rem;
       color: #fff;
-      font-size: 4rem; }
-  .site-header__mobile-menu-icon {
-    width: 20px;
-    height: 19px;
-    position: absolute;
-    z-index: 10;
-    /* we need this so the top left icon isn't overlaid when we click it the first time. Without this our icon won't make the nav menu vanish when it should vanish.*/
-    top: 4.2rem;
-    /* Users won't have login/logout capability. Thus, the admin bar will never block the hamburger icon. */
-    right: 46px;
-    /* 355px/16 = 22.1875em*/
-    /* 400px/16 = 25em */
-    /* 371px/16 = 25em */
-    /* 530px/16 = 33.125em*/
-    /* 562px/16 = 35.125em*/
-    /* 616px/16 = 38.5em */
-    /* 767px/16 = 47.9375em */
-    /* 782px/16 = 48.875em. This one's needed by the hamburger icon, so the wp-admin bar doesn't block it. wp-admin bar changes sizes at 782px. */
-    /* 800px/16 = 50em */
-    /* 1000px/16 = 62.5em*/
-    /* 1200px/16 = 75em*/
-    /* 1500px/16 = 93.75em*/
-    /* 1860px/16 = 116.25em   */
-    /* 355px/16 = 22.1875em*/
-    /* 400px/16 = 25em */
-    /* 371px/16 = 25em */
-    /* 530px/16 = 33.125em*/
-    /* 562px/16 = 35.125em*/
-    /* 616px/16 = 38.5em */
-    /* 767px/16 = 47.9375em */
-    /* 782px/16 = 48.875em. This one's needed by the hamburger icon, so the wp-admin bar doesn't block it. wp-admin bar changes sizes at 782px. */
-    /* 800px/16 = 50em */
-    /* 1000px/16 = 62.5em*/
-    /* 1200px/16 = 75em*/
-    /* 1500px/16 = 93.75em*/
-    /* 1860px/16 = 116.25em   */
-    /* 355px/16 = 22.1875em*/
-    /* 400px/16 = 25em */
-    /* 371px/16 = 25em */
-    /* 530px/16 = 33.125em*/
-    /* 562px/16 = 35.125em*/
-    /* 616px/16 = 38.5em */
-    /* 767px/16 = 47.9375em */
-    /* 782px/16 = 48.875em. This one's needed by the hamburger icon, so the wp-admin bar doesn't block it. wp-admin bar changes sizes at 782px. */
-    /* 800px/16 = 50em */
-    /* 1000px/16 = 62.5em*/
-    /* 1200px/16 = 75em*/
-    /* 1500px/16 = 93.75em*/
-    /* 1860px/16 = 116.25em   */
-    /* 355px/16 = 22.1875em*/
-    /* 400px/16 = 25em */
-    /* 371px/16 = 25em */
-    /* 530px/16 = 33.125em*/
-    /* 562px/16 = 35.125em*/
-    /* 616px/16 = 38.5em */
-    /* 767px/16 = 47.9375em */
-    /* 782px/16 = 48.875em. This one's needed by the hamburger icon, so the wp-admin bar doesn't block it. wp-admin bar changes sizes at 782px. */
-    /* 800px/16 = 50em */
-    /* 1000px/16 = 62.5em*/
-    /* 1200px/16 = 75em*/
-    /* 1500px/16 = 93.75em*/
-    /* 1860px/16 = 116.25em   */
-    /* 240px/16 = 15em */
-    /* 355px/16 = 22.1875em*/
-    /* 400px/16 = 25em */
-    /* 371px/16 = 25em */
-    /* 530px/16 = 33.125em*/
-    /* 562px/16 = 35.125em*/
-    /* 616px/16 = 38.5em */
-    /* 767px/16 = 47.9375em */
-    /* 782px/16 = 48.875em. This one's needed by the hamburger icon, so the wp-admin bar doesn't block it. wp-admin bar changes sizes at 782px. */
-    /* 800px/16 = 50em */
-    /* 1000px/16 = 62.5em*/
-    /* 1200px/16 = 75em*/
-    /* 1500px/16 = 93.75em*/
-    /* 1860px/16 = 116.25em   */
-    /* 400px/16px = 25em */ }
-    @media only screen and (max-width: 48.875em) {
-      .site-header__mobile-menu-icon {
-        top: 6.3rem; } }
-    @media only screen and (max-width: 33.125em) {
-      .site-header__mobile-menu-icon {
-        top: 8.4rem; } }
-    @media only screen and (max-width: 25em) {
-      .site-header__mobile-menu-icon {
-        top: 10.4rem; } }
-    @media only screen and (max-width: 22.1875em) {
-      .site-header__mobile-menu-icon {
-        top: 12.4rem; } }
-    @media only screen and (max-width: 15em) {
-      .site-header__mobile-menu-icon {
-        top: 14.4rem; } }
-    .site-header__mobile-menu-icon::before {
-      content: "";
+      /*flex: 0 0 18%;*/
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
       position: absolute;
-      top: 0;
-      left: 0;
-      width: 20px;
-      height: 3px;
-      background-color: #fff;
-      transform-origin: 0 0;
-      transition: transform 0.3s ease-out; }
-    .site-header__mobile-menu-icon__middle {
-      position: absolute;
-      top: 8px;
-      left: 0;
-      width: 20px;
-      height: 3px;
-      background-color: #fff;
-      transition: all 0.3s ease-out;
-      transform-origin: 0 50%; }
-    .site-header__mobile-menu-icon::after {
-      content: "";
-      /* Required or you won't see the last horizontal bar of the hamburger icon. */
-      position: absolute;
-      bottom: 0;
-      left: 0;
-      width: 20px;
-      height: 3px;
-      background-color: #fff;
-      transform-origin: 0 100%;
-      transition: transform 0.3s ease-out; }
-    @media (min-width: 65em) {
-      .site-header__mobile-menu-icon {
-        display: none; } }
-  .site-header__mobile-menu-icon--close-x::before {
-    transform: rotate(45deg) scaleX(1.25); }
-  .site-header__mobile-menu-icon--close-x .site-header__mobile-menu-icon__middle {
-    opacity: 0; }
-  .site-header__mobile-menu-icon--close-x::after {
-    transform: rotate(-45deg) scaleX(1.25) translateY(1px); }
+      margin: 2rem; }
+    .site-header__mobile-menu--icons {
+      margin-left: auto;
+      display: flex;
+      align-items: center; }
+      .site-header__mobile-menu--icons--hamburger {
+        width: 20px;
+        height: 19px;
+        position: absolute;
+        z-index: 10;
+        /* we need this so the top left icon isn't overlaid when we click it the first time. Without this our icon won't make the nav menu vanish when it should vanish.*/
+        /* 400px/16px = 25em */ }
+        .site-header__mobile-menu--icons--hamburger::before {
+          content: "";
+          position: absolute;
+          top: 0;
+          right: 10px;
+          width: 20px;
+          height: 3px;
+          background-color: #fff;
+          transform-origin: 0 0;
+          transition: transform 0.3s ease-out; }
+        .site-header__mobile-menu--icons--hamburger--middle {
+          position: absolute;
+          top: 8px;
+          right: 10px;
+          width: 20px;
+          height: 3px;
+          background-color: #fff;
+          transition: all 0.3s ease-out;
+          transform-origin: 0 50%; }
+        .site-header__mobile-menu--icons--hamburger::after {
+          content: "";
+          /* Required or you won't see the last horizontal bar of the hamburger icon. */
+          position: absolute;
+          bottom: 0;
+          right: 10px;
+          width: 20px;
+          height: 3px;
+          background-color: #fff;
+          transform-origin: 0 100%;
+          transition: transform 0.3s ease-out; }
+        @media (min-width: 65em) {
+          .site-header__mobile-menu--icons--hamburger {
+            display: none; } }
+        .site-header__mobile-menu--icons--hamburger--close-x::before {
+          transform: rotate(45deg) scaleX(1.25); }
+        .site-header__mobile-menu--icons--hamburger--close-x .site-header__mobile-menu--icons--hamburger--middle {
+          opacity: 0; }
+        .site-header__mobile-menu--icons--hamburger--close-x::after {
+          transform: rotate(-45deg) scaleX(1.25) translateY(1px); }
+      .site-header__mobile-menu--icons--search {
+        margin-right: 4rem;
+        font-size: 2.5rem; }
   .site-header__menu-content {
     opacity: 0;
     transform: scale(1.2);

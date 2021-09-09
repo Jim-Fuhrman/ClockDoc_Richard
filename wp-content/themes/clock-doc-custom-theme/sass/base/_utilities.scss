@@ -1,5 +1,5 @@
 .container {
-  max-width: 1300px;
+  max-width: 1300px; /* If the viewport is < 1300px, our container will occupy 100% of the viewport. */
   margin: 0 auto; /*zero for top/bottom, auto for left/right which will puts everything in the middle. */
   padding: 0 16px;
   position: relative;

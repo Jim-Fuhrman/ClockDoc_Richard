@@ -26,12 +26,9 @@
   &__nav {
     /* on small screens we don't show the nav bar at all, only on screen sizes 1040px / 65em and larger. */
     @media (min-width: 65em) {
-      top: 3.2rem; /* we don't want the black admin bar to overlay the nav bar. Thus, we need this line of code. */
-      left: 0;
-      right: 0;
       position: absolute;
       width: 100%;
-      margin: 0 auto;
+      /*margin: 0 auto;*/
       justify-content: space-around;
       opacity: 1;
 
@@ -85,6 +82,7 @@
       text-decoration: none; /* this removes underlining. */
       padding: 1.5rem 1.5rem;
       font-size: 2rem;
+      margin: 0;
 
       @include respondDesktop(atMediumLarge) {
         font-size: 3rem;
@@ -128,100 +126,96 @@
   /* .nav .container automatically puts the logo and nav menu in a row side by side. */
 
   &__mobile-menu {
+    @media (min-width: 65em) {
+      display: none;
+    } /* 1040px/16px = 65em */
     display: flex;
-    justify-content: space-around;
-    background-color: #000;
+    justify-content: space-between;
+    align-items: center;
+    background-color: transparent;
     color: #fff;
-    height: 7.2rem;
-    @media (min-width: 65em) {
-      display: none;
-    } /* 400px/16px = 25em */
+    height: 7.5rem;
 
-    h1 {
+    &--headings {
+      font-size: 1rem;
       color: #fff;
-      font-size: 4rem;
-    }
-  }
-
-  &__mobile-menu-icon {
-    width: 20px;
-    height: 19px;
-    position: absolute;
-    z-index: 10; /* we need this so the top left icon isn't overlaid when we click it the first time. Without this our icon won't make the nav menu vanish when it should vanish.*/
-    top: 4.2rem; /* Users won't have login/logout capability. Thus, the admin bar will never block the hamburger icon. */
-    right: 46px;
-
-    @include respondDesktop(at782) {
-      top: 6.3rem;
-    }
-
-    @include respondDesktop(atSmall) {
-      top: 8.4rem;
-    }
-
-    @include respondDesktop(at400) {
-      top: 10.4rem;
-    }
-
-    @include respondDesktop(atSmaller) {
-      top: 12.4rem;
-    }
-
-    @include respondDesktop(atSmallest) {
-      top: 14.4rem;
-    }
-
-    &::before {
-      content: "";
+      /*flex: 0 0 18%;*/
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
       position: absolute;
-      top: 0;
-      left: 0;
-      width: 20px;
-      height: 3px;
-      background-color: #fff;
-      transform-origin: 0 0;
-      transition: transform 0.3s ease-out;
+      margin: 2rem;
     }
 
-    &__middle {
-      position: absolute;
-      top: 8px;
-      left: 0;
-      width: 20px;
-      height: 3px;
-      background-color: #fff;
-      transition: all 0.3s ease-out;
-      transform-origin: 0 50%;
-    }
+    &--icons {
+      margin-left: auto;
+      display: flex;
+      align-items: center;
 
-    &::after {
-      content: ""; /* Required or you won't see the last horizontal bar of the hamburger icon. */
-      position: absolute;
-      bottom: 0;
-      left: 0;
-      width: 20px;
-      height: 3px;
-      background-color: #fff;
-      transform-origin: 0 100%;
-      transition: transform 0.3s ease-out;
-    }
+      &--hamburger {
+        width: 20px;
+        height: 19px;
+        position: absolute;
+        z-index: 10; /* we need this so the top left icon isn't overlaid when we click it the first time. Without this our icon won't make the nav menu vanish when it should vanish.*/
 
-    @media (min-width: 65em) {
-      display: none;
-    } /* 400px/16px = 25em */
-  }
+        &::before {
+          content: "";
+          position: absolute;
+          top: 0;
+          right: 10px;
+          width: 20px;
+          height: 3px;
+          background-color: #fff;
+          transform-origin: 0 0;
+          transition: transform 0.3s ease-out;
+        }
 
-  &__mobile-menu-icon--close-x {
-    &::before {
-      transform: rotate(45deg) scaleX(1.25);
-    }
+        &--middle {
+          position: absolute;
+          top: 8px;
+          right: 10px;
+          width: 20px;
+          height: 3px;
+          background-color: #fff;
+          transition: all 0.3s ease-out;
+          transform-origin: 0 50%;
+        }
 
-    .site-header__mobile-menu-icon__middle {
-      opacity: 0;
-    }
+        &::after {
+          content: ""; /* Required or you won't see the last horizontal bar of the hamburger icon. */
+          position: absolute;
+          bottom: 0;
+          right: 10px;
+          width: 20px;
+          height: 3px;
+          background-color: #fff;
+          transform-origin: 0 100%;
+          transition: transform 0.3s ease-out;
+        }
 
-    &::after {
-      transform: rotate(-45deg) scaleX(1.25) translateY(1px);
+        @media (min-width: 65em) {
+          display: none;
+        } /* 400px/16px = 25em */
+
+        &--close-x {
+          &::before {
+            transform: rotate(45deg) scaleX(1.25);
+          }
+
+          .site-header__mobile-menu--icons--hamburger--middle {
+            opacity: 0;
+          }
+
+          &::after {
+            transform: rotate(-45deg) scaleX(1.25) translateY(1px);
+          }
+        }
+      }
+
+      &--search {
+        margin-right: 4rem;
+        font-size: 2.5rem;
+      }
     }
   }
 

@@ -9,17 +9,24 @@
     <?php wp_head(); ?>  <!-- This is needed along with get_stylesheet_uri() in the functions.php file. -->
   </head>
 <body <?php body_class(); ?>>
-<header class="site-header">
+<header class="site-header" role="banner">
   <!-- nav bar for small screens -->
   <nav class="site-header__mobile-menu">
-      <h1>Clock Doctor Mobile Menu --></h1>
-      <div class="site-header__mobile-menu-icon">
-          <div class="site-header__mobile-menu-icon__middle"></div>
-      </div>
-    </nav>
+        <div class="site-header__mobile-menu--headings">
+            <h2 class="no-margin t-cursive">Clock Doctor</h2>
+            <h2 class="no-margin t-cursive">Quality and Craftsmanship for all Time</h2>
+        </div>
+        <div class="site-header__mobile-menu--icons">
+            <div class="site-header__mobile-menu--icons--hamburger">
+                <div class="site-header__mobile-menu--icons--hamburger--middle"></div>
+            </div>
+            <a class="site-header__mobile-menu--icons--search search-trigger js-search-trigger" href="<?php echo esc_url(site_url('/search')); ?>"><i class="fa fa-search" aria-hidden="true"></i></a>
+        </div>
+        <!-- <i class="site-header__menu-trigger fa fa-bars" aria-hidden="true"></i> -->
+  </nav>
 
     <!-- nav bar for large screens -->
-    <div class="site-header__menu">
+  <div class="site-header__menu">
       <nav class="site-header__nav">   
           <div class="site-header__nav-icon" style="background-image: url(<?php echo get_theme_file_uri('/images/ClockDocIcon.png');?>">
           </div>   
