@@ -156,6 +156,7 @@ li {
   font-size: 1.875rem; /* use rem not em here; otherwise, the font will be too big on the inner list within the outer list on the Conditions of Use page. */
   line-height: 1.5em;
   text-align: left;
+  margin-left: 1em;
 
   @include respondDesktop(atSmall) {
     font-size: 3em;

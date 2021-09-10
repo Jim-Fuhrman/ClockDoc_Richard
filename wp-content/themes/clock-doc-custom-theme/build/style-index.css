@@ -287,6 +287,7 @@ li {
   /* use rem not em here; otherwise, the font will be too big on the inner list within the outer list on the Conditions of Use page. */
   line-height: 1.5em;
   text-align: left;
+  margin-left: 1em;
   /* 355px/16 = 22.1875em*/
   /* 400px/16 = 25em */
   /* 371px/16 = 25em */
@@ -3450,10 +3451,44 @@ the exception being the .container class. That's defined in utilities.scss, so t
     align-items: center;
     background-color: transparent;
     color: #fff;
-    height: 7.5rem; }
+    height: 7.5rem;
+    /* 355px/16 = 22.1875em*/
+    /* 400px/16 = 25em */
+    /* 371px/16 = 25em */
+    /* 530px/16 = 33.125em*/
+    /* 562px/16 = 35.125em*/
+    /* 616px/16 = 38.5em */
+    /* 767px/16 = 47.9375em */
+    /* 782px/16 = 48.875em. This one's needed by the hamburger icon, so the wp-admin bar doesn't block it. wp-admin bar changes sizes at 782px. */
+    /* 800px/16 = 50em */
+    /* 1000px/16 = 62.5em*/
+    /* 1200px/16 = 75em*/
+    /* 1500px/16 = 93.75em*/
+    /* 1860px/16 = 116.25em   */
+    /* 355px/16 = 22.1875em*/
+    /* 400px/16 = 25em */
+    /* 371px/16 = 25em */
+    /* 530px/16 = 33.125em*/
+    /* 562px/16 = 35.125em*/
+    /* 616px/16 = 38.5em */
+    /* 767px/16 = 47.9375em */
+    /* 782px/16 = 48.875em. This one's needed by the hamburger icon, so the wp-admin bar doesn't block it. wp-admin bar changes sizes at 782px. */
+    /* 800px/16 = 50em */
+    /* 1000px/16 = 62.5em*/
+    /* 1200px/16 = 75em*/
+    /* 1500px/16 = 93.75em*/
+    /* 1860px/16 = 116.25em   */ }
     @media (min-width: 65em) {
       .site-header__mobile-menu {
         display: none; } }
+    @media only screen and (max-width: 33.125em) {
+      .site-header__mobile-menu {
+        margin-top: 1rem; } }
+    @media only screen and (max-width: 22.1875em) {
+      .site-header__mobile-menu {
+        flex-direction: column;
+        justify-content: flex-end;
+        height: 15rem; } }
     .site-header__mobile-menu--headings {
       font-size: 1rem;
       color: #fff;
@@ -3462,11 +3497,61 @@ the exception being the .container class. That's defined in utilities.scss, so t
       flex-direction: column;
       justify-content: center;
       position: absolute;
-      margin: 2rem; }
+      margin: 2rem;
+      /* 355px/16 = 22.1875em*/
+      /* 400px/16 = 25em */
+      /* 371px/16 = 25em */
+      /* 530px/16 = 33.125em*/
+      /* 562px/16 = 35.125em*/
+      /* 616px/16 = 38.5em */
+      /* 767px/16 = 47.9375em */
+      /* 782px/16 = 48.875em. This one's needed by the hamburger icon, so the wp-admin bar doesn't block it. wp-admin bar changes sizes at 782px. */
+      /* 800px/16 = 50em */
+      /* 1000px/16 = 62.5em*/
+      /* 1200px/16 = 75em*/
+      /* 1500px/16 = 93.75em*/
+      /* 1860px/16 = 116.25em   */
+      /* 355px/16 = 22.1875em*/
+      /* 400px/16 = 25em */
+      /* 371px/16 = 25em */
+      /* 530px/16 = 33.125em*/
+      /* 562px/16 = 35.125em*/
+      /* 616px/16 = 38.5em */
+      /* 767px/16 = 47.9375em */
+      /* 782px/16 = 48.875em. This one's needed by the hamburger icon, so the wp-admin bar doesn't block it. wp-admin bar changes sizes at 782px. */
+      /* 800px/16 = 50em */
+      /* 1000px/16 = 62.5em*/
+      /* 1200px/16 = 75em*/
+      /* 1500px/16 = 93.75em*/
+      /* 1860px/16 = 116.25em   */ }
+      @media only screen and (max-width: 33.125em) {
+        .site-header__mobile-menu--headings {
+          font-size: 0.65rem; } }
+      @media only screen and (max-width: 22.1875em) {
+        .site-header__mobile-menu--headings {
+          align-items: center;
+          font-size: 1rem; } }
     .site-header__mobile-menu--icons {
       margin-left: auto;
       display: flex;
-      align-items: center; }
+      align-items: center;
+      /* 355px/16 = 22.1875em*/
+      /* 400px/16 = 25em */
+      /* 371px/16 = 25em */
+      /* 530px/16 = 33.125em*/
+      /* 562px/16 = 35.125em*/
+      /* 616px/16 = 38.5em */
+      /* 767px/16 = 47.9375em */
+      /* 782px/16 = 48.875em. This one's needed by the hamburger icon, so the wp-admin bar doesn't block it. wp-admin bar changes sizes at 782px. */
+      /* 800px/16 = 50em */
+      /* 1000px/16 = 62.5em*/
+      /* 1200px/16 = 75em*/
+      /* 1500px/16 = 93.75em*/
+      /* 1860px/16 = 116.25em   */ }
+      @media only screen and (max-width: 22.1875em) {
+        .site-header__mobile-menu--icons {
+          margin-left: 0;
+          top: 10rem; } }
       .site-header__mobile-menu--icons--hamburger {
         width: 20px;
         height: 19px;

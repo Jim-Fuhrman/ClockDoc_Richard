@@ -136,6 +136,15 @@
     color: #fff;
     height: 7.5rem;
 
+    @include respondDesktop(atSmall) {
+      margin-top: 1rem;
+    }
+    @include respondDesktop(atSmaller) {
+      flex-direction: column;
+      justify-content: flex-end;
+      height: 15rem;
+    }
+
     &--headings {
       font-size: 1rem;
       color: #fff;
@@ -145,12 +154,24 @@
       justify-content: center;
       position: absolute;
       margin: 2rem;
+
+      @include respondDesktop(atSmall) {
+        font-size: 0.65rem;
+      }
+      @include respondDesktop(atSmaller) {
+        align-items: center;
+        font-size: 1rem;
+      }
     }
 
     &--icons {
       margin-left: auto;
       display: flex;
       align-items: center;
+      @include respondDesktop(atSmaller) {
+        margin-left: 0;
+        top: 10rem;
+      }
 
       &--hamburger {
         width: 20px;

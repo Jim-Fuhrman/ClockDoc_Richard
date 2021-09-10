@@ -13,8 +13,8 @@
   <!-- nav bar for small screens -->
   <nav class="site-header__mobile-menu">
         <div class="site-header__mobile-menu--headings">
-            <h2 class="no-margin t-cursive">Clock Doctor</h2>
-            <h2 class="no-margin t-cursive">Quality and Craftsmanship for all Time</h2>
+            <h2 class="no-margin t-cursive"><?php echo bloginfo('name'); ?></h2>
+            <h2 class="no-margin t-cursive"><?php echo bloginfo('description'); ?></h2>
         </div>
         <div class="site-header__mobile-menu--icons">
             <div class="site-header__mobile-menu--icons--hamburger">
