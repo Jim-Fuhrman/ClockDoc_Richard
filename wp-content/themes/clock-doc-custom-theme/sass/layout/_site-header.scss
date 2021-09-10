@@ -141,8 +141,13 @@
     }
     @include respondDesktop(atSmaller) {
       flex-direction: column;
+      flex: 1;
       justify-content: flex-end;
-      height: 15rem;
+      height: 20rem;
+    }
+
+    @include respondDesktop(at327) {
+      height: 25rem;
     }
 
     &--headings {
@@ -159,18 +164,25 @@
         font-size: 0.65rem;
       }
       @include respondDesktop(atSmaller) {
+        flex: 0, 0, 90%;
         align-items: center;
         font-size: 1rem;
+        margin: 8rem;
       }
+      /*@include respondDesktop(at327) {
+        margin: 10rem;
+        font-size: 2rem;
+      }*/
     }
 
     &--icons {
       margin-left: auto;
       display: flex;
       align-items: center;
+
       @include respondDesktop(atSmaller) {
-        margin-left: 0;
-        top: 10rem;
+        margin: 1rem;
+        justify-content: center;
       }
 
       &--hamburger {
@@ -236,6 +248,12 @@
       &--search {
         margin-right: 4rem;
         font-size: 2.5rem;
+
+        @include respondDesktop(atSmaller) {
+          margin-right: 0;
+          margin-left: 9rem;
+          font-size: 5.5rem;
+        }
       }
     }
   }

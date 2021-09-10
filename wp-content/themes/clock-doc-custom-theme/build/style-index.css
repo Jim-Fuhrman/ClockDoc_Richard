@@ -41,9 +41,10 @@ html {
   font-size: 62.5%;
   /* This defines 1rem. This is 10/16 or .625* - Thus, 1rem = 10px. This defines the font-size of our entire layout.*/
   /* in ClockDoc-CortlandNE this font size will not work. In clockdoc-Richard this font size does indeed work. */
+  /* 327px/16 = em */
   /* 355px/16 = 22.1875em*/
-  /* 400px/16 = 25em */
   /* 371px/16 = 25em */
+  /* 400px/16 = 25em */
   /* 530px/16 = 33.125em*/
   /* 562px/16 = 35.125em*/
   /* 616px/16 = 38.5em */
@@ -54,9 +55,10 @@ html {
   /* 1200px/16 = 75em*/
   /* 1500px/16 = 93.75em*/
   /* 1860px/16 = 116.25em   */
+  /* 327px/16 = em */
   /* 355px/16 = 22.1875em*/
-  /* 400px/16 = 25em */
   /* 371px/16 = 25em */
+  /* 400px/16 = 25em */
   /* 530px/16 = 33.125em*/
   /* 562px/16 = 35.125em*/
   /* 616px/16 = 38.5em */
@@ -67,9 +69,10 @@ html {
   /* 1200px/16 = 75em*/
   /* 1500px/16 = 93.75em*/
   /* 1860px/16 = 116.25em   */
+  /* 327px/16 = em */
   /* 355px/16 = 22.1875em*/
-  /* 400px/16 = 25em */
   /* 371px/16 = 25em */
+  /* 400px/16 = 25em */
   /* 530px/16 = 33.125em*/
   /* 562px/16 = 35.125em*/
   /* 616px/16 = 38.5em */
@@ -80,9 +83,10 @@ html {
   /* 1200px/16 = 75em*/
   /* 1500px/16 = 93.75em*/
   /* 1860px/16 = 116.25em   */
+  /* 327px/16 = em */
   /* 355px/16 = 22.1875em*/
-  /* 400px/16 = 25em */
   /* 371px/16 = 25em */
+  /* 400px/16 = 25em */
   /* 530px/16 = 33.125em*/
   /* 562px/16 = 35.125em*/
   /* 616px/16 = 38.5em */
@@ -93,9 +97,10 @@ html {
   /* 1200px/16 = 75em*/
   /* 1500px/16 = 93.75em*/
   /* 1860px/16 = 116.25em   */
+  /* 327px/16 = em */
   /* 355px/16 = 22.1875em*/
-  /* 400px/16 = 25em */
   /* 371px/16 = 25em */
+  /* 400px/16 = 25em */
   /* 530px/16 = 33.125em*/
   /* 562px/16 = 35.125em*/
   /* 616px/16 = 38.5em */
@@ -106,9 +111,10 @@ html {
   /* 1200px/16 = 75em*/
   /* 1500px/16 = 93.75em*/
   /* 1860px/16 = 116.25em   */
+  /* 327px/16 = em */
   /* 355px/16 = 22.1875em*/
-  /* 400px/16 = 25em */
   /* 371px/16 = 25em */
+  /* 400px/16 = 25em */
   /* 530px/16 = 33.125em*/
   /* 562px/16 = 35.125em*/
   /* 616px/16 = 38.5em */
@@ -178,9 +184,10 @@ h1 {
 h2 {
   font-size: 2.1rem;
   text-align: left;
+  /* 327px/16 = em */
   /* 355px/16 = 22.1875em*/
-  /* 400px/16 = 25em */
   /* 371px/16 = 25em */
+  /* 400px/16 = 25em */
   /* 530px/16 = 33.125em*/
   /* 562px/16 = 35.125em*/
   /* 616px/16 = 38.5em */
@@ -192,9 +199,10 @@ h2 {
   /* 1500px/16 = 93.75em*/
   /* 1860px/16 = 116.25em   */
   /* screen size <= 767px*/
+  /* 327px/16 = em */
   /* 355px/16 = 22.1875em*/
-  /* 400px/16 = 25em */
   /* 371px/16 = 25em */
+  /* 400px/16 = 25em */
   /* 530px/16 = 33.125em*/
   /* 562px/16 = 35.125em*/
   /* 616px/16 = 38.5em */
@@ -225,9 +233,10 @@ h5 {
 h6 {
   font-size: 1.2em; }
 
+/* 327px/16 = em */
 /* 355px/16 = 22.1875em*/
-/* 400px/16 = 25em */
 /* 371px/16 = 25em */
+/* 400px/16 = 25em */
 @media only screen and (max-width: 33.125em) {
   h1 {
     font-size: 6.25em; }
@@ -288,9 +297,10 @@ li {
   line-height: 1.5em;
   text-align: left;
   margin-left: 1em;
+  /* 327px/16 = em */
   /* 355px/16 = 22.1875em*/
-  /* 400px/16 = 25em */
   /* 371px/16 = 25em */
+  /* 400px/16 = 25em */
   /* 530px/16 = 33.125em*/
   /* 562px/16 = 35.125em*/
   /* 616px/16 = 38.5em */
@@ -301,9 +311,10 @@ li {
   /* 1200px/16 = 75em*/
   /* 1500px/16 = 93.75em*/
   /* 1860px/16 = 116.25em   */
+  /* 327px/16 = em */
   /* 355px/16 = 22.1875em*/
-  /* 400px/16 = 25em */
   /* 371px/16 = 25em */
+  /* 400px/16 = 25em */
   /* 530px/16 = 33.125em*/
   /* 562px/16 = 35.125em*/
   /* 616px/16 = 38.5em */
@@ -314,9 +325,10 @@ li {
   /* 1200px/16 = 75em*/
   /* 1500px/16 = 93.75em*/
   /* 1860px/16 = 116.25em   */
+  /* 327px/16 = em */
   /* 355px/16 = 22.1875em*/
-  /* 400px/16 = 25em */
   /* 371px/16 = 25em */
+  /* 400px/16 = 25em */
   /* 530px/16 = 33.125em*/
   /* 562px/16 = 35.125em*/
   /* 616px/16 = 38.5em */
@@ -327,9 +339,10 @@ li {
   /* 1200px/16 = 75em*/
   /* 1500px/16 = 93.75em*/
   /* 1860px/16 = 116.25em   */
+  /* 327px/16 = em */
   /* 355px/16 = 22.1875em*/
-  /* 400px/16 = 25em */
   /* 371px/16 = 25em */
+  /* 400px/16 = 25em */
   /* 530px/16 = 33.125em*/
   /* 562px/16 = 35.125em*/
   /* 616px/16 = 38.5em */
@@ -357,9 +370,10 @@ p {
   font-size: 2rem;
   /* This needs to be 2rem, not 2em, so the font isn't so big on the archive-clocks page. */
   line-height: 1.65em;
+  /* 327px/16 = em */
   /* 355px/16 = 22.1875em*/
-  /* 400px/16 = 25em */
   /* 371px/16 = 25em */
+  /* 400px/16 = 25em */
   /* 530px/16 = 33.125em*/
   /* 562px/16 = 35.125em*/
   /* 616px/16 = 38.5em */
@@ -370,9 +384,10 @@ p {
   /* 1200px/16 = 75em*/
   /* 1500px/16 = 93.75em*/
   /* 1860px/16 = 116.25em   */
+  /* 327px/16 = em */
   /* 355px/16 = 22.1875em*/
-  /* 400px/16 = 25em */
   /* 371px/16 = 25em */
+  /* 400px/16 = 25em */
   /* 530px/16 = 33.125em*/
   /* 562px/16 = 35.125em*/
   /* 616px/16 = 38.5em */
@@ -383,9 +398,10 @@ p {
   /* 1200px/16 = 75em*/
   /* 1500px/16 = 93.75em*/
   /* 1860px/16 = 116.25em   */
+  /* 327px/16 = em */
   /* 355px/16 = 22.1875em*/
-  /* 400px/16 = 25em */
   /* 371px/16 = 25em */
+  /* 400px/16 = 25em */
   /* 530px/16 = 33.125em*/
   /* 562px/16 = 35.125em*/
   /* 616px/16 = 38.5em */
@@ -396,9 +412,10 @@ p {
   /* 1200px/16 = 75em*/
   /* 1500px/16 = 93.75em*/
   /* 1860px/16 = 116.25em   */
+  /* 327px/16 = em */
   /* 355px/16 = 22.1875em*/
-  /* 400px/16 = 25em */
   /* 371px/16 = 25em */
+  /* 400px/16 = 25em */
   /* 530px/16 = 33.125em*/
   /* 562px/16 = 35.125em*/
   /* 616px/16 = 38.5em */
@@ -600,9 +617,10 @@ p {
 
 .main-navigation {
   padding-top: 0.2rem;
+  /* 327px/16 = em */
   /* 355px/16 = 22.1875em*/
-  /* 400px/16 = 25em */
   /* 371px/16 = 25em */
+  /* 400px/16 = 25em */
   /* 530px/16 = 33.125em*/
   /* 562px/16 = 35.125em*/
   /* 616px/16 = 38.5em */
@@ -630,9 +648,10 @@ p {
 .main-navigation li {
   float: right;
   list-style: none;
+  /* 327px/16 = em */
   /* 355px/16 = 22.1875em*/
-  /* 400px/16 = 25em */
   /* 371px/16 = 25em */
+  /* 400px/16 = 25em */
   /* 530px/16 = 33.125em*/
   /* 562px/16 = 35.125em*/
   /* 616px/16 = 38.5em */
@@ -654,9 +673,10 @@ p {
   color: #fff;
   text-decoration: none;
   font-weight: 300;
+  /* 327px/16 = em */
   /* 355px/16 = 22.1875em*/
-  /* 400px/16 = 25em */
   /* 371px/16 = 25em */
+  /* 400px/16 = 25em */
   /* 530px/16 = 33.125em*/
   /* 562px/16 = 35.125em*/
   /* 616px/16 = 38.5em */
@@ -738,9 +758,10 @@ the exception being the .container class. That's defined in utilities.scss, so t
   float: right;
   z-index: 1;
   background-color: #faf0ca;
+  /* 327px/16 = em */
   /* 355px/16 = 22.1875em*/
-  /* 400px/16 = 25em */
   /* 371px/16 = 25em */
+  /* 400px/16 = 25em */
   /* 530px/16 = 33.125em*/
   /* 562px/16 = 35.125em*/
   /* 616px/16 = 38.5em */
@@ -914,9 +935,10 @@ the exception being the .container class. That's defined in utilities.scss, so t
   background-position: bottom center;
   height: 50vh;
   width: 100vw;
+  /* 327px/16 = em */
   /* 355px/16 = 22.1875em*/
-  /* 400px/16 = 25em */
   /* 371px/16 = 25em */
+  /* 400px/16 = 25em */
   /* 530px/16 = 33.125em*/
   /* 562px/16 = 35.125em*/
   /* 616px/16 = 38.5em */
@@ -927,9 +949,10 @@ the exception being the .container class. That's defined in utilities.scss, so t
   /* 1200px/16 = 75em*/
   /* 1500px/16 = 93.75em*/
   /* 1860px/16 = 116.25em   */
+  /* 327px/16 = em */
   /* 355px/16 = 22.1875em*/
-  /* 400px/16 = 25em */
   /* 371px/16 = 25em */
+  /* 400px/16 = 25em */
   /* 530px/16 = 33.125em*/
   /* 562px/16 = 35.125em*/
   /* 616px/16 = 38.5em */
@@ -940,9 +963,10 @@ the exception being the .container class. That's defined in utilities.scss, so t
   /* 1200px/16 = 75em*/
   /* 1500px/16 = 93.75em*/
   /* 1860px/16 = 116.25em   */
+  /* 327px/16 = em */
   /* 355px/16 = 22.1875em*/
-  /* 400px/16 = 25em */
   /* 371px/16 = 25em */
+  /* 400px/16 = 25em */
   /* 530px/16 = 33.125em*/
   /* 562px/16 = 35.125em*/
   /* 616px/16 = 38.5em */
@@ -953,9 +977,10 @@ the exception being the .container class. That's defined in utilities.scss, so t
   /* 1200px/16 = 75em*/
   /* 1500px/16 = 93.75em*/
   /* 1860px/16 = 116.25em   */
+  /* 327px/16 = em */
   /* 355px/16 = 22.1875em*/
-  /* 400px/16 = 25em */
   /* 371px/16 = 25em */
+  /* 400px/16 = 25em */
   /* 530px/16 = 33.125em*/
   /* 562px/16 = 35.125em*/
   /* 616px/16 = 38.5em */
@@ -966,9 +991,10 @@ the exception being the .container class. That's defined in utilities.scss, so t
   /* 1200px/16 = 75em*/
   /* 1500px/16 = 93.75em*/
   /* 1860px/16 = 116.25em   */
+  /* 327px/16 = em */
   /* 355px/16 = 22.1875em*/
-  /* 400px/16 = 25em */
   /* 371px/16 = 25em */
+  /* 400px/16 = 25em */
   /* 530px/16 = 33.125em*/
   /* 562px/16 = 35.125em*/
   /* 616px/16 = 38.5em */
@@ -980,9 +1006,10 @@ the exception being the .container class. That's defined in utilities.scss, so t
   /* 1500px/16 = 93.75em*/
   /* 1860px/16 = 116.25em   */
   /* 240px/16 = 15em */
+  /* 327px/16 = em */
   /* 355px/16 = 22.1875em*/
-  /* 400px/16 = 25em */
   /* 371px/16 = 25em */
+  /* 400px/16 = 25em */
   /* 530px/16 = 33.125em*/
   /* 562px/16 = 35.125em*/
   /* 616px/16 = 38.5em */
@@ -1017,9 +1044,10 @@ the exception being the .container class. That's defined in utilities.scss, so t
     width: 100vw;
     background-image: linear-gradient(rgba(141, 43, 37, 0.7), rgba(141, 43, 37, 0.7));
     position: absolute;
+    /* 327px/16 = em */
     /* 355px/16 = 22.1875em*/
-    /* 400px/16 = 25em */
     /* 371px/16 = 25em */
+    /* 400px/16 = 25em */
     /* 530px/16 = 33.125em*/
     /* 562px/16 = 35.125em*/
     /* 616px/16 = 38.5em */
@@ -1030,9 +1058,10 @@ the exception being the .container class. That's defined in utilities.scss, so t
     /* 1200px/16 = 75em*/
     /* 1500px/16 = 93.75em*/
     /* 1860px/16 = 116.25em   */
+    /* 327px/16 = em */
     /* 355px/16 = 22.1875em*/
-    /* 400px/16 = 25em */
     /* 371px/16 = 25em */
+    /* 400px/16 = 25em */
     /* 530px/16 = 33.125em*/
     /* 562px/16 = 35.125em*/
     /* 616px/16 = 38.5em */
@@ -1043,9 +1072,10 @@ the exception being the .container class. That's defined in utilities.scss, so t
     /* 1200px/16 = 75em*/
     /* 1500px/16 = 93.75em*/
     /* 1860px/16 = 116.25em   */
+    /* 327px/16 = em */
     /* 355px/16 = 22.1875em*/
-    /* 400px/16 = 25em */
     /* 371px/16 = 25em */
+    /* 400px/16 = 25em */
     /* 530px/16 = 33.125em*/
     /* 562px/16 = 35.125em*/
     /* 616px/16 = 38.5em */
@@ -1056,9 +1086,10 @@ the exception being the .container class. That's defined in utilities.scss, so t
     /* 1200px/16 = 75em*/
     /* 1500px/16 = 93.75em*/
     /* 1860px/16 = 116.25em   */
+    /* 327px/16 = em */
     /* 355px/16 = 22.1875em*/
-    /* 400px/16 = 25em */
     /* 371px/16 = 25em */
+    /* 400px/16 = 25em */
     /* 530px/16 = 33.125em*/
     /* 562px/16 = 35.125em*/
     /* 616px/16 = 38.5em */
@@ -1069,9 +1100,10 @@ the exception being the .container class. That's defined in utilities.scss, so t
     /* 1200px/16 = 75em*/
     /* 1500px/16 = 93.75em*/
     /* 1860px/16 = 116.25em   */
+    /* 327px/16 = em */
     /* 355px/16 = 22.1875em*/
-    /* 400px/16 = 25em */
     /* 371px/16 = 25em */
+    /* 400px/16 = 25em */
     /* 530px/16 = 33.125em*/
     /* 562px/16 = 35.125em*/
     /* 616px/16 = 38.5em */
@@ -1083,9 +1115,10 @@ the exception being the .container class. That's defined in utilities.scss, so t
     /* 1500px/16 = 93.75em*/
     /* 1860px/16 = 116.25em   */
     /* 240px/16 = 15em */
+    /* 327px/16 = em */
     /* 355px/16 = 22.1875em*/
-    /* 400px/16 = 25em */
     /* 371px/16 = 25em */
+    /* 400px/16 = 25em */
     /* 530px/16 = 33.125em*/
     /* 562px/16 = 35.125em*/
     /* 616px/16 = 38.5em */
@@ -1126,9 +1159,10 @@ the exception being the .container class. That's defined in utilities.scss, so t
   font-size: 1em;
   height: 100%;
   width: 100%;
+  /* 327px/16 = em */
   /* 355px/16 = 22.1875em*/
-  /* 400px/16 = 25em */
   /* 371px/16 = 25em */
+  /* 400px/16 = 25em */
   /* 530px/16 = 33.125em*/
   /* 562px/16 = 35.125em*/
   /* 616px/16 = 38.5em */
@@ -1139,9 +1173,10 @@ the exception being the .container class. That's defined in utilities.scss, so t
   /* 1200px/16 = 75em*/
   /* 1500px/16 = 93.75em*/
   /* 1860px/16 = 116.25em   */
+  /* 327px/16 = em */
   /* 355px/16 = 22.1875em*/
-  /* 400px/16 = 25em */
   /* 371px/16 = 25em */
+  /* 400px/16 = 25em */
   /* 530px/16 = 33.125em*/
   /* 562px/16 = 35.125em*/
   /* 616px/16 = 38.5em */
@@ -1153,9 +1188,10 @@ the exception being the .container class. That's defined in utilities.scss, so t
   /* 1500px/16 = 93.75em*/
   /* 1860px/16 = 116.25em   */
   /* screen sizes <= 767px */
+  /* 327px/16 = em */
   /* 355px/16 = 22.1875em*/
-  /* 400px/16 = 25em */
   /* 371px/16 = 25em */
+  /* 400px/16 = 25em */
   /* 530px/16 = 33.125em*/
   /* 562px/16 = 35.125em*/
   /* 616px/16 = 38.5em */
@@ -1167,9 +1203,10 @@ the exception being the .container class. That's defined in utilities.scss, so t
   /* 1500px/16 = 93.75em*/
   /* 1860px/16 = 116.25em   */
   /* screen sizes <= 530px */
+  /* 327px/16 = em */
   /* 355px/16 = 22.1875em*/
-  /* 400px/16 = 25em */
   /* 371px/16 = 25em */
+  /* 400px/16 = 25em */
   /* 530px/16 = 33.125em*/
   /* 562px/16 = 35.125em*/
   /* 616px/16 = 38.5em */
@@ -1182,9 +1219,10 @@ the exception being the .container class. That's defined in utilities.scss, so t
   /* 1860px/16 = 116.25em   */
   /* screen sizes <= 320px */
   /* 240px/16 = 15em */
+  /* 327px/16 = em */
   /* 355px/16 = 22.1875em*/
-  /* 400px/16 = 25em */
   /* 371px/16 = 25em */
+  /* 400px/16 = 25em */
   /* 530px/16 = 33.125em*/
   /* 562px/16 = 35.125em*/
   /* 616px/16 = 38.5em */
@@ -1216,9 +1254,10 @@ the exception being the .container class. That's defined in utilities.scss, so t
     text-decoration: none; }
   .contactInfo h2 {
     margin-bottom: 1em;
+    /* 327px/16 = em */
     /* 355px/16 = 22.1875em*/
-    /* 400px/16 = 25em */
     /* 371px/16 = 25em */
+    /* 400px/16 = 25em */
     /* 530px/16 = 33.125em*/
     /* 562px/16 = 35.125em*/
     /* 616px/16 = 38.5em */
@@ -1235,9 +1274,10 @@ the exception being the .container class. That's defined in utilities.scss, so t
   .contactInfo p {
     line-height: 0.1em;
     font-size: 2em;
+    /* 327px/16 = em */
     /* 355px/16 = 22.1875em*/
-    /* 400px/16 = 25em */
     /* 371px/16 = 25em */
+    /* 400px/16 = 25em */
     /* 530px/16 = 33.125em*/
     /* 562px/16 = 35.125em*/
     /* 616px/16 = 38.5em */
@@ -1249,9 +1289,10 @@ the exception being the .container class. That's defined in utilities.scss, so t
     /* 1500px/16 = 93.75em*/
     /* 1860px/16 = 116.25em   */
     /* screen size <= 1200px*/
+    /* 327px/16 = em */
     /* 355px/16 = 22.1875em*/
-    /* 400px/16 = 25em */
     /* 371px/16 = 25em */
+    /* 400px/16 = 25em */
     /* 530px/16 = 33.125em*/
     /* 562px/16 = 35.125em*/
     /* 616px/16 = 38.5em */
@@ -1263,9 +1304,10 @@ the exception being the .container class. That's defined in utilities.scss, so t
     /* 1500px/16 = 93.75em*/
     /* 1860px/16 = 116.25em   */
     /* screen size <= 767px*/
+    /* 327px/16 = em */
     /* 355px/16 = 22.1875em*/
-    /* 400px/16 = 25em */
     /* 371px/16 = 25em */
+    /* 400px/16 = 25em */
     /* 530px/16 = 33.125em*/
     /* 562px/16 = 35.125em*/
     /* 616px/16 = 38.5em */
@@ -1276,9 +1318,10 @@ the exception being the .container class. That's defined in utilities.scss, so t
     /* 1200px/16 = 75em*/
     /* 1500px/16 = 93.75em*/
     /* 1860px/16 = 116.25em   */
+    /* 327px/16 = em */
     /* 355px/16 = 22.1875em*/
-    /* 400px/16 = 25em */
     /* 371px/16 = 25em */
+    /* 400px/16 = 25em */
     /* 530px/16 = 33.125em*/
     /* 562px/16 = 35.125em*/
     /* 616px/16 = 38.5em */
@@ -1306,9 +1349,10 @@ the exception being the .container class. That's defined in utilities.scss, so t
     padding: 1em;
     width: 35%;
     float: left;
+    /* 327px/16 = em */
     /* 355px/16 = 22.1875em*/
-    /* 400px/16 = 25em */
     /* 371px/16 = 25em */
+    /* 400px/16 = 25em */
     /* 530px/16 = 33.125em*/
     /* 562px/16 = 35.125em*/
     /* 616px/16 = 38.5em */
@@ -1319,9 +1363,10 @@ the exception being the .container class. That's defined in utilities.scss, so t
     /* 1200px/16 = 75em*/
     /* 1500px/16 = 93.75em*/
     /* 1860px/16 = 116.25em   */
+    /* 327px/16 = em */
     /* 355px/16 = 22.1875em*/
-    /* 400px/16 = 25em */
     /* 371px/16 = 25em */
+    /* 400px/16 = 25em */
     /* 530px/16 = 33.125em*/
     /* 562px/16 = 35.125em*/
     /* 616px/16 = 38.5em */
@@ -1344,9 +1389,10 @@ the exception being the .container class. That's defined in utilities.scss, so t
     padding: 1em;
     width: 35%;
     float: left;
+    /* 327px/16 = em */
     /* 355px/16 = 22.1875em*/
-    /* 400px/16 = 25em */
     /* 371px/16 = 25em */
+    /* 400px/16 = 25em */
     /* 530px/16 = 33.125em*/
     /* 562px/16 = 35.125em*/
     /* 616px/16 = 38.5em */
@@ -1357,9 +1403,10 @@ the exception being the .container class. That's defined in utilities.scss, so t
     /* 1200px/16 = 75em*/
     /* 1500px/16 = 93.75em*/
     /* 1860px/16 = 116.25em   */
+    /* 327px/16 = em */
     /* 355px/16 = 22.1875em*/
-    /* 400px/16 = 25em */
     /* 371px/16 = 25em */
+    /* 400px/16 = 25em */
     /* 530px/16 = 33.125em*/
     /* 562px/16 = 35.125em*/
     /* 616px/16 = 38.5em */
@@ -1382,9 +1429,10 @@ the exception being the .container class. That's defined in utilities.scss, so t
     padding: 1em;
     width: 30%;
     float: left;
+    /* 327px/16 = em */
     /* 355px/16 = 22.1875em*/
-    /* 400px/16 = 25em */
     /* 371px/16 = 25em */
+    /* 400px/16 = 25em */
     /* 530px/16 = 33.125em*/
     /* 562px/16 = 35.125em*/
     /* 616px/16 = 38.5em */
@@ -1468,9 +1516,10 @@ the exception being the .container class. That's defined in utilities.scss, so t
   font-weight: 300; }
   .headline--large {
     font-size: 3.6em;
+    /* 327px/16 = em */
     /* 355px/16 = 22.1875em*/
-    /* 400px/16 = 25em */
     /* 371px/16 = 25em */
+    /* 400px/16 = 25em */
     /* 530px/16 = 33.125em*/
     /* 562px/16 = 35.125em*/
     /* 616px/16 = 38.5em */
@@ -1490,9 +1539,10 @@ the exception being the .container class. That's defined in utilities.scss, so t
   .headline--medium {
     font-size: 1.9em;
     margin-bottom: 0.75em;
+    /* 327px/16 = em */
     /* 355px/16 = 22.1875em*/
-    /* 400px/16 = 25em */
     /* 371px/16 = 25em */
+    /* 400px/16 = 25em */
     /* 530px/16 = 33.125em*/
     /* 562px/16 = 35.125em*/
     /* 616px/16 = 38.5em */
@@ -1503,9 +1553,10 @@ the exception being the .container class. That's defined in utilities.scss, so t
     /* 1200px/16 = 75em*/
     /* 1500px/16 = 93.75em*/
     /* 1860px/16 = 116.25em   */
+    /* 327px/16 = em */
     /* 355px/16 = 22.1875em*/
-    /* 400px/16 = 25em */
     /* 371px/16 = 25em */
+    /* 400px/16 = 25em */
     /* 530px/16 = 33.125em*/
     /* 562px/16 = 35.125em*/
     /* 616px/16 = 38.5em */
@@ -1516,9 +1567,10 @@ the exception being the .container class. That's defined in utilities.scss, so t
     /* 1200px/16 = 75em*/
     /* 1500px/16 = 93.75em*/
     /* 1860px/16 = 116.25em   */
+    /* 327px/16 = em */
     /* 355px/16 = 22.1875em*/
-    /* 400px/16 = 25em */
     /* 371px/16 = 25em */
+    /* 400px/16 = 25em */
     /* 530px/16 = 33.125em*/
     /* 562px/16 = 35.125em*/
     /* 616px/16 = 38.5em */
@@ -1546,9 +1598,10 @@ the exception being the .container class. That's defined in utilities.scss, so t
   .headline--small {
     font-size: 1.2em;
     margin-bottom: 1.9em;
+    /* 327px/16 = em */
     /* 355px/16 = 22.1875em*/
-    /* 400px/16 = 25em */
     /* 371px/16 = 25em */
+    /* 400px/16 = 25em */
     /* 530px/16 = 33.125em*/
     /* 562px/16 = 35.125em*/
     /* 616px/16 = 38.5em */
@@ -1587,9 +1640,10 @@ the exception being the .container class. That's defined in utilities.scss, so t
     transform: translateY(-50%); }
   .metabox--with-home-link {
     padding: 0;
+    /* 327px/16 = em */
     /* 355px/16 = 22.1875em*/
-    /* 400px/16 = 25em */
     /* 371px/16 = 25em */
+    /* 400px/16 = 25em */
     /* 530px/16 = 33.125em*/
     /* 562px/16 = 35.125em*/
     /* 616px/16 = 38.5em */
@@ -1671,9 +1725,10 @@ the exception being the .container class. That's defined in utilities.scss, so t
               animation-duration: 1s;
       -webkit-animation-timing-function: ease-out;
               animation-timing-function: ease-out;
+      /* 327px/16 = em */
       /* 355px/16 = 22.1875em*/
-      /* 400px/16 = 25em */
       /* 371px/16 = 25em */
+      /* 400px/16 = 25em */
       /* 530px/16 = 33.125em*/
       /* 562px/16 = 35.125em*/
       /* 616px/16 = 38.5em */
@@ -1701,9 +1756,10 @@ the exception being the .container class. That's defined in utilities.scss, so t
               animation-duration: 1s;
       -webkit-animation-timing-function: ease-out;
               animation-timing-function: ease-out;
+      /* 327px/16 = em */
       /* 355px/16 = 22.1875em*/
-      /* 400px/16 = 25em */
       /* 371px/16 = 25em */
+      /* 400px/16 = 25em */
       /* 530px/16 = 33.125em*/
       /* 562px/16 = 35.125em*/
       /* 616px/16 = 38.5em */
@@ -1716,9 +1772,10 @@ the exception being the .container class. That's defined in utilities.scss, so t
       /* 1860px/16 = 116.25em   */
       /*animation: moveInRight 1s ease-out;*/
       /* 240px/16 = 15em */
+      /* 327px/16 = em */
       /* 355px/16 = 22.1875em*/
-      /* 400px/16 = 25em */
       /* 371px/16 = 25em */
+      /* 400px/16 = 25em */
       /* 530px/16 = 33.125em*/
       /* 562px/16 = 35.125em*/
       /* 616px/16 = 38.5em */
@@ -1746,9 +1803,10 @@ the exception being the .container class. That's defined in utilities.scss, so t
     width: -moz-max-content;
     width: max-content;
     margin: 1.5em auto;
+    /* 327px/16 = em */
     /* 355px/16 = 22.1875em*/
-    /* 400px/16 = 25em */
     /* 371px/16 = 25em */
+    /* 400px/16 = 25em */
     /* 530px/16 = 33.125em*/
     /* 562px/16 = 35.125em*/
     /* 616px/16 = 38.5em */
@@ -1759,9 +1817,10 @@ the exception being the .container class. That's defined in utilities.scss, so t
     /* 1200px/16 = 75em*/
     /* 1500px/16 = 93.75em*/
     /* 1860px/16 = 116.25em   */
+    /* 327px/16 = em */
     /* 355px/16 = 22.1875em*/
-    /* 400px/16 = 25em */
     /* 371px/16 = 25em */
+    /* 400px/16 = 25em */
     /* 530px/16 = 33.125em*/
     /* 562px/16 = 35.125em*/
     /* 616px/16 = 38.5em */
@@ -1772,9 +1831,10 @@ the exception being the .container class. That's defined in utilities.scss, so t
     /* 1200px/16 = 75em*/
     /* 1500px/16 = 93.75em*/
     /* 1860px/16 = 116.25em   */
+    /* 327px/16 = em */
     /* 355px/16 = 22.1875em*/
-    /* 400px/16 = 25em */
     /* 371px/16 = 25em */
+    /* 400px/16 = 25em */
     /* 530px/16 = 33.125em*/
     /* 562px/16 = 35.125em*/
     /* 616px/16 = 38.5em */
@@ -1785,9 +1845,10 @@ the exception being the .container class. That's defined in utilities.scss, so t
     /* 1200px/16 = 75em*/
     /* 1500px/16 = 93.75em*/
     /* 1860px/16 = 116.25em   */
+    /* 327px/16 = em */
     /* 355px/16 = 22.1875em*/
-    /* 400px/16 = 25em */
     /* 371px/16 = 25em */
+    /* 400px/16 = 25em */
     /* 530px/16 = 33.125em*/
     /* 562px/16 = 35.125em*/
     /* 616px/16 = 38.5em */
@@ -1870,9 +1931,10 @@ the exception being the .container class. That's defined in utilities.scss, so t
       width: 90rem;
       height: 12rem;
     }*/
+    /* 327px/16 = em */
     /* 355px/16 = 22.1875em*/
-    /* 400px/16 = 25em */
     /* 371px/16 = 25em */
+    /* 400px/16 = 25em */
     /* 530px/16 = 33.125em*/
     /* 562px/16 = 35.125em*/
     /* 616px/16 = 38.5em */
@@ -1883,9 +1945,10 @@ the exception being the .container class. That's defined in utilities.scss, so t
     /* 1200px/16 = 75em*/
     /* 1500px/16 = 93.75em*/
     /* 1860px/16 = 116.25em   */
+    /* 327px/16 = em */
     /* 355px/16 = 22.1875em*/
-    /* 400px/16 = 25em */
     /* 371px/16 = 25em */
+    /* 400px/16 = 25em */
     /* 530px/16 = 33.125em*/
     /* 562px/16 = 35.125em*/
     /* 616px/16 = 38.5em */
@@ -1896,9 +1959,10 @@ the exception being the .container class. That's defined in utilities.scss, so t
     /* 1200px/16 = 75em*/
     /* 1500px/16 = 93.75em*/
     /* 1860px/16 = 116.25em   */
+    /* 327px/16 = em */
     /* 355px/16 = 22.1875em*/
-    /* 400px/16 = 25em */
     /* 371px/16 = 25em */
+    /* 400px/16 = 25em */
     /* 530px/16 = 33.125em*/
     /* 562px/16 = 35.125em*/
     /* 616px/16 = 38.5em */
@@ -1909,9 +1973,10 @@ the exception being the .container class. That's defined in utilities.scss, so t
     /* 1200px/16 = 75em*/
     /* 1500px/16 = 93.75em*/
     /* 1860px/16 = 116.25em   */
+    /* 327px/16 = em */
     /* 355px/16 = 22.1875em*/
-    /* 400px/16 = 25em */
     /* 371px/16 = 25em */
+    /* 400px/16 = 25em */
     /* 530px/16 = 33.125em*/
     /* 562px/16 = 35.125em*/
     /* 616px/16 = 38.5em */
@@ -1922,9 +1987,10 @@ the exception being the .container class. That's defined in utilities.scss, so t
     /* 1200px/16 = 75em*/
     /* 1500px/16 = 93.75em*/
     /* 1860px/16 = 116.25em   */
+    /* 327px/16 = em */
     /* 355px/16 = 22.1875em*/
-    /* 400px/16 = 25em */
     /* 371px/16 = 25em */
+    /* 400px/16 = 25em */
     /* 530px/16 = 33.125em*/
     /* 562px/16 = 35.125em*/
     /* 616px/16 = 38.5em */
@@ -1936,9 +2002,10 @@ the exception being the .container class. That's defined in utilities.scss, so t
     /* 1500px/16 = 93.75em*/
     /* 1860px/16 = 116.25em   */
     /* 240px/16 = 15em */
+    /* 327px/16 = em */
     /* 355px/16 = 22.1875em*/
-    /* 400px/16 = 25em */
     /* 371px/16 = 25em */
+    /* 400px/16 = 25em */
     /* 530px/16 = 33.125em*/
     /* 562px/16 = 35.125em*/
     /* 616px/16 = 38.5em */
@@ -2070,9 +2137,10 @@ the exception being the .container class. That's defined in utilities.scss, so t
   background-color: #000;
   padding: 80px 0 40px 0;
   position: relative;
+  /* 327px/16 = em */
   /* 355px/16 = 22.1875em*/
-  /* 400px/16 = 25em */
   /* 371px/16 = 25em */
+  /* 400px/16 = 25em */
   /* 530px/16 = 33.125em*/
   /* 562px/16 = 35.125em*/
   /* 616px/16 = 38.5em */
@@ -2096,9 +2164,10 @@ the exception being the .container class. That's defined in utilities.scss, so t
     font-size: 3.6rem;
     margin: 0 0 1rem 0;
     color: #fff;
+    /* 327px/16 = em */
     /* 355px/16 = 22.1875em*/
-    /* 400px/16 = 25em */
     /* 371px/16 = 25em */
+    /* 400px/16 = 25em */
     /* 530px/16 = 33.125em*/
     /* 562px/16 = 35.125em*/
     /* 616px/16 = 38.5em */
@@ -2109,9 +2178,10 @@ the exception being the .container class. That's defined in utilities.scss, so t
     /* 1200px/16 = 75em*/
     /* 1500px/16 = 93.75em*/
     /* 1860px/16 = 116.25em   */
+    /* 327px/16 = em */
     /* 355px/16 = 22.1875em*/
-    /* 400px/16 = 25em */
     /* 371px/16 = 25em */
+    /* 400px/16 = 25em */
     /* 530px/16 = 33.125em*/
     /* 562px/16 = 35.125em*/
     /* 616px/16 = 38.5em */
@@ -2144,9 +2214,10 @@ the exception being the .container class. That's defined in utilities.scss, so t
     font-size: 1.2rem;
     line-height: 1.3;
     color: #ededed;
+    /* 327px/16 = em */
     /* 355px/16 = 22.1875em*/
-    /* 400px/16 = 25em */
     /* 371px/16 = 25em */
+    /* 400px/16 = 25em */
     /* 530px/16 = 33.125em*/
     /* 562px/16 = 35.125em*/
     /* 616px/16 = 38.5em */
@@ -2166,9 +2237,10 @@ the exception being the .container class. That's defined in utilities.scss, so t
 .page-section {
   padding-top: 1.6rem;
   padding-bottom: 1.6rem;
+  /* 327px/16 = em */
   /* 355px/16 = 22.1875em*/
-  /* 400px/16 = 25em */
   /* 371px/16 = 25em */
+  /* 400px/16 = 25em */
   /* 530px/16 = 33.125em*/
   /* 562px/16 = 35.125em*/
   /* 616px/16 = 38.5em */
@@ -2198,9 +2270,10 @@ the exception being the .container class. That's defined in utilities.scss, so t
   height: 100vh;
   width: 100vw;
   display: flex;
+  /* 327px/16 = em */
   /* 355px/16 = 22.1875em*/
-  /* 400px/16 = 25em */
   /* 371px/16 = 25em */
+  /* 400px/16 = 25em */
   /* 530px/16 = 33.125em*/
   /* 562px/16 = 35.125em*/
   /* 616px/16 = 38.5em */
@@ -2211,9 +2284,10 @@ the exception being the .container class. That's defined in utilities.scss, so t
   /* 1200px/16 = 75em*/
   /* 1500px/16 = 93.75em*/
   /* 1860px/16 = 116.25em   */
+  /* 327px/16 = em */
   /* 355px/16 = 22.1875em*/
-  /* 400px/16 = 25em */
   /* 371px/16 = 25em */
+  /* 400px/16 = 25em */
   /* 530px/16 = 33.125em*/
   /* 562px/16 = 35.125em*/
   /* 616px/16 = 38.5em */
@@ -2225,9 +2299,10 @@ the exception being the .container class. That's defined in utilities.scss, so t
   /* 1500px/16 = 93.75em*/
   /* 1860px/16 = 116.25em   */
   /* 240px/16 = 15em */
+  /* 327px/16 = em */
   /* 355px/16 = 22.1875em*/
-  /* 400px/16 = 25em */
   /* 371px/16 = 25em */
+  /* 400px/16 = 25em */
   /* 530px/16 = 33.125em*/
   /* 562px/16 = 35.125em*/
   /* 616px/16 = 38.5em */
@@ -2297,9 +2372,10 @@ the exception being the .container class. That's defined in utilities.scss, so t
   transform: translate(50%, 0%);
   /* -50% will overlap the page banner. */
   font-size: 1.5rem;
+  /* 327px/16 = em */
   /* 355px/16 = 22.1875em*/
-  /* 400px/16 = 25em */
   /* 371px/16 = 25em */
+  /* 400px/16 = 25em */
   /* 530px/16 = 33.125em*/
   /* 562px/16 = 35.125em*/
   /* 616px/16 = 38.5em */
@@ -2310,9 +2386,10 @@ the exception being the .container class. That's defined in utilities.scss, so t
   /* 1200px/16 = 75em*/
   /* 1500px/16 = 93.75em*/
   /* 1860px/16 = 116.25em   */
+  /* 327px/16 = em */
   /* 355px/16 = 22.1875em*/
-  /* 400px/16 = 25em */
   /* 371px/16 = 25em */
+  /* 400px/16 = 25em */
   /* 530px/16 = 33.125em*/
   /* 562px/16 = 35.125em*/
   /* 616px/16 = 38.5em */
@@ -2323,9 +2400,10 @@ the exception being the .container class. That's defined in utilities.scss, so t
   /* 1200px/16 = 75em*/
   /* 1500px/16 = 93.75em*/
   /* 1860px/16 = 116.25em   */
+  /* 327px/16 = em */
   /* 355px/16 = 22.1875em*/
-  /* 400px/16 = 25em */
   /* 371px/16 = 25em */
+  /* 400px/16 = 25em */
   /* 530px/16 = 33.125em*/
   /* 562px/16 = 35.125em*/
   /* 616px/16 = 38.5em */
@@ -2356,9 +2434,10 @@ the exception being the .container class. That's defined in utilities.scss, so t
   -ms-grid-columns: (1fr)[6];
   grid-template-columns: repeat(6, 1fr);
   grid-gap: 1rem;
+  /* 327px/16 = em */
   /* 355px/16 = 22.1875em*/
-  /* 400px/16 = 25em */
   /* 371px/16 = 25em */
+  /* 400px/16 = 25em */
   /* 530px/16 = 33.125em*/
   /* 562px/16 = 35.125em*/
   /* 616px/16 = 38.5em */
@@ -2369,9 +2448,10 @@ the exception being the .container class. That's defined in utilities.scss, so t
   /* 1200px/16 = 75em*/
   /* 1500px/16 = 93.75em*/
   /* 1860px/16 = 116.25em   */
+  /* 327px/16 = em */
   /* 355px/16 = 22.1875em*/
-  /* 400px/16 = 25em */
   /* 371px/16 = 25em */
+  /* 400px/16 = 25em */
   /* 530px/16 = 33.125em*/
   /* 562px/16 = 35.125em*/
   /* 616px/16 = 38.5em */
@@ -2427,9 +2507,10 @@ the exception being the .container class. That's defined in utilities.scss, so t
     -ms-grid-column: 4;
     -ms-grid-column-span: 2;
     grid-column: 4 / 6;
+    /* 327px/16 = em */
     /* 355px/16 = 22.1875em*/
-    /* 400px/16 = 25em */
     /* 371px/16 = 25em */
+    /* 400px/16 = 25em */
     /* 530px/16 = 33.125em*/
     /* 562px/16 = 35.125em*/
     /* 616px/16 = 38.5em */
@@ -2453,9 +2534,10 @@ the exception being the .container class. That's defined in utilities.scss, so t
     -ms-grid-row-span: 1;
     grid-row: 1 / 2;
     grid-column: 6 / -1;
+    /* 327px/16 = em */
     /* 355px/16 = 22.1875em*/
-    /* 400px/16 = 25em */
     /* 371px/16 = 25em */
+    /* 400px/16 = 25em */
     /* 530px/16 = 33.125em*/
     /* 562px/16 = 35.125em*/
     /* 616px/16 = 38.5em */
@@ -2481,9 +2563,10 @@ the exception being the .container class. That's defined in utilities.scss, so t
     -ms-grid-column: 1;
     -ms-grid-column-span: 2;
     grid-column: 1 / span 2;
+    /* 327px/16 = em */
     /* 355px/16 = 22.1875em*/
-    /* 400px/16 = 25em */
     /* 371px/16 = 25em */
+    /* 400px/16 = 25em */
     /* 530px/16 = 33.125em*/
     /* 562px/16 = 35.125em*/
     /* 616px/16 = 38.5em */
@@ -2509,9 +2592,10 @@ the exception being the .container class. That's defined in utilities.scss, so t
     -ms-grid-column: 3;
     -ms-grid-column-span: 2;
     grid-column: 3 / span 2;
+    /* 327px/16 = em */
     /* 355px/16 = 22.1875em*/
-    /* 400px/16 = 25em */
     /* 371px/16 = 25em */
+    /* 400px/16 = 25em */
     /* 530px/16 = 33.125em*/
     /* 562px/16 = 35.125em*/
     /* 616px/16 = 38.5em */
@@ -2537,9 +2621,10 @@ the exception being the .container class. That's defined in utilities.scss, so t
     -ms-grid-column: 5;
     -ms-grid-column-span: 1;
     grid-column: 5 / 6;
+    /* 327px/16 = em */
     /* 355px/16 = 22.1875em*/
-    /* 400px/16 = 25em */
     /* 371px/16 = 25em */
+    /* 400px/16 = 25em */
     /* 530px/16 = 33.125em*/
     /* 562px/16 = 35.125em*/
     /* 616px/16 = 38.5em */
@@ -2565,9 +2650,10 @@ the exception being the .container class. That's defined in utilities.scss, so t
     -ms-grid-column: 6;
     -ms-grid-column-span: 1;
     grid-column: 6 / 7;
+    /* 327px/16 = em */
     /* 355px/16 = 22.1875em*/
-    /* 400px/16 = 25em */
     /* 371px/16 = 25em */
+    /* 400px/16 = 25em */
     /* 530px/16 = 33.125em*/
     /* 562px/16 = 35.125em*/
     /* 616px/16 = 38.5em */
@@ -2593,9 +2679,10 @@ the exception being the .container class. That's defined in utilities.scss, so t
     -ms-grid-column: 1;
     -ms-grid-column-span: 2;
     grid-column: 1 / 3;
+    /* 327px/16 = em */
     /* 355px/16 = 22.1875em*/
-    /* 400px/16 = 25em */
     /* 371px/16 = 25em */
+    /* 400px/16 = 25em */
     /* 530px/16 = 33.125em*/
     /* 562px/16 = 35.125em*/
     /* 616px/16 = 38.5em */
@@ -2621,9 +2708,10 @@ the exception being the .container class. That's defined in utilities.scss, so t
     -ms-grid-column: 3;
     -ms-grid-column-span: 2;
     grid-column: 3 / 5;
+    /* 327px/16 = em */
     /* 355px/16 = 22.1875em*/
-    /* 400px/16 = 25em */
     /* 371px/16 = 25em */
+    /* 400px/16 = 25em */
     /* 530px/16 = 33.125em*/
     /* 562px/16 = 35.125em*/
     /* 616px/16 = 38.5em */
@@ -2649,9 +2737,10 @@ the exception being the .container class. That's defined in utilities.scss, so t
     -ms-grid-column: 5;
     -ms-grid-column-span: 2;
     grid-column: 5 / span 2;
+    /* 327px/16 = em */
     /* 355px/16 = 22.1875em*/
-    /* 400px/16 = 25em */
     /* 371px/16 = 25em */
+    /* 400px/16 = 25em */
     /* 530px/16 = 33.125em*/
     /* 562px/16 = 35.125em*/
     /* 616px/16 = 38.5em */
@@ -2677,9 +2766,10 @@ the exception being the .container class. That's defined in utilities.scss, so t
     -ms-grid-column: 1;
     -ms-grid-column-span: 1;
     grid-column: 1 / 2;
+    /* 327px/16 = em */
     /* 355px/16 = 22.1875em*/
-    /* 400px/16 = 25em */
     /* 371px/16 = 25em */
+    /* 400px/16 = 25em */
     /* 530px/16 = 33.125em*/
     /* 562px/16 = 35.125em*/
     /* 616px/16 = 38.5em */
@@ -2705,9 +2795,10 @@ the exception being the .container class. That's defined in utilities.scss, so t
     -ms-grid-column: 2;
     -ms-grid-column-span: 2;
     grid-column: 2 / span 2;
+    /* 327px/16 = em */
     /* 355px/16 = 22.1875em*/
-    /* 400px/16 = 25em */
     /* 371px/16 = 25em */
+    /* 400px/16 = 25em */
     /* 530px/16 = 33.125em*/
     /* 562px/16 = 35.125em*/
     /* 616px/16 = 38.5em */
@@ -2733,9 +2824,10 @@ the exception being the .container class. That's defined in utilities.scss, so t
     -ms-grid-column: 4;
     -ms-grid-column-span: 2;
     grid-column: 4 / span 2;
+    /* 327px/16 = em */
     /* 355px/16 = 22.1875em*/
-    /* 400px/16 = 25em */
     /* 371px/16 = 25em */
+    /* 400px/16 = 25em */
     /* 530px/16 = 33.125em*/
     /* 562px/16 = 35.125em*/
     /* 616px/16 = 38.5em */
@@ -2757,9 +2849,10 @@ the exception being the .container class. That's defined in utilities.scss, so t
   .gallery__item--15 {
     grid-row: 5 / -1;
     grid-column: 6 / -1;
+    /* 327px/16 = em */
     /* 355px/16 = 22.1875em*/
-    /* 400px/16 = 25em */
     /* 371px/16 = 25em */
+    /* 400px/16 = 25em */
     /* 530px/16 = 33.125em*/
     /* 562px/16 = 35.125em*/
     /* 616px/16 = 38.5em */
@@ -2814,9 +2907,10 @@ the exception being the .container class. That's defined in utilities.scss, so t
 .page-section {
   padding-top: 1.6rem;
   padding-bottom: 1.6rem;
+  /* 327px/16 = em */
   /* 355px/16 = 22.1875em*/
-  /* 400px/16 = 25em */
   /* 371px/16 = 25em */
+  /* 400px/16 = 25em */
   /* 530px/16 = 33.125em*/
   /* 562px/16 = 35.125em*/
   /* 616px/16 = 38.5em */
@@ -2959,9 +3053,10 @@ the exception being the .container class. That's defined in utilities.scss, so t
   font-size: 1.3em;
   color: darkblue;
   text-decoration: none;
+  /* 327px/16 = em */
   /* 355px/16 = 22.1875em*/
-  /* 400px/16 = 25em */
   /* 371px/16 = 25em */
+  /* 400px/16 = 25em */
   /* 530px/16 = 33.125em*/
   /* 562px/16 = 35.125em*/
   /* 616px/16 = 38.5em */
@@ -2972,9 +3067,10 @@ the exception being the .container class. That's defined in utilities.scss, so t
   /* 1200px/16 = 75em*/
   /* 1500px/16 = 93.75em*/
   /* 1860px/16 = 116.25em   */
+  /* 327px/16 = em */
   /* 355px/16 = 22.1875em*/
-  /* 400px/16 = 25em */
   /* 371px/16 = 25em */
+  /* 400px/16 = 25em */
   /* 530px/16 = 33.125em*/
   /* 562px/16 = 35.125em*/
   /* 616px/16 = 38.5em */
@@ -3148,9 +3244,10 @@ the exception being the .container class. That's defined in utilities.scss, so t
     border-top: 1px dotted #dedede;
     padding-top: 3.5em;
     /* 240px/16 = 15em */
+    /* 327px/16 = em */
     /* 355px/16 = 22.1875em*/
-    /* 400px/16 = 25em */
     /* 371px/16 = 25em */
+    /* 400px/16 = 25em */
     /* 530px/16 = 33.125em*/
     /* 562px/16 = 35.125em*/
     /* 616px/16 = 38.5em */
@@ -3166,9 +3263,10 @@ the exception being the .container class. That's defined in utilities.scss, so t
         grid-template-columns: repeat(auto-fit, minmax(25em, 1fr)); } }
     .site-footer__inner-grid h2 {
       font-size: 3em;
+      /* 327px/16 = em */
       /* 355px/16 = 22.1875em*/
-      /* 400px/16 = 25em */
       /* 371px/16 = 25em */
+      /* 400px/16 = 25em */
       /* 530px/16 = 33.125em*/
       /* 562px/16 = 35.125em*/
       /* 616px/16 = 38.5em */
@@ -3179,9 +3277,10 @@ the exception being the .container class. That's defined in utilities.scss, so t
       /* 1200px/16 = 75em*/
       /* 1500px/16 = 93.75em*/
       /* 1860px/16 = 116.25em   */
+      /* 327px/16 = em */
       /* 355px/16 = 22.1875em*/
-      /* 400px/16 = 25em */
       /* 371px/16 = 25em */
+      /* 400px/16 = 25em */
       /* 530px/16 = 33.125em*/
       /* 562px/16 = 35.125em*/
       /* 616px/16 = 38.5em */
@@ -3214,9 +3313,10 @@ the exception being the .container class. That's defined in utilities.scss, so t
     color: #0d3b66;
     text-decoration: underline; }
   .site-footer h2 {
+    /* 327px/16 = em */
     /* 355px/16 = 22.1875em*/
-    /* 400px/16 = 25em */
     /* 371px/16 = 25em */
+    /* 400px/16 = 25em */
     /* 530px/16 = 33.125em*/
     /* 562px/16 = 35.125em*/
     /* 616px/16 = 38.5em */
@@ -3232,9 +3332,10 @@ the exception being the .container class. That's defined in utilities.scss, so t
       .site-footer h2 {
         font-size: 2.5em; } }
   .site-footer h3 {
+    /* 327px/16 = em */
     /* 355px/16 = 22.1875em*/
-    /* 400px/16 = 25em */
     /* 371px/16 = 25em */
+    /* 400px/16 = 25em */
     /* 530px/16 = 33.125em*/
     /* 562px/16 = 35.125em*/
     /* 616px/16 = 38.5em */
@@ -3259,9 +3360,10 @@ the exception being the .container class. That's defined in utilities.scss, so t
       align-items: center;
       transition: all 0.3s ease-in-out;
       /* This is the line that briefly shows the nav bar with the desired fonts then shrinks them to a really tiny font I don't want.  */
+      /* 327px/16 = em */
       /* 355px/16 = 22.1875em*/
-      /* 400px/16 = 25em */
       /* 371px/16 = 25em */
+      /* 400px/16 = 25em */
       /* 530px/16 = 33.125em*/
       /* 562px/16 = 35.125em*/
       /* 616px/16 = 38.5em */
@@ -3298,9 +3400,10 @@ the exception being the .container class. That's defined in utilities.scss, so t
         /*margin: 0 auto;*/
         justify-content: space-around;
         opacity: 1;
+        /* 327px/16 = em */
         /* 355px/16 = 22.1875em*/
-        /* 400px/16 = 25em */
         /* 371px/16 = 25em */
+        /* 400px/16 = 25em */
         /* 530px/16 = 33.125em*/
         /* 562px/16 = 35.125em*/
         /* 616px/16 = 38.5em */
@@ -3318,9 +3421,10 @@ the exception being the .container class. That's defined in utilities.scss, so t
       /* on small screens we don't show the nav icon at all, only on screen sizes 1040px / 65em and larger. */
       /*display: none;*/
       /* 1040px/16px = 65em */
+      /* 327px/16 = em */
       /* 355px/16 = 22.1875em*/
-      /* 400px/16 = 25em */
       /* 371px/16 = 25em */
+      /* 400px/16 = 25em */
       /* 530px/16 = 33.125em*/
       /* 562px/16 = 35.125em*/
       /* 616px/16 = 38.5em */
@@ -3366,9 +3470,10 @@ the exception being the .container class. That's defined in utilities.scss, so t
       padding: 1.5rem 1.5rem;
       font-size: 2rem;
       margin: 0;
+      /* 327px/16 = em */
       /* 355px/16 = 22.1875em*/
-      /* 400px/16 = 25em */
       /* 371px/16 = 25em */
+      /* 400px/16 = 25em */
       /* 530px/16 = 33.125em*/
       /* 562px/16 = 35.125em*/
       /* 616px/16 = 38.5em */
@@ -3379,9 +3484,10 @@ the exception being the .container class. That's defined in utilities.scss, so t
       /* 1200px/16 = 75em*/
       /* 1500px/16 = 93.75em*/
       /* 1860px/16 = 116.25em   */
+      /* 327px/16 = em */
       /* 355px/16 = 22.1875em*/
-      /* 400px/16 = 25em */
       /* 371px/16 = 25em */
+      /* 400px/16 = 25em */
       /* 530px/16 = 33.125em*/
       /* 562px/16 = 35.125em*/
       /* 616px/16 = 38.5em */
@@ -3392,9 +3498,10 @@ the exception being the .container class. That's defined in utilities.scss, so t
       /* 1200px/16 = 75em*/
       /* 1500px/16 = 93.75em*/
       /* 1860px/16 = 116.25em   */
+      /* 327px/16 = em */
       /* 355px/16 = 22.1875em*/
-      /* 400px/16 = 25em */
       /* 371px/16 = 25em */
+      /* 400px/16 = 25em */
       /* 530px/16 = 33.125em*/
       /* 562px/16 = 35.125em*/
       /* 616px/16 = 38.5em */
@@ -3405,9 +3512,10 @@ the exception being the .container class. That's defined in utilities.scss, so t
       /* 1200px/16 = 75em*/
       /* 1500px/16 = 93.75em*/
       /* 1860px/16 = 116.25em   */
+      /* 327px/16 = em */
       /* 355px/16 = 22.1875em*/
-      /* 400px/16 = 25em */
       /* 371px/16 = 25em */
+      /* 400px/16 = 25em */
       /* 530px/16 = 33.125em*/
       /* 562px/16 = 35.125em*/
       /* 616px/16 = 38.5em */
@@ -3452,9 +3560,10 @@ the exception being the .container class. That's defined in utilities.scss, so t
     background-color: transparent;
     color: #fff;
     height: 7.5rem;
+    /* 327px/16 = em */
     /* 355px/16 = 22.1875em*/
-    /* 400px/16 = 25em */
     /* 371px/16 = 25em */
+    /* 400px/16 = 25em */
     /* 530px/16 = 33.125em*/
     /* 562px/16 = 35.125em*/
     /* 616px/16 = 38.5em */
@@ -3465,9 +3574,24 @@ the exception being the .container class. That's defined in utilities.scss, so t
     /* 1200px/16 = 75em*/
     /* 1500px/16 = 93.75em*/
     /* 1860px/16 = 116.25em   */
+    /* 327px/16 = em */
     /* 355px/16 = 22.1875em*/
-    /* 400px/16 = 25em */
     /* 371px/16 = 25em */
+    /* 400px/16 = 25em */
+    /* 530px/16 = 33.125em*/
+    /* 562px/16 = 35.125em*/
+    /* 616px/16 = 38.5em */
+    /* 767px/16 = 47.9375em */
+    /* 782px/16 = 48.875em. This one's needed by the hamburger icon, so the wp-admin bar doesn't block it. wp-admin bar changes sizes at 782px. */
+    /* 800px/16 = 50em */
+    /* 1000px/16 = 62.5em*/
+    /* 1200px/16 = 75em*/
+    /* 1500px/16 = 93.75em*/
+    /* 1860px/16 = 116.25em   */
+    /* 327px/16 = em */
+    /* 355px/16 = 22.1875em*/
+    /* 371px/16 = 25em */
+    /* 400px/16 = 25em */
     /* 530px/16 = 33.125em*/
     /* 562px/16 = 35.125em*/
     /* 616px/16 = 38.5em */
@@ -3487,8 +3611,12 @@ the exception being the .container class. That's defined in utilities.scss, so t
     @media only screen and (max-width: 22.1875em) {
       .site-header__mobile-menu {
         flex-direction: column;
+        flex: 1;
         justify-content: flex-end;
-        height: 15rem; } }
+        height: 20rem; } }
+    @media only screen and (max-width: 20.4375em) {
+      .site-header__mobile-menu {
+        height: 25rem; } }
     .site-header__mobile-menu--headings {
       font-size: 1rem;
       color: #fff;
@@ -3498,9 +3626,10 @@ the exception being the .container class. That's defined in utilities.scss, so t
       justify-content: center;
       position: absolute;
       margin: 2rem;
+      /* 327px/16 = em */
       /* 355px/16 = 22.1875em*/
-      /* 400px/16 = 25em */
       /* 371px/16 = 25em */
+      /* 400px/16 = 25em */
       /* 530px/16 = 33.125em*/
       /* 562px/16 = 35.125em*/
       /* 616px/16 = 38.5em */
@@ -3511,9 +3640,10 @@ the exception being the .container class. That's defined in utilities.scss, so t
       /* 1200px/16 = 75em*/
       /* 1500px/16 = 93.75em*/
       /* 1860px/16 = 116.25em   */
+      /* 327px/16 = em */
       /* 355px/16 = 22.1875em*/
-      /* 400px/16 = 25em */
       /* 371px/16 = 25em */
+      /* 400px/16 = 25em */
       /* 530px/16 = 33.125em*/
       /* 562px/16 = 35.125em*/
       /* 616px/16 = 38.5em */
@@ -3523,21 +3653,28 @@ the exception being the .container class. That's defined in utilities.scss, so t
       /* 1000px/16 = 62.5em*/
       /* 1200px/16 = 75em*/
       /* 1500px/16 = 93.75em*/
-      /* 1860px/16 = 116.25em   */ }
+      /* 1860px/16 = 116.25em   */
+      /*@include respondDesktop(at327) {
+        margin: 10rem;
+        font-size: 2rem;
+      }*/ }
       @media only screen and (max-width: 33.125em) {
         .site-header__mobile-menu--headings {
           font-size: 0.65rem; } }
       @media only screen and (max-width: 22.1875em) {
         .site-header__mobile-menu--headings {
+          flex: 0, 0, 90%;
           align-items: center;
-          font-size: 1rem; } }
+          font-size: 1rem;
+          margin: 8rem; } }
     .site-header__mobile-menu--icons {
       margin-left: auto;
       display: flex;
       align-items: center;
+      /* 327px/16 = em */
       /* 355px/16 = 22.1875em*/
-      /* 400px/16 = 25em */
       /* 371px/16 = 25em */
+      /* 400px/16 = 25em */
       /* 530px/16 = 33.125em*/
       /* 562px/16 = 35.125em*/
       /* 616px/16 = 38.5em */
@@ -3550,8 +3687,8 @@ the exception being the .container class. That's defined in utilities.scss, so t
       /* 1860px/16 = 116.25em   */ }
       @media only screen and (max-width: 22.1875em) {
         .site-header__mobile-menu--icons {
-          margin-left: 0;
-          top: 10rem; } }
+          margin: 1rem;
+          justify-content: center; } }
       .site-header__mobile-menu--icons--hamburger {
         width: 20px;
         height: 19px;
@@ -3600,7 +3737,26 @@ the exception being the .container class. That's defined in utilities.scss, so t
           transform: rotate(-45deg) scaleX(1.25) translateY(1px); }
       .site-header__mobile-menu--icons--search {
         margin-right: 4rem;
-        font-size: 2.5rem; }
+        font-size: 2.5rem;
+        /* 327px/16 = em */
+        /* 355px/16 = 22.1875em*/
+        /* 371px/16 = 25em */
+        /* 400px/16 = 25em */
+        /* 530px/16 = 33.125em*/
+        /* 562px/16 = 35.125em*/
+        /* 616px/16 = 38.5em */
+        /* 767px/16 = 47.9375em */
+        /* 782px/16 = 48.875em. This one's needed by the hamburger icon, so the wp-admin bar doesn't block it. wp-admin bar changes sizes at 782px. */
+        /* 800px/16 = 50em */
+        /* 1000px/16 = 62.5em*/
+        /* 1200px/16 = 75em*/
+        /* 1500px/16 = 93.75em*/
+        /* 1860px/16 = 116.25em   */ }
+        @media only screen and (max-width: 22.1875em) {
+          .site-header__mobile-menu--icons--search {
+            margin-right: 0;
+            margin-left: 9rem;
+            font-size: 5.5rem; } }
   .site-header__menu-content {
     opacity: 0;
     transform: scale(1.2);
@@ -3634,9 +3790,10 @@ the exception being the .container class. That's defined in utilities.scss, so t
       background-color: #000;
       top: 3.2rem;
       right: 9rem;
+      /* 327px/16 = em */
       /* 355px/16 = 22.1875em*/
-      /* 400px/16 = 25em */
       /* 371px/16 = 25em */
+      /* 400px/16 = 25em */
       /* 530px/16 = 33.125em*/
       /* 562px/16 = 35.125em*/
       /* 616px/16 = 38.5em */
@@ -3649,9 +3806,10 @@ the exception being the .container class. That's defined in utilities.scss, so t
       /* 1860px/16 = 116.25em   */
       /* this ensures we see the entire menu not just part of it */
       /* 240px/16 = 15em */
+      /* 327px/16 = em */
       /* 355px/16 = 22.1875em*/
-      /* 400px/16 = 25em */
       /* 371px/16 = 25em */
+      /* 400px/16 = 25em */
       /* 530px/16 = 33.125em*/
       /* 562px/16 = 35.125em*/
       /* 616px/16 = 38.5em */
@@ -3671,9 +3829,10 @@ the exception being the .container class. That's defined in utilities.scss, so t
           top: 12rem; } }
       .site-header__menu-content--is-visible a {
         font-size: 1.5rem;
+        /* 327px/16 = em */
         /* 355px/16 = 22.1875em*/
-        /* 400px/16 = 25em */
         /* 371px/16 = 25em */
+        /* 400px/16 = 25em */
         /* 530px/16 = 33.125em*/
         /* 562px/16 = 35.125em*/
         /* 616px/16 = 38.5em */
@@ -3692,9 +3851,10 @@ the exception being the .container class. That's defined in utilities.scss, so t
     .site-header__menu-content__util {
       padding: 0 0 0 20px;
       /*@media (min-width: 47.9375em) {*/
+      /* 327px/16 = em */
       /* 355px/16 = 22.1875em*/
-      /* 400px/16 = 25em */
       /* 371px/16 = 25em */
+      /* 400px/16 = 25em */
       /* 530px/16 = 33.125em*/
       /* 562px/16 = 35.125em*/
       /* 616px/16 = 38.5em */
@@ -3714,9 +3874,10 @@ the exception being the .container class. That's defined in utilities.scss, so t
     .site-header__menu-content__btn {
       margin-right: 20px;
       /*@media (min-width: 47.9375em) {*/
+      /* 327px/16 = em */
       /* 355px/16 = 22.1875em*/
-      /* 400px/16 = 25em */
       /* 371px/16 = 25em */
+      /* 400px/16 = 25em */
       /* 530px/16 = 33.125em*/
       /* 562px/16 = 35.125em*/
       /* 616px/16 = 38.5em */
@@ -3770,9 +3931,10 @@ the exception being the .container class. That's defined in utilities.scss, so t
 .wrapper {
   padding-left: 3.7rem;
   padding-right: 3.7rem;
+  /* 327px/16 = em */
   /* 355px/16 = 22.1875em*/
-  /* 400px/16 = 25em */
   /* 371px/16 = 25em */
+  /* 400px/16 = 25em */
   /* 530px/16 = 33.125em*/
   /* 562px/16 = 35.125em*/
   /* 616px/16 = 38.5em */
