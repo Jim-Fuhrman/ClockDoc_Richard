@@ -42,6 +42,10 @@
     backface-visibility: hidden;
     margin-bottom: 2rem;
 
+    @include respondDesktop(atSmallest) {
+      display: none;
+    }
+
     &--main {
       display: block;
       font-size: 8rem;
@@ -96,6 +100,11 @@
       display: block;
       transition: all 0.2s;
       position: relative;
+
+      @include respondDesktop(atSmallest) {
+        display: none;
+      } /* On the smallest screen size the button wouldn't work when I hid the page-banner headings. I had to hide the page-banner headings on the smallest
+      screen size because they overlapped the mobile menu headings. The easiest solution is simply don't show the button on the smallest screen size. */
     }
 
     &::after {
