@@ -1,5 +1,5 @@
-<?php
-      $bkgdWatch = '/images/shutterstock_JimF_Flat_Watch_SilverBand.jpg';  
+<?php  
+      $bkgdWatch = '/images/shutterstock_Jimf-Watch-Battery-Being-Replaced-300x150.jpg';
         ?>
         <!-- <div class="contactInfo__bkgd"> -->
         <div class="contactInfo__bkgd" 

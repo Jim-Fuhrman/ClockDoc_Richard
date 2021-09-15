@@ -927,228 +927,6 @@ the exception being the .container class. That's defined in utilities.scss, so t
     background-color: antiquewhite;
     color: maroon; }
 
-/* This is from clockdoc-richard website. */
-.contactInfo__bkgd {
-  position: relative;
-  display: block;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: bottom center;
-  height: 50vh;
-  width: 100vw;
-  /* 327px/16 = em */
-  /* 355px/16 = 22.1875em*/
-  /* 371px/16 = 25em */
-  /* 400px/16 = 25em */
-  /* 530px/16 = 33.125em*/
-  /* 562px/16 = 35.125em*/
-  /* 616px/16 = 38.5em */
-  /* 767px/16 = 47.9375em */
-  /* 782px/16 = 48.875em. This one's needed by the hamburger icon, so the wp-admin bar doesn't block it. wp-admin bar changes sizes at 782px. */
-  /* 800px/16 = 50em */
-  /* 1000px/16 = 62.5em*/
-  /* 1200px/16 = 75em*/
-  /* 1500px/16 = 93.75em*/
-  /* 1860px/16 = 116.25em   */
-  /* 327px/16 = em */
-  /* 355px/16 = 22.1875em*/
-  /* 371px/16 = 25em */
-  /* 400px/16 = 25em */
-  /* 530px/16 = 33.125em*/
-  /* 562px/16 = 35.125em*/
-  /* 616px/16 = 38.5em */
-  /* 767px/16 = 47.9375em */
-  /* 782px/16 = 48.875em. This one's needed by the hamburger icon, so the wp-admin bar doesn't block it. wp-admin bar changes sizes at 782px. */
-  /* 800px/16 = 50em */
-  /* 1000px/16 = 62.5em*/
-  /* 1200px/16 = 75em*/
-  /* 1500px/16 = 93.75em*/
-  /* 1860px/16 = 116.25em   */
-  /* 327px/16 = em */
-  /* 355px/16 = 22.1875em*/
-  /* 371px/16 = 25em */
-  /* 400px/16 = 25em */
-  /* 530px/16 = 33.125em*/
-  /* 562px/16 = 35.125em*/
-  /* 616px/16 = 38.5em */
-  /* 767px/16 = 47.9375em */
-  /* 782px/16 = 48.875em. This one's needed by the hamburger icon, so the wp-admin bar doesn't block it. wp-admin bar changes sizes at 782px. */
-  /* 800px/16 = 50em */
-  /* 1000px/16 = 62.5em*/
-  /* 1200px/16 = 75em*/
-  /* 1500px/16 = 93.75em*/
-  /* 1860px/16 = 116.25em   */
-  /* 327px/16 = em */
-  /* 355px/16 = 22.1875em*/
-  /* 371px/16 = 25em */
-  /* 400px/16 = 25em */
-  /* 530px/16 = 33.125em*/
-  /* 562px/16 = 35.125em*/
-  /* 616px/16 = 38.5em */
-  /* 767px/16 = 47.9375em */
-  /* 782px/16 = 48.875em. This one's needed by the hamburger icon, so the wp-admin bar doesn't block it. wp-admin bar changes sizes at 782px. */
-  /* 800px/16 = 50em */
-  /* 1000px/16 = 62.5em*/
-  /* 1200px/16 = 75em*/
-  /* 1500px/16 = 93.75em*/
-  /* 1860px/16 = 116.25em   */
-  /* 327px/16 = em */
-  /* 355px/16 = 22.1875em*/
-  /* 371px/16 = 25em */
-  /* 400px/16 = 25em */
-  /* 530px/16 = 33.125em*/
-  /* 562px/16 = 35.125em*/
-  /* 616px/16 = 38.5em */
-  /* 767px/16 = 47.9375em */
-  /* 782px/16 = 48.875em. This one's needed by the hamburger icon, so the wp-admin bar doesn't block it. wp-admin bar changes sizes at 782px. */
-  /* 800px/16 = 50em */
-  /* 1000px/16 = 62.5em*/
-  /* 1200px/16 = 75em*/
-  /* 1500px/16 = 93.75em*/
-  /* 1860px/16 = 116.25em   */
-  /* 240px/16 = 15em */
-  /* 327px/16 = em */
-  /* 355px/16 = 22.1875em*/
-  /* 371px/16 = 25em */
-  /* 400px/16 = 25em */
-  /* 530px/16 = 33.125em*/
-  /* 562px/16 = 35.125em*/
-  /* 616px/16 = 38.5em */
-  /* 767px/16 = 47.9375em */
-  /* 782px/16 = 48.875em. This one's needed by the hamburger icon, so the wp-admin bar doesn't block it. wp-admin bar changes sizes at 782px. */
-  /* 800px/16 = 50em */
-  /* 1000px/16 = 62.5em*/
-  /* 1200px/16 = 75em*/
-  /* 1500px/16 = 93.75em*/
-  /* 1860px/16 = 116.25em   */ }
-  @media only screen and (max-width: 47.9375em) {
-    .contactInfo__bkgd {
-      height: 105vh; } }
-  @media only screen and (max-width: 38.5em) {
-    .contactInfo__bkgd {
-      height: 75vh; } }
-  @media only screen and (max-width: 25em) {
-    .contactInfo__bkgd {
-      height: 70vh; } }
-  @media only screen and (max-width: 23.1875em) {
-    .contactInfo__bkgd {
-      height: 80vh; } }
-  @media only screen and (max-width: 22.1875em) {
-    .contactInfo__bkgd {
-      height: 90vh; } }
-  @media only screen and (max-width: 15em) {
-    .contactInfo__bkgd {
-      height: 130vh; } }
-  .contactInfo__bkgd--color {
-    background-size: cover;
-    height: 50vh;
-    width: 100vw;
-    background-image: linear-gradient(rgba(141, 43, 37, 0.7), rgba(141, 43, 37, 0.7));
-    position: absolute;
-    /* 327px/16 = em */
-    /* 355px/16 = 22.1875em*/
-    /* 371px/16 = 25em */
-    /* 400px/16 = 25em */
-    /* 530px/16 = 33.125em*/
-    /* 562px/16 = 35.125em*/
-    /* 616px/16 = 38.5em */
-    /* 767px/16 = 47.9375em */
-    /* 782px/16 = 48.875em. This one's needed by the hamburger icon, so the wp-admin bar doesn't block it. wp-admin bar changes sizes at 782px. */
-    /* 800px/16 = 50em */
-    /* 1000px/16 = 62.5em*/
-    /* 1200px/16 = 75em*/
-    /* 1500px/16 = 93.75em*/
-    /* 1860px/16 = 116.25em   */
-    /* 327px/16 = em */
-    /* 355px/16 = 22.1875em*/
-    /* 371px/16 = 25em */
-    /* 400px/16 = 25em */
-    /* 530px/16 = 33.125em*/
-    /* 562px/16 = 35.125em*/
-    /* 616px/16 = 38.5em */
-    /* 767px/16 = 47.9375em */
-    /* 782px/16 = 48.875em. This one's needed by the hamburger icon, so the wp-admin bar doesn't block it. wp-admin bar changes sizes at 782px. */
-    /* 800px/16 = 50em */
-    /* 1000px/16 = 62.5em*/
-    /* 1200px/16 = 75em*/
-    /* 1500px/16 = 93.75em*/
-    /* 1860px/16 = 116.25em   */
-    /* 327px/16 = em */
-    /* 355px/16 = 22.1875em*/
-    /* 371px/16 = 25em */
-    /* 400px/16 = 25em */
-    /* 530px/16 = 33.125em*/
-    /* 562px/16 = 35.125em*/
-    /* 616px/16 = 38.5em */
-    /* 767px/16 = 47.9375em */
-    /* 782px/16 = 48.875em. This one's needed by the hamburger icon, so the wp-admin bar doesn't block it. wp-admin bar changes sizes at 782px. */
-    /* 800px/16 = 50em */
-    /* 1000px/16 = 62.5em*/
-    /* 1200px/16 = 75em*/
-    /* 1500px/16 = 93.75em*/
-    /* 1860px/16 = 116.25em   */
-    /* 327px/16 = em */
-    /* 355px/16 = 22.1875em*/
-    /* 371px/16 = 25em */
-    /* 400px/16 = 25em */
-    /* 530px/16 = 33.125em*/
-    /* 562px/16 = 35.125em*/
-    /* 616px/16 = 38.5em */
-    /* 767px/16 = 47.9375em */
-    /* 782px/16 = 48.875em. This one's needed by the hamburger icon, so the wp-admin bar doesn't block it. wp-admin bar changes sizes at 782px. */
-    /* 800px/16 = 50em */
-    /* 1000px/16 = 62.5em*/
-    /* 1200px/16 = 75em*/
-    /* 1500px/16 = 93.75em*/
-    /* 1860px/16 = 116.25em   */
-    /* 327px/16 = em */
-    /* 355px/16 = 22.1875em*/
-    /* 371px/16 = 25em */
-    /* 400px/16 = 25em */
-    /* 530px/16 = 33.125em*/
-    /* 562px/16 = 35.125em*/
-    /* 616px/16 = 38.5em */
-    /* 767px/16 = 47.9375em */
-    /* 782px/16 = 48.875em. This one's needed by the hamburger icon, so the wp-admin bar doesn't block it. wp-admin bar changes sizes at 782px. */
-    /* 800px/16 = 50em */
-    /* 1000px/16 = 62.5em*/
-    /* 1200px/16 = 75em*/
-    /* 1500px/16 = 93.75em*/
-    /* 1860px/16 = 116.25em   */
-    /* 240px/16 = 15em */
-    /* 327px/16 = em */
-    /* 355px/16 = 22.1875em*/
-    /* 371px/16 = 25em */
-    /* 400px/16 = 25em */
-    /* 530px/16 = 33.125em*/
-    /* 562px/16 = 35.125em*/
-    /* 616px/16 = 38.5em */
-    /* 767px/16 = 47.9375em */
-    /* 782px/16 = 48.875em. This one's needed by the hamburger icon, so the wp-admin bar doesn't block it. wp-admin bar changes sizes at 782px. */
-    /* 800px/16 = 50em */
-    /* 1000px/16 = 62.5em*/
-    /* 1200px/16 = 75em*/
-    /* 1500px/16 = 93.75em*/
-    /* 1860px/16 = 116.25em   */ }
-    @media only screen and (max-width: 47.9375em) {
-      .contactInfo__bkgd--color {
-        height: 105vh; } }
-    @media only screen and (max-width: 38.5em) {
-      .contactInfo__bkgd--color {
-        height: 75vh; } }
-    @media only screen and (max-width: 25em) {
-      .contactInfo__bkgd--color {
-        height: 70vh; } }
-    @media only screen and (max-width: 23.1875em) {
-      .contactInfo__bkgd--color {
-        height: 80vh; } }
-    @media only screen and (max-width: 22.1875em) {
-      .contactInfo__bkgd--color {
-        height: 90vh; } }
-    @media only screen and (max-width: 15em) {
-      .contactInfo__bkgd--color {
-        height: 130vh; } }
-
 .contactInfo {
   top: 0;
   bottom: 0;
@@ -1346,6 +1124,226 @@ the exception being the .container class. That's defined in utilities.scss, so t
     @media only screen and (max-width: 22.1875em) {
       .contactInfo p {
         font-size: 3em; } }
+  .contactInfo__bkgd {
+    position: relative;
+    display: block;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom center;
+    height: 50vh;
+    width: 100vw;
+    /* 327px/16 = em */
+    /* 355px/16 = 22.1875em*/
+    /* 371px/16 = 25em */
+    /* 400px/16 = 25em */
+    /* 530px/16 = 33.125em*/
+    /* 562px/16 = 35.125em*/
+    /* 616px/16 = 38.5em */
+    /* 767px/16 = 47.9375em */
+    /* 782px/16 = 48.875em. This one's needed by the hamburger icon, so the wp-admin bar doesn't block it. wp-admin bar changes sizes at 782px. */
+    /* 800px/16 = 50em */
+    /* 1000px/16 = 62.5em*/
+    /* 1200px/16 = 75em*/
+    /* 1500px/16 = 93.75em*/
+    /* 1860px/16 = 116.25em   */
+    /* 327px/16 = em */
+    /* 355px/16 = 22.1875em*/
+    /* 371px/16 = 25em */
+    /* 400px/16 = 25em */
+    /* 530px/16 = 33.125em*/
+    /* 562px/16 = 35.125em*/
+    /* 616px/16 = 38.5em */
+    /* 767px/16 = 47.9375em */
+    /* 782px/16 = 48.875em. This one's needed by the hamburger icon, so the wp-admin bar doesn't block it. wp-admin bar changes sizes at 782px. */
+    /* 800px/16 = 50em */
+    /* 1000px/16 = 62.5em*/
+    /* 1200px/16 = 75em*/
+    /* 1500px/16 = 93.75em*/
+    /* 1860px/16 = 116.25em   */
+    /* 327px/16 = em */
+    /* 355px/16 = 22.1875em*/
+    /* 371px/16 = 25em */
+    /* 400px/16 = 25em */
+    /* 530px/16 = 33.125em*/
+    /* 562px/16 = 35.125em*/
+    /* 616px/16 = 38.5em */
+    /* 767px/16 = 47.9375em */
+    /* 782px/16 = 48.875em. This one's needed by the hamburger icon, so the wp-admin bar doesn't block it. wp-admin bar changes sizes at 782px. */
+    /* 800px/16 = 50em */
+    /* 1000px/16 = 62.5em*/
+    /* 1200px/16 = 75em*/
+    /* 1500px/16 = 93.75em*/
+    /* 1860px/16 = 116.25em   */
+    /* 327px/16 = em */
+    /* 355px/16 = 22.1875em*/
+    /* 371px/16 = 25em */
+    /* 400px/16 = 25em */
+    /* 530px/16 = 33.125em*/
+    /* 562px/16 = 35.125em*/
+    /* 616px/16 = 38.5em */
+    /* 767px/16 = 47.9375em */
+    /* 782px/16 = 48.875em. This one's needed by the hamburger icon, so the wp-admin bar doesn't block it. wp-admin bar changes sizes at 782px. */
+    /* 800px/16 = 50em */
+    /* 1000px/16 = 62.5em*/
+    /* 1200px/16 = 75em*/
+    /* 1500px/16 = 93.75em*/
+    /* 1860px/16 = 116.25em   */
+    /* 327px/16 = em */
+    /* 355px/16 = 22.1875em*/
+    /* 371px/16 = 25em */
+    /* 400px/16 = 25em */
+    /* 530px/16 = 33.125em*/
+    /* 562px/16 = 35.125em*/
+    /* 616px/16 = 38.5em */
+    /* 767px/16 = 47.9375em */
+    /* 782px/16 = 48.875em. This one's needed by the hamburger icon, so the wp-admin bar doesn't block it. wp-admin bar changes sizes at 782px. */
+    /* 800px/16 = 50em */
+    /* 1000px/16 = 62.5em*/
+    /* 1200px/16 = 75em*/
+    /* 1500px/16 = 93.75em*/
+    /* 1860px/16 = 116.25em   */
+    /* 240px/16 = 15em */
+    /* 327px/16 = em */
+    /* 355px/16 = 22.1875em*/
+    /* 371px/16 = 25em */
+    /* 400px/16 = 25em */
+    /* 530px/16 = 33.125em*/
+    /* 562px/16 = 35.125em*/
+    /* 616px/16 = 38.5em */
+    /* 767px/16 = 47.9375em */
+    /* 782px/16 = 48.875em. This one's needed by the hamburger icon, so the wp-admin bar doesn't block it. wp-admin bar changes sizes at 782px. */
+    /* 800px/16 = 50em */
+    /* 1000px/16 = 62.5em*/
+    /* 1200px/16 = 75em*/
+    /* 1500px/16 = 93.75em*/
+    /* 1860px/16 = 116.25em   */ }
+    @media only screen and (max-width: 47.9375em) {
+      .contactInfo__bkgd {
+        height: 105vh; } }
+    @media only screen and (max-width: 38.5em) {
+      .contactInfo__bkgd {
+        height: 75vh; } }
+    @media only screen and (max-width: 25em) {
+      .contactInfo__bkgd {
+        height: 70vh; } }
+    @media only screen and (max-width: 23.1875em) {
+      .contactInfo__bkgd {
+        height: 80vh; } }
+    @media only screen and (max-width: 22.1875em) {
+      .contactInfo__bkgd {
+        height: 90vh; } }
+    @media only screen and (max-width: 15em) {
+      .contactInfo__bkgd {
+        height: 130vh; } }
+    .contactInfo__bkgd--color {
+      background-size: cover;
+      height: 50vh;
+      width: 100vw;
+      background-image: linear-gradient(rgba(141, 43, 37, 0.7), rgba(141, 43, 37, 0.7));
+      position: absolute;
+      /* 327px/16 = em */
+      /* 355px/16 = 22.1875em*/
+      /* 371px/16 = 25em */
+      /* 400px/16 = 25em */
+      /* 530px/16 = 33.125em*/
+      /* 562px/16 = 35.125em*/
+      /* 616px/16 = 38.5em */
+      /* 767px/16 = 47.9375em */
+      /* 782px/16 = 48.875em. This one's needed by the hamburger icon, so the wp-admin bar doesn't block it. wp-admin bar changes sizes at 782px. */
+      /* 800px/16 = 50em */
+      /* 1000px/16 = 62.5em*/
+      /* 1200px/16 = 75em*/
+      /* 1500px/16 = 93.75em*/
+      /* 1860px/16 = 116.25em   */
+      /* 327px/16 = em */
+      /* 355px/16 = 22.1875em*/
+      /* 371px/16 = 25em */
+      /* 400px/16 = 25em */
+      /* 530px/16 = 33.125em*/
+      /* 562px/16 = 35.125em*/
+      /* 616px/16 = 38.5em */
+      /* 767px/16 = 47.9375em */
+      /* 782px/16 = 48.875em. This one's needed by the hamburger icon, so the wp-admin bar doesn't block it. wp-admin bar changes sizes at 782px. */
+      /* 800px/16 = 50em */
+      /* 1000px/16 = 62.5em*/
+      /* 1200px/16 = 75em*/
+      /* 1500px/16 = 93.75em*/
+      /* 1860px/16 = 116.25em   */
+      /* 327px/16 = em */
+      /* 355px/16 = 22.1875em*/
+      /* 371px/16 = 25em */
+      /* 400px/16 = 25em */
+      /* 530px/16 = 33.125em*/
+      /* 562px/16 = 35.125em*/
+      /* 616px/16 = 38.5em */
+      /* 767px/16 = 47.9375em */
+      /* 782px/16 = 48.875em. This one's needed by the hamburger icon, so the wp-admin bar doesn't block it. wp-admin bar changes sizes at 782px. */
+      /* 800px/16 = 50em */
+      /* 1000px/16 = 62.5em*/
+      /* 1200px/16 = 75em*/
+      /* 1500px/16 = 93.75em*/
+      /* 1860px/16 = 116.25em   */
+      /* 327px/16 = em */
+      /* 355px/16 = 22.1875em*/
+      /* 371px/16 = 25em */
+      /* 400px/16 = 25em */
+      /* 530px/16 = 33.125em*/
+      /* 562px/16 = 35.125em*/
+      /* 616px/16 = 38.5em */
+      /* 767px/16 = 47.9375em */
+      /* 782px/16 = 48.875em. This one's needed by the hamburger icon, so the wp-admin bar doesn't block it. wp-admin bar changes sizes at 782px. */
+      /* 800px/16 = 50em */
+      /* 1000px/16 = 62.5em*/
+      /* 1200px/16 = 75em*/
+      /* 1500px/16 = 93.75em*/
+      /* 1860px/16 = 116.25em   */
+      /* 327px/16 = em */
+      /* 355px/16 = 22.1875em*/
+      /* 371px/16 = 25em */
+      /* 400px/16 = 25em */
+      /* 530px/16 = 33.125em*/
+      /* 562px/16 = 35.125em*/
+      /* 616px/16 = 38.5em */
+      /* 767px/16 = 47.9375em */
+      /* 782px/16 = 48.875em. This one's needed by the hamburger icon, so the wp-admin bar doesn't block it. wp-admin bar changes sizes at 782px. */
+      /* 800px/16 = 50em */
+      /* 1000px/16 = 62.5em*/
+      /* 1200px/16 = 75em*/
+      /* 1500px/16 = 93.75em*/
+      /* 1860px/16 = 116.25em   */
+      /* 240px/16 = 15em */
+      /* 327px/16 = em */
+      /* 355px/16 = 22.1875em*/
+      /* 371px/16 = 25em */
+      /* 400px/16 = 25em */
+      /* 530px/16 = 33.125em*/
+      /* 562px/16 = 35.125em*/
+      /* 616px/16 = 38.5em */
+      /* 767px/16 = 47.9375em */
+      /* 782px/16 = 48.875em. This one's needed by the hamburger icon, so the wp-admin bar doesn't block it. wp-admin bar changes sizes at 782px. */
+      /* 800px/16 = 50em */
+      /* 1000px/16 = 62.5em*/
+      /* 1200px/16 = 75em*/
+      /* 1500px/16 = 93.75em*/
+      /* 1860px/16 = 116.25em   */ }
+      @media only screen and (max-width: 47.9375em) {
+        .contactInfo__bkgd--color {
+          height: 105vh; } }
+      @media only screen and (max-width: 38.5em) {
+        .contactInfo__bkgd--color {
+          height: 75vh; } }
+      @media only screen and (max-width: 25em) {
+        .contactInfo__bkgd--color {
+          height: 70vh; } }
+      @media only screen and (max-width: 23.1875em) {
+        .contactInfo__bkgd--color {
+          height: 80vh; } }
+      @media only screen and (max-width: 22.1875em) {
+        .contactInfo__bkgd--color {
+          height: 90vh; } }
+      @media only screen and (max-width: 15em) {
+        .contactInfo__bkgd--color {
+          height: 130vh; } }
   .contactInfo__business-hours {
     padding: 1em;
     width: 35%;
@@ -1459,9 +1457,6 @@ the exception being the .container class. That's defined in utilities.scss, so t
   .contactInfo__link:hover {
     color: #0d3b66;
     text-decoration: underline; }
-  .contactInfo_inner {
-    border-top: 1px dotted #dedede;
-    padding-top: 3.5rem; }
 
 .contactUs {
   position: relative;
@@ -2127,6 +2122,56 @@ the exception being the .container class. That's defined in utilities.scss, so t
     opacity: 1;
     transform: translate(0); } }
 
+.page-section {
+  position: relative;
+  display: block;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  opacity: 1;
+  /*
+  height: 100%;
+  width: 100%;
+  */
+  padding-top: 5.6rem;
+  padding-bottom: 5.6rem;
+  /* 327px/16 = em */
+  /* 355px/16 = 22.1875em*/
+  /* 371px/16 = 25em */
+  /* 400px/16 = 25em */
+  /* 530px/16 = 33.125em*/
+  /* 562px/16 = 35.125em*/
+  /* 616px/16 = 38.5em */
+  /* 767px/16 = 47.9375em */
+  /* 782px/16 = 48.875em. This one's needed by the hamburger icon, so the wp-admin bar doesn't block it. wp-admin bar changes sizes at 782px. */
+  /* 800px/16 = 50em */
+  /* 1000px/16 = 62.5em*/
+  /* 1200px/16 = 75em*/
+  /* 1500px/16 = 93.75em*/
+  /* 1860px/16 = 116.25em   */ }
+  @media only screen and (max-width: 47.9375em) {
+    .page-section {
+      padding-top: 3.5rem;
+      padding-bottom: 3.5rem; } }
+  .page-section__bkgd-image {
+    position: relative;
+    height: 100%;
+    width: 100%;
+    opacity: 0.33;
+    background-position: bottom center;
+    background-size: cover;
+    background-repeat: no-repeat; }
+  .page-section__content {
+    position: absolute;
+    z-index: 2; }
+  .page-section--white {
+    background-color: #fff; }
+  .page-section--beige {
+    background-color: #faf0ca; }
+  .page-section p:last-of-type {
+    margin-bottom: 0; }
+
 .postpage-banner {
   background-color: #000;
   padding: 80px 0 40px 0;
@@ -2783,34 +2828,6 @@ the exception being the .container class. That's defined in utilities.scss, so t
 
 .remove-favorite:hover {
   background-color: #dedede; }
-
-.page-section {
-  padding-top: 1.6rem;
-  padding-bottom: 1.6rem;
-  /* 327px/16 = em */
-  /* 355px/16 = 22.1875em*/
-  /* 371px/16 = 25em */
-  /* 400px/16 = 25em */
-  /* 530px/16 = 33.125em*/
-  /* 562px/16 = 35.125em*/
-  /* 616px/16 = 38.5em */
-  /* 767px/16 = 47.9375em */
-  /* 782px/16 = 48.875em. This one's needed by the hamburger icon, so the wp-admin bar doesn't block it. wp-admin bar changes sizes at 782px. */
-  /* 800px/16 = 50em */
-  /* 1000px/16 = 62.5em*/
-  /* 1200px/16 = 75em*/
-  /* 1500px/16 = 93.75em*/
-  /* 1860px/16 = 116.25em   */ }
-  @media only screen and (max-width: 47.9375em) {
-    .page-section {
-      padding-top: 3.5rem;
-      padding-bottom: 3.5rem; } }
-  .page-section--white {
-    background-color: #fff; }
-  .page-section--beige {
-    background-color: #faf0ca; }
-  .page-section p:last-of-type {
-    margin-bottom: 0; }
 
 .school-logo-text {
   position: relative;

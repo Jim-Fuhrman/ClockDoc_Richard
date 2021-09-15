@@ -1,65 +1,3 @@
-/* This is from clockdoc-richard website. */
-.contactInfo__bkgd {
-  position: relative;
-  display: block;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: bottom center;
-  height: 50vh;
-  width: 100vw;
-
-  @include respondDesktop(atMedium) {
-    height: 105vh;
-  }
-  @include respondDesktop(atMediumSmall) {
-    height: 75vh;
-  }
-
-  @include respondDesktop(at400) {
-    height: 70vh;
-  }
-  @include respondDesktop(at371) {
-    height: 80vh;
-  }
-  @include respondDesktop(atSmaller) {
-    height: 90vh;
-  }
-  @include respondDesktop(atSmallest) {
-    height: 130vh;
-  }
-
-  &--color {
-    background-size: cover;
-    height: 50vh;
-    width: 100vw;
-    background-image: linear-gradient(
-      rgba(141, 43, 37, 0.7),
-      rgba(141, 43, 37, 0.7)
-    );
-    position: absolute;
-
-    @include respondDesktop(atMedium) {
-      height: 105vh;
-    }
-    @include respondDesktop(atMediumSmall) {
-      height: 75vh;
-    }
-
-    @include respondDesktop(at400) {
-      height: 70vh;
-    }
-    @include respondDesktop(at371) {
-      height: 80vh;
-    }
-    @include respondDesktop(atSmaller) {
-      height: 90vh;
-    }
-    @include respondDesktop(atSmallest) {
-      height: 130vh;
-    }
-  }
-}
-
 .contactInfo {
   top: 0;
   bottom: 0;
@@ -125,6 +63,67 @@
     }
   }
 
+  &__bkgd {
+    position: relative;
+    display: block;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom center;
+    height: 50vh;
+    width: 100vw;
+
+    @include respondDesktop(atMedium) {
+      height: 105vh;
+    }
+    @include respondDesktop(atMediumSmall) {
+      height: 75vh;
+    }
+
+    @include respondDesktop(at400) {
+      height: 70vh;
+    }
+    @include respondDesktop(at371) {
+      height: 80vh;
+    }
+    @include respondDesktop(atSmaller) {
+      height: 90vh;
+    }
+    @include respondDesktop(atSmallest) {
+      height: 130vh;
+    }
+
+    &--color {
+      background-size: cover;
+      height: 50vh;
+      width: 100vw;
+      background-image: linear-gradient(
+        rgba(141, 43, 37, 0.7),
+        rgba(141, 43, 37, 0.7)
+      );
+      position: absolute;
+
+      @include respondDesktop(atMedium) {
+        height: 105vh;
+      }
+      @include respondDesktop(atMediumSmall) {
+        height: 75vh;
+      }
+
+      @include respondDesktop(at400) {
+        height: 70vh;
+      }
+      @include respondDesktop(at371) {
+        height: 80vh;
+      }
+      @include respondDesktop(atSmaller) {
+        height: 90vh;
+      }
+      @include respondDesktop(atSmallest) {
+        height: 130vh;
+      }
+    }
+  }
+
   &__business-hours {
     padding: 1em;
     width: 35%;
@@ -180,10 +179,5 @@
   &__link:hover {
     color: $mainBlue;
     text-decoration: underline;
-  }
-
-  &_inner {
-    border-top: 1px dotted #dedede;
-    padding-top: 3.5rem;
   }
 }
