@@ -93,6 +93,7 @@
     }
 
     &--color {
+      position: absolute;
       background-size: cover;
       height: 50vh;
       width: 100vw;
@@ -100,7 +101,6 @@
         rgba(141, 43, 37, 0.7),
         rgba(141, 43, 37, 0.7)
       );
-      position: absolute;
 
       @include respondDesktop(atMedium) {
         height: 105vh;

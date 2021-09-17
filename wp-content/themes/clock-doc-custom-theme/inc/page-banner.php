@@ -18,7 +18,7 @@ function pageBanner($args = NULL) {
     ?>
       <div class="postpage-banner">
         <div class="postpage-banner__bg-image" style="background-image: url(<?php echo $args['photo'];?>);"></div>
-        <div class="postpage-banner__content container container--narrow">
+        <div class="container container--narrow">
           <h1 class="postpage-banner__title"><?php echo $args['title'];?></h1>
           <div class="postpage-banner__intro">
             <p><?php echo $args['subtitle']; ?></p>

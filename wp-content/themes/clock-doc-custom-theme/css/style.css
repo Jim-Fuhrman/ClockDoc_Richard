@@ -1236,11 +1236,11 @@ the exception being the .container class. That's defined in utilities.scss, so t
       .contactInfo__bkgd {
         height: 130vh; } }
     .contactInfo__bkgd--color {
+      position: absolute;
       background-size: cover;
       height: 50vh;
       width: 100vw;
       background-image: linear-gradient(rgba(141, 43, 37, 0.7), rgba(141, 43, 37, 0.7));
-      position: absolute;
       /* 327px/16 = em */
       /* 355px/16 = 22.1875em*/
       /* 371px/16 = 25em */
@@ -2123,19 +2123,8 @@ the exception being the .container class. That's defined in utilities.scss, so t
     transform: translate(0); } }
 
 .page-section {
-  position: relative;
-  display: block;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  opacity: 1;
-  /*
-  height: 100%;
-  width: 100%;
-  */
-  padding-top: 5.6rem;
-  padding-bottom: 5.6rem;
+  padding-top: 1.6rem;
+  padding-bottom: 1.6rem;
   /* 327px/16 = em */
   /* 355px/16 = 22.1875em*/
   /* 371px/16 = 25em */
@@ -2154,21 +2143,6 @@ the exception being the .container class. That's defined in utilities.scss, so t
     .page-section {
       padding-top: 3.5rem;
       padding-bottom: 3.5rem; } }
-  .page-section__bkgd-image {
-    position: relative;
-    height: 100%;
-    width: 100%;
-    opacity: 0.33;
-    background-position: bottom center;
-    background-size: cover;
-    background-repeat: no-repeat; }
-  .page-section__content {
-    position: absolute;
-    z-index: 2; }
-  .page-section--white {
-    background-color: #fff; }
-  .page-section--beige {
-    background-color: #faf0ca; }
   .page-section p:last-of-type {
     margin-bottom: 0; }
 
@@ -2194,9 +2168,6 @@ the exception being the .container class. That's defined in utilities.scss, so t
     .postpage-banner {
       /* width <= 530px */
       padding: 130px 0 60px 0; } }
-  .postpage-banner__content {
-    position: relative;
-    z-index: 2; }
   .postpage-banner__title {
     font-family: "Roboto Condensed", sans-serif;
     font-weight: 300;

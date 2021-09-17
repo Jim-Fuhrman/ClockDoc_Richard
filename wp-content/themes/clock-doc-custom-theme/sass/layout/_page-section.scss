@@ -1,46 +1,9 @@
 .page-section {
-  position: relative;
-  display: block;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  opacity: 1;
-  /*
-  height: 100%;
-  width: 100%;
-  */
-
-  padding-top: 5.6rem;
-  padding-bottom: 5.6rem;
-
+  padding-top: 1.6rem;
+  padding-bottom: 1.6rem;
   @include respondDesktop(atMedium) {
     padding-top: 3.5rem;
     padding-bottom: 3.5rem;
-  }
-
-  &__bkgd-image {
-    position: relative;
-    height: 100%;
-    width: 100%;
-    opacity: 0.33;
-
-    background-position: bottom center;
-    background-size: cover;
-    background-repeat: no-repeat;
-  }
-
-  &__content {
-    position: absolute;
-    z-index: 2;
-  }
-
-  &--white {
-    background-color: #fff;
-  }
-
-  &--beige {
-    background-color: $beige;
   }
 
   p:last-of-type {
