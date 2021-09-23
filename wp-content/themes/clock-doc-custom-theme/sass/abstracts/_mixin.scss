@@ -42,11 +42,17 @@ I need to code them that way and not use a mixin. */
     } /* 240px/16 = 15em */
   }
 
+  @if $breakpoint == at280 {
+    @media only screen and (max-width: 17.5em) {
+      @content;
+    }
+  } /* 280px/16 = 17.5em */
+
   @if $breakpoint == at327 {
     @media only screen and (max-width: 20.4375em) {
       @content;
     }
-  } /* 327px/16 = em */
+  } /* 327px/16 = 20.4375em */
 
   @if $breakpoint == atSmaller {
     @media only screen and (max-width: 22.1875em) {
@@ -115,10 +121,10 @@ I need to code them that way and not use a mixin. */
   } /* 1200px/16 = 75em*/
 
   @if $breakpoint == atLarger {
-    @media only screen and (max-width: 93.75em) {
+    @media only screen and (max-width: 101.8125em) {
       @content;
     }
-  } /* 1500px/16 = 93.75em*/
+  } /* 1629px/16 = 101.8125em*/
 
   @if $breakpoint == atLargest {
     @media only screen and (min-width: 116.25em) {

@@ -1,22 +1,11 @@
 .products-background {
-  /* 38 is the page id of the Products page.  This class used to be called products-background. page-id-38 is what it will be called later. */
+  /* 38 is the page id of the Products page. */
   position: relative;
   background-color: transparent;
-  height: 100vh;
-  width: 100vw;
   display: flex;
-
-  @include respondDesktop(atLarge) {
-    height: 175vh;
-  }
-
-  @include respondDesktop(atSmaller) {
-    height: 225vh;
-  }
-
-  @include respondDesktop(atSmallest) {
-    height: 400vh;
-  }
+  /* Note: The height & width of .products-background are adjusted for smaller screens in ProdGalHeight.js.  
+  They worked a lot better there than here. I didn't always get the desired results adjusting products-background 
+  height here. The bottom rows of the products gallery were often truncated. I tried using @include respondDesktops. */
 }
 
 .white-cover {
@@ -71,22 +60,34 @@
   }
 }
 
-.products-foreground {
+.products-miscellaneous {
+  flex: 1;
+  position: absolute;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: bottom center;
+  width: 50vw;
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  right: 0;
+
+  &::before {
+    /* if I want some level of opacity, I'll code this. */
+    position: absolute;
+    content: "";
+    width: 50%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0);
+    z-index: -1;
+  }
+}
+
+.products-heading-and-gallery {
   /* This includes the heading "Not all items pictured may be in stock" */
   top: 0;
   left: 0;
-  transform: translate(50%, 0%); /* -50% will overlap the page banner. */
   font-size: 1.5rem;
-
-  @include respondDesktop(atLarge) {
-    transform: translate(5%, 0%);
-  }
-  @include respondDesktop(atMedium) {
-    transform: translate(15%, 0%);
-  }
-  @include respondDesktop(atMediumSmall) {
-    transform: translate(1%, 0%);
-  }
 }
 
 .gallery {
@@ -261,28 +262,12 @@
         grid-column: 1 / 4;
       }
     }
-  }
-}
 
-.products-miscellaneous {
-  flex: 1;
-  position: absolute;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: bottom center;
-  width: 50vw;
-  top: 0;
-  bottom: 0;
-  left: 50%;
-  right: 0;
-
-  &::before {
-    /* if I want some level of opacity, I'll code this. */
-    position: absolute;
-    content: "";
-    width: 50%;
-    height: 100%;
-    background-color: rgba(255, 255, 255, 0);
-    z-index: -1;
+    &__img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+    }
   }
 }

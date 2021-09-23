@@ -3049,6 +3049,62 @@ class MobileMenu {
 
 /***/ }),
 
+/***/ "./src/ProdGalHeight.js":
+/*!******************************!*\
+  !*** ./src/ProdGalHeight.js ***!
+  \******************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+class ProdGalHeight {
+  constructor() {
+    this.productGallery = document.querySelector(".products-background");
+    this.calcHeight();
+  }
+
+  calcHeight() {
+    if (window.innerWidth <= 355) {
+      switch (window.innerHeight) {
+        case 480
+        /* iphone 4 has a height of 480px */
+        :
+          this.productGallery.style.height = "310vh";
+          break;
+
+        case 533
+        /* Nokia Lumia 520 has a height of 533px */
+        :
+          this.productGallery.style.height = "280vh";
+          break;
+
+        case 568
+        /* iphone5/SE has a height of 568px */
+        :
+          this.productGallery.style.height = "260vh";
+          break;
+
+        default:
+          this.productGallery.style.height = "310vh";
+      }
+    }
+
+    if (window.innerWidth <= 280) {
+      this.productGallery.style.height = "200vh";
+    }
+
+    if (window.innerWidth <= 240) {
+      this.productGallery.style.height = "350vh";
+    }
+  }
+
+}
+
+/* harmony default export */ __webpack_exports__["default"] = (ProdGalHeight);
+
+/***/ }),
+
 /***/ "./src/RevealLogin.js":
 /*!****************************!*\
   !*** ./src/RevealLogin.js ***!
@@ -3309,8 +3365,10 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _RevealLogin__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./RevealLogin */ "./src/RevealLogin.js");
 /* harmony import */ var _Search__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./Search */ "./src/Search.js");
 /* harmony import */ var _UpArrow__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./UpArrow */ "./src/UpArrow.js");
+/* harmony import */ var _ProdGalHeight__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./ProdGalHeight */ "./src/ProdGalHeight.js");
 
 /*import ImportantNoticeCheck from "./ImportantNoticeCheck";*/
+
 
 
 
@@ -3324,6 +3382,7 @@ let navBarModify = new _navBarModify__WEBPACK_IMPORTED_MODULE_2__["default"]();
 let revealLogin = new _RevealLogin__WEBPACK_IMPORTED_MODULE_3__["default"]();
 let letsSearch = new _Search__WEBPACK_IMPORTED_MODULE_4__["default"]();
 let upArrow = new _UpArrow__WEBPACK_IMPORTED_MODULE_5__["default"]();
+let prodGalHeight = new _ProdGalHeight__WEBPACK_IMPORTED_MODULE_6__["default"]();
 
 /***/ }),
 
@@ -3364,7 +3423,7 @@ class NavBarModify {
 
 
   fixNav() {
-    if (window.innerWidth < 600) {
+    if (window.innerWidth < 1040) {
       this.fixNavOnSmallScreens();
     } else {
       if (window.scrollY > this.nav.offsetHeight + 10) {

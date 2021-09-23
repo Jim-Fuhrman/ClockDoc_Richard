@@ -5,6 +5,7 @@
   background-position: center center;
   height: 100vh;
   width: 100vw;
+  overflow: hidden;
   /* z-index: -2;  This line of code caused the anchor labeled "Click to see our products" not to work. */
 
   &::before {

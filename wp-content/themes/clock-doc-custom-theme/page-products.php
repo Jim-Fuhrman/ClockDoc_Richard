@@ -1,4 +1,3 @@
-<!-- This is the previous version of ClockDoc-CortlandNE's content-products.php file. -->
 <?php get_header(); 
 while(have_posts()) {
     the_post();
@@ -18,7 +17,7 @@ while(have_posts()) {
                 <div class="full-width-split__inner white-cover"></div>
             </div>
         </div>
-        <div class="products-foreground">
+        <div class="container container--narrow products-heading-and-gallery">
             <h1 class="t-maroon t-cursive t-bold t-center">Not all items pictured may be in stock</h1>    
             <?php get_template_part("template-parts/content", "products-gallery");?>
         </div>

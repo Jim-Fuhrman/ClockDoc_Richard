@@ -126,19 +126,21 @@
   /* .nav .container automatically puts the logo and nav menu in a row side by side. */
 
   &__mobile-menu {
+    /* If you adjust this @media, you need to adjust src/NavBarModify.js also. 
+    The fixNav method will need an adjustment where it compares innerwidth. */
     @media (min-width: 65em) {
       display: none;
     } /* 1040px/16px = 65em */
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: transparent;
+    background-color: #000;
     color: #fff;
     height: 7.5rem;
 
-    @include respondDesktop(atSmall) {
+    /*@include respondDesktop(atSmall) {
       margin-top: 1rem;
-    }
+    }*/
     @include respondDesktop(atSmaller) {
       flex-direction: column;
       flex: 1;

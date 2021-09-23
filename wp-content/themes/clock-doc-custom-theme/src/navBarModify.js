@@ -23,7 +23,7 @@ class NavBarModify {
   /* We don't want the doctor's kit icon to overlap into the page-banner title. */
   /* On screen sizes smaller than 616px we don't want the hamburger icon to overlap anything either. */
   fixNav() {
-    if (window.innerWidth < 600) {
+    if (window.innerWidth < 1040) {
       this.fixNavOnSmallScreens();
     } else {
       if (window.scrollY > this.nav.offsetHeight + 10) {

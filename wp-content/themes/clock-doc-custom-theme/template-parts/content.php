@@ -2,12 +2,12 @@
 get_header();
 /*$bkgdClock = '/shutterstock_Clock_Ancient_clear-1024x591.jpg';*/
 /* in fictional-university library-hero.jpg is 1920x796 or 247kb. It loads quickly on my i-phone, so the following 2 choices should be just fine!*/
-/*$bkgdClock = '/images/Bouc_Grandfather_ClockFace-1-768x1024.jpg'; /* 228kb*/
-$bkgdClock = '/images/Grandfather_Clockface_Thirteen-768x1024.jpg'; /* 185kb */
+/*$bkgdClock = '/images/Bouc_Grandfather_ClockFace-1-768x1024.jpg'; /*  228kb */
+$bkgdClock = '/images/Grandfather_Clockface_Thirteen-225x300.jpg';  /* 23.9kb */
+$bkgdClock = '/images/Grandfather_Clockface_Thirteen-480x650.jpg';  /* 89.6kb */
+$bkgdClock = '/images/Grandfather_Clockface_Thirteen-768x1024.jpg'; /*  185kb */
 ?>
 <!-- topOfWebsite is used by the content-upArrow.php -->
-<!-- -->
-
 <header id="topOfWebsite" class="page-banner" style="background-image: url(<?php echo get_theme_file_uri($bkgdClock);?>">  
   <div class="page-banner__text-box">  <!-- text-box is position: absolute; its parent class page-banner is position: relative -->
     <h1 class="page-banner__heading">  <!-- heading is position: undefined-->
