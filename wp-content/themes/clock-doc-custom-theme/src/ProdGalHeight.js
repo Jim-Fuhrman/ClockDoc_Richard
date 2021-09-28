@@ -1,7 +1,9 @@
 class ProdGalHeight {
   constructor() {
     this.productGallery = document.querySelector(".products-background");
-    this.calcHeight();
+    if (this.productGallery !== null) {
+      this.calcHeight();
+    }
   }
   calcHeight() {
     if (window.innerWidth <= 355) {

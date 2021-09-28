@@ -3025,20 +3025,18 @@ module.exports = g;
 __webpack_require__.r(__webpack_exports__);
 class MobileMenu {
   constructor() {
-    this.mobileMenuIcon = document.querySelector(".site-header__mobile-menu--icons--hamburger");
+    this.hamburgerIcon = document.querySelector(".site-header__mobile-menu--icons--hamburger");
     this.menuContent = document.querySelector(".site-header__menu-content");
-    this.siteHeader = document.querySelector(".site-header");
     this.events();
   }
 
   events() {
-    this.mobileMenuIcon.addEventListener("click", () => this.toggleTheMenu());
+    this.hamburgerIcon.addEventListener("click", () => this.toggleTheMenu());
   }
 
   toggleTheMenu() {
     this.menuContent.classList.toggle("site-header__menu-content--is-visible");
-    this.siteHeader.classList.toggle("site-header--is-expanded");
-    this.mobileMenuIcon.classList.toggle("site-header__mobile-menu--icons--hamburger--close-x");
+    this.hamburgerIcon.classList.toggle("site-header__mobile-menu--icons--hamburger--close-x");
   }
 
   goToTopOfWebsite() {}
@@ -3061,7 +3059,10 @@ __webpack_require__.r(__webpack_exports__);
 class ProdGalHeight {
   constructor() {
     this.productGallery = document.querySelector(".products-background");
-    this.calcHeight();
+
+    if (this.productGallery !== null) {
+      this.calcHeight();
+    }
   }
 
   calcHeight() {
@@ -3402,9 +3403,6 @@ __webpack_require__.r(__webpack_exports__);
 class NavBarModify {
   constructor() {
     this.nav = document.querySelector(".site-header__nav");
-    this.dropdownMenu = document.querySelector(".dropdown__content");
-    this.doctorKitIcon = document.querySelector(".site-header__nav-icon");
-    this.hamburgerIcon = document.querySelector(".site-header__mobile-menu-icon");
     this.scrollThrottle = lodash_throttle__WEBPACK_IMPORTED_MODULE_0___default()(this.calcCaller, 20).bind(this);
     this.events();
     /* we want calcCaller to execcute 50 times a second or 1000 milliseconds divided by 20. That's why 20 is coded in the line above.  */
@@ -3419,25 +3417,17 @@ class NavBarModify {
   }
   /* We don't want the doctor's kit icon to overlap into the page-banner title. */
 
-  /* On screen sizes smaller than 616px we don't want the hamburger icon to overlap anything either. */
-
 
   fixNav() {
     if (window.innerWidth < 1040) {
       this.fixNavOnSmallScreens();
     } else {
-      if (window.scrollY > this.nav.offsetHeight + 10) {
-        this.doctorKitIcon.classList.add("hide");
-
-        if (window.scrollY > this.nav.offsetHeight + 70) {
-          this.nav.classList.add("active");
-          this.dropdownMenu.classList.add("active");
-        } else {
-          this.nav.classList.remove("active");
-          this.dropdownMenu.classList.remove("active");
-        }
+      if (window.scrollY > this.nav.offsetHeight + 70) {
+        this.nav.classList.add("active");
+        console.log("fixNav is adding active class in navBarModify.js");
       } else {
-        this.doctorKitIcon.classList.remove("hide");
+        this.nav.classList.remove("active");
+        console.log("fixNav is removing active class in navBarModify.js");
       }
     }
   }
@@ -3446,13 +3436,8 @@ class NavBarModify {
     if (window.scrollY > this.nav.offsetHeight + 100) {
       this.nav.classList.add("hide");
       /* Please hide the nav bar */
-
-      this.hamburgerIcon.classList.add("hide");
     } else {
       this.nav.classList.remove("hide");
-      /* Please show the nav bar */
-
-      this.hamburgerIcon.classList.remove("hide");
       /* Please show the nav bar */
     }
   }

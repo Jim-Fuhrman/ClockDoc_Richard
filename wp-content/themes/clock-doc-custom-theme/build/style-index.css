@@ -3597,8 +3597,10 @@ the exception being the .container class. That's defined in utilities.scss, so t
       color: #c0392b;
       font-weight: bold; }
   .site-header__mobile-menu {
-    /* If you adjust this @media, you need to adjust src/NavBarModify.js also. */
+    /* If you adjust this @media, you need to adjust src/NavBarModify.js also. 
+    The fixNav method will need an adjustment where it compares innerwidth. */
     /* 1040px/16px = 65em */
+    position: static;
     display: flex;
     justify-content: space-between;
     align-items: center;

@@ -131,6 +131,7 @@
     @media (min-width: 65em) {
       display: none;
     } /* 1040px/16px = 65em */
+    position: static;
     display: flex;
     justify-content: space-between;
     align-items: center;

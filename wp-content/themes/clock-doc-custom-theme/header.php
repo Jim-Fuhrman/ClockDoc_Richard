@@ -9,59 +9,41 @@
     <?php wp_head(); ?>  <!-- This is needed along with get_stylesheet_uri() in the functions.php file. -->
   </head>
 <body <?php body_class(); ?>>
-<header class="site-header" role="banner">
-  <!-- nav bar for small screens -->
-  <nav class="site-header__mobile-menu">
-        <div class="site-header__mobile-menu--headings">
-            <h2 class="no-margin t-cursive"><?php echo bloginfo('name'); ?></h2>
-            <h2 class="no-margin t-cursive t-center"><?php echo bloginfo('description'); ?></h2>
-        </div>
-        <div class="site-header__mobile-menu--icons">
-            <div class="site-header__mobile-menu--icons--hamburger">
-                <div class="site-header__mobile-menu--icons--hamburger--middle"></div>
+<!-- nav bar for small screens -->
+    <nav class="site-header__mobile-menu">
+            <div class="site-header__mobile-menu--headings">
+                <h2 class="no-margin t-cursive"><?php echo bloginfo('name'); ?></h2>
+                <h2 class="no-margin t-cursive t-center"><?php echo bloginfo('description'); ?></h2>
             </div>
-            <a class="site-header__mobile-menu--icons--search search-trigger js-search-trigger" href="<?php echo esc_url(site_url('/search')); ?>"><i class="fa fa-search" aria-hidden="true"></i></a>
-        </div>
-        <!-- <i class="site-header__menu-trigger fa fa-bars" aria-hidden="true"></i> -->
-  </nav>
-
-    <!-- nav bar for large screens -->
-  <div class="site-header__menu">
-      <nav class="site-header__nav">   
-          <div class="site-header__nav-icon" style="background-image: url(<?php echo get_theme_file_uri('/images/ClockDocIcon.png');?>">
-          </div>   
-          <ul class="site-header__nav-menu site-header__menu-content">
-              <li><a href="<?php echo esc_url(site_url('')); ?>">Home</a></li>
-              <li><a <?php if (is_page('about-us') or wp_get_post_parent_id(0) == 42) echo 'class="current"'?> href="<?php echo esc_url(site_url('/About Us'));?>">About</a></li>
-              <div class="dropdown">
-                <li class="dropdown__a"><a  <?php if(is_page('products') || get_post_type('clocks') || get_post_type('watches') || get_post_type('misc_items')) echo 'class="current"'?> 
-                href="/Products">Products</a></li>  <!-- If I want Products to look like the other 4 links, it needs to be an anchor tag with an href. -->
-                  <div class="dropdown__content"> <!-- dropdown__content is in /layout/_site-header.scss -->
-                    <a href="<?php echo esc_url(site_url('/Products')); ?>">All Products</a>  
-                    <a href="<?php echo get_post_type_archive_link('clocks'); ?>">Clocks</a>
-                    <a href="<?php echo get_post_type_archive_link('watches');?>">Watches</a>
-                    <a href="<?php echo get_post_type_archive_link('misc_items');?>">Miscellaneous</a>
-                  </div>
-              </div>
-              <li><a <?php if (get_post_type() == 'post') echo 'class="current"'?> href="<?php echo site_url('/blog'); ?>">Blogs</a></li>
-              <li><a <?php if (is_page('contact-us')) echo 'class="current"'?> href="<?php echo esc_url(site_url('/Contact Us'));?>">Contact Us</a></li>
-              <li>
-                  <a href="<?php echo esc_url(site_url('/search')); ?>" class="search-trigger js-search-trigger">
-                    <i class="fa fa-search" aria-hidden="true"></i>
-                  </a>
-              </li>
-              <div class="site-header__util hide">   
-              <!-- When the user types the escape key, it toggles the hiding/displaying of the Login button. By default we hide the login button, so customers can't see it -->
-                  <?php if(is_user_logged_in()) {?>
-                        <a href="<?php echo wp_logout_url(); ?>" class="btn btn--small btn--dark-orange float-left btn--with-photo">
-                        <span class="site-header__avatar"><?php echo get_avatar(get_current_user_id(), 60); ?></span>
-                        <span class="btn__text">Log Out</span>
-                        </a>
-                  <?php } else {?>
-                        <a href="<?php echo wp_login_url();?>" class="btn btn--small btn--orange float-left push-right">Login</a>
-                  <?php } ?>
-              </div>
-          </ul>
+            <div class="site-header__mobile-menu--icons">
+                <div class="site-header__mobile-menu--icons--hamburger">
+                    <div class="site-header__mobile-menu--icons--hamburger--middle"></div>
+                </div>
+                <a class="site-header__mobile-menu--icons--search search-trigger js-search-trigger" href="<?php echo esc_url(site_url('/search')); ?>"><i class="fa fa-search" aria-hidden="true"></i></a>
+            </div>
+            <!-- <i class="site-header__menu-trigger fa fa-bars" aria-hidden="true"></i> -->
       </nav>
-    </div>
-</header>
+    <!-- Important! site-header__mobile-menu needs to be outside the site-header for larger screens. You'll have problems mixing them under the same header. The hamburger icon won't work 100% if you mix them. -->
+      <header class="site-header" role="banner">
+          <!-- nav bar for large screens -->
+        <div class="site-header__menu">
+            <nav class="site-header__nav">   
+                <div class="site-header__nav-icon" style="background-image: url(<?php echo get_theme_file_uri('/images/ClockDocIcon.png');?>">
+                </div>   
+                <ul class="site-header__nav-menu site-header__menu-content">
+                    <?php get_template_part("template-parts/content", "siteHeaderMenu"); ?>
+                    <div class="site-header__util hide">   
+                    <!-- When the user types the escape key, it toggles the hiding/displaying of the Login button. By default we hide the login button, so customers can't see it -->
+                        <?php if(is_user_logged_in()) {?>
+                              <a href="<?php echo wp_logout_url(); ?>" class="btn btn--small btn--dark-orange float-left btn--with-photo">
+                              <span class="site-header__avatar"><?php echo get_avatar(get_current_user_id(), 60); ?></span>
+                              <span class="btn__text">Log Out</span>
+                              </a>
+                        <?php } else {?>
+                              <a href="<?php echo wp_login_url();?>" class="btn btn--small btn--orange float-left push-right">Login</a>
+                        <?php } ?>
+                    </div>
+                </ul>
+            </nav>
+          </div>
+      </header>
