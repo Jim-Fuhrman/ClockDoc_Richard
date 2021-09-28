@@ -138,6 +138,7 @@
     background-color: #000;
     color: #fff;
     height: 7.5rem;
+    padding: 1rem;
 
     /*@include respondDesktop(atSmall) {
       margin-top: 1rem;
@@ -150,7 +151,8 @@
     }
 
     @include respondDesktop(at327) {
-      height: 25rem;
+      height: 30rem;
+      padding: 2rem;
     }
 
     &--headings {

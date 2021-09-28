@@ -3607,6 +3607,7 @@ the exception being the .container class. That's defined in utilities.scss, so t
     background-color: #000;
     color: #fff;
     height: 7.5rem;
+    padding: 1rem;
     /*@include respondDesktop(atSmall) {
       margin-top: 1rem;
     }*/
@@ -3651,7 +3652,8 @@ the exception being the .container class. That's defined in utilities.scss, so t
         height: 20rem; } }
     @media only screen and (max-width: 20.4375em) {
       .site-header__mobile-menu {
-        height: 25rem; } }
+        height: 30rem;
+        padding: 2rem; } }
     .site-header__mobile-menu--headings {
       font-size: 1rem;
       color: #fff;
