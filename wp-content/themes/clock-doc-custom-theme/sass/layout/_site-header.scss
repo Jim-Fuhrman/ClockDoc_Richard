@@ -2,7 +2,7 @@
   @media (min-width: 65em) {
     display: flex;
     justify-content: space-around;
-    align-items: center;
+    align-items: end; /* This prevents the black wp admin bar from overlapping into the white clock doctor icon. */
     transition: all 0.3s ease-in-out; /* This is the line that briefly shows the nav bar with the desired fonts then shrinks them to a really tiny font I don't want.  */
 
     @include respondDesktop(at1000) {
@@ -28,7 +28,8 @@
     @media (min-width: 65em) {
       position: absolute;
       width: 100%;
-      /*margin: 0 auto;*/
+      padding: 1rem 0;
+      padding-top: 2rem; /* This prevents the black wp admin bar from overlapping into the white clock doctor icon. */
       justify-content: space-around;
       opacity: 1;
 
@@ -52,7 +53,6 @@
       }
 
       &.hide {
-        /* display: none; */
         opacity: 0;
       }
     }
@@ -104,7 +104,6 @@
     &.active {
       background-color: #000;
       box-shadow: 0 0.2rem 1rem rgba(0, 0, 0, 0.3); /* 10px blur*/
-      padding: 1rem 0;
     }
 
     &.hide {

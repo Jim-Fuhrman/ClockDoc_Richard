@@ -3230,7 +3230,8 @@ the exception being the .container class. That's defined in utilities.scss, so t
     .site-header .site-header__nav {
       display: flex;
       justify-content: space-around;
-      align-items: center;
+      align-items: end;
+      /* This prevents the black wp admin bar from overlapping into the white clock doctor icon. */
       transition: all 0.3s ease-in-out;
       /* This is the line that briefly shows the nav bar with the desired fonts then shrinks them to a really tiny font I don't want.  */
       /* 280px/16 = 17.5em */
@@ -3271,7 +3272,9 @@ the exception being the .container class. That's defined in utilities.scss, so t
       .site-header__nav {
         position: absolute;
         width: 100%;
-        /*margin: 0 auto;*/
+        padding: 1rem 0;
+        padding-top: 2rem;
+        /* This prevents the black wp admin bar from overlapping into the white clock doctor icon. */
         justify-content: space-around;
         opacity: 1;
         /* 280px/16 = 17.5em */
@@ -3321,7 +3324,6 @@ the exception being the .container class. That's defined in utilities.scss, so t
         .site-header__nav-icon {
           display: none; } }
       .site-header__nav-icon.hide {
-        /* display: none; */
         opacity: 0; }
     .site-header__nav-menu {
       margin: 1.65em 0 1.65em 0;
@@ -3421,8 +3423,7 @@ the exception being the .container class. That's defined in utilities.scss, so t
     .site-header__nav.active {
       background-color: #000;
       box-shadow: 0 0.2rem 1rem rgba(0, 0, 0, 0.3);
-      /* 10px blur*/
-      padding: 1rem 0; }
+      /* 10px blur*/ }
     .site-header__nav.hide {
       /* display: none; */
       opacity: 0; }
