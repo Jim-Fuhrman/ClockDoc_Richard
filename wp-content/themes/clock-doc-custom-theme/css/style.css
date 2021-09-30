@@ -3272,7 +3272,7 @@ the exception being the .container class. That's defined in utilities.scss, so t
       .site-header__nav {
         position: absolute;
         width: 100%;
-        padding: 1rem 0;
+        padding-bottom: 1rem;
         padding-top: 2rem;
         /* This prevents the black wp admin bar from overlapping into the white clock doctor icon. */
         justify-content: space-around;
