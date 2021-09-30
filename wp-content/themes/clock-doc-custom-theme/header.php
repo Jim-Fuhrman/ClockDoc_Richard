@@ -18,7 +18,7 @@
             <div class="site-header__mobile-menu--icons">
                 <div class="site-header__mobile-menu--icons--hamburger">
                     <div class="site-header__mobile-menu--icons--hamburger--middle"></div>
-                </div>
+                </div> <!-- search-trigger defined in shame.scss -->
                 <a class="site-header__mobile-menu--icons--search search-trigger js-search-trigger" href="<?php echo esc_url(site_url('/search')); ?>"><i class="fa fa-search" aria-hidden="true"></i></a>
             </div>
             <!-- <i class="site-header__menu-trigger fa fa-bars" aria-hidden="true"></i> -->

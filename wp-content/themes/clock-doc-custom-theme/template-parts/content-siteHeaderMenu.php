@@ -12,7 +12,7 @@ href="#">Products</a></li>  <!-- If I want Products to look like the other 4 lin
 </div>
 <li><a <?php if (get_post_type() == 'post') echo 'class="current"'?> href="<?php echo site_url('/blog'); ?>">Blogs</a></li>
 <li><a <?php if (is_page('contact-us')) echo 'class="current"'?> href="<?php echo esc_url(site_url('/Contact Us'));?>">Contact Us</a></li>
-<li>
+<li class="site-header__large-screen-search-icon">
     <a href="<?php echo esc_url(site_url('/search')); ?>" class="search-trigger js-search-trigger">
     <i class="fa fa-search" aria-hidden="true"></i>
     </a>
