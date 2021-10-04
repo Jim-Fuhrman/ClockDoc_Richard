@@ -200,12 +200,11 @@ li {
 }
 
 li {
-  line-height: 3rem; /* original setting 1.5em */
+  line-height: 3.5rem; /* original setting 1.5em */
   text-align: left;
   margin-left: 2rem; /* original setting 1em */
 
   @include respondDesktop(atLarge) {
-    line-height: 3.5rem;
     margin-left: 2.5rem;
   }
 

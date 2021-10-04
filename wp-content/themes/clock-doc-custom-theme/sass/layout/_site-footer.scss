@@ -1,5 +1,5 @@
 .site-footer {
-  padding: 1em 0 1em 0;
+  padding: 1em 0;
   background-image: linear-gradient(bisque, antiquewhite);
   grid-column: full-start / full-end;
   /*position:  relative;*/
@@ -26,20 +26,38 @@
 
     h2 {
       font-size: 3em;
+      margin-left: 2.1rem;
 
       @include respondDesktop(atMedium) {
-        font-size: 2.5em;
+        font-size: 2rem;
+        margin-left: 2.4rem;
       }
       @include respondDesktop(at562) {
         font-size: 2.3em;
       }
     }
-  }
 
-  &__inner-grid--item {
-    text-decoration: none;
-    text-align: center;
-    padding: 1.5rem;
+    li {
+      @include respondDesktop(atMedium) {
+        font-size: 2rem;
+        margin-left: 2.4rem;
+      }
+
+      @include respondDesktop(atSmall) {
+        font-size: 2.5rem;
+        margin-left: 2.4rem;
+      }
+
+      @include respondDesktop(atSmaller) {
+        font-size: 3rem;
+      }
+    }
+
+    &--item {
+      text-decoration: none;
+      text-align: center;
+      padding: 1.5rem;
+    }
   }
 
   &__copyright-info {
