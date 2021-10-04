@@ -50,7 +50,6 @@ body {
   color: #222;
   padding-bottom: 1em;
   background-color: beige; /* $beige: #faf0ca; is worth considering */
-  font-size: 1em;
 }
 
 h1,
@@ -71,8 +70,12 @@ h1 {
 }
 
 h2 {
-  font-size: 2.1rem; /* originally 2.1rem. increased to 4.1rem because it was so small on mobile headings. Tested with ipadpro. */
+  font-size: 2.1rem;
   text-align: left;
+
+  @include respondDesktop(atLarge) {
+    font-size: 3.1rem; /* needed for Conditions of Use page on the ipadpro. */
+  }
 
   @include respondDesktop(atMedium) {
     font-size: 2.5em;
@@ -120,7 +123,7 @@ h6 {
     font-size: 6.25em;
   }
   h2 {
-    font-size: 5em;
+    font-size: 3em;
   }
   h4 {
     font-size: 2.4em;
@@ -174,26 +177,32 @@ li {
   text-align: left;
   margin-left: 2rem; /* original setting 1em */
 
+  @include respondDesktop(atLarge) {
+    font-size: 2.5rem;
+    line-height: 3.5rem;
+    margin-left: 2.5rem;
+  }
+
   @include respondDesktop(atSmall) {
     font-size: 3rem;
-    line-height: 3rem;
+    line-height: 4rem;
     margin-left: 3rem;
   }
 
   @include respondDesktop(at400) {
     font-size: 2.5rem;
-    line-height: 2.5rem;
+    line-height: 3.5rem;
     margin-left: 2.5rem;
   }
 
   @include respondDesktop(at371) {
     font-size: 2.25rem;
-    line-height: 2.25rem;
+    line-height: 3.25rem;
     margin-left: 2.25rem;
   }
   @include respondDesktop(atSmaller) {
     font-size: 3rem;
-    line-height: 3rem;
+    line-height: 4rem;
     margin-left: 3rem;
   }
 }
@@ -201,6 +210,10 @@ li {
 p {
   font-size: 2rem; /* This needs to be 2rem, not 2em, so the font isn't so big on the archive-clocks page. */
   line-height: 1.65em;
+
+  @include respondDesktop(atLarge) {
+    font-size: 2.5rem;
+  }
 
   @include respondDesktop(atSmall) {
     font-size: 3rem;

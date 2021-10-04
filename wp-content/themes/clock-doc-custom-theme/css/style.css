@@ -169,9 +169,7 @@ body {
   color: #222;
   padding-bottom: 1em;
   background-color: beige;
-  /* $beige: #faf0ca; is worth considering */
-  font-size: 1em;
-  /* In clockdoc-Richard this line of code needs to be asterisked out. */ }
+  /* $beige: #faf0ca; is worth considering */ }
 
 h1,
 h2,
@@ -190,8 +188,22 @@ h1 {
 
 h2 {
   font-size: 2.1rem;
-  /* originally 2.1rem. increased to 4.1rem because it was so small on mobile headings. Tested with ipadpro. */
   text-align: left;
+  /* 280px/16 = 17.5em */
+  /* 327px/16 = 20.4375em */
+  /* 355px/16 = 22.1875em*/
+  /* 371px/16 = 25em */
+  /* 400px/16 = 25em */
+  /* 530px/16 = 33.125em*/
+  /* 562px/16 = 35.125em*/
+  /* 580px/16 = 36.25em*/
+  /* 616px/16 = 38.5em */
+  /* 767px/16 = 47.9375em */
+  /* 800px/16 = 50em */
+  /* 1000px/16 = 62.5em*/
+  /* 1200px/16 = 75em*/
+  /* 1629px/16 = 101.8125em*/
+  /* 1860px/16 = 116.25em   */
   /* 280px/16 = 17.5em */
   /* 327px/16 = 20.4375em */
   /* 355px/16 = 22.1875em*/
@@ -224,6 +236,10 @@ h2 {
   /* 1629px/16 = 101.8125em*/
   /* 1860px/16 = 116.25em   */
   /* screen size <= 530px*/ }
+  @media only screen and (max-width: 75em) {
+    h2 {
+      font-size: 3.1rem;
+      /* needed for Conditions of Use page on the ipadpro. */ } }
   @media only screen and (max-width: 47.9375em) {
     h2 {
       font-size: 2.5em; } }
@@ -362,7 +378,7 @@ h6 {
   h1 {
     font-size: 6.25em; }
   h2 {
-    font-size: 5em; }
+    font-size: 3em; }
   h4 {
     font-size: 2.4em; }
   h5 {
@@ -477,26 +493,46 @@ li {
   /* 1000px/16 = 62.5em*/
   /* 1200px/16 = 75em*/
   /* 1629px/16 = 101.8125em*/
+  /* 1860px/16 = 116.25em   */
+  /* 280px/16 = 17.5em */
+  /* 327px/16 = 20.4375em */
+  /* 355px/16 = 22.1875em*/
+  /* 371px/16 = 25em */
+  /* 400px/16 = 25em */
+  /* 530px/16 = 33.125em*/
+  /* 562px/16 = 35.125em*/
+  /* 580px/16 = 36.25em*/
+  /* 616px/16 = 38.5em */
+  /* 767px/16 = 47.9375em */
+  /* 800px/16 = 50em */
+  /* 1000px/16 = 62.5em*/
+  /* 1200px/16 = 75em*/
+  /* 1629px/16 = 101.8125em*/
   /* 1860px/16 = 116.25em   */ }
+  @media only screen and (max-width: 75em) {
+    li {
+      font-size: 2.5rem;
+      line-height: 3.5rem;
+      margin-left: 2.5rem; } }
   @media only screen and (max-width: 33.125em) {
     li {
       font-size: 3rem;
-      line-height: 3rem;
+      line-height: 4rem;
       margin-left: 3rem; } }
   @media only screen and (max-width: 25em) {
     li {
       font-size: 2.5rem;
-      line-height: 2.5rem;
+      line-height: 3.5rem;
       margin-left: 2.5rem; } }
   @media only screen and (max-width: 23.1875em) {
     li {
       font-size: 2.25rem;
-      line-height: 2.25rem;
+      line-height: 3.25rem;
       margin-left: 2.25rem; } }
   @media only screen and (max-width: 22.1875em) {
     li {
       font-size: 3rem;
-      line-height: 3rem;
+      line-height: 4rem;
       margin-left: 3rem; } }
 
 p {
@@ -562,7 +598,25 @@ p {
   /* 1000px/16 = 62.5em*/
   /* 1200px/16 = 75em*/
   /* 1629px/16 = 101.8125em*/
+  /* 1860px/16 = 116.25em   */
+  /* 280px/16 = 17.5em */
+  /* 327px/16 = 20.4375em */
+  /* 355px/16 = 22.1875em*/
+  /* 371px/16 = 25em */
+  /* 400px/16 = 25em */
+  /* 530px/16 = 33.125em*/
+  /* 562px/16 = 35.125em*/
+  /* 580px/16 = 36.25em*/
+  /* 616px/16 = 38.5em */
+  /* 767px/16 = 47.9375em */
+  /* 800px/16 = 50em */
+  /* 1000px/16 = 62.5em*/
+  /* 1200px/16 = 75em*/
+  /* 1629px/16 = 101.8125em*/
   /* 1860px/16 = 116.25em   */ }
+  @media only screen and (max-width: 75em) {
+    p {
+      font-size: 2.5rem; } }
   @media only screen and (max-width: 33.125em) {
     p {
       font-size: 3rem; } }
