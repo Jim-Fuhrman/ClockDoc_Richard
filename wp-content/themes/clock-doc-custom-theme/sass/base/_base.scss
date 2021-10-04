@@ -50,7 +50,7 @@ body {
   color: #222;
   padding-bottom: 1em;
   background-color: beige; /* $beige: #faf0ca; is worth considering */
-  font-size: 1em; /* In clockdoc-Richard this line of code needs to be asterisked out. */
+  font-size: 1em;
 }
 
 h1,
@@ -71,7 +71,7 @@ h1 {
 }
 
 h2 {
-  font-size: 2.1rem;
+  font-size: 2.1rem; /* originally 2.1rem. increased to 4.1rem because it was so small on mobile headings. Tested with ipadpro. */
   text-align: left;
 
   @include respondDesktop(atMedium) {
@@ -84,7 +84,26 @@ h2 {
 }
 
 h3 {
-  font-size: 1.8em;
+  /* used by site-header__mobile-menu class*/
+  font-size: 4.1rem;
+  @include respondDesktop(at580) {
+    font-size: 3.6rem;
+  }
+  @include respondDesktop(at400) {
+    font-size: 4.1rem;
+  }
+  @include respondDesktop(at371) {
+    font-size: 3.9rem;
+  }
+  @include respondDesktop(atSmaller) {
+    font-size: 4.7rem;
+  }
+  @include respondDesktop(at280) {
+    font-size: 5.5rem;
+  }
+  @include respondDesktop(atSmallest) {
+    font-size: 5rem;
+  }
 }
 h4 {
   font-size: 1.6em;
@@ -102,9 +121,6 @@ h6 {
   }
   h2 {
     font-size: 5em;
-  }
-  h3 {
-    font-size: 3.125em;
   }
   h4 {
     font-size: 2.4em;
@@ -153,24 +169,32 @@ ol {
 }
 
 li {
-  font-size: 1.875rem; /* use rem not em here; otherwise, the font will be too big on the inner list within the outer list on the Conditions of Use page. */
-  line-height: 1.5em;
+  font-size: 2rem; /* use rem not em here; otherwise, the font will be too big on the inner list within the outer list on the Conditions of Use page. */
+  line-height: 2rem; /* original setting 1.5em */
   text-align: left;
-  margin-left: 1em;
+  margin-left: 2rem; /* original setting 1em */
 
   @include respondDesktop(atSmall) {
-    font-size: 3em;
+    font-size: 3rem;
+    line-height: 3rem;
+    margin-left: 3rem;
   }
 
   @include respondDesktop(at400) {
-    font-size: 2.5em;
+    font-size: 2.5rem;
+    line-height: 2.5rem;
+    margin-left: 2.5rem;
   }
 
   @include respondDesktop(at371) {
-    font-size: 2.25em;
+    font-size: 2.25rem;
+    line-height: 2.25rem;
+    margin-left: 2.25rem;
   }
   @include respondDesktop(atSmaller) {
-    font-size: 3em;
+    font-size: 3rem;
+    line-height: 3rem;
+    margin-left: 3rem;
   }
 }
 

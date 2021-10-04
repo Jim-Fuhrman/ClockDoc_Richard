@@ -84,6 +84,12 @@ I need to code them that way and not use a mixin. */
     }
   } /* 562px/16 = 35.125em*/
 
+  @if $breakpoint == at580 {
+    @media only screen and (max-width: 36.25em) {
+      @content;
+    }
+  } /* 580px/16 = 36.25em*/
+
   @if $breakpoint == atMediumSmall {
     @media only screen and (max-width: 38.5em) {
       @content;
@@ -95,12 +101,6 @@ I need to code them that way and not use a mixin. */
       @content;
     }
   } /* 767px/16 = 47.9375em */
-
-  @if $breakpoint == at782 {
-    @media only screen and (max-width: 48.875em) {
-      @content;
-    }
-  } /* 782px/16 = 48.875em. This one's needed by the hamburger icon, so the wp-admin bar doesn't block it. wp-admin bar changes sizes at 782px. */
 
   @if $breakpoint == atMediumLarge {
     @media only screen and (max-width: 50em) {

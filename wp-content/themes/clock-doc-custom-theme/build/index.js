@@ -3025,9 +3025,11 @@ module.exports = g;
 __webpack_require__.r(__webpack_exports__);
 class MobileMenu {
   constructor() {
+    this.shlssi = document.querySelector(
+    /* this prevents the search icon from showing when the user clicks Products */
+    ".site-header__large-screen-search-icon");
     this.hamburgerIcon = document.querySelector(".site-header__mobile-menu--icons--hamburger");
     this.menuContent = document.querySelector(".site-header__menu-content");
-    this.shlssi = document.querySelector(".site-header__large-screen-search-icon");
     this.events();
   }
 

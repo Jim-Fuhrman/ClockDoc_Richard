@@ -7,13 +7,13 @@
     <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&display=swap" rel="stylesheet">
     <!-- <link rel="profile" href="http://gmpg.org/xfn/11"> -->
     <?php wp_head(); ?>  <!-- This is needed along with get_stylesheet_uri() in the functions.php file. -->
-  </head>
+  </head>   
 <body <?php body_class(); ?>>
 <!-- nav bar for small screens -->
     <nav class="site-header__mobile-menu">
             <div class="site-header__mobile-menu--headings">
-                <h2 class="no-margin t-cursive"><?php echo bloginfo('name'); ?></h2>
-                <h2 class="no-margin t-cursive t-center"><?php echo bloginfo('description'); ?></h2>
+                <h3 class="no-margin t-cursive"><?php echo bloginfo('name'); ?></h3>
+                <h3 class="no-margin t-cursive t-center"><?php echo bloginfo('description'); ?></h3>
             </div>
             <div class="site-header__mobile-menu--icons">
                 <div class="site-header__mobile-menu--icons--hamburger">
