@@ -3014,62 +3014,48 @@ module.exports = g;
 
 /***/ }),
 
-/***/ "./src/MobileMenu.js":
-/*!***************************!*\
-  !*** ./src/MobileMenu.js ***!
-  \***************************/
+/***/ "./src/ClassHeights.js":
+/*!*****************************!*\
+  !*** ./src/ClassHeights.js ***!
+  \*****************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-class MobileMenu {
+class ClassHeights {
   constructor() {
-    this.shlssi = document.querySelector(
-    /* this prevents the search icon from showing when the user clicks Products */
-    ".site-header__large-screen-search-icon");
-    this.hamburgerIcon = document.querySelector(".site-header__mobile-menu--icons--hamburger");
-    this.menuContent = document.querySelector(".site-header__menu-content");
+    this.contactInfo = document.querySelector(".contactInfo__bkgd");
+    this.contactInfoColor = document.querySelector(".contactInfo__bkgd--color");
+    this.productGallery = document.querySelector(".products-background");
     this.events();
   }
 
   events() {
-    this.hamburgerIcon.addEventListener("click", () => this.toggleTheMenu());
-  }
-
-  toggleTheMenu() {
-    this.menuContent.classList.toggle("site-header__menu-content--is-visible");
-    this.hamburgerIcon.classList.toggle("site-header__mobile-menu--icons--hamburger--close-x");
-    this.shlssi.classList.toggle("hide");
-  }
-
-  goToTopOfWebsite() {}
-
-}
-
-/* harmony default export */ __webpack_exports__["default"] = (MobileMenu);
-
-/***/ }),
-
-/***/ "./src/ProdGalHeight.js":
-/*!******************************!*\
-  !*** ./src/ProdGalHeight.js ***!
-  \******************************/
-/*! exports provided: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-class ProdGalHeight {
-  constructor() {
-    this.productGallery = document.querySelector(".products-background");
+    /*if (this.contactInfo !== null) {
+      this.calcContactInfoHeight();
+    } else {
+      alert(`contactInfo is null`);
+    }*/
+    this.calcContactInfoHeight();
 
     if (this.productGallery !== null) {
-      this.calcHeight();
+      this.calcProdGalHeight();
     }
   }
 
-  calcHeight() {
+  calcContactInfoHeight() {
+    /* this next if was coded because a big problem was unique to the Nest Hub contactInfo section. Nest Hub is 1024px by 600. 
+    Its contactInfo was spilling over into the footer. It looked really bad! */
+    if (window.innerWidth === 1024) {
+      if (window.innerHeight === 600) {
+        this.contactInfo.style.height = "90vh";
+        this.contactInfoColor.style.height = "90vh";
+      }
+    }
+  }
+
+  calcProdGalHeight() {
     if (window.innerWidth <= 355) {
       switch (window.innerHeight) {
         case 480
@@ -3106,7 +3092,44 @@ class ProdGalHeight {
 
 }
 
-/* harmony default export */ __webpack_exports__["default"] = (ProdGalHeight);
+/* harmony default export */ __webpack_exports__["default"] = (ClassHeights);
+
+/***/ }),
+
+/***/ "./src/MobileMenu.js":
+/*!***************************!*\
+  !*** ./src/MobileMenu.js ***!
+  \***************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+class MobileMenu {
+  constructor() {
+    this.shlssi = document.querySelector(
+    /* this prevents the search icon from showing when the user clicks Products */
+    ".site-header__large-screen-search-icon");
+    this.hamburgerIcon = document.querySelector(".site-header__mobile-menu--icons--hamburger");
+    this.menuContent = document.querySelector(".site-header__menu-content");
+    this.events();
+  }
+
+  events() {
+    this.hamburgerIcon.addEventListener("click", () => this.toggleTheMenu());
+  }
+
+  toggleTheMenu() {
+    this.menuContent.classList.toggle("site-header__menu-content--is-visible");
+    this.hamburgerIcon.classList.toggle("site-header__mobile-menu--icons--hamburger--close-x");
+    this.shlssi.classList.toggle("hide");
+  }
+
+  goToTopOfWebsite() {}
+
+}
+
+/* harmony default export */ __webpack_exports__["default"] = (MobileMenu);
 
 /***/ }),
 
@@ -3370,7 +3393,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _RevealLogin__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./RevealLogin */ "./src/RevealLogin.js");
 /* harmony import */ var _Search__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./Search */ "./src/Search.js");
 /* harmony import */ var _UpArrow__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./UpArrow */ "./src/UpArrow.js");
-/* harmony import */ var _ProdGalHeight__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./ProdGalHeight */ "./src/ProdGalHeight.js");
+/* harmony import */ var _ClassHeights__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./ClassHeights */ "./src/ClassHeights.js");
 
 /*import ImportantNoticeCheck from "./ImportantNoticeCheck";*/
 
@@ -3387,7 +3410,7 @@ let navBarModify = new _navBarModify__WEBPACK_IMPORTED_MODULE_2__["default"]();
 let revealLogin = new _RevealLogin__WEBPACK_IMPORTED_MODULE_3__["default"]();
 let letsSearch = new _Search__WEBPACK_IMPORTED_MODULE_4__["default"]();
 let upArrow = new _UpArrow__WEBPACK_IMPORTED_MODULE_5__["default"]();
-let prodGalHeight = new _ProdGalHeight__WEBPACK_IMPORTED_MODULE_6__["default"]();
+let classHeights = new _ClassHeights__WEBPACK_IMPORTED_MODULE_6__["default"]();
 
 /***/ }),
 
@@ -3428,10 +3451,8 @@ class NavBarModify {
     } else {
       if (window.scrollY > this.nav.offsetHeight + 70) {
         this.nav.classList.add("active");
-        console.log("fixNav is adding active class in navBarModify.js");
       } else {
         this.nav.classList.remove("active");
-        console.log("fixNav is removing active class in navBarModify.js");
       }
     }
   }

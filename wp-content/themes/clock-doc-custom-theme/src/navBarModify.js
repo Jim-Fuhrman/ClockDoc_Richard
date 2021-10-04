@@ -22,10 +22,8 @@ class NavBarModify {
     } else {
       if (window.scrollY > this.nav.offsetHeight + 70) {
         this.nav.classList.add("active");
-        console.log("fixNav is adding active class in navBarModify.js");
       } else {
         this.nav.classList.remove("active");
-        console.log("fixNav is removing active class in navBarModify.js");
       }
     }
   }
