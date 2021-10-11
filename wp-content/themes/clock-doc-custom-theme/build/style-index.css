@@ -400,13 +400,15 @@ img {
   height: auto; }
 
 input {
-  height: 4rem;
-  /* This needs to be 4rem not 4em; otherwise, the fields on the Contact Us page will be too big. */ }
+  height: 2em;
+  /* 2em - not 2rem nor 4rem - looks perfect on all screen sizes. 4rem was too small for the ipohone 5/se. */
+  width: 18em; }
 
 textarea {
   /* used on contact us form. */
-  height: 8rem;
-  /* This needs to be 8rem not 8em; otherwise, the textarea on the Contact Us page will be too big. */ }
+  height: 8em;
+  /* This needs to be 8rem not 8em; otherwise, the textarea on the Contact Us page will be too big. */
+  width: 18em; }
 
 a {
   color: #0d3b66;
@@ -750,6 +752,7 @@ li {
   display: none; }
 
 .btn {
+  /* Used by the Login/Logout in the header.php site_utils part. */
   display: inline-block;
   cursor: pointer;
   border-radius: 4px;
@@ -1762,16 +1765,21 @@ the exception being the .container class. That's defined in utilities.scss, so t
 
 .contactUs {
   position: relative;
-  font-size: 1.6rem; }
-  .contactUs__button {
-    /* This is used on Contact Form 1, not the Contact Us Page. */
-    background-color: #f95738;
-    border: none;
-    border-radius: 20%;
-    cursor: pointer;
+  font-size: 1.6rem;
+  /* This is used on Contact Form 1, not the Contact Us Page. */ }
+  .contactUs__btn {
     display: block;
-    padding: 1rem;
-    width: 10rem; }
+    padding: 0.6rem 1.2rem;
+    border-radius: 5rem;
+    border: none;
+    color: #fff;
+    background-color: #f95738;
+    cursor: pointer;
+    margin: 0;
+    font-size: 1em;
+    width: -webkit-max-content;
+    width: -moz-max-content;
+    width: max-content; }
   .contactUs__padding {
     padding: 0.5rem 1rem; }
 
@@ -2219,8 +2227,6 @@ the exception being the .container class. That's defined in utilities.scss, so t
     .page-banner__btn::after {
       content: "";
       display: block;
-      /*height: 200%;
-      width: 200%;*/
       border-radius: 10rem;
       background-color: blanchedalmond;
       color: black;

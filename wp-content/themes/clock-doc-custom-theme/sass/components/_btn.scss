@@ -1,4 +1,5 @@
 .btn {
+  /* Used by the Login/Logout in the header.php site_utils part. */
   display: inline-block;
   cursor: pointer;
   border-radius: 4px;
@@ -26,10 +27,7 @@
   }
 
   &--orange:hover {
-    background: linear-gradient(
-      $lightOrange,
-      color($lightOrange b(+30%) s(+80%))
-    );
+    background: linear-gradient($lightOrange, color($lightOrange b(+30%) s(+80%)));
   }
 
   &--dark-orange {
@@ -37,10 +35,7 @@
   }
 
   &--dark-orange:hover {
-    background: linear-gradient(
-      $darkOrange,
-      color($darkOrange b(+40%) s(+80%))
-    );
+    background: linear-gradient($darkOrange, color($darkOrange b(+40%) s(+80%)));
   }
 
   &--blue {
@@ -57,10 +52,7 @@
   }
 
   &--yellow:hover {
-    background: linear-gradient(
-      $mainYellow,
-      color($mainYellow b(+40%) s(+80%))
-    );
+    background: linear-gradient($mainYellow, color($mainYellow b(+40%) s(+80%)));
   }
 
   &--beige {

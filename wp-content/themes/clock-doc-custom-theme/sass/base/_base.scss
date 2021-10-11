@@ -142,12 +142,15 @@ img {
 }
 
 input {
-  height: 4rem; /* This needs to be 4rem not 4em; otherwise, the fields on the Contact Us page will be too big. */
+  /* this needs to be measured in ems not rems, so contact us input fields look consistent on all screen sizes. */
+  height: 2em; /* 2em - not 2rem nor 4rem - looks perfect on all screen sizes. 4rem was too small for the ipohone 5/se. */
+  width: 18em;
 }
 
 textarea {
   /* used on contact us form. */
-  height: 8rem; /* This needs to be 8rem not 8em; otherwise, the textarea on the Contact Us page will be too big. */
+  height: 8em; /* this needs to be measured in ems not rems, so textarea adjusts and looks consistent on all screen sizes. */
+  width: 18em;
 }
 
 a {

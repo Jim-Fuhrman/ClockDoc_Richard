@@ -2,15 +2,19 @@
   position: relative;
   font-size: 1.6rem;
 
-  &__button {
-    /* This is used on Contact Form 1, not the Contact Us Page. */
-    background-color: $darkOrange;
-    border: none;
-    border-radius: 20%;
-    cursor: pointer;
+  /* This is used on Contact Form 1, not the Contact Us Page. */
+
+  &__btn {
     display: block;
-    padding: 1rem;
-    width: 10rem;
+    padding: 0.6rem 1.2rem;
+    border-radius: 5rem;
+    border: none;
+    color: #fff;
+    background-color: $darkOrange;
+    cursor: pointer;
+    margin: 0;
+    font-size: 1em;
+    width: max-content;
   }
 
   &__padding {
