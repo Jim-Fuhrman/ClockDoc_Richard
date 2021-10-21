@@ -205,7 +205,7 @@ li {
 li {
   line-height: 3.5rem; /* original setting 1.5em */
   text-align: left;
-  /*margin-left: 2rem;*/ /* having a left margin makes links look bad on the About Us page and its child pages. I put it there so bullets would align with the paragraphs above them, but they don't look bad without the margin-left. */
+  margin-left: 2rem;
 
   @include respondDesktop(atLarge) {
     margin-left: 2.5rem;

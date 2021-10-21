@@ -1,14 +1,14 @@
 .page-links {
   position: relative;
-  margin: 0 0 40px 20px;
-  width: 300px;
+  margin: 4rem;
+  width: 30rem;
   float: right;
 
   z-index: 1;
   background-color: $beige;
 
-  @include respondDesktop(atMedium) {
-    margin: 0 0 40px 20px;
+  @include respondDesktop(atMediumLarge) {
+    margin: 0 0 4rem 0;
     width: 100%;
     float: none;
   } /* screen size >= 767px/16 or 47.9375em */
@@ -17,7 +17,7 @@
     margin: 0;
     font-weight: normal;
     text-align: center;
-    padding: 20px 0;
+    padding: 2rem 0;
     background-color: $mainBlue;
     color: #fff;
 
@@ -29,7 +29,10 @@
   }
 
   li {
-    border-top: 1px solid adjust-color($beige, $lightness: -14%);
+    border-top: 0.1rem solid adjust-color($beige, $lightness: -14%);
+    margin-left: 0; /* I only want the margin-left = 0 on the About Us links.  
+    The bullets beside clock brands and clock types need the margin-left on small screen sizes. 
+    They are set in base.scss*/
   }
 
   li:first-child {
@@ -47,8 +50,10 @@
   li a {
     display: block;
     text-align: center;
-    padding: 17px 10px;
+    padding: 1.7rem 1rem;
     text-decoration: none;
+    color: $mainBlue;
+    transition: all 0.3s;
   }
 
   li a:hover {

@@ -536,8 +536,7 @@ li {
   line-height: 3.5rem;
   /* original setting 1.5em */
   text-align: left;
-  /*margin-left: 2rem;*/
-  /* having a left margin makes links look bad on the About Us page and its child pages */
+  margin-left: 2rem;
   /* 280px/16 = 17.5em */
   /* 327px/16 = 20.4375em */
   /* 355px/16 = 22.1875em*/
@@ -951,8 +950,8 @@ the exception being the .container class. That's defined in utilities.scss, so t
 
 .page-links {
   position: relative;
-  margin: 0 0 40px 20px;
-  width: 300px;
+  margin: 4rem;
+  width: 30rem;
   float: right;
   z-index: 1;
   background-color: #faf0ca;
@@ -972,16 +971,16 @@ the exception being the .container class. That's defined in utilities.scss, so t
   /* 1629px/16 = 101.8125em*/
   /* 1860px/16 = 116.25em   */
   /* screen size >= 767px/16 or 47.9375em */ }
-  @media only screen and (max-width: 47.9375em) {
+  @media only screen and (max-width: 50em) {
     .page-links {
-      margin: 0 0 40px 20px;
+      margin: 0 0 4rem 0;
       width: 100%;
       float: none; } }
   .page-links__title {
     margin: 0;
     font-weight: normal;
     text-align: center;
-    padding: 20px 0;
+    padding: 2rem 0;
     background-color: #0d3b66;
     color: #fff; }
     .page-links__title a {
@@ -989,7 +988,11 @@ the exception being the .container class. That's defined in utilities.scss, so t
       text-decoration: none;
       background-color: #0d3b66; }
   .page-links li {
-    border-top: 1px solid #f4de89; }
+    border-top: 0.1rem solid #f4de89;
+    margin-left: 0;
+    /* I only want the margin-left = 0 on the About Us links.  
+    The bullets beside clock brands and clock types need the margin-left on small screen sizes. 
+    They are set in base.scss*/ }
   .page-links li:first-child {
     border-top: none; }
   .page-links__active,
@@ -1001,8 +1004,10 @@ the exception being the .container class. That's defined in utilities.scss, so t
   .page-links li a {
     display: block;
     text-align: center;
-    padding: 17px 10px;
-    text-decoration: none; }
+    padding: 1.7rem 1rem;
+    text-decoration: none;
+    color: #0d3b66;
+    transition: all 0.3s; }
   .page-links li a:hover {
     color: #0a2b4b;
     background-color: #f2e3aa; }
