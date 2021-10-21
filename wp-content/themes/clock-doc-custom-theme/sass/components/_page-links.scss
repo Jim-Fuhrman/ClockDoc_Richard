@@ -1,14 +1,14 @@
 .page-links {
   position: relative;
-  margin: 4rem;
-  width: 30rem;
+  margin: 0 0 40px 20px;
+  width: 300px;
   float: right;
 
   z-index: 1;
   background-color: $beige;
 
   @include respondDesktop(atMedium) {
-    margin: 0 0 4rem 0;
+    margin: 0 0 40px 20px;
     width: 100%;
     float: none;
   } /* screen size >= 767px/16 or 47.9375em */
@@ -17,7 +17,7 @@
     margin: 0;
     font-weight: normal;
     text-align: center;
-    padding: 2rem 0;
+    padding: 20px 0;
     background-color: $mainBlue;
     color: #fff;
 
@@ -29,7 +29,7 @@
   }
 
   li {
-    border-top: 0.1rem solid color($beige l(-14%));
+    border-top: 1px solid adjust-color($beige, $lightness: -14%);
   }
 
   li:first-child {
@@ -39,7 +39,7 @@
   &__active,
   & .current_page_item {
     text-align: center;
-    background-color: color($beige blackness(+11%) s(+50%));
+    background-color: scale-color($beige, $lightness: -7%, $saturation: -10%);
     color: $mainBlue;
     font-weight: bold;
   }
@@ -47,14 +47,12 @@
   li a {
     display: block;
     text-align: center;
-    padding: 1.7rem 1rem;
+    padding: 17px 10px;
     text-decoration: none;
-    color: $mainBlue;
-    transition: all 0.3s;
   }
 
   li a:hover {
-    color: color($mainBlue b(+6%));
-    background-color: color($beige blackness(+18%) s(+65%));
+    color: adjust-color($mainBlue, $lightness: -6%);
+    background-color: scale-color($beige, $lightness: -9%, $saturation: -12%);
   }
 }
