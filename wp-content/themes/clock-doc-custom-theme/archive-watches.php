@@ -5,7 +5,7 @@ $watchStyles = new WP_Query(array(
 ));
 pageBanner(array(
     'title' => 'All watches',
-    'subtitle' => 'Pictured below are ' . $watchStyles->found_posts . ' different watch styles'
+    'subtitle' => 'Pictured below are ' . $watchStyles->found_posts . ' watch styles'
 ));
 get_template_part("template-parts/content", "archiveCode"); 
 get_template_part('template-parts/content', 'contactInfo');

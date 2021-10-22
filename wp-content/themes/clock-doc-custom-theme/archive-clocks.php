@@ -5,7 +5,7 @@ $clockStyles = new WP_Query(array(
 ));
 pageBanner(array(
     'title' => 'All Clocks',
-    'subtitle' => 'Pictured below are ' . $clockStyles->found_posts . ' different clock styles'
+    'subtitle' => 'Pictured below are ' . $clockStyles->found_posts . ' clock styles'
 ));
 get_template_part("template-parts/content", "archiveCode");
 get_template_part('template-parts/content', 'contactInfo');
