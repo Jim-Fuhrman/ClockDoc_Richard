@@ -3346,6 +3346,8 @@ class upArrow {
     this.nav = document.querySelector(".site-header__nav");
     this.upArrow = document.querySelector(".upArrow");
     this.browserHeight = window.innerHeight;
+    /* the next line runs 5 times a second or once every 200 milliseconds.*/
+
     this.scrollThrottle = lodash_throttle__WEBPACK_IMPORTED_MODULE_0___default()(this.calcCaller, 200).bind(this);
     this.events();
   }
@@ -3360,7 +3362,10 @@ class upArrow {
   }
 
   scrollTo() {
-    window.scrollTo(0, 0);
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth"
+    });
     this.nav.classList.remove("active");
   }
 
