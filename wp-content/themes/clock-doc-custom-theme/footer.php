@@ -13,8 +13,9 @@
                         </ul>
                     </nav>
                 </div>
+                <!--
                 <div class="site-footer__inner-grid--item">
-                    <h2>Learn</h2>  <!--  class="headline headline--medium" -->
+                    <h2>Learn</h2>
                     <nav class="nav-list">
                         <ul>
                             <li><a href="<?php echo site_url('/conditions-of-use');?>">Conditions of Use</a></li>
@@ -22,7 +23,8 @@
                             <li><a href="<?php echo site_url('/guidelines-for-ratings-and-reviews');?>; ">Guidelines for Reviews</a></li>
                         </ul>
                     </nav>
-                </div>   
+                </div>
+            -->   
                 <div class="site-footer__inner-grid--item">
                     <h2 class="t-center">Connect With Us</h2>  <!-- headline headline--medium -->
                     <nav>
